@@ -1,0 +1,127 @@
+# Copyright (c) 2016 by Keegan Taylor
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+
+outfit "Adipose Storage"
+	licenses
+		Antfolk
+	category "Power"
+	cost 23000
+	thumbnail "outfit/tiny battery hai"
+	"mass" 18
+	"outfit space" -18
+	"energy capacity" 1440
+	"biotech capacity" -18
+	description "Antfolk battery. Best in terms of energy capacity efficiency between Antfolk batteries."
+#80 e/m
+
+outfit "Visceral Storage"
+	licenses
+		Antfolk
+	category "Power"
+	cost 175000
+	thumbnail "outfit/tiny battery hai"
+	"mass" 56
+	"outfit space" -56
+	"energy capacity" 2520
+	"hull" 250
+	"biotech capacity" -56
+	description "Antfolk battery. Also increases hull strength."
+#60 e/m
+
+outfit "Musculus Storage"
+	licenses
+		Antfolk
+	category "Power"
+	cost 64000
+	thumbnail "outfit/tiny battery hai"
+	"mass" 33
+	"outfit space" -33
+	"energy capacity" 1980
+	"energy generation" 1.375
+	"heat generation" 3.3
+	"biotech capacity" -33
+	description "Antfolk battery. Also produces small amounts of energy."
+#45 e/m
+
+
+outfit "Biochemical Container"
+	licenses
+		Antfolk
+	category "Power"
+	cost 125000
+	thumbnail "outfit/small biochemical"
+	"mass" 14
+	"outfit space" -14
+	"energy generation" 0.9
+	"heat generation" 1
+	"hull repair rate" 0.075
+	"hull energy" 0.15
+	"hull heat" 0.6
+	"biotech capacity" -14
+	description "Antfolk energy generation. Also repairs ships."
+
+outfit "Biochemical Tank"
+	licenses
+		Antfolk
+	category "Power"
+	cost 245000
+	thumbnail "outfit/small biochemical"
+	"mass" 26
+	"outfit space" -26
+	"energy generation" 2
+	"heat generation" 2.2
+	"hull repair rate" 0.15
+	"hull energy" 0.3
+	"hull heat" 1.2
+	"biotech capacity" -26
+	description "Antfolk energy generation. Also repairs ships."
+
+outfit "Biochemical Vat"
+	licenses
+		Antfolk
+	category "Power"
+	cost 490000
+	thumbnail "outfit/small biochemical"
+	"mass" 49
+	"outfit space" -49
+	"energy generation" 4.5
+	"heat generation" 4.8
+	"hull repair rate" 0.4
+	"hull energy" 0.8
+	"hull heat" 3.2
+	"biotech capacity" -51
+	description "Antfolk energy generation. Also repairs ships."
+
+outfit "Photosynthetic Cell"
+	licenses
+		Antfolk
+	category "Power"
+	cost 115000
+	thumbnail "outfit/small photovoltaic"
+	"mass" 12
+	"outfit space" -12
+	"solar collection" 1
+	"energy capacity" 150
+	"biotech capacity" -12
+	description "Antfolk energy generation. Dependent on distance from system center. Also holds energy."
+
+outfit "Photosynthetic Array"
+	licenses
+		Antfolk
+	category "Power"
+	cost 295000
+	thumbnail "outfit/small photovoltaic"
+	"mass" 22
+	"outfit space" -22
+	"solar collection" 2.5
+	"energy capacity" 225
+	"biotech capacity" -22
+	description "Antfolk energy generation. Dependent on distance from system center. Also holds energy."

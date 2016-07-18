@@ -1,0 +1,138 @@
+# Copyright (c) 2016 by Keegan Taylor
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+outfit "Greyling's Breath Steering"
+	licenses
+		Antfolk
+	category "Engines"
+	"cost" 6000
+	thumbnail "outfit/tiny radiant steering"
+	"mass" 9
+	"outfit space" -9
+	"engine capacity" -9
+	"biotech capacity" -9
+	"turn" 110
+	"turning energy" .25
+	"turning heat" 0.6
+	description
+
+outfit "Greyling's Breath Thruster"
+	licenses
+		Antfolk
+	category "Engines"
+	"cost" 8500
+	thumbnail "outfit/tiny radiant thruster"
+	"mass" 13
+	"outfit space" -13
+	"engine capacity" -13
+	"biotech capacity" -13
+	"thrust" 4.9
+	"thrusting energy" 0.5
+	"thrusting heat" 1.8
+	"flare sprite" "effect/plasma flare/tiny"
+		"frame rate" 12
+	"flare sound" "plasma tiny"
+	description
+
+outfit "Imperial's Breath Steering"
+	licenses
+		Antfolk
+	category "Engines"
+	"cost" 20000
+	thumbnail "outfit/small radiant steering"
+	"mass" 24
+	"outfit space" -24
+	"engine capacity" -24
+	"biotech capacity" -24
+	"turn" 320
+	"turning energy" 0.6
+	"turning heat" 1.7
+	description
+
+outfit "Imperial's Breath Thruster"
+	licenses
+		Antfolk
+	category "Engines"
+	"cost" 25000
+	thumbnail "outfit/small radiant thruster"
+	"mass" 32
+	"outfit space" -32
+	"engine capacity" -32
+	"biotech capacity" -32
+	"thrust" 13.6
+	"thrusting energy" 1.2
+	"thrusting heat" 4.7
+	"flare sprite" "effect/plasma flare/small"
+		"frame rate" 14
+	"flare sound" "plasma small"
+	description
+
+outfit "Reaper's Breath Steering"
+	licenses
+		Antfolk
+	category "Engines"
+	"cost" 47000
+	thumbnail "outfit/medium radiant steering"
+	"mass" 49
+	"outfit space" -49
+	"engine capacity" -49
+	"biotech capacity" -49
+	"turn" 710
+	"turning energy" 1.2
+	"turning heat" 3.7
+	description
+
+outfit "Reaper's Breath Thruster"
+	licenses
+		Antfolk
+	category "Engines"
+	"cost" 53000
+	thumbnail "outfit/medium radiant thruster"
+	"mass" 57
+	"outfit space" -57
+	"engine capacity" -57
+	"biotech capacity" -57
+	"thrust" 27.5
+	"thrusting energy" 2.3
+	"thrusting heat" 8.1
+	"flare sprite" "effect/plasma flare/medium"
+		"frame rate" 16
+	"flare sound" "plasma medium"
+
+outfit "Widowmaker's Breath Steering"
+	licenses
+		Antfolk
+	category "Engines"
+	"cost" 85000
+	thumbnail "outfit/large radiant steering"
+	"mass" 79
+	"outfit space" -79
+	"engine capacity" -79
+	"biotech capacity" -79
+	"turn" 1250
+	"turning energy" 2.1
+	"turning heat" 6.5
+
+outfit "Widowmaker's Breath Thruster"
+	licenses
+		Antfolk
+	category "Engines"
+	"cost" 105000
+	thumbnail "outfit/large radiant thruster"
+	"mass" 94
+	"outfit space" -94
+	"engine capacity" -94
+	"biotech capacity" -94
+	"thrust" 51
+	"thrusting energy" 4
+	"thrusting heat" 14
+	"flare sprite" "effect/plasma flare/big"
+		"frame rate" 18
+	"flare sound" "plasma large"
