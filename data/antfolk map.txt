@@ -3753,7 +3753,7 @@ system Chirr'ay'akai
 system Chordi
 	pos 205.371 92.2137
 	government "Antfolk Union"
-	habitable 486.68
+	habitable 806.68
 	link Chang-Er
 	link Voida
 	asteroids "small rock" 1 2.436
@@ -3774,12 +3774,18 @@ system Chordi
 	trade Plastic 390
 	object
 		sprite star/k0
-		period 10
+		distance 41.2555
+		period 14.9369
+	object
+		sprite star/m0
+		distance 62.7445
+		period 14.9369
+		offset 180
 	object Mikula
 		sprite planet/cloud0
-		distance 469.118
-		period 184.231
-		offset 32.3506
+		distance 784.448
+		period 309.425
+		offset 182.423
 		object
 			sprite planet/desert4
 			distance 158
@@ -3787,9 +3793,9 @@ system Chordi
 			offset 16.639
 	object
 		sprite planet/gas16
-		distance 1076.08
-		period 640.035
-		offset 212.968
+		distance 1391.41
+		period 730.957
+		offset 290.111
 		object
 			sprite planet/rock3
 			distance 213
@@ -3798,16 +3804,16 @@ system Chordi
 			sprite planet/rhea
 			distance 310
 			period 28.7303
-	object
+	object Yaunus
 		sprite planet/rock19
-		distance 1551.08
-		period 1107.62
-		offset 55.8982
-	object
+		distance 1866.41
+		period 1135.59
+		offset 66.2224
+	object Ducarro
 		sprite planet/desert7
-		distance 1825.44
-		period 1414.13
-		offset 30.7919
+		distance 2140.77
+		period 1394.97
+		offset 26.9362
 
 system Chornifath
 	pos 40.4305 -214.812
@@ -17031,6 +17037,10 @@ planet "Drekag Firask"
 	bribe 0
 	security 0
 
+planet Ducarro
+	landscape land/hills0
+	security 0.2
+
 planet Dune
 	attributes rim mining
 	landscape land/dune2
@@ -17969,6 +17979,10 @@ planet Midgard
 
 planet Mikula
 	landscape land/mfield3
+	description `Mikula is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is so strange that your mind can't quite comprehend it all at once, despite each individual structure having been constructed from materials you're at least somewhat familiar with and seem to follow many of the same principals of architecture as far as you can tell. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
+	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
+	bribe 0
+	security 0.3
 
 planet Millrace
 	attributes "near earth" factory urban
@@ -19246,6 +19260,11 @@ planet "Wyvern Station"
 	tribute 400
 		threshold 3500
 		fleet "Large Militia" 6
+
+planet Yaunus
+	landscape land/sea1
+	description `Yaunus is home to the oldest off-homeworld colonies the Antfolk have. Due to the planet's surface being eighty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
+	security 0.2
 
 planet Zenith
 	attributes pirate
