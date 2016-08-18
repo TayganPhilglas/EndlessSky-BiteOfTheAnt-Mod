@@ -16,7 +16,7 @@ mission "meet a new species 0"
 		dialog 'Immediately upon entering this system, you notice that the local lifeforms are registering as hostile. Even more importantly, you find yourself face-to-face with a Drak Archon. A voice in your head, presumably the Drak Archon, says, "This system is under the protection of the Drak. Leave now, or die, human."'
 	name "Escape the Drak"
 	description "Leave this system!"
-	npc kill
+	npc
 		government Drak
 		personality heroic vindictive staying
 		system "Chordi"
