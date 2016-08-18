@@ -17,7 +17,7 @@ mission "meet a new species 0"
 	name "Escape the Drak"
 	description "Leave this system!"
 	npc
-		government Drak
+		government " Drak "
 		personality heroic vindictive staying
 		system "Chordi"
 		ship "Archon" "Defensive Nanny"

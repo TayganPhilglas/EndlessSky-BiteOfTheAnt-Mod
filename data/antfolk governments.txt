@@ -8,11 +8,17 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+government " Drak "
+	"player reputation"
+	"attitude toward"
+	"bribe" 0
+
 government "Antfolk Union"
 	language "Antfolk"
 	"player reputation" #[-1000?]
 	"attitude toward"
 		"Drak"
+		" Drak "
 		"Antfolk Rebellion" #working name
 	"bribe" 0
 
