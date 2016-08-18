@@ -20,5 +20,5 @@ mission "meet a new species 0"
 	npc kill
 		government Drak
 		personality heroic vindictive staying
-		system #system_name
+		system "Chordi"
 		ship "Archon" "Defensive Nanny"
