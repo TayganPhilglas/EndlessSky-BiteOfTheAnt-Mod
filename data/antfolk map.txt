@@ -707,6 +707,7 @@ system Aldhibain
 
 system Alecto
 	pos 181.371 -6.78625
+	government Uninhabited
 	habitable 1313.28
 	link Syntha
 	link Annatar
@@ -2167,6 +2168,7 @@ system Ankaa
 
 system Annatar
 	pos 233.371 -3.08889
+	government Uninhabited
 	habitable 2140.92
 	link Alecto
 	link Polevik
@@ -3556,9 +3558,10 @@ system Celeborim
 
 system Chang-Er
 	pos 172.371 50.2137
-	habitable 2035
+	government Uninhabited
+	habitable 806.68
 	link Alecto
-	link Voida
+	link "Voida  "
 	link Chordi
 	asteroids "small rock" 2 1.8444
 	asteroids "medium rock" 7 1.74
@@ -3575,34 +3578,40 @@ system Chang-Er
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite star/f5
-		distance 19.027
-		period 11.802
-		offset 180
+		sprite star/k0
+		distance 43.6356
+		period 16.2479
 	object
 		sprite star/m0
-		distance 101.973
-		period 11.802
+		distance 66.3644
+		period 16.2479
+		offset 180
 	object
-		sprite planet/mars
-		distance 246.863
-		period 34.3923
+		sprite planet/rock5
+		distance 198.054
+		period 39.2542
 	object
-		sprite planet/lava1
-		distance 530.023
-		period 108.198
+		sprite planet/ice2
+		distance 420.264
+		period 121.337
 	object
-		sprite planet/miranda
-		distance 704.463
-		period 165.793
-	object
-		sprite planet/rock15
-		distance 1096.27
-		period 321.852
+		sprite planet/rock10
+		distance 748.602
+		period 288.46
+		offset 61.4679
 	object
 		sprite planet/gas14
-		distance 2411.03
-		period 1049.74
+		distance 1641.85
+		period 936.937
+		offset 8.33328
+		object
+			sprite planet/tethys
+			distance 209
+			period 12.3049
+		object
+			sprite planet/lava0
+			distance 355
+			period 27.2396
 
 system Chikatip
 	pos -77.5695 -307.812
@@ -3755,7 +3764,7 @@ system Chordi
 	government "Antfolk Union"
 	habitable 806.68
 	link Chang-Er
-	link Voida
+	link "Voida  "
 	asteroids "small rock" 1 2.436
 	asteroids "medium rock" 3 4.144
 	asteroids "large rock" 15 3.556
@@ -3764,12 +3773,12 @@ system Chordi
 	asteroids "large metal" 3 2.268
 	trade Clothing 290
 	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
+	trade Equipment 570
+	trade Food 500
 	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
+	trade Industrial 760
+	trade "Luxury Goods" 1150
+	trade Medical 830
 	trade Metal 390
 	trade Plastic 390
 	object
@@ -11714,8 +11723,9 @@ system Polaris
 
 system Polevik
 	pos 287.794 35.4211
+	government Uninhabited
 	habitable 486.68
-	link Voida
+	link "Voida  "
 	link Annatar
 	asteroids "large rock" 5 4.52
 	asteroids "small metal" 32 3.28
@@ -11998,10 +12008,12 @@ system "Pug Formici"
 	pos 212.371 15.2137
 	government Pug
 	habitable 425.92
-	asteroids "small rock" 3 1.0368
-	asteroids "medium rock" 1 1.5168
-	asteroids "large rock" 1 1.9584
-	asteroids "large metal" 2 1.6128
+	asteroids "small rock" 3 5.681
+	asteroids "medium rock" 8 4.485
+	asteroids "large rock" 12 7.5348
+	asteroids "small metal" 64 5.2624
+	asteroids "medium metal" 99 4.9634
+	asteroids "large metal" 53 3.3488
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -12012,6 +12024,8 @@ system "Pug Formici"
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Small Pug" 500
+	fleet "Large Pug" 1100
 	object
 		sprite star/k5
 		period 10
@@ -14439,6 +14453,7 @@ system Sumprast
 
 system Syntha
 	pos 145.988 8.82356
+	government Uninhabited
 	habitable 625
 	link Vorloo
 	link Alecto
@@ -15370,8 +15385,9 @@ system Vindemiatrix
 		distance 2091.26
 		period 1164.02
 
-system Voida
+system "Voida  "
 	pos 227.371 38.2137
+	government Uninhabited
 	habitable 2372.76
 	link Chang-Er
 	link Polevik
@@ -15407,21 +15423,25 @@ system Voida
 		distance 546.25
 		period 104.838
 	object
-		sprite planet/gas13
-		distance 1410.14
-		period 434.837
+		sprite planet/gas17
+		distance 2321.25
+		period 918.366
+		offset 258.89
 		object
 			sprite planet/io
-			distance 278
-			period 13.0851
+			distance 229
+			period 14.8056
+			offset 113.431
 		object
 			sprite planet/dust4
-			distance 366
-			period 19.7666
+			distance 317
+			period 24.1136
+			offset 242.517
 	object
 		sprite planet/rhea
-		distance 3122.18
-		period 1432.58
+		distance 3984.29
+		period 2065.19
+		offset 111.897
 
 system Volax
 	pos -256 -179
@@ -15477,6 +15497,7 @@ system Volax
 
 system Vorloo
 	pos 99.3708 -31.7863
+	government Uninhabited
 	habitable 233.28
 	link Syntha
 	asteroids "small rock" 29 6.4512
