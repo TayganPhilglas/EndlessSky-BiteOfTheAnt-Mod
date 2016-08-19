@@ -8,132 +8,6 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-system Chordi
-	pos 205.371 92.2137
-	government "Antfolk Union"
-	habitable 806.68
-	link Chang-Er
-	link "Voida  "
-	asteroids "small rock" 1 2.436
-	asteroids "medium rock" 3 4.144
-	asteroids "large rock" 15 3.556
-	asteroids "small metal" 30 3.64
-	asteroids "medium metal" 3 3.444
-	asteroids "large metal" 3 2.268
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 570
-	trade Food 500
-	trade "Heavy Metals" 960
-	trade Industrial 760
-	trade "Luxury Goods" 1150
-	trade Medical 830
-	trade Metal 390
-	trade Plastic 390
-	object
-		sprite star/k0
-		distance 41.2555
-		period 14.9369
-	object
-		sprite star/m0
-		distance 62.7445
-		period 14.9369
-		offset 180
-	object "Svijet Porijekla"
-		sprite planet/cloud0
-		distance 784.448
-		period 309.425
-		offset 182.423
-		object
-			sprite planet/desert4
-			distance 158
-			period 24.4748
-			offset 16.639
-	object
-		sprite planet/gas16
-		distance 1391.41
-		period 730.957
-		offset 290.111
-		object
-			sprite planet/rock3
-			distance 213
-			period 16.3631
-		object
-			sprite planet/rhea
-			distance 310
-			period 28.7303
-	object "Svijetu Vode"
-		sprite planet/rock19
-		distance 1866.41
-		period 1135.59
-		offset 66.2224
-	object "Svijet od Požara"
-		sprite planet/desert7
-		distance 2140.77
-		period 1394.97
-		offset 26.9362
-		
-system "Pug Formici"
-	pos 212.371 15.2137
-	government Pug
-	habitable 425.92
-	asteroids "small rock" 3 5.681
-	asteroids "medium rock" 8 4.485
-	asteroids "large rock" 12 7.5348
-	asteroids "small metal" 64 5.2624
-	asteroids "medium metal" 99 4.9634
-	asteroids "large metal" 53 3.3488
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
-	fleet "Small Pug" 500
-	fleet "Large Pug" 1100
-	object
-		sprite star/k5
-		period 10
-	object "Svijet Pug"
-		sprite planet/ice3
-		distance 409.983
-		period 160.896
-		offset 248.548
-		object
-			sprite planet/dust3
-			distance 145
-			period 16.6972
-	object
-		sprite planet/desert5
-		distance 891.233
-		period 515.683
-		offset 309.727
-		object
-			sprite planet/ice8
-			distance 170
-			period 24.3729
-	object
-		sprite planet/gas12
-		distance 2039.84
-		period 1785.63
-		offset 35.2402
-		object
-			sprite planet/tethys
-			distance 269
-			period 11.5881
-		object
-			sprite planet/ice7
-			distance 379
-			period 19.3796
-		object
-			sprite planet/callisto
-			distance 517
-			period 30.876
-			
 system Alecto
 	pos 181.371 -6.78625
 	government Uninhabited
@@ -311,6 +185,71 @@ system Chang-Er
 			distance 355
 			period 27.2396
 
+system Chordi
+	pos 205.371 92.2137
+	government "Antfolk Union"
+	habitable 806.68
+	link Chang-Er
+	link "Voida  "
+	asteroids "small rock" 1 2.436
+	asteroids "medium rock" 3 4.144
+	asteroids "large rock" 15 3.556
+	asteroids "small metal" 30 3.64
+	asteroids "medium metal" 3 3.444
+	asteroids "large metal" 3 2.268
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 570
+	trade Food 500
+	trade "Heavy Metals" 960
+	trade Industrial 760
+	trade "Luxury Goods" 1150
+	trade Medical 830
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		distance 41.2555
+		period 14.9369
+	object
+		sprite star/m0
+		distance 62.7445
+		period 14.9369
+		offset 180
+	object "Svijet Porijekla"
+		sprite planet/cloud0
+		distance 784.448
+		period 309.425
+		offset 182.423
+		object
+			sprite planet/desert4
+			distance 158
+			period 24.4748
+			offset 16.639
+	object
+		sprite planet/gas16
+		distance 1391.41
+		period 730.957
+		offset 290.111
+		object
+			sprite planet/rock3
+			distance 213
+			period 16.3631
+		object
+			sprite planet/rhea
+			distance 310
+			period 28.7303
+	object "Svijetu Vode"
+		sprite planet/rock19
+		distance 1866.41
+		period 1135.59
+		offset 76.7809
+	object "Svijet od Požara"
+		sprite planet/desert7
+		distance 2140.77
+		period 1394.97
+		offset 26.9354
+
 system Polevik
 	pos 287.794 35.4211
 	government Uninhabited
@@ -358,6 +297,67 @@ system Polevik
 			sprite planet/ice7
 			distance 229
 			period 14.8056
+
+system "Pug Formici"
+	pos 212.371 15.2137
+	government Pug
+	habitable 425.92
+	asteroids "small rock" 3 5.681
+	asteroids "medium rock" 8 4.485
+	asteroids "large rock" 12 7.5348
+	asteroids "small metal" 64 5.2624
+	asteroids "medium metal" 99 4.9634
+	asteroids "large metal" 53 3.3488
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	fleet "Small Pug" 500
+	fleet "Large Pug" 1100
+	object
+		sprite star/k5
+		period 10
+	object "Svijet Pug"
+		sprite planet/ice3
+		distance 409.983
+		period 160.896
+		offset 248.548
+		object
+			sprite planet/dust3
+			distance 145
+			period 16.6972
+	object
+		sprite planet/desert5
+		distance 891.233
+		period 515.683
+		offset 309.727
+		object
+			sprite planet/ice8
+			distance 170
+			period 24.3729
+	object
+		sprite planet/gas12
+		distance 2039.84
+		period 1785.63
+		offset 35.2402
+		object
+			sprite planet/tethys
+			distance 269
+			period 11.5881
+		object
+			sprite planet/ice7
+			distance 379
+			period 19.3796
+		object
+			sprite planet/callisto
+			distance 517
+			period 30.876
 
 system Syntha
 	pos 145.988 8.82356
@@ -526,7 +526,7 @@ system Vorloo
 
 planet "Svijet Porijekla"
 	landscape land/mfield3
-	description `Svijet Porijekla is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is so strange that your mind can't quite comprehend it all at once, despite each individual structure having been constructed from materials you're at least somewhat familiar with and seem to follow many of the same principals of architecture as far as you can tell. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
+	description `Svijet Porijekla is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
 	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
 	bribe 0
 	security 0.3
@@ -536,9 +536,12 @@ planet "Svijet Pug"
 
 planet "Svijet od Požara"
 	landscape land/hills0
+	bribe 0
 	security 0.2
 
 planet "Svijetu Vode"
 	landscape land/sea1
 	description `Svijetu Vode is home to the oldest off-homeworld colonies the Antfolk have. Due to the planet's surface being eighty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
+	bribe 0
 	security 0.2
+
