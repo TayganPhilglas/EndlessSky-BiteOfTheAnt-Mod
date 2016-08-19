@@ -9,9 +9,11 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 government " Drak "
-	"player reputation"
+	swizzle 5
+	color 1 1 1
+	"player reputation" 1
 	"attitude toward"
-	"bribe" 0
+	"fine" 0
 
 government "Antfolk Union"
 	language "Antfolk"
