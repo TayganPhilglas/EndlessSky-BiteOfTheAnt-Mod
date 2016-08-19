@@ -14,8 +14,6 @@ mission "Drak guarding Chordi"
 		has "main plot completed"
 	on enter Chordi
 		dialog 'Immediately upon entering this system, you notice that the local lifeforms are registering as hostile. Even more importantly, you find yourself face-to-face with a Drak Archon. A voice in your head, presumably the Drak Archon, says, "This system is under the protection of the Drak. Leave now, or die, human."'
-	name "BUG"
-	description "BUG YOU SHOULDN'T SEE THIS"
 	npc
 		government " Drak "
 		personality heroic vindictive staying
@@ -47,7 +45,8 @@ outfit "Timer Weapon"
 		"blast radius" 20
 		"hull damage" .04
 		
-mission "Drak gets hostile"
+mission "Archon gets hostile"
+	invisible
 	to offer
 		has "Drak guarding Chordi"
 	npc disable
@@ -55,7 +54,7 @@ mission "Drak gets hostile"
 		system "Chordi"
 		personality unconstrained heroic nemesis
 		ship "Timer Ship" "Timer"
-		dialog `After a while, you notice tha Archon getting very close to your ship. "For now, I shall not end you. You will not be so welcome next time." it says to you in your head. It might be good to land somewhere in another system to see why the Archon was so hostile.`
+		dialog `After a while, you notice the Archon getting very close to your ship. "I shall spare you this once. You will not be so welcome next time," it says to you in your head. It might be good to land somewhere in another system to see why the Archon was so hostile.`
 	on complete
 		event hostiledrak
 		"reputation:  Drak  " -1
@@ -67,19 +66,19 @@ mission "Land at Svijet Pug"
 		has "Drak guarding Chordi: active"
 	on enter "Pug Formici"
 		set "reputation: Pug" 1
-		dialog `Upon entering the system, a Pug ship enters the system as well. It seems that the Pug reside here as well, though the ships do not seem hostile like during the War. They're allowing you to land on the planet orbiting the parent star.`
+		dialog `Upon entering the system, a Pug ship jumps in as well. It seems that the Pug reside here, too, though the ships do not seem hostile like during the War. They're allowing you to land on the only inhabited planet.`
 	on complete
 		fail "Drak guarding Chordi"
 		conversation
-			`Upon landing, a group of Pug guards storms toward you. You open your ship's hatch and get out of <ship>. One of the guards is holding a cuboid device.`
-			`"hello human traveler," it says, speaking into the device, which seems to be a rudimentary translator. "what are you seeking here in this place," it asks.`
+			`Upon landing, a group of Pug guards storm towards you. You open your ship's hatch and get out of the <ship>. You notice one of the guards is holding a cuboid device.`
+			`"Hello human traveler," it says, speaking into the device, which seems to be a fairly simple translator. "What are you seeking here?" it asks.`
 			choice
 				`	I was exploring space.`
 				`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
-			`	"a draks archon is guarding the system known as chordi. on that planet there is a species of what humans would call large ants. we need your help to make them more advanced."`
-			`	"we will provide you with a translator for the language of these species." the Pug says, who is now looking at you, waiting for an answer."
+			`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We need your help to make them more advanced."`
+			`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
 			choice
 				`	"I will help you."`
 				`	"I will not help you."
-			`	"very well. we will give you time to rethink but you are always allowed to land here and help us. when you do land here we will provide you with the translator and instructions."
+			`	"Very well. We will give you time to rethink but you are always allowed to land here and help us. When you do land here we will provide you with the translator and instructions."
 			`	The guards walk away from your ship and enter a large building.`
