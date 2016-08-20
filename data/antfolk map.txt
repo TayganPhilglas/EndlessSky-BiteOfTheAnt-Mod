@@ -244,7 +244,7 @@ system Chordi
 		distance 1866.41
 		period 1135.59
 		offset 76.7809
-	object "Svijet od Požara"
+	object "Svijet od Pozara"
 		sprite planet/desert7
 		distance 2140.77
 		period 1394.97
@@ -534,7 +534,7 @@ planet "Svijet Porijekla"
 planet "Svijet Pug"
 	landscape land/space6
 
-planet "Svijet od Požara"
+planet "Svijet od Pozara"
 	landscape land/hills0
 	bribe 0
 	security 0.2
