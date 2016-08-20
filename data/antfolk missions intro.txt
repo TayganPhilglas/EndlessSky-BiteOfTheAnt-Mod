@@ -66,19 +66,21 @@ mission "Land at Svijet Pug"
 		has "Drak guarding Chordi: active"
 	on enter "Pug Formici"
 		set "reputation: Pug" 1
-		dialog `Upon entering the system, a Pug ship jumps in as well. It seems that the Pug reside here, too, though the ships do not seem hostile like during the War. They're allowing you to land on the only inhabited planet.`
+		dialog `Upon entering the system, a Pug ship jumps in as well. It hails you, asking you to land on the only inhabited planet.`
 	on complete
 		fail "Drak guarding Chordi"
 		conversation
-			`Upon landing, a group of Pug guards storm towards you. You open your ship's hatch and get out of the <ship>. You notice one of the guards is holding a cuboid device.`
-			`"Hello human traveler," it says, speaking into the device, which seems to be a fairly simple translator. "What are you seeking here?" it asks.`
+			`You settle your ship onto a landing pad in what appears to be the Pug's idea of a  spaceport. After exiting the <ship>, you are met with a sudden stare from some Pug nearby. One of them takes some device out of it's pocket and speaks into it.`
+			`Soon after, a contingent of Pug guards surrounding a single, more formally-dressed, Pug approaches you. You notice that the formally-dressed Pug is holding a cuboid device.`
+			`"At last, we meet," it says, speaking into the device, which seems to be a fairly simple translator. "Tell me, human traveller, what brings you to Pug space this time?" it asks.`
+			`This Pug seems far more talkative than they have previously been. You might be able to get some answers about them if you play it's game.`
 			choice
-				`	I was exploring space.`
+				`	I was exploring space and wanted to see what was inside this system.`
 				`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
 			`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We need your help to make them more advanced."`
 			`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
 			choice
 				`	"I will help you."`
-				`	"I will not help you."
+				`	"I will not help you."`
 			`	"Very well. We will give you time to rethink but you are always allowed to land here and help us. When you do land here we will provide you with the translator and instructions."
 			`	The guards walk away from your ship and enter a large building.`
