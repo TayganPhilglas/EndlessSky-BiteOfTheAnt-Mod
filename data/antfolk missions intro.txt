@@ -75,10 +75,15 @@ mission "Land at Svijet Pug"
 			`"At last, we meet," it says, speaking into the device, which seems to be a fairly simple translator. "Tell me, human traveller, what brings you to Pug space this time?" it asks.`
 			`This Pug seems far more talkative than they have previously been. You might be able to get some answers about them if you play it's game.`
 			choice
-				`	I was exploring space and wanted to see what was inside this system.`
-				`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
-			`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We need your help to make them more advanced."`
-			`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
+				`	"I was exploring nearby and I jumped into a system guarded by an Archon. I'm kind of wondering why the Drak are guarding that system in particular."`
+					goto guarded
+			label guarded
+			`	#dialogue`
+				
+				#`	I was exploring space and wanted to see what was inside this system.`
+				#`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
+			#`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We would apprechiate your help to nudge along their advancement."`
+			#`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
 			choice
 				`	"I will help you."`
 				`	"I will not help you."`

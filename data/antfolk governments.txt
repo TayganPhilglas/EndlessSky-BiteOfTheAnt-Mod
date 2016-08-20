@@ -13,20 +13,13 @@ government " Drak "
 	color 1 1 1
 	"player reputation" 1
 	"attitude toward"
+		"Antfolk Union"
 	"fine" 0
 
 government "Antfolk Union"
 	language "Antfolk"
-	"player reputation" #[-1000?]
+	"player reputation" -10
 	"attitude toward"
-		"Drak"
-		" Drak "
-		"Antfolk Rebellion" #working name
-	"bribe" 0
-
-government "Antfolk Rebellion" #working name
-	language "Antfolk"
-	"player reputation" #[-1000?]
-	"attitude toward"
-		"Antfolk Union"
+		"Drak" 1
+		" Drak " 1
 	"bribe" 0

@@ -12,7 +12,7 @@ event "player has english-antfolk translation machine"
 
 event "antfolk gain hyperdrives"
 
-event hostiledrak
+event "hostiledrak"
 	government " Drak "
 		"attitude toward"
 			Escort -1
