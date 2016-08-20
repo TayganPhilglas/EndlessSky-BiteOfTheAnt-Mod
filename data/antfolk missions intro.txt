@@ -82,7 +82,7 @@ mission "Land at Svijet Pug"
 				
 				#`	I was exploring space and wanted to see what was inside this system.`
 				#`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
-			#`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We would apprechiate your help to nudge along their advancement."`
+			#`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We would appreciate your help to nudge along their advancement."`
 			#`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
 			choice
 				`	"I will help you."`
