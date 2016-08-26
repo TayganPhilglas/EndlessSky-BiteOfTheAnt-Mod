@@ -72,8 +72,8 @@ mission "Land at Svijet Pug"
 		conversation
 			`You settle your ship onto a landing pad in what appears to be the Pug's idea of a  spaceport. After exiting the <ship>, you are met with a sudden stare from some Pug nearby. One of them takes some device out of it's pocket and speaks into it.`
 			`Soon after, a contingent of Pug guards surrounding a single, more formally-dressed, Pug approaches you. You notice that the formally-dressed Pug is holding a cuboid device.`
-			`"At last, we meet," it says, speaking into the device, which seems to be a fairly simple translator. "Tell me, human traveller, what brings you to Pug space this time?" it asks.`
-			`This Pug seems far more talkative than they have previously been. You might be able to get some answers about them if you play it's game.`
+			`"At last, we meet," it says, speaking into the device, which seems to be a fairly simple translator. "Tell me, <name>, what brings you to Pug space this time?" it asks.`
+			`This Pug seems far more talkative than they have previously been. You might be able to get some answers about them if you play its game.`
 			choice
 				`	"I was exploring nearby and I jumped into a system guarded by an Archon. I'm kind of wondering why the Drak are guarding that system in particular."`
 					goto guarded
