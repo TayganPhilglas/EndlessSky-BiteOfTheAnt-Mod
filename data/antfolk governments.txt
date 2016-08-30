@@ -17,7 +17,7 @@ government " Drak "
 	"fine" 0
 
 government "Antfolk Union"
-	language "Antfolk"
+	language "APASL"
 	"player reputation" -10
 	"attitude toward"
 		"Drak" 1

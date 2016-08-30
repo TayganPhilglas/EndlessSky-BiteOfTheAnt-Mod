@@ -8,7 +8,15 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-event "player has english-antfolk translation machine"
+event "has 1 real cloak"
+
+event "has 2 real cloaks"
+
+event "has 1 civ cloak"
+
+event "has 2 civ cloaks"
+
+event "player has english-apasl translation machine"
 
 event "antfolk gain hyperdrives"
 

@@ -8,10 +8,48 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-mission "Drak guarding Chordi"
+mission "Cloak Check 1"
 	invisible
 	to offer
 		has "main plot completed"
+		has "Land at Svijet Pug 1: done"
+	on offer
+		require Cloaking Device 1
+			event "has 1 real cloak"
+	fail
+
+mission "Cloak Check 2"
+	invisible
+	to offer
+		has "main plot completed"
+		has "UPStock Cloaking Device available"
+		has "Land at Svijet Pug 1: done"
+	on offer
+		require Cloaking Device 2
+			event "has 2 real cloaks"
+	fail
+
+mission "Cloak Check 3"
+	invisible
+	to offer
+		has "main plot completed"
+		has "Land at Svijet Pug 1: done"
+	on offer
+		require Civilian Cloaking Device 1
+			event "has 1 civ cloak"
+
+mission "Cloak Check 4"
+	invisible
+	to offer
+		has "main plot completed"
+		has "Land at Svijet Pug 1: done"
+	on offer
+		require Civilian Cloaking Device 2
+			event "has 2 civ cloaks"
+
+mission "Drak guarding Chordi"
+	invisible
+	landing
 	on enter Chordi
 		dialog 'Immediately upon entering this system, you notice that the local lifeforms are registering as hostile. Even more importantly, you find yourself face-to-face with a Drak Archon. A voice in your head, presumably the Drak Archon, says, "This system is under the protection of the Drak. Leave now, or die, human."'
 	npc
@@ -48,7 +86,7 @@ outfit "Timer Weapon"
 mission "Archon gets hostile"
 	invisible
 	to offer
-		has "Drak guarding Chordi"
+		has "Drak guarding Chordi: active"
 	npc disable
 		government "Test Dummy"
 		system "Chordi"
@@ -59,18 +97,19 @@ mission "Archon gets hostile"
 		event hostiledrak
 		"reputation:  Drak  " -1
 		
-mission "Land at Svijet Pug"
+mission "Land at Svijet Pug 1"
 	invisible
-	destination "Svijet Pug"
+	destination Svijet Pug
 	to offer
+		has "main plot completed"
 		has "Drak guarding Chordi: active"
 	on enter "Pug Formici"
 		set "reputation: Pug" 1
 		dialog `Upon entering the system, a Pug ship jumps in as well. It hails you, asking you to land on the only inhabited planet.`
 	on complete
-		fail "Drak guarding Chordi"
+		#fail "Drak guarding Chordi"
 		conversation
-			`You settle your ship onto a landing pad in what appears to be the Pug's idea of a  spaceport. After exiting the <ship>, you are met with a sudden stare from some Pug nearby. One of them takes some device out of it's pocket and speaks into it.`
+			`You settle your ship onto a landing pad in what appears to be the Pug's idea of a spaceport. After exiting the <ship>, you are met with a sudden stare from some Pug nearby. One of them takes some device out of it's pocket and speaks into it.`
 			`Soon after, a contingent of Pug guards surrounding a single, more formally-dressed, Pug approaches you. You notice that the formally-dressed Pug is holding a cuboid device.`
 			`"At last, we meet," it says, speaking into the device, which seems to be a fairly simple translator. "Tell me, <name>, what brings you to Pug space this time?" it asks.`
 			`This Pug seems far more talkative than they have previously been. You might be able to get some answers about them if you play its game.`
@@ -89,3 +128,227 @@ mission "Land at Svijet Pug"
 				`	"I will not help you."`
 			`	"Very well. We will give you time to rethink but you are always allowed to land here and help us. When you do land here we will provide you with the translator and instructions."
 			`	The guards walk away from your ship and enter a large building.`
+
+mission "Land at Svijet Pug 2a"
+	invisible
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Pug 1: done"
+		not "has 1 real cloak"
+		not "has 2 real cloaks"
+		not "has 1 civ cloak"
+		not "has 2 civ cloaks"
+		not "Land at Svijet Pug 2b: offered"
+		not "Land at Svijet Pug 2c: offered"
+		not "Land at Svijet Pug 2d: offered"
+		not "Land at Svijet Pug 2e: offered"
+		not "Land at Svijet Pug 2f: offered"
+		not "Land at Svijet Pug 2g: offered"
+		not "Land at Svijet Pug 2h: offered"
+	on complete
+		conversation
+			#`[stuff about PC deciding to help the Pug]`
+			#`[stuff about Pug explaining a Cloaking Device (mainly how powerful it is and how necessary it is to get past the Archon) to PC]`
+			#`[stuff about Pug giving PC a Cloaking Device]`
+			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
+			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			outfit Cloaking Device
+
+mission "Land at Svijet Pug 2b"
+	invisible
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Pug 1: done"
+		has "has 1 real cloak"
+		not "has 2 real cloaks"
+		not "has 1 civ cloak"
+		not "has 2 civ cloaks"
+		not "Land at Svijet Pug 2a: offered"
+		not "Land at Svijet Pug 2c: offered"
+		not "Land at Svijet Pug 2d: offered"
+		not "Land at Svijet Pug 2e: offered"
+		not "Land at Svijet Pug 2f: offered"
+		not "Land at Svijet Pug 2g: offered"
+		not "Land at Svijet Pug 2h: offered"
+	on complete
+		conversation
+			#`[stuff about PC deciding to help the Pug]`
+			#`[stuff about Pug figuring out PC already HAS a Cloaking Device]`
+			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
+			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+
+mission "Land at Svijet Pug 2c"
+	invisible
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Pug 1: done"
+		has "has 2 real cloaks"
+		not "has 1 civ cloak"
+		not "has 2 civ cloaks"
+		not "Land at Svijet Pug 2a: offered"
+		not "Land at Svijet Pug 2b: offered"
+		not "Land at Svijet Pug 2d: offered"
+		not "Land at Svijet Pug 2e: offered"
+		not "Land at Svijet Pug 2f: offered"
+		not "Land at Svijet Pug 2g: offered"
+		not "Land at Svijet Pug 2h: offered"
+	on complete
+		conversation
+			#`[stuff about PC deciding to help the Pug]`
+			#`[stuff about Pug figuring out PC ALREADY has not only 1, but MORE THAN ONE Cloaking Device]`
+			#`[choices about whether or not to tell the Pug about Ursa Polaris]`
+			#`[possible Pug reactions to different choices mentioned above]`
+			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
+			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+
+mission "Land at Svijet Pug 2d"
+	invisible
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Pug 1: done"
+		not "has 1 real cloak"
+		not "has 2 real cloaks"
+		has "has 1 civ cloak"
+		not "has 2 civ cloaks"
+		not "Land at Svijet Pug 2a: offered"
+		not "Land at Svijet Pug 2b: offered"
+		not "Land at Svijet Pug 2c: offered"
+		not "Land at Svijet Pug 2e: offered"
+		not "Land at Svijet Pug 2f: offered"
+		not "Land at Svijet Pug 2g: offered"
+		not "Land at Svijet Pug 2h: offered"
+	on complete
+		conversation
+			#`[stuff about PC deciding to help the Pug]`
+			#`[stuff about Pug figuring out PC already has a Cloaking Device, but it's worse than what the Pug have {probably some minor mockery, to boot}]`
+			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
+			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+
+mission "Land at Svijet Pug 2e"
+	invisible
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Pug 1: done"
+		not "has 1 real cloak"
+		not "has 2 real cloaks"
+		has "has 2 civ cloaks"
+		not "Land at Svijet Pug 2a: offered"
+		not "Land at Svijet Pug 2b: offered"
+		not "Land at Svijet Pug 2c: offered"
+		not "Land at Svijet Pug 2d: offered"
+		not "Land at Svijet Pug 2f: offered"
+		not "Land at Svijet Pug 2g: offered"
+		not "Land at Svijet Pug 2h: offered"
+	on complete
+		conversation
+			#`[stuff about PC deciding to help the Pug]`
+			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, and that they're all specifically WORSE than what the Pug have {probably some level of mockery to boot}]`
+			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
+			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+
+mission "Land at Svijet Pug 2f"
+	invisible
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Pug 1: done"
+		has "has 1 real cloak"
+		not "has 2 real cloaks"
+		has "has 1 civ cloak"
+		not "has 2 civ cloaks"
+		not "Land at Svijet Pug 2a: offered"
+		not "Land at Svijet Pug 2b: offered"
+		not "Land at Svijet Pug 2c: offered"
+		not "Land at Svijet Pug 2d: offered"
+		not "Land at Svijet Pug 2e: offered"
+		not "Land at Svijet Pug 2g: offered"
+		not "Land at Svijet Pug 2h: offered"
+	on complete
+		conversation
+			#`[stuff about PC deciding to help the Pug]`
+			#`[stuff about Pug figuring out PC already has TWO Cloaking Devices, but one of them is crap compared to what the Pug have {probably some level of mockery to boot}]`
+			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
+			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+
+mission "Land at Svijet Pug 2g"
+	invisible
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Pug 1: done"
+		has "has 1 real cloak"
+		not "has 2 real cloaks"
+		has "has 2 civ cloaks"
+		not "Land at Svijet Pug 2a: offered"
+		not "Land at Svijet Pug 2b: offered"
+		not "Land at Svijet Pug 2c: offered"
+		not "Land at Svijet Pug 2d: offered"
+		not "Land at Svijet Pug 2e: offered"
+		not "Land at Svijet Pug 2f: offered"
+		not "Land at Svijet Pug 2h: offered"
+	on complete
+		conversation
+			#`[stuff about PC deciding to help the Pug]`
+			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, but all but one of them is crap compared to what the Pug have {probably some level of mockery to boot}]`
+			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
+			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+
+mission "Land at Svijet Pug 2h"
+	invisible
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Pug 1: done"
+		has "has 1 real cloak"
+		not "has 2 real cloaks"
+		has "has 2 civ cloaks"
+		not "Land at Svijet Pug 2a: offered"
+		not "Land at Svijet Pug 2b: offered"
+		not "Land at Svijet Pug 2c: offered"
+		not "Land at Svijet Pug 2d: offered"
+		not "Land at Svijet Pug 2e: offered"
+		not "Land at Svijet Pug 2f: offered"
+		not "Land at Svijet Pug 2g: offered"
+	on complete
+		conversation
+			#`[stuff about PC deciding to help the Pug]`
+			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, and they're a mix of real, good Cloaking Devices and some sort of crudware Civilian version {probably a ton of mockery to boot, like 'Who even does that?!' or something}]`
+			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
+			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+
+mission "Land at Svijet Porijekla"
+	name "Human First Contact with Antfolk"
+	description "Enter the Chordi System while cloaked to make first-contact with the 'Antfolk'"
+	source Svijet Pug
+	destination Svijet Porijekla
+	clearance "You try hailing Svijet Porijekla using the translation device the Pug gave you in conjunction with the modifications they made to your ship's communications systems. The traffic controller panics and leaves their post. You are left waiting for a good five hours before what you think is a different Antfolk comes on and grants permission to land in an open wasteland instead of the spaceport."
+	infiltrating
+	to offer
+		has "Land at Svijet Pug 2: done"
+	on complete
+		conversation
+			#`[stuff about PC gaining the Antfolk's trust]`
+			#`[stuff about the Antfolk wanting Jump Drive tech]`
+			#`[at some point, try to explain that the Antfolk language is called 'Assimilated Pheromonal, Anatonmical, and Sonic Language', or 'APASL' for short]`
+
+mission "Antfolk Hyperdrives Prep 1"
+	name "Race Shepharding 101"
+	description "Learn about how to best provide new technology to a younger race"
+	#source Svijet Porijekla | I'm not sure I should have this mission require the Player to be on a particular planet. Keeping this here as documentation until I can get a second opinion.
+	destination Svijet Pug
+	to offer
+		has "Land at Svijet Porijekla: done"
+	on offer
+		conversation
+			`It occurs to you that you know very little about how Hyperdrives work or how to make them, and even less about Jump Drives. Not to mention that what little you know of the two makes just giving tons of either one to a race that hasn't earned the knowledge for themselves sounds like more of a terrible idea the more you think about it.`
+			`You should probably go back to Sevijet Pug and ask [the Pug] about what to do from here.`
+	on complete
+		conversation
+			#`[PC explains problem to Pug]`
+			#`[Pug teach PC about simplified models and giving tech slowly and incrementally]`
+			`"So I should give the Antfolk simplified, educational models of Hyperdrives rather than actual Hyperdrives, and *only* give them models for Hyperdrives, nothing else, at least for now," you say, summarizing and clarifying what [the Pug] said. Then you ask, "But... where am I supposed to find something like that? And how many do I need?"`
+			`[The Pug] smirks. At least, you think it's smirking. "Telling you all of that would defeat the point of you doing this instead of us. If you *must* have a hint, then I'd recommend contacting one of your species' 'corporations' that manufactures Hyperdrives and see if any of them can - or will - help you. As for how many you need, only the Antfolk scientists looking at such a model *may* be able to know how many they need in advance."`
+			`[The Pug] turns to leave, then stops, turns back and says "Oh, and feel free to come back after you have given the Antfolk all the Hyperdrive Models they need. It's between them and you what assistance they require next, but you are welcome to visit us and tell us all you have learned when you are between project stages. We might even have advice from time to time. Maybe. But only bother coming if you want to. We're not forcing you to do anything."`
+
+mission "Antfolk Hyperdrives Prep 2"
+	name "Find a supplier for Hyperdrive Educational Models"
+	description "Find someone who can supply you with educational models of a Hyperdrive."
+	destination Wayfarer
+	
