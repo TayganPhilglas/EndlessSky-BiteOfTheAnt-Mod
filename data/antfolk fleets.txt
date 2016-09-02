@@ -7,24 +7,3 @@
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-event "has 1 real cloak"
-
-event "has 2 real cloaks"
-
-event "has 1 civ cloak"
-
-event "has 2 civ cloaks"
-
-event "player has english-apasl translation machine"
-
-event "antfolk gain hyperdrives"
-	"reputation: Antfolk Union" >?= 20
-	outfitter "Antfolk Civilian Outfits"
-		"Fuel Vacuole"
-		"Hyperdrive"
-
-event "hostiledrak"
-	government " Drak "
-		"attitude toward"
-			Escort -1

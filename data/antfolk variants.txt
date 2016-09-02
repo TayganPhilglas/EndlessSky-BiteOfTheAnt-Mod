@@ -17,6 +17,26 @@ ship "Battle Larva" "Battle Larva (Missile)"
 		"Greyling's Breath Thruster"
 		"Greyling's Breath Steering"
 
+ship "Slave Maker" "Slave Maker (Hyper)"
+	outfits
+		"Hyperdrive"
+		"Fuel Vacuole" 2
+
+ship "Honey Pot" "Honey Pot (Hyper)"
+	outfits
+		"Hyperdrive"
+		"Fuel Vacuole" 1 #maybe 2, dunno yet
+
+ship "Leaf Cutter" "Leaf Cutter (Hyper)"
+	outfits
+		"Hyperdrive"
+		"Fuel Vacuole" 2
+
+ship "Fire Frigate" "Fire Frigate (Hyper)"
+	outfits
+		"Hyperdrive"
+		"Fuel Vacuole" 2
+
 ship "Solifuge" "Queen Carrier"
 	fighter 0 0
 	fighter 0 0

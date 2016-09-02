@@ -62,21 +62,20 @@ ship "Slave Maker" #still not sure about the name of this ship
 		"hull energy" 0.06
 		"required crew" 60
 		"bunks" 480
-		"mass" 870
+		"mass" 230
 		"drag" 15.8
 		"heat dissipation" .5
-		"fuel capacity" 600
-		"cargo space" 300 #may need further adjustment
+		"cargo space" 100
 		"outfit space" 410
-		"weapon capacity" 180
-		"engine capacity" 85
+		"weapon capacity" 60
+		"engine capacity" 100
 		"biotech capacity" 410
 		weapon
-			"blast radius" 120
-			"shield damage" 1200
-			"hull damage" 600
-			"hit force" 1800
-	outfits
+			"blast radius" 120 #needs changing
+			"shield damage" 1200 #needs changing
+			"hull damage" 600 #needs changing
+			"hit force" 1800 #needs changing
+	outfits #needs changing
 		"Heavy Anti-Missile Turret" 2
 		
 		"RT-I Radiothermal"
@@ -108,12 +107,12 @@ ship "Honey Pot"
 	attributes
 		category "Light Freighter"
 		"cost" #undecided
-		"hull" #undecided
+		"hull" 4000 #tentative
 		"hull repair rate" 1
 		"hull energy" 0.06
-		"required crew" 60
-		"bunks" 75
-		"mass" #undecided
+		"required crew" 10
+		"bunks" 15
+		"mass" 300 #tentative
 		"drag" #undecided
 		"heat dissipation" #undecided
 		"cargo space" 600
@@ -141,18 +140,17 @@ ship "Leaf Cutter"
 	attributes
 		category "Heavy Freighter"
 		"cost" #undecided
-		"hull" #undecided
+		"hull" 65100 #might need adjustment
 		"hull repair rate" 1
 		"hull energy" 0.06
-		"required crew" 85
-		"bunks" 105
-		"mass" #dunno
+		"required crew" 30 #needs adjustment
+		"bunks" 50 #needs adjustment
+		"mass" 1200 #probably needs adjustment
 		"drag" #on. The fact that I made a joke instead of providing useful documentation here should show I have no idea how to decide on a ship's drag value
 		"heat dissipation" #still dunno how to decide this stuff...
-		"fuel capacity" #not sure how much to give
 		"cargo space" 1800
-		"outfit space" #no clue, except that I think it should probably be more than whatever I pick for mass
-		"weapon capacity" #no clue
+		"outfit space" #no clue
+		"weapon capacity" #no clue, though should be a smaller ratio than whatever is picked for the warships, for sure
 		"engine capacity" #no clue
 		"biotech capacity" #no clue
 		weapon #aka a bunch of stuff I could calculate IF I could calculate everything above this line, which I can't really
@@ -181,15 +179,14 @@ ship "Fire Frigate"
 	attributes
 		category "Light Warship"
 		"cost" 2000000
-		"hull" 3050
+		"hull" 6100 #either 3050 or 6100, leaning on 6100 until I can figure out where the 3050 number came from
 		"hull repair rate" 1
 		"hull energy" 0.06
 		"required crew" 60
 		"bunks" 130
-		"mass" #120/130
+		"mass" 220 #120/130 or, ya'know, something that fits the 6100 number a little better, like 220
 		"drag" 3.7
-		"heat dissipation" .8
-		"fuel capacity" 500
+		"heat dissipation" .8 #needs to be better, much better. this is a bioship for pete's sake!
 		"cargo space" 30
 		"outfit space" 280
 		"weapon capacity" 90
@@ -231,15 +228,15 @@ ship "Army Cruiser"
 	attributes
 		category "Medium Warship"
 		cost "????"
-		"hull" ????
+		"hull" 7300 #may very well need adjustment
 		"hull repair rate" 1
 		"hull energy" 0.06
-		"required crew"
-		"bunks"
+		"required crew" 15
+		"bunks" 30
 		"mass"
 		"drag"
 		"heat dissipation"
-		"fuel capacity"
+		"fuel capacity" 500
 		"cargo space"
 		"outfit space"
 		"weapon capacity"
@@ -250,6 +247,12 @@ ship "Army Cruiser"
 			"shield damage"
 			"hull damage"
 			"hit force"
+	outfits
+	
+	#engine hardpoints and stuff
+	#weapon hardpoints and stuff
+	#explosions and stuff
+	description ""
 
 ship "Bullet Battleship"
 	sprite "ship/????" #needs own sprite
@@ -305,4 +308,3 @@ ship "Queen Carrier"
 			"hull damage"
 			"hit force"
 		#20 fighter bays
-		#will appear in fleets of at least three Queen Carriers, each spawning with all 20 of their fighters
