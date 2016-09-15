@@ -14,11 +14,9 @@ mission "Cloak Check 1"
 		has "main plot completed"
 		has "Land at Atilt San Pug 1: done"
 	on offer
-		require "Cloaking Device" 1
-		event "has 1 real cloak"
-		fail
-
-event "has 1 real cloak"
+		require Cloaking Device 1
+			event "has 1 real cloak"
+	fail
 
 mission "Cloak Check 2"
 	invisible
@@ -27,11 +25,9 @@ mission "Cloak Check 2"
 		has "UPStock Cloaking Device available"
 		has "Land at Atilt San Pug 1: done"
 	on offer
-		require "Cloaking Device" 2
-		event "has 2 real cloaks"
-		fail
-
-event "has 2 real cloaks"
+		require Cloaking Device 2
+			event "has 2 real cloaks"
+	fail
 
 mission "Cloak Check 3"
 	invisible
@@ -40,10 +36,7 @@ mission "Cloak Check 3"
 		has "Land at Atilt San Pug 1: done"
 	on offer
 		require Civilian Cloaking Device 1
-		event "has 1 civ cloak"
-		fail
-
-event "has 1 civ cloak"
+			event "has 1 civ cloak"
 
 mission "Cloak Check 4"
 	invisible
@@ -52,10 +45,7 @@ mission "Cloak Check 4"
 		has "Land at Atilt San Pug 1: done"
 	on offer
 		require Civilian Cloaking Device 2
-		event "has 2 civ cloaks"
-		fail
-
-event "has 2 civ cloaks"
+			event "has 2 civ cloaks"
 
 mission "Drak guarding Chordi"
 	invisible
@@ -63,11 +53,36 @@ mission "Drak guarding Chordi"
 	on enter Chordi
 		dialog 'Immediately upon entering this system, you notice that the local lifeforms are registering as hostile. Even more importantly, you find yourself face-to-face with a Drak Archon. A voice in your head, presumably the Drak Archon, says, "This system is under the protection of the Drak. Leave now, or die, human."'
 	npc
-		government "Chordi Drak"
+		government " Drak "
 		personality heroic vindictive staying
 		system "Chordi"
 		ship "Archon" "Defensive Nanny"
-			
+	
+ship "Timer Ship"
+	attributes
+		"hull" 1
+		"hull repair rate" .0003
+		"mass" 100
+		"drag" 5
+		"automaton" 1
+		"thrust" 10
+		"turn" 600
+	outfits
+		"Timer Weapon"
+	gun 0 0
+
+outfit "Timer Weapon"
+	category "Guns"
+	thumbnail "outfit/unknown"
+	"gun ports" -1
+	weapon
+		"velocity" 10
+		"lifetime" 20
+		"reload" 100
+		"trigger radius" 200
+		"blast radius" 20
+		"hull damage" .04
+		
 mission "Archon gets hostile"
 	invisible
 	to offer
@@ -75,13 +90,12 @@ mission "Archon gets hostile"
 	npc disable
 		government "Test Dummy"
 		system "Chordi"
-		personality unconstrained heroic nemesis staying
+		personality unconstrained heroic nemesis
 		ship "Timer Ship" "Timer"
 		dialog `After a while, you notice the Archon getting very close to your ship. "I shall spare you this once. You will not be so welcome next time," it says to you in your head. It might be good to land somewhere in another system to see why the Archon was so hostile.`
-		event "hostile drak"
-
-event "hostile drak"
-	"reputation: Chordi Drak" -1
+	on complete
+		event hostiledrak
+		"reputation:  Drak  " -1
 		
 mission "Land at Atilt San Pug 1"
 	invisible
@@ -101,39 +115,43 @@ mission "Land at Atilt San Pug 1"
 			choice
 				`	"I was exploring nearby and I jumped into a system guarded by an Archon. I'm kind of wondering why the Drak are guarding that system in particular."`
 					goto guarded
-			choice				
-				`	I was exploring space and wanted to see what was inside this system.`
-				`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
-			`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We would appreciate your help to nudge along their advancement."`
-			`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
+			label guarded
+			`	#dialog`
+				
+				#`	I was exploring space and wanted to see what was inside this system.`
+				#`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
+			#`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We would appreciate your help to nudge along their advancement."`
+			#`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
 			choice
 				`	"I will help you."`
-					goto help
 				`	"I will not help you."`
-			`	"Very well. We will give you time to rethink but you are always allowed to land here and help us. When you do wish to help, land here we will provide you with the translator and instructions."`
-				goto end
-			label help
-			`Thank you. Come in and we will explane fearther.`
-			label end
-			`	The guards walk away from your ship and enter the nearby Spaceport.`
+			`	"Very well. We will give you time to rethink but you are always allowed to land here and help us. When you do land here we will provide you with the translator and instructions."
+			`	The guards walk away from your ship and enter a large building.`
 
 mission "Land at Atilt San Pug 2a"
 	invisible
 	destination Atilt San Pug
 	to offer
+		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
+		not "has 2 real cloaks"
 		not "has 1 civ cloak"
-		not "pug intro antfolk"
-	on offer
-		set "pug intro antfolk"
+		not "has 2 civ cloaks"
+		not "Land at Atilt San Pug 2b: offered"
+		not "Land at Atilt San Pug 2c: offered"
+		not "Land at Atilt San Pug 2d: offered"
+		not "Land at Atilt San Pug 2e: offered"
+		not "Land at Atilt San Pug 2f: offered"
+		not "Land at Atilt San Pug 2g: offered"
+		not "Land at Atilt San Pug 2h: offered"
+	on complete
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug explaining a Cloaking Device (mainly how powerful it is and how necessary it is to get past the Archon) to PC]`
 			#`[stuff about Pug giving PC a Cloaking Device]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			outfit "Cloaking Device"
-			decline
+			outfit Cloaking Device
 
 mission "Land at Atilt San Pug 2b"
 	invisible
@@ -143,15 +161,20 @@ mission "Land at Atilt San Pug 2b"
 		has "has 1 real cloak"
 		not "has 2 real cloaks"
 		not "has 1 civ cloak"
-		not "pug intro antfolk"
-	on offer
-		set "pug intro antfolk"
+		not "has 2 civ cloaks"
+		not "Land at Atilt San Pug 2a: offered"
+		not "Land at Atilt San Pug 2c: offered"
+		not "Land at Atilt San Pug 2d: offered"
+		not "Land at Atilt San Pug 2e: offered"
+		not "Land at Atilt San Pug 2f: offered"
+		not "Land at Atilt San Pug 2g: offered"
+		not "Land at Atilt San Pug 2h: offered"
+	on complete
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already HAS a Cloaking Device]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
 
 mission "Land at Atilt San Pug 2c"
 	invisible
@@ -160,9 +183,15 @@ mission "Land at Atilt San Pug 2c"
 		has "Land at Atilt San Pug 1: done"
 		has "has 2 real cloaks"
 		not "has 1 civ cloak"
-		not "pug intro antfolk"
-	on offer
-		set "pug intro antfolk"
+		not "has 2 civ cloaks"
+		not "Land at Atilt San Pug 2a: offered"
+		not "Land at Atilt San Pug 2b: offered"
+		not "Land at Atilt San Pug 2d: offered"
+		not "Land at Atilt San Pug 2e: offered"
+		not "Land at Atilt San Pug 2f: offered"
+		not "Land at Atilt San Pug 2g: offered"
+		not "Land at Atilt San Pug 2h: offered"
+	on complete
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC ALREADY has not only 1, but MORE THAN ONE Cloaking Device]`
@@ -170,7 +199,6 @@ mission "Land at Atilt San Pug 2c"
 			#`[possible Pug reactions to different choices mentioned above]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
 
 mission "Land at Atilt San Pug 2d"
 	invisible
@@ -178,17 +206,22 @@ mission "Land at Atilt San Pug 2d"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
+		not "has 2 real cloaks"
 		has "has 1 civ cloak"
 		not "has 2 civ cloaks"
-		not "pug intro antfolk"
-	on offer
-		set "pug intro antfolk"
+		not "Land at Atilt San Pug 2a: offered"
+		not "Land at Atilt San Pug 2b: offered"
+		not "Land at Atilt San Pug 2c: offered"
+		not "Land at Atilt San Pug 2e: offered"
+		not "Land at Atilt San Pug 2f: offered"
+		not "Land at Atilt San Pug 2g: offered"
+		not "Land at Atilt San Pug 2h: offered"
+	on complete
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has a Cloaking Device, but it's worse than what the Pug have {probably some minor mockery, to boot}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
 
 mission "Land at Atilt San Pug 2e"
 	invisible
@@ -196,16 +229,21 @@ mission "Land at Atilt San Pug 2e"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
+		not "has 2 real cloaks"
 		has "has 2 civ cloaks"
-		not "pug intro antfolk"
+		not "Land at Atilt San Pug 2a: offered"
+		not "Land at Atilt San Pug 2b: offered"
+		not "Land at Atilt San Pug 2c: offered"
+		not "Land at Atilt San Pug 2d: offered"
+		not "Land at Atilt San Pug 2f: offered"
+		not "Land at Atilt San Pug 2g: offered"
+		not "Land at Atilt San Pug 2h: offered"
 	on complete
-		set "pug intro antfolk"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, and that they're all specifically WORSE than what the Pug have {probably some level of mockery to boot}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
 
 mission "Land at Atilt San Pug 2f"
 	invisible
@@ -216,15 +254,19 @@ mission "Land at Atilt San Pug 2f"
 		not "has 2 real cloaks"
 		has "has 1 civ cloak"
 		not "has 2 civ cloaks"
-		not "pug intro antfolk"
-	on offer
-		set "pug intro antfolk"
+		not "Land at Atilt San Pug 2a: offered"
+		not "Land at Atilt San Pug 2b: offered"
+		not "Land at Atilt San Pug 2c: offered"
+		not "Land at Atilt San Pug 2d: offered"
+		not "Land at Atilt San Pug 2e: offered"
+		not "Land at Atilt San Pug 2g: offered"
+		not "Land at Atilt San Pug 2h: offered"
+	on complete
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has TWO Cloaking Devices, but one of them is crap compared to what the Pug have {probably some level of mockery to boot}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
 
 mission "Land at Atilt San Pug 2g"
 	invisible
@@ -234,32 +276,41 @@ mission "Land at Atilt San Pug 2g"
 		has "has 1 real cloak"
 		not "has 2 real cloaks"
 		has "has 2 civ cloaks"
-		not "pug intro antfolk"
-	on offer
-		set "pug intro antfolk"
+		not "Land at Atilt San Pug 2a: offered"
+		not "Land at Atilt San Pug 2b: offered"
+		not "Land at Atilt San Pug 2c: offered"
+		not "Land at Atilt San Pug 2d: offered"
+		not "Land at Atilt San Pug 2e: offered"
+		not "Land at Atilt San Pug 2f: offered"
+		not "Land at Atilt San Pug 2h: offered"
+	on complete
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, but all but one of them is crap compared to what the Pug have {probably some level of mockery to boot}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
 
 mission "Land at Atilt San Pug 2h"
 	invisible
 	destination Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
-		has "has 2 real cloaks"
+		has "has 1 real cloak"
+		not "has 2 real cloaks"
 		has "has 2 civ cloaks"
-		not "pug intro antfolk"
-	on offer
-		set "pug intro antfolk"
+		not "Land at Atilt San Pug 2a: offered"
+		not "Land at Atilt San Pug 2b: offered"
+		not "Land at Atilt San Pug 2c: offered"
+		not "Land at Atilt San Pug 2d: offered"
+		not "Land at Atilt San Pug 2e: offered"
+		not "Land at Atilt San Pug 2f: offered"
+		not "Land at Atilt San Pug 2g: offered"
+	on complete
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, and they're a mix of real, good Cloaking Devices and some sort of crudware Civilian version {probably a ton of mockery to boot, like 'Who even does that?!' or something}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
 
 mission "Land at Ussria"
 	name "First Contact: Antfolk"
@@ -275,7 +326,7 @@ mission "Land at Ussria"
 			#`[stuff about PC gaining the Antfolk's trust]`
 			#`[stuff about the Antfolk wanting Jump Drive tech]`
 			#`[at some point, try to explain that the Antfolk language is called 'Assimilated Pheromonal, Anatonmical, and Sonic Language', or 'APASL' for short]`
-		"reputation: Antfolk Union" >?=10
+		"reputation: Antfolk Union" >?=1
 
 mission "Antfolk Hyperdrives Prep 1"
 	name "Race Shepharding 101"
@@ -287,17 +338,17 @@ mission "Antfolk Hyperdrives Prep 1"
 	on offer
 		conversation
 			`It occurs to you that you know very little about how Hyperdrives work or how to make them, and even less about Jump Drives. Not to mention that what little you know of the two makes just giving tons of either one to a race that hasn't earned the knowledge for themselves sounds like more of a terrible idea the more you think about it.`
-			`You should probably go back to Sevijet Pug and ask the Pug about what to do from here.`
+			`You should probably go back to Sevijet Pug and ask [the Pug] about what to do from here.`
 	on complete
 		conversation
 			#`[PC explains problem to Pug]`
 			#`[Pug teach PC about simplified models and giving tech slowly and incrementally]`
-			`"So I should give the Antfolk simplified, educational models of Hyperdrives rather than actual Hyperdrives, and *only* give them models for Hyperdrives, nothing else, at least for now," you say, summarizing and clarifying what the Pug said. Then you ask, "But... where am I supposed to find something like that? And how many do I need?"`
-			`The Pug smirks. At least, you think it's smirking. "Telling you all of that would defeat the point of you doing this instead of us. If you must have a hint, then I'd recommend contacting one of your species' 'corporations' that manufactures Hyperdrives and see if any of them can - or will - help you. As for how many you need, only the Antfolk scientists looking at such a model may be able to know how many they need in advance."`
-			`The Pug turns to leave, then stops, turns back and says "Oh, and feel free to come back after you have given the Antfolk all the Hyperdrive Models they need. It's between them and you what assistance they require next, but you are welcome to visit us and tell us all you have learned when you are between project stages. We might even have advice from time to time. Maybe. But only bother coming if you want to. We're not forcing you to do anything."`
+			`"So I should give the Antfolk simplified, educational models of Hyperdrives rather than actual Hyperdrives, and *only* give them models for Hyperdrives, nothing else, at least for now," you say, summarizing and clarifying what [the Pug] said. Then you ask, "But... where am I supposed to find something like that? And how many do I need?"`
+			`[The Pug] smirks. At least, you think it's smirking. "Telling you all of that would defeat the point of you doing this instead of us. If you *must* have a hint, then I'd recommend contacting one of your species' 'corporations' that manufactures Hyperdrives and see if any of them can - or will - help you. As for how many you need, only the Antfolk scientists looking at such a model *may* be able to know how many they need in advance."`
+			`[The Pug] turns to leave, then stops, turns back and says "Oh, and feel free to come back after you have given the Antfolk all the Hyperdrive Models they need. It's between them and you what assistance they require next, but you are welcome to visit us and tell us all you have learned when you are between project stages. We might even have advice from time to time. Maybe. But only bother coming if you want to. We're not forcing you to do anything."`
 
 mission "Antfolk Hyperdrives Prep 2"
-	name "Find a supplier for Hyperdrive Models"
+	name "Find a supplier for Hyperdrive Educational Models"
 	description "Find someone who can supply you with educational models of a Hyperdrive."
 	to offer
 		has "Antfolk Hyperdrives Prep 1"
@@ -305,40 +356,41 @@ mission "Antfolk Hyperdrives Prep 2"
 		conversation
 			#`[pulls list of major human ship and outfit manufacturing corporations off of ship computer's database]`
 			#`[some details about each corporation, ex. the Syndicate have resources, but they are jerks]`
-			branch kestrel
-				has "Kestrel Testing: done"
-			accept
-			label kestrel
+			#has "Kestrel Testing: done"
 			#`["Oh yeah, and the Tarazed Corporation probably likes me since they asked me to help with testing their Kestrel warship..."]`
-			accept
-	stopover Ada
-		diolog
-			`"Sorry, Lovelace Labs can't help you."`
-	stopover Asgard
-		diolog
-			`"Sorry, Deep Sky can't help you."`
-	stopover Rust
-		diolog
-			`"Sorry, Kraz Cybernetics can't help you."`		stopover Solace
-		diolog
-			`"Sorry, the Delta V Corporation can't help you."`
-	stopover Hephaestus
-		diolog
-			`"The Syndicate won't help you."`
-	stopover Tarazed	
+	to complete
+		waypoint Aldebaran
+			stopover Ada
+				conversation
+					`"Sorry, Lovelace Labs can't help you."`
+		waypoint Naos
+			stopover Asgard
+				conversation
+					`"Sorry, Deep Sky can't help you."`
+		waypoint Kraz
+			stopover Rust
+				conversation
+					`"Sorry, Kraz Cybernetics can't help you."`
+		waypoint Pherkad
+			stopover Solace
+				conversation
+					`"Sorry, the Delta V Corporation can't help you."`
+		waypoint Markab
+			stopover Hephaestus
+				conversation
+					`"LOL, the Syndicate *won't* help you."`
+		destination Wayfarer
+	on complete
 		conversation
-			`"Sure, we'll help the great Captain <name>! Here's a spare Hyperdrive Model we used them to train apprentices. Your more than welcome to it."`
-		fail
+			`"Sure, we'll help the great Captain <name>! Here's a spare Hyperdrive Educational Model lying around. You go deliver it to your insect buddies while we get more."`
 
 mission "Antfolk Hyperdrive Model 1"
-	landing
-	name "Deliver a Hyperdrive Model"
+	name "Pickup and Deliver a Hyperdrive Model"
 	description "Pickup a Hyperdrive Educational Model from <source>, and bring it to the Antfolk on <destination>"
 	to offer
 		has "Antfolk Hyperdrives Prep 2"
 	source "Wayfarer"
 	cargo "Hyperdrive Educational Model" 20
-	blocked "You need 20 tons of cargo space for the Hyperdrive model"
 	on offer
 		dialog "Some Tarazed Corp workers load the Hyperdrive Educational Model onto your ship."
 	destination "Ussria"
@@ -346,9 +398,7 @@ mission "Antfolk Hyperdrive Model 1"
 		conversation
 			`The Antfolk unload the simplified model of a Hyperdrive from your ship and carry it off. You try asking them how many more they think they'll need, but they just look at you and then walk away, carrying the model.`
 			`You go back to your ship and try contacting the Antfolk government. You manage to get a response from an "Ambassador [named antfolk sapience 1]" who says "This 'Hyperdrive' you gave us does not [appear/seem] [real/authentic]. It does not [work/function]. What is the meaning of this?"`
-			choice
-				`"I gave you a simplified educational model of a Hyperdrive,"`
-#need more options
+			`"I gave you a simplified educational model of a Hyperdrive," you say.`
 			`"Why? What is your [purpose/reasoning] for doing so?" Ambassador [named antfolk sapience 1] asks
 			choice
 				`"Because real Hyperdrives are dangerous and I wished for you to have something safer to reverse-engineer."`
@@ -362,7 +412,7 @@ mission "Antfolk Hyperdrive Model 1"
 				`You think you might've also detected a hint of embarassment or nervousness in Ambassador [named antfolk sapience 1]'s voice. You suspect that they had attempted exactly what you said was a bad idea prior to your call.`
 			`"How many more of these Hyperdrive models do you think you'll need?" you ask.`
 			`"We will definitely need at least one more. Beyond that, [I/we/this one] cannot be sure."`
-		"reputation: Antfolk Union" >?= 20
+		"reputation: Antfolk Union" >?= 10
 
 mission "Antfolk Hyperdrive Model 2"
 	name "More Hyperdrive Models"
@@ -394,7 +444,7 @@ mission "Antfolk Hyperdrive Model 3"
 	on complete
 		conversation
 			`"This is enough of them. On behalf of the Antfolk Union, [I/we/this one] thank you," says Ambassador [named antfolk sapience 1]`
-		event "antfolk gain hyperdrives" 50 #the exact delay is debatable. A year or two perhaps - J
+		event "antfolk gain hyperdrives" 50 #the exact delay is debatable
 
 mission "Drak stop guarding Chordi"
 	invisible

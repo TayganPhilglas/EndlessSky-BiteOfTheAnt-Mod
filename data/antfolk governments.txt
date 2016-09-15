@@ -8,16 +8,18 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-government "Chordi Drak"
+government " Drak "
 	swizzle 5
 	color 1 1 1
 	"player reputation" 1
+	"attitude toward"
+		"Antfolk Union"
 	"fine" 0
 
 government "Antfolk Union"
 	language "APASL"
-	"player reputation" 1
+	"player reputation" -10
 	"attitude toward"
 		"Drak" 1
-		"Chordi Drak" 1
+		" Drak " 1
 	"bribe" 0

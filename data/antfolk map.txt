@@ -552,7 +552,7 @@ planet Ussria
 	shipyard "Antfolk Advanced"
 	outfitter "Antfolk Civilian Outfits"
 	outfitter "Antfolk Military Outfits"
-	"required reputation" 10
+	"required reputation" 1
 	bribe 0
 	security 0.3
 
