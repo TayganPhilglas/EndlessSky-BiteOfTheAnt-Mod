@@ -52,13 +52,15 @@ system Alecto
 			distance 180
 			period 12.8554
 	object
-		sprite planet/gas7
-		distance 1463.62
-		period 618.049
+		sprite planet/fog0
+		distance 1300
+		period 517.367
+		offset 246.176
 	object
 		sprite planet/gas0
-		distance 2814.51
-		period 1648.11
+		distance 2683.89
+		period 1534.72
+		offset 343.663
 		object
 			sprite planet/rock14
 			distance 294
@@ -133,7 +135,7 @@ system Chang-Er
 	government Uninhabited
 	habitable 806.68
 	link Alecto
-	link "Voida  "
+	link Voida
 	link Chordi
 	asteroids "small rock" 2 1.8444
 	asteroids "medium rock" 7 1.74
@@ -168,14 +170,14 @@ system Chang-Er
 		period 121.337
 	object
 		sprite planet/rock10
-		distance 748.602
-		period 288.46
-		offset 61.4679
+		distance 778.354
+		period 305.827
+		offset 134.213
 	object
 		sprite planet/gas14
-		distance 1641.85
-		period 936.937
-		offset 8.33328
+		distance 1671.6
+		period 962.518
+		offset 18.6532
 		object
 			sprite planet/tethys
 			distance 209
@@ -190,7 +192,7 @@ system Chordi
 	government "Antfolk Union"
 	habitable 806.68
 	link Chang-Er
-	link "Voida  "
+	link Voida
 	asteroids "small rock" 1 2.436
 	asteroids "medium rock" 3 4.144
 	asteroids "large rock" 15 3.556
@@ -217,44 +219,31 @@ system Chordi
 		period 14.9369
 		offset 180
 	object Ussria
-		sprite planet/cloud0
-		distance 784.448
-		period 309.425
-		offset 182.423
+		sprite planet/forest1
+		distance 710.562
+		period 266.755
+		offset 353.093
 		object
 			sprite planet/desert4
-			distance 158
-			period 24.4748
-			offset 16.639
-	object
-		sprite planet/gas16
-		distance 1391.41
-		period 730.957
-		offset 290.111
-		object
-			sprite planet/rock3
-			distance 213
-			period 16.3631
-		object
-			sprite planet/rhea
-			distance 310
-			period 28.7303
+			distance 146.104
+			period 21.7634
+			offset 343.88
 	object "Ad Elans"
-		sprite planet/rock19
-		distance 1866.41
-		period 1135.59
-		offset 76.8916
+		sprite planet/water0
+		distance 1011.67
+		period 453.174
+		offset 316.477
 	object "Miasma Eopto"
 		sprite planet/desert7
-		distance 2140.77
-		period 1394.97
-		offset 26.9351
+		distance 1197.67
+		period 583.731
+		offset 22.0675
 
 system Polevik
 	pos 287.794 35.4211
 	government Uninhabited
 	habitable 486.68
-	link "Voida  "
+	link Voida
 	link Annatar
 	asteroids "large rock" 5 4.52
 	asteroids "small metal" 32 3.28
@@ -413,7 +402,7 @@ system Syntha
 		distance 2090.29
 		period 1529.08
 
-system "Voida  "
+system Voida
 	pos 227.371 38.2137
 	government Uninhabited
 	habitable 2372.76
@@ -452,9 +441,9 @@ system "Voida  "
 		period 104.838
 	object
 		sprite planet/gas17
-		distance 2321.25
-		period 918.366
-		offset 258.89
+		distance 2345.57
+		period 932.835
+		offset 265.125
 		object
 			sprite planet/io
 			distance 229
@@ -467,9 +456,9 @@ system "Voida  "
 			offset 242.517
 	object
 		sprite planet/rhea
-		distance 3984.29
-		period 2065.19
-		offset 111.897
+		distance 4008.61
+		period 2084.12
+		offset 113.497
 
 system Vorloo
 	pos 99.3708 -31.7863
@@ -528,6 +517,7 @@ planet "Ad Elans"
 	attributes antfolk
 	landscape land/sea1
 	description `Svijetu Vode is home to the oldest off-homeworld colonies the Antfolk have. Due to the planet's surface being ninty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
+	spaceport `Due to the heavy space traffic Ad Elans recieves, the city the spaceport is on one of the largest platforms of the largest and oldest of the mobile floating cities sailing the planet's oceans. While the Antfolk's choice to do this rather than letting docked ships take up valuable landmass makes sense, it has the side effect that ships can only land on one specific part of the planet, and which part that is constantly changes. As a result, traffic controllers have to stay in constant communication with the ships they're trying to help land, so as to send them new coordinates for the spaceport should they change significantly before the ship can find the correct floating city.`
 	"required reputation" 1
 	bribe 0
 	security 0.2
@@ -546,8 +536,8 @@ planet "Miasma Eopto"
 planet Ussria
 	attributes antfolk
 	landscape land/mfield3
-	description `Svijet Porijekla is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
-	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
+	description `Ussria is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
+	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of leasuire break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
 	shipyard "Antfolk Basics"
 	shipyard "Antfolk Advanced"
 	outfitter "Antfolk Civilian Outfits"

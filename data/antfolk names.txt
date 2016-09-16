@@ -8,25 +8,11 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-government " Drak "
-	swizzle 5
-	color 1 1 1
-	"player reputation" 1
-	"attitude toward"
-		"Antfolk Union"
-	"fine" 0
+phrase "antfolk civilian"
 
-government "Antfolk Union"
-	language "APASL"
-	"player reputation" -10
-	"attitude toward"
-		"Drak" 1
-		" Drak " 1
-	"bribe" 0
-
-government "Antfolk Merchant"
-	language "APASL"
-	"player reputation" -10
-	"attitude toward"
-		"Drak" 1
-		" Drak " 1
+phrase "antfolk union"
+	word
+		"Her Royal Majesty's "
+	word
+		"Grace"
+		"Warrior"

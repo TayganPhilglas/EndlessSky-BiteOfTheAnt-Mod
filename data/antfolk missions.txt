@@ -317,16 +317,35 @@ mission "Land at Ussria"
 	description "Enter the Chordi System while cloaked to make first-contact with the 'Antfolk'"
 	source Atilt San Pug
 	destination Ussria
-	clearance "You try hailing Ussria using the translation device the Pug gave you in conjunction with the modifications they made to your ship's communications systems. The traffic controller panics and leaves their post. You are left waiting for a good five hours before what you think is a different Antfolk comes on and grants permission to land in an open wasteland instead of the spaceport."
+	clearance "You try hailing Ussria using the translation device the Pug gave you in conjunction with the modifications they made to your ship's communications systems. The traffic controllers panic and leave their post. You are left waiting for a good five hours before what you think is a different group of Antfolk come on and grant permission to land in an open wasteland instead of the spaceport."
 	infiltrating
 	to offer
-		has "Land at Atilt San Pug 2: done"
+		or
+			has "Land at Atilt San Pug 2a: done"
+			has "Land at Atilt San Pug 2b: done"
+			has "Land at Atilt San Pug 2c: done"
+			has "Land at Atilt San Pug 2d: done"
+			has "Land at Atilt San Pug 2e: done"
+			has "Land at Atilt San Pug 2f: done"
+			has "Land at Atilt San Pug 2g: done"
+			has "Land at Atilt San Pug 2h: done"
 	on complete
 		conversation
-			#`[stuff about PC gaining the Antfolk's trust]`
+			`You slowly guide your ship into landing just inside a large cave that has a high enough lead content that it might hide your ship from the Archon even if you decloak. You hesitate over the on/off button for your cloaking device... if you're wrong about lead being able to even slightly interfere with Drak ship sensors, you'll be accosted by the Drak Archon nearby in a matter of seconds. Eventually you work up the nerve to turn off your ship's cloaking device.`
+			`You tense up and franticly check your own sensors to see if there are any nearby hostile ships. There are, and quite a lot of them. They even kind of - kind of - look like Drak ships, but they're not. The Drak Archon is still in the system, but has made no obvious moves towards this planet that could be correlated to your ship decloaking. These false-Archons are somehow... more primitive, less sophisticated. You scan them, and find that they're really not made of stuff that's THAT tough. Despite obviously being bioships, you estimate that even a Free Worlds Militia fleet of sufficient size could wipe out every ship here quite easily. Assuming the two forces ever actually were to meet at all, much less locked in combat.`
+			`[Still, though, the local lifeforms' ships could fairly easily kill you with one shot if they spot you out in the open - you ARE only human, after all.] You run an atmospheric scan of the planet to see if you need to be wearing an EVA suit and oxygen tank. The planet's atmosphere turns out to be not dissimilar to Earth... back in the Devonian Period.`
+			choice
+				`	(Don't worry about it, it's not like Earth had a toxic atmosphere in the Devonian Period or anything, right?)`
+				`	(Don't risk it, wear EVA suits and oxygen tanks.)`
+			`You leave the ship.`
+			#`[stuff about meeting the Antfolk]`
+			`"My name is <first>, Captain <name>," you say to introduce yourself.`
+			`"We are [Scent/Smell of Blood], all Warrior Caste. We and you have met now, <first> Captain <name>," said the apparent leader of the band of giant ants.`
+			#`[PC does the whole "take me to your leader" routine]`
 			#`[stuff about the Antfolk wanting Jump Drive tech]`
 			#`[at some point, try to explain that the Antfolk language is called 'Assimilated Pheromonal, Anatonmical, and Sonic Language', or 'APASL' for short]`
-		"reputation: Antfolk Union" >?=1
+		"reputation: Antfolk Union" >?= 1
+		"reputation: Antfolk Merchant" >?= 1
 
 mission "Antfolk Hyperdrives Prep 1"
 	name "Race Shepharding 101"
@@ -338,7 +357,7 @@ mission "Antfolk Hyperdrives Prep 1"
 	on offer
 		conversation
 			`It occurs to you that you know very little about how Hyperdrives work or how to make them, and even less about Jump Drives. Not to mention that what little you know of the two makes just giving tons of either one to a race that hasn't earned the knowledge for themselves sounds like more of a terrible idea the more you think about it.`
-			`You should probably go back to Sevijet Pug and ask [the Pug] about what to do from here.`
+			`You should probably go back to Atilt San Pug and ask [the Pug] about what to do from here.`
 	on complete
 		conversation
 			#`[PC explains problem to Pug]`
@@ -356,8 +375,6 @@ mission "Antfolk Hyperdrives Prep 2"
 		conversation
 			#`[pulls list of major human ship and outfit manufacturing corporations off of ship computer's database]`
 			#`[some details about each corporation, ex. the Syndicate have resources, but they are jerks]`
-			#has "Kestrel Testing: done"
-			#`["Oh yeah, and the Tarazed Corporation probably likes me since they asked me to help with testing their Kestrel warship..."]`
 	to complete
 		waypoint Aldebaran
 			stopover Ada
@@ -397,22 +414,23 @@ mission "Antfolk Hyperdrive Model 1"
 	on complete
 		conversation
 			`The Antfolk unload the simplified model of a Hyperdrive from your ship and carry it off. You try asking them how many more they think they'll need, but they just look at you and then walk away, carrying the model.`
-			`You go back to your ship and try contacting the Antfolk government. You manage to get a response from an "Ambassador [named antfolk sapience 1]" who says "This 'Hyperdrive' you gave us does not [appear/seem] [real/authentic]. It does not [work/function]. What is the meaning of this?"`
+			`You go back to your ship and try contacting the Antfolk government. You manage to get a response from a politician hive mind of Antfolk calling themselves "[[Ambassador/Ambassadors]/[Ambassador/Ambassadors]s] [named antfolk sapience 1]" who says "This 'Hyperdrive' you gave us does not [appear/seem] [real/authentic]. It does not [work/function]. What is the meaning of this?"`
 			`"I gave you a simplified educational model of a Hyperdrive," you say.`
-			`"Why? What is your [purpose/reasoning] for doing so?" Ambassador [named antfolk sapience 1] asks
+			`"Why? What is your [purpose/reasoning] for doing so?" [Ambassador/Ambassadors] [named antfolk sapience 1] asks
 			choice
 				`"Because real Hyperdrives are dangerous and I wished for you to have something safer to reverse-engineer."`
 					goto safer
 				#`"Because real Hyperdrives are extremely complicated and I wished for you to have something easier to reverse-engineer."`
 					#goto easier
 			label safer
-				`"How are Hyperdrives dangerous? Are they not [simply/just/only] a [device/tool] of [propulsion/movement]?" Ambassador [named antfolk sapience 1] asks.`
+				`"How are Hyperdrives dangerous? Are they not [simply/just/only] a [device/tool] of [propulsion/movement]?" [Ambassador/Ambassadors] [named antfolk sapience 1] asks.`
 				`"They are meant purely for faster-than-light propulsion, but they do so partly by using a nuclear fusion reaction intense enough to destroy an entire city. Not something you want to turn on while in a terrestrial laboratory," you explain.`
-				`"[I/we/this one]... understand. We are [appreciative/thankful] of your [thoughtfulness/prudence] on the matter," Ambassador [named antfolk sapience 1] says slowly.`
-				`You think you might've also detected a hint of embarassment or nervousness in Ambassador [named antfolk sapience 1]'s voice. You suspect that they had attempted exactly what you said was a bad idea prior to your call.`
+				`"[I/we/this one]... understand. We are [appreciative/thankful] of your [thoughtfulness/prudence] on the matter," [Ambassador/Ambassadors] [named antfolk sapience 1] says slowly.`
+				`You think you might've also detected a hint of embarassment or nervousness in [Ambassador/Ambassadors] [named antfolk sapience 1]'s voice. You suspect that they had attempted exactly what you said was a bad idea prior to your call.`
 			`"How many more of these Hyperdrive models do you think you'll need?" you ask.`
 			`"We will definitely need at least one more. Beyond that, [I/we/this one] cannot be sure."`
 		"reputation: Antfolk Union" >?= 10
+		"reputation: Antfolk Merchant" >?= 10
 
 mission "Antfolk Hyperdrive Model 2"
 	name "More Hyperdrive Models"
@@ -420,6 +438,7 @@ mission "Antfolk Hyperdrive Model 2"
 	to offer
 		has "Antfolk Hyperdrive Model 1"
 	source "Ussria"
+	destination "Ussria"
 	waypoint Tarazed
 		stopover Wayfarer
 	on stopover
@@ -427,15 +446,16 @@ mission "Antfolk Hyperdrive Model 2"
 		dialog "Tarazed Corp workers load another <commodity> onto your ship."
 	on complete
 		conversation
-			`The Antfolk unload their second simplified Hyperdrive model from your ship. You decide to contact Ambassador [named antfolk sapience 1] to see if they need more.`
-			`By way of radio communication, Ambassador [named antfolk sapience 1] says "Yes, we will need a third. [I/we/this one] must apologize for being unable to provide a total number required. Studying these models is not an exact [science/art], but we will know when we have enough."`
+			`The Antfolk unload their second simplified Hyperdrive model from your ship. You decide to contact [Ambassador/Ambassadors] [named antfolk sapience 1] to see if they need more.`
+			`By way of radio communication, [Ambassador/Ambassadors] [named antfolk sapience 1] says "Yes, we will need a third. [I/we/this one] must apologize for being unable to provide a total number required. Studying these models is not an exact [science/art], but we will know when we have enough."`
 
 mission "Antfolk Hyperdrive Model 3"
 	name "More Hyperdrive Models"
 	description "Pickup another Hyperdrive Educational Model from <stopover> and bring it to the Antfolk on <destination>"
 	to offer
-		has "Antfolk Hyperdrive Model 1"
+		has "Antfolk Hyperdrive Model 2"
 	source "Ussria"
+	destination "Ussria"
 	waypoint Tarazed
 		stopover Wayfarer
 	on stopover
@@ -443,8 +463,8 @@ mission "Antfolk Hyperdrive Model 3"
 		dialog "Tarazed Corp workers load another <commodity> onto your ship."
 	on complete
 		conversation
-			`"This is enough of them. On behalf of the Antfolk Union, [I/we/this one] thank you," says Ambassador [named antfolk sapience 1]`
-		event "antfolk gain hyperdrives" 50 #the exact delay is debatable
+			`"This is enough of them. On behalf of the High Queen, [I/we/this one] thank you," says [Ambassador/Ambassadors] [named antfolk sapience 1]`
+		event "antfolk gain hyperdrives" 60 #the exact delay is debatable
 
 mission "Drak stop guarding Chordi"
 	invisible
@@ -453,3 +473,77 @@ mission "Drak stop guarding Chordi"
 		has "antfolk gain hyperdrives"
 	on offer
 		fail "Drak guarding Chordi"
+
+#transition scene (means that some stuff is missing that will go here later [heh, probably])
+
+mission "Message from the Pug"
+	name "Check on the Antfolk"
+	description "The Pug want you to return to Antfolk space; plus, you're curious how things might've changed"
+	landing
+	destination "Ussria"
+	to offer
+		has "antfolk gain hyperdrives"
+	on offer
+		conversation
+			`You recieve a heavily encrypted transmission that turns out to be from the Pug.`
+			`"Attention Captain <name>. The 'winds of change', as your species says, have begun blowing in Antfolk space since you delivered those Hyperdrive models. It would be in your interests to return to the Antfolk homeworld and see for yourself."`
+	on complete
+		conversation
+			`When you exit your ship, you find that the Antfolk have already sent [Ambassador/Ambassadors] [named antfolk sapience 1], along with a good twenty more Antfolk (you can't tell how many actual sapiences there are among them, though), about five of which are wearing battle armor and are carrying some kind of gas grenade.`
+			`"Honored Human <name>! It has been a while! Come, come. We will prepare for you a [banquet/feast] fit for a [deity/spirit]!" says [Ambassador/Ambassadors] [named antfolk sapience 1].`
+			`You start to walk off with the Antfolk before [Ambassador/Ambassadors] [named antfolk sapience 1] stop and turn around. They then say "It has occured to [I/we/this one] that not even the greatest chef in the Antfolk Union could guarente a correct guess at what you would find [appitizing/edible]. Would you mind informing [I/we/this one] of Human dietary habits?"`
+			choice
+				`You explain as best you can what sort of things humans normally eat.`
+					goto humanfood
+			label humanfood
+				`[Ambassador/Ambassadors] [named antfolk sapience 1] think for a while, then say "[I/we/this one] does not know if we can produce food to such... specific specifications. Perhaps we should skip the feast for now. [I/we/this one] shall inform those who need to know so that we can dine next time."`
+				`Considering you didn't even go into your own personal preferences of what examples you gave that you did or didn't actually like, you shudder at the thought of what the Antfolk were planning on serving you.`
+				`Just to be extra safe, you say "How about I fetch you guys a data chip containing human deitary information from a xenobiological perspective?"`
+				`"That would probably be best," say [Ambassador/Ambassadors] [named antfolk sapience 1].`
+				set "human food data chip fetch quest"
+			`"To change the topic," [Ambassador/Ambassadors] [named antfolk sapience 1] say, "Because of your critical role in our development of Hyperdrive technology, the High Queen has decreed that the Antfolk Union will accept your curreny. We will also allow you to purchase our civilian-grade ships and outfits. In addition, the High Queen has decreed that every planet in the Antfolk Union must pay a salary to you in [honor/thankfulness] of your assistance."`
+		set "license: Antfolk"
+
+mission "Antfolk Salary 1"
+	invisible
+	landing
+	destination "Ussria"
+	to offer
+		has "Message from the Pug"
+	on offer
+		"salary: Antfolk Union" = 700 #working number
+		fail
+
+mission "Pug Visit 1"
+	name "Visit the Pug (Optional)"
+	description "The Pug mentioned wanting you to visit between assignments from the Antfolk. You could go visit them now"
+	destination "Atilt San Pug"
+	to offer
+		has "Message from the Pug"
+	on complete
+		conversation
+			`[stuff about PC saying "What I learned from helping the Antfolk grow today is..." to the Pug]`
+			`[stuff about the Pug giving transchronological advice on the matter of Amy and terraforming Antfolk worlds {make it not obvious at the time that the Pug are trying to advise about future crap}]`
+			`[stuff about Pug giving PC what basicly amounts to a pair of quantum entangled PDAs or something and telling PC to give one to the Antfolk]`
+				set "both quantum pdas in pc possession"
+
+#transition section (means that lots of stuff is missing that will go here later [heh, probably])
+
+mission "Chance to let Antfolk contact PC whenever"
+	name "Deliver a Quantum PDA to <destination>"
+	description "Deliver one of the Pug's Quantum PDAs to the Antfolk Union's High Queen"
+	destination "Ussria"
+	to offer
+		has "both quantum pdas in pc possession"
+	on complete
+		conversation
+			`You return to High Queen Bringer of Law XVI's [place].`
+			`"Hello, High Queen," you say.`
+			`"Hello, <first> Captain <name>. What brings you here on this day?" asks High Queen Bringer of Law.`
+			choice
+				`["Yeah, take this quantum pda so we can talk to each other when I'm not in Antfolk space," PC still wouldn't say, but is somewhat closer to real dialog]`
+					clear "both qantum pdas in pc possession"
+					set "antfolk have a quantum pda"
+					goto pda
+			label pda
+				`["Woah, cool. Now we can pester you for help whenever we feel like it!"]`

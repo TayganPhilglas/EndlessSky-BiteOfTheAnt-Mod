@@ -97,3 +97,11 @@ outfit "Antfolk Biogrenades"
 	"capture attack" 250
 	"unplunderable" 1
 	description "While the Pug use hand to hand bioweaponry for defensive purposes, the Antfolk have designed equally effective offensive weapons."
+
+outfit "Power Armor"
+	category "Hand to Hand"
+	cost 20000
+	thumbnail "outfit/unknown"
+	"capture defense" 2.1
+	"unplunderable" 1
+	description ""

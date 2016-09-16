@@ -8,6 +8,27 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+event "deep sky sells power armor"
+	outfitter "Deep Sky Advanced"
+		Power Armor
+
+mission "deep sky sells power armor"
+	invisible
+	landing
+	source
+		or
+			government "Republic"
+			government "Syndicate"
+			government "Free Worlds"
+			government "Neutral"
+			government "Independent"
+	to offer
+		has "main plot completed"
+	on offer
+		event "deep sky sells power armor"
+		conversation
+			`"Attention all space captains! Deep Sky is proud to announce the latest in hand-to-hand defensive combat: Power Armor! 'It's the Security Station you can wear wherever you go!' DISCLAIMER: The Deep Sky Power Armor does not possess any offensive capabilities."`
+
 event "has 1 real cloak"
 
 event "has 2 real cloaks"
@@ -28,3 +49,212 @@ event "hostiledrak"
 	government " Drak "
 		"attitude toward"
 			Escort -1
+
+event "antfolk colonize chang-er"
+	system Chang-Er
+		government "Antfolk Union"
+		object
+			sprite star/k0
+			distance 43.6356
+			period 16.2479
+		object
+			sprite star/m0
+			distance 66.3644
+			period 16.2479
+			offset 180
+		object
+			sprite planet/rock5
+			distance 198.054
+			period 39.2542
+		object
+			sprite planet/ice2
+			distance 420.264
+			period 121.337
+		object Endlagn
+			sprite planet/rock10
+			distance 748.602
+			period 288.46
+			offset 61.4679
+		object
+			sprite planet/gas14
+			distance 1641.85
+			period 936.937
+			offset 8.33328
+			object
+				sprite planet/tethys
+				distance 209
+				period 12.3049
+			object
+				sprite planet/lava0
+				distance 355
+				period 27.2396
+	planet Endlagn
+		attributes antfolk
+		landscape land/badlands2
+		description `[planet description here]`
+		spaceport `[spaceport description here]`
+
+event "antfolk colonize voida"
+	system Voida
+		government "Antfolk Union"
+		object
+			sprite star/f0
+			period 10
+		object
+			sprite planet/ice3
+			distance 207.09
+			period 24.4721
+		object
+			sprite planet/ice0
+			distance 388.09
+			period 62.7815
+		object
+			sprite planet/rock16
+			distance 546.25
+			period 104.838
+		object
+			sprite planet/gas17
+			distance 2321.25
+			period 918.366
+			offset 258.89
+			object Zcehc
+				sprite planet/io
+				distance 229
+				period 14.8056
+				offset 113.431
+			object Lovsai
+				sprite planet/dust4
+				distance 317
+				period 24.1136
+				offset 242.517
+		object
+			sprite planet/rhea
+			distance 3984.29
+			period 2065.19
+			offset 111.897
+	planet Zcehc
+		attributes antfolk
+		landscape #land/something
+		description `[planet description here]`
+		spaceport `[spaceport description here]`
+	planet Lovsai
+		attributes antfolk
+		landscape #land/something
+		description `[planet description here]`
+		spaceport `[spaceport description here]`
+
+event "antfolk colonize alecto"
+	system Alecto
+		government "Antfolk Union"
+		object
+			sprite star/g0
+			distance 19.3618
+			period 12.5609
+			offset 180
+		object
+			sprite star/m4
+			distance 89.6382
+			period 12.5609
+		object
+			sprite planet/ice6
+			distance 299.878
+			period 57.319
+		object
+			sprite planet/gas8
+			distance 656.128
+			period 185.509
+			object
+				sprite planet/europa
+				distance 180
+				period 12.8554
+		object Aicmaer
+			sprite planet/fog0
+			distance 1300
+			period 517.367
+			offset 246.176
+		object
+			sprite planet/gas0
+			distance 2683.89
+			period 1534.72
+			offset 343.663
+			object
+				sprite planet/rock14
+				distance 294
+				period 14.7733
+			object
+				sprite planet/tethys
+				distance 431
+				period 26.2224
+			object
+				sprite planet/lava0
+				distance 536
+				period 36.3667
+	planet Aicmaer
+		attributes antfolk
+		landscape #land/something
+		description `Aicmaer at first seemed like a perfectly habitable for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
+		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Aicmaer lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Aicmaer has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
+
+event "orbital terraforming management station 1: built"
+	system Alecto
+		government "Antfolk Union"
+		object
+			sprite star/g0
+			distance 19.3618
+			period 12.5609
+			offset 180
+		object
+			sprite star/m4
+			distance 89.6382
+			period 12.5609
+		object
+			sprite planet/ice6
+			distance 299.878
+			period 57.319
+		object
+			sprite planet/gas8
+			distance 656.128
+			period 185.509
+			object
+				sprite planet/europa
+				distance 180
+				period 12.8554
+		object Aicmaer
+			sprite planet/fog0
+			distance 1300
+			period 517.367
+			offset 246.176
+			object "OTMS 1"
+				sprite planet/station3
+				distance 242
+				period 13.3922
+		object
+			sprite planet/gas0
+			distance 2683.89
+			period 1534.72
+			offset 343.663
+			object
+				sprite planet/rock14
+				distance 294
+				period 14.7733
+			object
+				sprite planet/tethys
+				distance 431
+				period 26.2224
+			object
+				sprite planet/lava0
+				distance 536
+				period 36.3667
+	planet Aicmaer
+		attributes antfolk
+		landscape #land/something
+		description `[planet description here]`
+		description `[stuff about the effects of otms 1 on aicmaer here]`
+		spaceport `[spaceport description here]`
+		spaceport `[stuff about the effects of otms 1 on aicmaer's spaceport here]`
+	planet "OTMS 1"
+		attributes antfolk station
+		landscape land/station0
+		description `"OTMS" apparently stands for "Orbital Terraforming Management Station", and is an ingenius solution to Aicmaer's weather problems. By building as large a space station as they could, the Antfolk have basicly managed to build an artificial moon for Aicmaer that noticably tempers the planet's weather just by being there.`
+		description `And yet the Antfolk did not invest so much resources into such a large space station just for it to sit there and be only marginally cheaper than a normal Glory terraforming machine. OTMS 1 also serves as a deuterium refinery using the local stars' solar winds, and teams of Antfolk scientists on the station run numerous tests and monitoring functions on the planet below to calculate when and how to adjust the planet's environment next.`
+		spaceport `[spaceport description here]`

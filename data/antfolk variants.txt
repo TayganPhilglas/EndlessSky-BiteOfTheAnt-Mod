@@ -37,7 +37,7 @@ ship "Fire Frigate" "Fire Frigate (Hyper)"
 		"Hyperdrive"
 		"Fuel Vacuole" 2
 
-ship "Solifuge" "Queen Carrier"
+ship "Queen Carrier" "Queen Carrier (Full)"
 	fighter 0 0
 	fighter 0 0
 	fighter 0 0
