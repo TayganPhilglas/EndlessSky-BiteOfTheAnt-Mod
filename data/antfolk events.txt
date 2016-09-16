@@ -10,7 +10,7 @@
 
 event "deep sky sells power armor"
 	outfitter "Deep Sky Advanced"
-		Power Armor
+		"Power Armor"
 
 mission "deep sky sells power armor"
 	invisible
