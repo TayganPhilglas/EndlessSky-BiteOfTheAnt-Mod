@@ -74,7 +74,7 @@ mission "Archon gets hostile"
 mission "Land at Atilt San Pug 1"
 	landing
 	invisible
-	destination Atilt San Pug
+	destination "Atilt San Pug"
 	to offer
 		has "main plot completed"
 		has "Drak guarding Chordi: active"
@@ -89,22 +89,25 @@ mission "Land at Atilt San Pug 1"
 			`This Pug seems far more talkative than they have previously been. You might be able to get some answers about them if you play its game.`
 			choice
 				`	"I was exploring nearby and I jumped into a system guarded by an Archon. I'm kind of wondering why the Drak are guarding that system in particular."`
-					goto guarded
-			label guarded
-			`	#dialog`
-				
-				#`	I was exploring space and wanted to see what was inside this system.`
-				#`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
-			#`	"A Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We would appreciate your help to nudge along their advancement."`
-			#`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
+					goto guarded				
+				`	I was exploring space and wanted to see what was inside this system.`
+				`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
+			`	"The Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. We would appreciate your help to nudge along their advancement."`
+			`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
 			choice
 				`	"I will help you."`
+					goto help
 				`	"I will not help you."`
 			`	"Very well. We will give you time to rethink but you are always allowed to land here and help us. When you do land here we will provide you with the translator and instructions."
-			`	The guards walk away from your ship and enter a large building.`
+				goto end
+			label help
+			`Thank you. Come in and we will explane fearther.`
+			label end
+			`	The guards walk away from your ship and enter the nearby Spaceport.`
 
 mission "Land at Atilt San Pug 2a"
-	source Atilt San Pug
+	landing
+	source "Atilt San Pug"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
@@ -122,7 +125,8 @@ mission "Land at Atilt San Pug 2a"
 			decline
 
 mission "Land at Atilt San Pug 2b"
-	source Atilt San Pug
+	landing
+	source "Atilt San Pug"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 1 real cloak"
@@ -139,7 +143,8 @@ mission "Land at Atilt San Pug 2b"
 			decline
 
 mission "Land at Atilt San Pug 2c"
-	source Atilt San Pug
+	landing
+	source "Atilt San Pug"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 2 real cloaks"
@@ -157,7 +162,8 @@ mission "Land at Atilt San Pug 2c"
 			decline
 
 mission "Land at Atilt San Pug 2d"
-	source Atilt San Pug
+	landing
+	source "Atilt San Pug"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
@@ -174,7 +180,8 @@ mission "Land at Atilt San Pug 2d"
 			decline
 
 mission "Land at Atilt San Pug 2e"
-	source Atilt San Pug
+	landing
+	source "Atilt San Pug"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
@@ -190,7 +197,8 @@ mission "Land at Atilt San Pug 2e"
 			decline
 
 mission "Land at Atilt San Pug 2f"
-	source Atilt San Pug
+	landing
+	source "Atilt San Pug"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 1 real cloak"
@@ -208,7 +216,8 @@ mission "Land at Atilt San Pug 2f"
 			decline
 
 mission "Land at Atilt San Pug 2g"
-	source Atilt San Pug
+	landing
+	source "Atilt San Pug"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 1 real cloak"
@@ -225,7 +234,8 @@ mission "Land at Atilt San Pug 2g"
 			decline
 
 mission "Land at Atilt San Pug 2h"
-	source Atilt San Pug
+	landing
+	source "Atilt San Pug"
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 1 real cloak"
@@ -242,9 +252,10 @@ mission "Land at Atilt San Pug 2h"
 			decline
 
 mission "Land at Ussria"
+	landing
 	name "First Contact: Antfolk"
 	description "Enter the Chordi System while cloaked to make first-contact with the 'Antfolk'"
-	source Atilt San Pug
+	source "Atilt San Pug"
 	destination Ussria
 	clearance "You try hailing Ussria using the translation device the Pug gave you in conjunction with the modifications they made to your ship's communications systems. The traffic controllers panic and leave their post. You are left waiting for a good five hours before what you think is a different group of Antfolk come on and grant permission to land in an open wasteland instead of the spaceport."
 	infiltrating
@@ -265,14 +276,15 @@ mission "Land at Ussria"
 			#`[PC does the whole "take me to your leader" routine]`
 			#`[stuff about the Antfolk wanting Jump Drive tech]`
 			#`[at some point, try to explain that the Antfolk language is called 'Assimilated Pheromonal, Anatonmical, and Sonic Language', or 'APASL' for short]`
-		"reputation: Antfolk Union" >?= 1
-		"reputation: Antfolk Merchant" >?= 1
+		"reputation: Antfolk Union" >?= 10
+		"reputation: Antfolk Merchant" >?= 10
 
 mission "Antfolk Hyperdrives Prep 1"
+	landing
 	name "Race Shepharding 101"
 	description "Learn about how to best provide new technology to a younger race"
-	#source Ussria | I'm not sure I should have this mission require the Player to be on a particular planet. Keeping this here as documentation until I can get a second opinion.
-	destination Atilt San Pug
+	source Ussria
+	destination "Atilt San Pug"
 	to offer
 		has "Land at Ussria: done"
 	on offer
@@ -288,45 +300,42 @@ mission "Antfolk Hyperdrives Prep 1"
 			`[The Pug] turns to leave, then stops, turns back and says "Oh, and feel free to come back after you have given the Antfolk all the Hyperdrive Models they need. It's between them and you what assistance they require next, but you are welcome to visit us and tell us all you have learned when you are between project stages. We might even have advice from time to time. Maybe. But only bother coming if you want to. We're not forcing you to do anything."`
 
 mission "Antfolk Hyperdrives Prep 2"
-	name "Find a supplier for Hyperdrive Educational Models"
+	landing
+	name "Find a supplier for Hyperdrive Models"
 	description "Find someone who can supply you with educational models of a Hyperdrive."
 	to offer
-		has "Antfolk Hyperdrives Prep 1"
+		has "Antfolk Hyperdrives Prep 1: done"
 	on offer
 		conversation
 			#`[pulls list of major human ship and outfit manufacturing corporations off of ship computer's database]`
 			#`[some details about each corporation, ex. the Syndicate have resources, but they are jerks]`
 	to complete
-		waypoint Aldebaran
-			stopover Ada
-				conversation
-					`"Sorry, Lovelace Labs can't help you."`
-		waypoint Naos
-			stopover Asgard
-				conversation
-					`"Sorry, Deep Sky can't help you."`
-		waypoint Kraz
-			stopover Rust
-				conversation
-					`"Sorry, Kraz Cybernetics can't help you."`
-		waypoint Pherkad
-			stopover Solace
-				conversation
-					`"Sorry, the Delta V Corporation can't help you."`
-		waypoint Markab
-			stopover Hephaestus
-				conversation
-					`"LOL, the Syndicate *won't* help you."`
-		destination Wayfarer
-	on complete
-		conversation
-			`"Sure, we'll help the great Captain <name>! Here's a spare Hyperdrive Educational Model lying around. You go deliver it to your insect buddies while we get more."`
+		stopover Ada
+			dialog
+				`"Sorry, Lovelace Labs can't help you."`
+		stopover Asgard
+			dialog
+				`"Sorry, Deep Sky can't help you."`
+		stopover Rust
+			dialog
+				`"Sorry, Kraz Cybernetics can't help you."`
+		stopover Solace
+			dialog
+				`"Sorry, the Delta V Corporation can't help you."`
+		stopover Hephaestus
+			dialog
+				`"LOL, the Syndicate *won't* help you."`
+		stopover Tarazed
+			dialog
+				`"Sure, we'll help the great Captain <name>! Here's a spare Hyperdrive Educational Model lying around. You go deliver it to your insect buddies while we get more."`
+					fail
 
 mission "Antfolk Hyperdrive Model 1"
-	name "Pickup and Deliver a Hyperdrive Model"
+	landing
+	name "Deliver a Hyperdrive Model"
 	description "Pickup a Hyperdrive Educational Model from <source>, and bring it to the Antfolk on <destination>"
 	to offer
-		has "Antfolk Hyperdrives Prep 2"
+		has "Antfolk Hyperdrives Prep 2: offered"
 	source "Wayfarer"
 	cargo "Hyperdrive Educational Model" 20
 	on offer
@@ -350,38 +359,54 @@ mission "Antfolk Hyperdrive Model 1"
 				`You think you might've also detected a hint of embarassment or nervousness in [Ambassador/Ambassadors] [named antfolk sapience 1]'s voice. You suspect that they had attempted exactly what you said was a bad idea prior to your call.`
 			`"How many more of these Hyperdrive models do you think you'll need?" you ask.`
 			`"We will definitely need at least one more. Beyond that, [I/we/this one] cannot be sure."`
-		"reputation: Antfolk Union" >?= 10
-		"reputation: Antfolk Merchant" >?= 10
+		"reputation: Antfolk Union" >?= 20
+		"reputation: Antfolk Merchant" >?= 20
 
 mission "Antfolk Hyperdrive Model 2"
+	landing
 	name "More Hyperdrive Models"
-	description "Pickup another Hyperdrive Educational Model from <stopover> and bring it to the Antfolk on <destination>"
+	description "Pickup another Hyperdrive Model from <destination> to give to the Antfolk on <origin>"
 	to offer
-		has "Antfolk Hyperdrive Model 1"
+		has "Antfolk Hyperdrive Model 1: done"
 	source "Ussria"
+	destination Tarazed
+	on complete
+		dialog "Tarazed Corp workers load another Hyperdrive Model onto your ship."
+
+mission "Antfolk Hyperdrive Model 2A"
+	landing
+	name "More Hyperdrive Models"
+	description "Bring another Hyperdrive Model from <orgin> to the Antfolk on <destination>"
+	to offer
+		has "Antfolk Hyperdrive Model 2: done"
+	source Tarazed
 	destination "Ussria"
-	waypoint Tarazed
-		stopover Wayfarer
-	on stopover
-		cargo "Hyperdrive Educational Model" 20
-		dialog "Tarazed Corp workers load another <commodity> onto your ship."
+	cargo "Hyperdrive Educational Model" 20
 	on complete
 		conversation
 			`The Antfolk unload their second simplified Hyperdrive model from your ship. You decide to contact [Ambassador/Ambassadors] [named antfolk sapience 1] to see if they need more.`
 			`By way of radio communication, [Ambassador/Ambassadors] [named antfolk sapience 1] says "Yes, we will need a third. [I/we/this one] must apologize for being unable to provide a total number required. Studying these models is not an exact [science/art], but we will know when we have enough."`
 
 mission "Antfolk Hyperdrive Model 3"
+	landing
 	name "More Hyperdrive Models"
-	description "Pickup another Hyperdrive Educational Model from <stopover> and bring it to the Antfolk on <destination>"
+	description "Pickup another Hyperdrive Model from <destination> to give to the Antfolk on <origin>"
 	to offer
-		has "Antfolk Hyperdrive Model 2"
+		has "Antfolk Hyperdrive Model 2A: done"
 	source "Ussria"
+	destination Tarazed
+	on complete
+		dialog "Tarazed Corp workers load another Hyperdrive Model onto your ship."
+
+mission "Antfolk Hyperdrive Model 3A"
+	landing
+	name "More Hyperdrive Models"
+	description "Bring another Hyperdrive Model from <orgin> to the Antfolk on <destination>"
+	to offer
+		has "Antfolk Hyperdrive Model 3: done"
+	source Tarazed
 	destination "Ussria"
-	waypoint Tarazed
-		stopover Wayfarer
-	on stopover
-		cargo "Hyperdrive Educational Model" 20
-		dialog "Tarazed Corp workers load another <commodity> onto your ship."
+	cargo "Hyperdrive Educational Model" 20
 	on complete
 		conversation
 			`"This is enough of them. On behalf of the High Queen, [I/we/this one] thank you," says [Ambassador/Ambassadors] [named antfolk sapience 1]`
@@ -396,6 +421,7 @@ mission "Drak stop guarding Chordi"
 		fail "Drak guarding Chordi"
 
 #transition scene (means that some stuff is missing that will go here later [heh, probably])
+#I'm going to leave things after this point alone for now. J
 
 mission "Message from the Pug"
 	name "Check on the Antfolk"
