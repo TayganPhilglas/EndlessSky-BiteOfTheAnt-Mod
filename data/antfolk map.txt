@@ -518,7 +518,7 @@ planet "Ad Elans"
 	landscape land/sea1
 	description `Svijetu Vode is home to the oldest off-homeworld colonies the Antfolk have. Due to the planet's surface being ninty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
 	spaceport `Due to the heavy space traffic Ad Elans recieves, the city the spaceport is on one of the largest platforms of the largest and oldest of the mobile floating cities sailing the planet's oceans. While the Antfolk's choice to do this rather than letting docked ships take up valuable landmass makes sense, it has the side effect that ships can only land on one specific part of the planet, and which part that is constantly changes. As a result, traffic controllers have to stay in constant communication with the ships they're trying to help land, so as to send them new coordinates for the spaceport should they change significantly before the ship can find the correct floating city.`
-	"required reputation" 1
+	"required reputation" 10
 	bribe 0
 	security 0.2
 
@@ -529,7 +529,7 @@ planet "Miasma Eopto"
 	attributes antfolk
 	landscape land/hills0
 	description `Just as Mars in the Sol System was named after a destructive god from Human mythology, Miasma Eopto is named after a deity in Antfolk religion called "Miasma", who seems to be some kind of god of the apocalypse. Despite the general decline of religious belief in Antfolk society since the dawn of their space age, some fringe groups still hold a sacrificial ceremony to "hold back Miasma from rising up and destroying us [the Antfolk] all."`
-	"required reputation" 1
+	"required reputation" 10
 	bribe 0
 	security 0.2
 
@@ -542,7 +542,7 @@ planet Ussria
 	shipyard "Antfolk Advanced"
 	outfitter "Antfolk Civilian Outfits"
 	outfitter "Antfolk Military Outfits"
-	"required reputation" 1
+	"required reputation" 10
 	bribe 0
 	security 0.3
 

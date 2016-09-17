@@ -15,7 +15,7 @@ mission "Cloak Check 1"
 		has "Land at Atilt San Pug 1: done"
 	on offer
 		require Cloaking Device 1
-			event "has 1 real cloak"
+		set "has 1 real cloak"
 	fail
 
 mission "Cloak Check 2"
@@ -26,7 +26,7 @@ mission "Cloak Check 2"
 		has "Land at Atilt San Pug 1: done"
 	on offer
 		require Cloaking Device 2
-			event "has 2 real cloaks"
+		set "has 2 real cloaks"
 	fail
 
 mission "Cloak Check 3"
@@ -36,7 +36,8 @@ mission "Cloak Check 3"
 		has "Land at Atilt San Pug 1: done"
 	on offer
 		require Civilian Cloaking Device 1
-			event "has 1 civ cloak"
+		set "has 1 civ cloak"
+	fail
 
 mission "Cloak Check 4"
 	invisible
@@ -45,7 +46,8 @@ mission "Cloak Check 4"
 		has "Land at Atilt San Pug 1: done"
 	on offer
 		require Civilian Cloaking Device 2
-			event "has 2 civ cloaks"
+		set "has 2 civ cloaks"
+	fail
 
 mission "Drak guarding Chordi"
 	invisible
@@ -57,32 +59,7 @@ mission "Drak guarding Chordi"
 		personality heroic vindictive staying
 		system "Chordi"
 		ship "Archon" "Defensive Nanny"
-	
-ship "Timer Ship"
-	attributes
-		"hull" 1
-		"hull repair rate" .0003
-		"mass" 100
-		"drag" 5
-		"automaton" 1
-		"thrust" 10
-		"turn" 600
-	outfits
-		"Timer Weapon"
-	gun 0 0
-
-outfit "Timer Weapon"
-	category "Guns"
-	thumbnail "outfit/unknown"
-	"gun ports" -1
-	weapon
-		"velocity" 10
-		"lifetime" 20
-		"reload" 100
-		"trigger radius" 200
-		"blast radius" 20
-		"hull damage" .04
-		
+			
 mission "Archon gets hostile"
 	invisible
 	to offer
@@ -91,13 +68,11 @@ mission "Archon gets hostile"
 		government "Test Dummy"
 		system "Chordi"
 		personality unconstrained heroic nemesis
-		ship "Timer Ship" "Timer"
+		ship "Timer Ship"
 		dialog `After a while, you notice the Archon getting very close to your ship. "I shall spare you this once. You will not be so welcome next time," it says to you in your head. It might be good to land somewhere in another system to see why the Archon was so hostile.`
-	on complete
-		event hostiledrak
-		"reputation:  Drak  " -1
-		
+	
 mission "Land at Atilt San Pug 1"
+	landing
 	invisible
 	destination Atilt San Pug
 	to offer
@@ -129,22 +104,14 @@ mission "Land at Atilt San Pug 1"
 			`	The guards walk away from your ship and enter a large building.`
 
 mission "Land at Atilt San Pug 2a"
-	invisible
-	destination Atilt San Pug
+	source Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
-		not "has 2 real cloaks"
 		not "has 1 civ cloak"
-		not "has 2 civ cloaks"
-		not "Land at Atilt San Pug 2b: offered"
-		not "Land at Atilt San Pug 2c: offered"
-		not "Land at Atilt San Pug 2d: offered"
-		not "Land at Atilt San Pug 2e: offered"
-		not "Land at Atilt San Pug 2f: offered"
-		not "Land at Atilt San Pug 2g: offered"
-		not "Land at Atilt San Pug 2h: offered"
-	on complete
+		not "antfolk pug intro"
+	on offer
+		set "antfolk pug intro"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug explaining a Cloaking Device (mainly how powerful it is and how necessary it is to get past the Archon) to PC]`
@@ -152,46 +119,34 @@ mission "Land at Atilt San Pug 2a"
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
 			outfit Cloaking Device
+			decline
 
 mission "Land at Atilt San Pug 2b"
-	invisible
-	destination Atilt San Pug
+	source Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 1 real cloak"
 		not "has 2 real cloaks"
 		not "has 1 civ cloak"
-		not "has 2 civ cloaks"
-		not "Land at Atilt San Pug 2a: offered"
-		not "Land at Atilt San Pug 2c: offered"
-		not "Land at Atilt San Pug 2d: offered"
-		not "Land at Atilt San Pug 2e: offered"
-		not "Land at Atilt San Pug 2f: offered"
-		not "Land at Atilt San Pug 2g: offered"
-		not "Land at Atilt San Pug 2h: offered"
-	on complete
+		not "antfolk pug intro"
+	on offer
+		set "antfolk pug intro"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already HAS a Cloaking Device]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			decline
 
 mission "Land at Atilt San Pug 2c"
-	invisible
-	destination Atilt San Pug
+	source Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 2 real cloaks"
 		not "has 1 civ cloak"
-		not "has 2 civ cloaks"
-		not "Land at Atilt San Pug 2a: offered"
-		not "Land at Atilt San Pug 2b: offered"
-		not "Land at Atilt San Pug 2d: offered"
-		not "Land at Atilt San Pug 2e: offered"
-		not "Land at Atilt San Pug 2f: offered"
-		not "Land at Atilt San Pug 2g: offered"
-		not "Land at Atilt San Pug 2h: offered"
-	on complete
+		not "antfolk pug intro"
+	on offer
+		set "antfolk pug intro"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC ALREADY has not only 1, but MORE THAN ONE Cloaking Device]`
@@ -199,118 +154,92 @@ mission "Land at Atilt San Pug 2c"
 			#`[possible Pug reactions to different choices mentioned above]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			decline
 
 mission "Land at Atilt San Pug 2d"
-	invisible
-	destination Atilt San Pug
+	source Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
-		not "has 2 real cloaks"
 		has "has 1 civ cloak"
 		not "has 2 civ cloaks"
-		not "Land at Atilt San Pug 2a: offered"
-		not "Land at Atilt San Pug 2b: offered"
-		not "Land at Atilt San Pug 2c: offered"
-		not "Land at Atilt San Pug 2e: offered"
-		not "Land at Atilt San Pug 2f: offered"
-		not "Land at Atilt San Pug 2g: offered"
-		not "Land at Atilt San Pug 2h: offered"
-	on complete
+		not "antfolk pug intro"
+	on offer
+		set "antfolk pug intro"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has a Cloaking Device, but it's worse than what the Pug have {probably some minor mockery, to boot}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			decline
 
 mission "Land at Atilt San Pug 2e"
-	invisible
-	destination Atilt San Pug
+	source Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		not "has 1 real cloak"
-		not "has 2 real cloaks"
 		has "has 2 civ cloaks"
-		not "Land at Atilt San Pug 2a: offered"
-		not "Land at Atilt San Pug 2b: offered"
-		not "Land at Atilt San Pug 2c: offered"
-		not "Land at Atilt San Pug 2d: offered"
-		not "Land at Atilt San Pug 2f: offered"
-		not "Land at Atilt San Pug 2g: offered"
-		not "Land at Atilt San Pug 2h: offered"
-	on complete
+		not "antfolk pug intro"
+	on offer
+		set "antfolk pug intro"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, and that they're all specifically WORSE than what the Pug have {probably some level of mockery to boot}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			decline
 
 mission "Land at Atilt San Pug 2f"
-	invisible
-	destination Atilt San Pug
+	source Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 1 real cloak"
 		not "has 2 real cloaks"
 		has "has 1 civ cloak"
 		not "has 2 civ cloaks"
-		not "Land at Atilt San Pug 2a: offered"
-		not "Land at Atilt San Pug 2b: offered"
-		not "Land at Atilt San Pug 2c: offered"
-		not "Land at Atilt San Pug 2d: offered"
-		not "Land at Atilt San Pug 2e: offered"
-		not "Land at Atilt San Pug 2g: offered"
-		not "Land at Atilt San Pug 2h: offered"
-	on complete
+		not "antfolk pug intro"
+	on offer
+		set "antfolk pug intro"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has TWO Cloaking Devices, but one of them is crap compared to what the Pug have {probably some level of mockery to boot}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			decline
 
 mission "Land at Atilt San Pug 2g"
-	invisible
-	destination Atilt San Pug
+	source Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 1 real cloak"
 		not "has 2 real cloaks"
 		has "has 2 civ cloaks"
-		not "Land at Atilt San Pug 2a: offered"
-		not "Land at Atilt San Pug 2b: offered"
-		not "Land at Atilt San Pug 2c: offered"
-		not "Land at Atilt San Pug 2d: offered"
-		not "Land at Atilt San Pug 2e: offered"
-		not "Land at Atilt San Pug 2f: offered"
-		not "Land at Atilt San Pug 2h: offered"
-	on complete
+		not "antfolk pug intro"
+	on offer
+		set "antfolk pug intro"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, but all but one of them is crap compared to what the Pug have {probably some level of mockery to boot}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			decline
 
 mission "Land at Atilt San Pug 2h"
-	invisible
-	destination Atilt San Pug
+	source Atilt San Pug
 	to offer
 		has "Land at Atilt San Pug 1: done"
 		has "has 1 real cloak"
 		not "has 2 real cloaks"
 		has "has 2 civ cloaks"
-		not "Land at Atilt San Pug 2a: offered"
-		not "Land at Atilt San Pug 2b: offered"
-		not "Land at Atilt San Pug 2c: offered"
-		not "Land at Atilt San Pug 2d: offered"
-		not "Land at Atilt San Pug 2e: offered"
-		not "Land at Atilt San Pug 2f: offered"
-		not "Land at Atilt San Pug 2g: offered"
-	on complete
+		not "antfolk pug intro"
+	on offer
+		set "antfolk pug intro"
 		conversation
 			#`[stuff about PC deciding to help the Pug]`
 			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, and they're a mix of real, good Cloaking Devices and some sort of crudware Civilian version {probably a ton of mockery to boot, like 'Who even does that?!' or something}]`
 			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
 			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			decline
 
 mission "Land at Ussria"
 	name "First Contact: Antfolk"
@@ -320,15 +249,7 @@ mission "Land at Ussria"
 	clearance "You try hailing Ussria using the translation device the Pug gave you in conjunction with the modifications they made to your ship's communications systems. The traffic controllers panic and leave their post. You are left waiting for a good five hours before what you think is a different group of Antfolk come on and grant permission to land in an open wasteland instead of the spaceport."
 	infiltrating
 	to offer
-		or
-			has "Land at Atilt San Pug 2a: done"
-			has "Land at Atilt San Pug 2b: done"
-			has "Land at Atilt San Pug 2c: done"
-			has "Land at Atilt San Pug 2d: done"
-			has "Land at Atilt San Pug 2e: done"
-			has "Land at Atilt San Pug 2f: done"
-			has "Land at Atilt San Pug 2g: done"
-			has "Land at Atilt San Pug 2h: done"
+		has "antfolk pug intro"
 	on complete
 		conversation
 			`You slowly guide your ship into landing just inside a large cave that has a high enough lead content that it might hide your ship from the Archon even if you decloak. You hesitate over the on/off button for your cloaking device... if you're wrong about lead being able to even slightly interfere with Drak ship sensors, you'll be accosted by the Drak Archon nearby in a matter of seconds. Eventually you work up the nerve to turn off your ship's cloaking device.`
