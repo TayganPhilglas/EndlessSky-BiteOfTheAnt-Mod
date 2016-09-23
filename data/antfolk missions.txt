@@ -101,7 +101,7 @@ mission "Land at Atilt San Pug 1"
 			`	"Very well. We will give you time to rethink but you are always allowed to land here and help us. When you do land here we will provide you with the translator and instructions."
 				goto end
 			label help
-			`Thank you. Come in and we will explane fearther.`
+			`Thank you. Come in and we will explane further.`
 			label end
 			`	The guards walk away from your ship and enter the nearby Spaceport.`
 
