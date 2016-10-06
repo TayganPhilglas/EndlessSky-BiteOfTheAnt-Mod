@@ -207,8 +207,8 @@ system Chordi
 	trade Industrial 760
 	trade "Luxury Goods" 1150
 	trade Medical 830
-	trade Metal 390
-	trade Plastic 390
+	trade Metal 430
+	trade Plastic 350
 	object
 		sprite star/k0
 		distance 41.2555
@@ -288,7 +288,7 @@ system Polevik
 			period 14.8056
 
 system "Pug Formici"
-	pos 212.371 15.2137
+	pos 272.371 65.2137
 	government Pug
 	habitable 425.92
 	asteroids "small rock" 3 5.681
