@@ -22,7 +22,7 @@ ship "Battle Larva"
 		"bunks" 1
 		"mass" 13
 		"drag" .5
-		"heat dissipation" 1
+		"heat dissipation" 1.2
 		"outfit space" 75
 		"weapon capacity" 17
 		"engine capacity" 24
@@ -48,9 +48,9 @@ ship "Battle Larva"
 	gun 7 -14 "Thorn Gun" #one of these two needs changing, the other needs removal
 	explode "tiny explosion" 15
 
-	description ""
+	description "The Battle Larva is a small and highly maneuverable fightercraft. Its lightweight and compact design is made possible through the use of incredibly low mass, high strength biomaterials and the simple fact that Antfolk don't need as large a cockpit as humans do."
 
-ship "Slave Maker" #still not sure about the name of this ship
+ship "Slave Maker"
 	sprite "ship/bulk freighter" #needs own sprite
 	Licenses
 		Antfolk
@@ -64,7 +64,7 @@ ship "Slave Maker" #still not sure about the name of this ship
 		"bunks" 480
 		"mass" 230
 		"drag" 15.8
-		"heat dissipation" .5
+		"heat dissipation" 0.8
 		"cargo space" 100
 		"outfit space" 410
 		"weapon capacity" 60
@@ -75,6 +75,7 @@ ship "Slave Maker" #still not sure about the name of this ship
 			"shield damage" 1200 #needs changing
 			"hull damage" 600 #needs changing
 			"hit force" 1800 #needs changing
+		#2 fighter bays
 	outfits #needs changing
 		"Heavy Anti-Missile Turret" 2
 		
@@ -98,7 +99,7 @@ ship "Slave Maker" #still not sure about the name of this ship
 	explode "big explosion" 35
 	explode "huge explosion" 20
 	"final explode" "final explosion large"
-	description ""
+	description "The Slave Maker has been the primary transport vessel of the Antfolk ever since they achieved space flight. Mainly used for the purpose of transporting Antfolk from planet to planet, the Slave Maker is capable of carrying hundreds of Antfolk, but as a result is rather slow and has few defenses."
 
 ship "Honey Pot"
 	sprite "ship/????" #needs own sprite
@@ -114,7 +115,7 @@ ship "Honey Pot"
 		"bunks" 15
 		"mass" 300 #tentative
 		"drag" #undecided
-		"heat dissipation" #undecided
+		"heat dissipation" 1
 		"cargo space" 600
 		"outfit space" #undecided
 		"weapon capacity" #undecided, probably fairly low
@@ -131,7 +132,7 @@ ship "Honey Pot"
 	engine #spot 2
 	#any weapon mounts this ship will actually have will go here
 	explode #explosion sizes go in this section, I guess
-	description ""
+	description "Much like the Slave Maker, the Honey Pot has been in use for some time. While the carrying capacity of the Honey Pot is rather low by Antfolk freighter standards, any Human able to see just how much cargo that the Honey Pot is able to carry would be astonished. This is because of the Honey Pot's ability to adjust its internal structure with ease while dealing no damage to hull integrity, allowing the packing of much more cargo than would be thought possible."
 
 ship "Leaf Cutter"
 	sprite "ship/????" #needs own sprite
@@ -147,7 +148,8 @@ ship "Leaf Cutter"
 		"bunks" 50 #needs adjustment
 		"mass" 1200 #probably needs adjustment
 		"drag" #on. The fact that I made a joke instead of providing useful documentation here should show I have no idea how to decide on a ship's drag value
-		"heat dissipation" #still dunno how to decide this stuff...
+		"heat dissipation" 0.75 #or maybe 0.85 if the Leaf Cutter turns out smaller than I thought.
+		"fuel capacity" 400
 		"cargo space" 1800
 		"outfit space" #no clue
 		"weapon capacity" #no clue, though should be a smaller ratio than whatever is picked for the warships, for sure
@@ -170,7 +172,7 @@ ship "Leaf Cutter"
 	engine #engine hardpoint 2
 	#weapon hardpoints
 	#explosion stuff
-	description ""
+	description "After beginning to colonize more systems, the Antfolk were in serious need of bigger and better freighters to be able to transport the huge amounts of cargo needed to colonize planets. As such, the Antfolk developed the Leaf Cutter. This heavy freighter holds the same bioship capabilities that make the Honey Pot so efficient, allowing the Leaf Cutter to hold unfathomable amounts of cargo."
 
 ship "Fire Frigate"
 	sprite "ship/raven" #needs own sprite
@@ -186,7 +188,7 @@ ship "Fire Frigate"
 		"bunks" 130
 		"mass" 220 #120/130 or, ya'know, something that fits the 6100 number a little better, like 220
 		"drag" 3.7
-		"heat dissipation" .8 #needs to be better, much better. this is a bioship for pete's sake!
+		"heat dissipation" .9
 		"cargo space" 30
 		"outfit space" 280
 		"weapon capacity" 90
@@ -219,7 +221,7 @@ ship "Fire Frigate"
 	explode "tiny explosion" 28
 	explode "small explosion" 40
 	"final explode" "final explosion small"
-	description ""
+	description "The Fire Frigate is a small, light craft that can barely be considered a warship. Slower only than the Battle Larvae, the Fire Frigate is normally used as an escort craft to defend transport ships and freighters from any marauding pirates while traveling between planets, or to simply distract them if needed. The frigate has just enough armaments to deal with two or three Battle Larve, but beyond that has trouble in defending itself without back up."
 
 ship "Army Cruiser"
 	sprite "ship/????" #needs own sprite
@@ -235,7 +237,7 @@ ship "Army Cruiser"
 		"bunks" 30
 		"mass"
 		"drag"
-		"heat dissipation"
+		"heat dissipation" 0.8
 		"fuel capacity" 500
 		"cargo space"
 		"outfit space"
@@ -252,34 +254,7 @@ ship "Army Cruiser"
 	#engine hardpoints and stuff
 	#weapon hardpoints and stuff
 	#explosions and stuff
-	description ""
-
-ship "Bullet Battleship"
-	sprite "ship/????" #needs own sprite
-	licenses
-		Antfolk Military
-	attributes
-		category "Heavy Warship"
-		cost "????"
-		"hull" ????
-		"hull repair rate" 1
-		"hull energy" 0.06
-		"required crew" ??/???
-		"bunks" ???
-		"mass" #dunno
-		"drag"
-		"heat dissipation"
-		"fuel capacity" #not sure how much to give
-		"cargo space" #dunno
-		"oufit space" #dunno, probably bigger than whatever mass I pick
-		"weapon capacity" #dunno
-		"engine capacity" #dunno
-		"biotech capacity" #same as outfit space
-		weapon #aka a bunch of stuff I could calculate IF I could calculate everything above this line, which I can't really
-			"blast radius"
-			"shield damage"
-			"hull damage"
-			"hit force"
+	description "As a response to an increase in Antfolk pirate activity after the discovery of the Hyperdrive, the Army Cruiser is the first Antfolk ship created for pure combat. A step up in size and power compared to the Fire Frigate, the cruiser is considerably less manueverable, while boasting not only increased fire power and hull strength, but also integrated shield technology, something that older ships do not have. This allows it to last longer in sustained battle while also cleaning up targets far quicker."
 
 ship "Queen Carrier"
 	sprite "ship/????" #needs own sprite
@@ -295,7 +270,7 @@ ship "Queen Carrier"
 		"bunks" 280
 		"mass" 750 #approximately, may need adjusting later
 		"drag"
-		"heat dissipation"
+		"heat dissipation" 0.7
 		"fuel capacity" #600?
 		"cargo space" ???
 		"outfit space" #dunno
@@ -308,3 +283,42 @@ ship "Queen Carrier"
 			"hull damage"
 			"hit force"
 		#20 fighter bays
+	outfits
+	
+	#engine hardpoints
+	#weapon hardpoints
+	#explosions
+	description "Battle Larva, being too small to equip their own Hyperdrive, require a larger ship to carry them between systems. As a result, the Antfolk developed the Queen Carrier. While completely defenseless on its own, the Queen Carrier is able to carry upwards of 20 fighters in its large hangar bays. That much fire power is able to overpower almost any ship, quickly picking away at the shields and hull of anyone unfortunate enough to be in the way."
+
+ship "Bullet Battleship"
+	sprite "ship/????" #needs own sprite
+	licenses
+		Antfolk Military
+	attributes
+		category "Heavy Warship"
+		cost "????"
+		"hull" ????
+		"hull repair rate" 2
+		"hull energy" 0.24
+		"required crew" ??/???
+		"bunks" ???
+		"mass" #dunno
+		"drag"
+		"heat dissipation" 0.7
+		"fuel capacity" #not sure how much to give
+		"cargo space" #dunno
+		"oufit space" #dunno, probably bigger than whatever mass I pick
+		"weapon capacity" #dunno
+		"engine capacity" #dunno
+		"biotech capacity" #same as outfit space
+		weapon #aka a bunch of stuff I could calculate IF I could calculate everything above this line, which I can't really
+			"blast radius"
+			"shield damage"
+			"hull damage"
+			"hit force"
+	outfits
+	
+	#engine hardpoints
+	#weapon hardpoints
+	#explosions
+	description "The Bullet Battleship is the pinacle of Antfolk technology. Large and intimidating, this hulking beast has the most potential firepower of any single Antfolk ship, able to single handedly take down multiple Army Cruisers or Fire Frigates. The biggest advantage that this ship has is its comparatively massive self repair rate. The Antfolk have developed a special steroid serum specifically for Bullet Battleships, allowing the ship to heal considerably more quickly than other Antfolk bio-ships."
