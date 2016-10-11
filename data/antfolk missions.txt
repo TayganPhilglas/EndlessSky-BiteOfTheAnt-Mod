@@ -528,3 +528,16 @@ mission "Disable Miasma"
 		personality heroic
 		government Korath
 		ship "Korath Raider" "Miasma"
+
+mission "Destroy Miasma"
+	description "Finish off the Korath Raider the Antfolk call Miasma"
+
+	npc kill
+		personality heroic
+		government Derelict
+		ship "Korath Raider" "Miasma"
+
+#transition scene
+
+mission "Deliver the Jump Drive to <destination>"
+#this mission will be important to the Korath-Antfolk War in that the Jump Drive from the Miasma ship (which is delivered to some arbitrary Antfolk-controlled planet for safe storage in this mission) serves to allow the Antfolk to perform ANY forward operations in Korath Exiles space
