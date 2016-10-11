@@ -471,7 +471,7 @@ mission "Pug Visit 1"
 		conversation
 			`[stuff about PC saying "What I learned from helping the Antfolk grow today is..." to the Pug]`
 			`[stuff about the Pug giving transchronological advice on the matter of Amy and terraforming Antfolk worlds {make it not obvious at the time that the Pug are trying to advise about future crap}]`
-			`[stuff about Pug giving PC what basicly amounts to a pair of quantum entangled PDAs or something and telling PC to give one to the Antfolk]`
+			`[stuff about Pug giving PC what basically amounts to a pair of quantum entangled PDAs or something and telling PC to give one to the Antfolk]`
 				set "both quantum pdas in pc possession"
 
 #transition section (means that lots of stuff is missing that will go here later [heh, probably])
@@ -488,7 +488,7 @@ mission "Chance to let Antfolk contact PC whenever"
 			`"Hello, High Queen," you say.`
 			`"Hello, <first> Captain <name>. What brings you here on this day?" asks High Queen Bringer of Law.`
 			choice
-				`["Yeah, take this quantum pda so we can talk to each other when I'm not in Antfolk space," PC still wouldn't say, but is somewhat closer to real dialog]`
+				`["Yeah, take this quantum pda so we can talk to each other when I'm not in Antfolk space," PC probably wouldn't say, but is reasonably close to real dialog]`
 					clear "both qantum pdas in pc possession"
 					set "antfolk have a quantum pda"
 					goto pda
