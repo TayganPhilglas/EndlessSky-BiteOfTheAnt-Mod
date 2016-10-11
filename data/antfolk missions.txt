@@ -474,8 +474,6 @@ mission "Pug Visit 1"
 			`[stuff about Pug giving PC what basically amounts to a pair of quantum entangled PDAs or something and telling PC to give one to the Antfolk]`
 				set "both quantum pdas in pc possession"
 
-#transition section (means that lots of stuff is missing that will go here later [heh, probably])
-
 mission "Chance to let Antfolk contact PC whenever"
 	name "Deliver a Quantum PDA to <destination>"
 	description "Deliver one of the Pug's Quantum PDAs to the Antfolk Union's High Queen"
@@ -494,3 +492,39 @@ mission "Chance to let Antfolk contact PC whenever"
 					goto pda
 			label pda
 				`["Woah, cool. Now we can pester you for help whenever we feel like it!"]`
+
+mission "Antfolk Terraforming 1"
+#introduction to the Terraforming Miasma Eopto mission chain
+
+#transition section (filler note for lots of stuff)
+
+mission "Disable Miasma"
+	landing
+	name "Defeat Miasma"
+	description "Disable the Korath Raider 'Miasma' and take its Jump Drive"
+	source "Miasma Eopto"
+	to offer
+		#mission previous
+	on offer
+		conversation
+			`When you land on the Miasma Eopto Spaceport, you notice that the entire spaceport is decked out with what you think - or at least hope - are decorations for some kind of holiday. While staring at the decorations, a small group of Antfolk (no more than ten) approach you and say "<first> Captain <name> is [in awe/amazed by] the decorations. This pleases [me/us/this one]. Do you wish to learn about the holiday that is the Aniversary of Miasma's Defeat?"`
+			`Do you? This could be a chance to learn more about Antfolk religion and culture, which theoretically would help in interacting with them.  Or it could turn out to be a complete waste of time.`
+			choice
+				`Yeah, sure. Why not? Tell me about Miasma.`
+					goto story
+			label story
+				`The Antfolk explains "You see, back in very ancient times, Antfolk believed that demons came from a [hell/prison] below Ussria's surface. However, we soon learned that demons don't come from below, they come from above. A millenia ago, a massive metal monster descended from the skies. It burned the land and boiled the seas. Our only salvation from its wrath came when our [deity/goddess], the mighty {Giant Sky Spider}, also came down from the [skies/heavens] and banished Miasma from our world. It then gave us the sacred [Pipe Organ] of Spirits and instructed us in its proper use to prevent the return of Miasma.`
+				`[I/we/this one] was just on [my/our] way to the festival celebrating and observing the Anniversary of Miasma's Defeat. Do you wish to come?`
+				choice
+					`Alright. I'll come.`
+						goto festival
+			label festival
+				`#brief description of the Miasma's Defeat festival`
+				`	#description of a Korath Raider rising from under Miasma Eopto and flying into space`
+				`	#something to let PC know to disable the Korath Raider and take its Jump Drive`
+					launch
+
+	npc disable
+		personality heroic
+		government Korath
+		ship "Korath Raider" "Miasma"
