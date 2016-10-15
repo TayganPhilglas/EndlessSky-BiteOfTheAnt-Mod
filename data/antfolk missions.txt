@@ -421,7 +421,6 @@ mission "Drak stop guarding Chordi"
 		fail "Drak guarding Chordi"
 
 #transition scene (means that some stuff is missing that will go here later [heh, probably])
-#I'm going to leave things after this point alone for now. J
 
 mission "Message from the Pug"
 	name "Check on the Antfolk"
@@ -429,7 +428,7 @@ mission "Message from the Pug"
 	landing
 	destination "Ussria"
 	to offer
-		has "antfolk gain hyperdrives"
+		has "event: antfolk gain hyperdrives"
 	on offer
 		conversation
 			`You recieve a heavily encrypted transmission that turns out to be from the Pug.`
@@ -454,7 +453,7 @@ mission "Message from the Pug"
 mission "Antfolk Salary 1"
 	invisible
 	landing
-	destination "Ussria"
+	source "Ussria"
 	to offer
 		has "Message from the Pug"
 	on offer
@@ -502,6 +501,9 @@ mission "Disable Miasma"
 	landing
 	name "Defeat Miasma"
 	description "Disable the Korath Raider 'Miasma' and take its Jump Drive"
+	blocked "You need to have a Jump drive to continue."
+	on fail
+		dialog "You need to Disable the Raider to take it's Jump Drive. If you want to finsh the Antfolk story you must revert to an erlier save."
 	source "Miasma Eopto"
 	to offer
 		#mission previous
@@ -523,8 +525,20 @@ mission "Disable Miasma"
 				`	#description of a Korath Raider rising from under Miasma Eopto and flying into space`
 				`	#something to let PC know to disable the Korath Raider and take its Jump Drive`
 					launch
+	on complete
+		outfit "Jump Drive" -1
 
+#this will make the Raider persistant so the PC won't get stranded as easily, the aulternative is to give the raider a "speacle" drive for the mission to accsept. - J
+mission "Disable Miasma: enamys"
+	invisable
+	landing
+	to offer
+		#same as above
+	source "Miasma Eopto"
 	npc disable
 		personality heroic
 		government Korath
 		ship "Korath Raider" "Miasma"
+	on fail
+		fail "Disable Miasma"
+
