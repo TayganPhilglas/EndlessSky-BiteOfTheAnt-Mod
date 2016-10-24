@@ -1,0 +1,92 @@
+The Player goes to the Chordi System (available to humans via Jump Drive) to find unidentified hostile alien life, as well as an also hostile Drak Archon which hails the Player, ordering them to leave the system immediately.
+The Player goes to the nearby Pug system, and lands on the local Pug planet.
+	[Note: Will need some kind of draw to get PC to go to the local Pug system]
+If the Player lacks a Cloaking Device, the Pug give them one. Also, the Pug give the Player a translation machine to speak with the Antfolk in the Chordi System.
+	The Pug ask the Player to report back after each incident to explain what they learned and to receive any warranted advice on future issues. “But only if you want to.”
+The player, with only their one ship in cloak, go to Planet Mikula, the Antfolk homeworld.
+Player gives the Antfolk the knowledge of hyperspace links to earn a small amount of their trust.
+The Antfolk ask for the knowledge of how to make Hyperdrives.
+The Player goes to Tarazed Corporation and does missions for the President of said company to get Hyperdrive Educational Models one at a time and deliver them to Mikula one at a time under the cover of cloaking.
+	This will work on a counter kind of like the Unfettered Jump Drive missions.
+		It will be 3.
+[Transition Section]
+	Maybe a side mission?
+The Antfolk invent the Hyperdrive and start mass producing them.
+	This will happen on some event timer that starts right when the Hyperdrive Model Counter completes.
+	The Drak Archon guarding the system leaves.
+The Player receives the Antfolk License next visit after the Antfolk begin mass producing Hyperdrives.
+[Transition Section]
+The Antfolk colonize [nearby star systems].
+	[Will be using periodic timed events for this.]
+Optional: Pug Visit
+	The Player reports to the Pug about the Hyperdrives and the Pug give advice about the Terraforming stuff.
+	Pug Visit +1
+The Antfolk ask the Player for the knowledge to terraform planets to make them more habitable and therefore able to sustain a higher population.
+The Player explains how Humans usually do it to the best of their ability. The Antfolk say something like “We couldn't have thought of a less efficient way to do that if we tried! Please go find a better way!”
+So the Player goes to Rand to look for Amy. They find out that Amy is now teaching terraforming, working under Ijs at the Conservatory on Winter.
+The Player goes to the Conservatory on Winter to speak with Amy. It turns out her full name is “Amy Su”.
+The Player has to convince a now-arrogant and attention hog-ish Amy Su to help with the Antfolk.
+	Patronizing Choice
+		The Player gets Amy to do what the Player wants by giving her a reality check. The Player does something to shame Amy and then comes back later to explain why they did what they did.
+		Possible Conversation Snip-it
+			Context: The Player is publicly embarrassing Amy Su to smash her oversized ego.
+			<name>: Kid, you're nothing more than a college dropout who just so happened to have the spine to say 'throwing asteroids at planets changes their climates'. That's all.
+			Amy: Oh yeah, and what are you without your [ship/fleet]?
+			<name>: Billionaire War Hero Alpha Slayer.
+		While the Player waits for Amy to chill and get a cool head again, the Antfolk are continuing to expand [and are getting impatient that the Player hasn’t brought back the secret to Terraforming.] [<--- well, they might not be. I mean, they had to wait a while for the Hyperdrive models.]
+		set patronizing
+	Manipulating Choice
+		The Player gets Amy to do what the Player wants by appealing to her pride. Emphasizing how she's the only one who can help the Antfolk with this terribly important problem, etc.
+		During this branch of the story, Amy makes some mistake at a critical time because of her arrogant pride.
+		set manipulative
+The Player brings Amy to Antfolk space, but stops by the Pug world nearby to ask for a second Pug Translation Machine.
+has patronizing
+Amy considers changing her mind about helping because of the Pug War, but reluctantly accepts the translator and agrees to continue to Planet Mikula.
+The Player + Amy Su land on Mikula. Amy introduces herself to the Antfolk ambassador they send.
+The Player escorts Amy in collecting data on what the ideal environment is for the Antfolk.
+	Side Note: Planet Mikula is extremely similar to how Earth was in the Devonian Period.
+The Player leaves Mikula with Amy, escorting an Antfolk bioship to the planet <planet 1>, still in the Chordi System.
+Terraforming <planet 1>
+	has patronizing
+	Amy does an atmospheric analysis and geological survey of Planet <planet 1> with the Player's ship’s sensors.
+	[Amy terraforms Planet <planet 1>]
+The Player and Amy realize that she shouldn't just do all the Antfolk’s terraforming for them forever. She needs to take on Antfolk apprentices, which means living on an Antfolk world, most likely Mikula, which means the Antfolk need to know how to design living spaces designed for humans.
+The Antfolk eagerly agree to the idea and ask the Player to fetch them designs for a human luxury apartment complex.
+The Player returns to human space. Upon searching the internet, the Player finds out that all non-government construction blueprints are considered company secrets by the companies owning their respective building designs.
+The Player goes to <planet>, home of the <company> Construction Firm headquarters, to try to strike up a deal of some kind.
+	The representative of <company> Construction Firm says that the Player can buy a copy of the blueprints as well as the rights to build what they depict IF the Player [does a Bounty Mission].
+The Player [does a Bounty Mission], and buys a data chip with a copy of the blueprints and the [construction rights confirmation] [<--- whatever the term is] document on them.
+The Player and Amy return to Antfolk space. On Planet Mikula, the Player delivers a copy of the blueprints to the Antfolk, who proceed to begin preparations for building the structure to the best of their ability immediately.
+	Timer for when the Antfolk complete their “Palace of the Giants” human guest facility. [What should this timer’s countdown be?]
+When the “Palace of the Giants” is completed, the next time PC visits the Antfolk give PC an Antfolk Military License “in case the need arises”.
+Optional: Visit the Pug
+	The Player reports to the Pug about the Terraforming stuff and the Pug give advice about the [something goes here; maybe “energy shielding”] stuff.
+	Pug Visit +1
+[Transition Section]
+[The Player gives the Antfolk energy shielding technology]
+	[This needs to be somehow way more complicated to do than it really should be.]
+[Transition Section]
+The Korath War
+	A Korath Raider ship is uncovered from under the sands of Miasma Eopto.
+		The Korath Raider sends a distress signal to the Korath Exiles.
+	[Transition Scene]
+	Korath Raiders attack Antfolk space.
+	[Transition Scene]
+	The Antfolk Union asks PC to rescue certain key scientists and engineers on Antfolk colonies and bring them to the Antfolk homeworld of Mikula so they can begin building new ships of war while the PC defends the Chordi home star system and its neighbors.
+	[Transition Section]
+	#[may need removal] If the player hasn’t been reporting in to the Pug enough times prior to the Korath War…
+		The Player is forced to deliver 1000 tons of Pugging Supplies to the Wanderer Branch while dealing with pirates en route, and then has to deal with hellucination ships on the way back to the Antfolk Branch.
+	[Transition Section]
+	The Pug let the Player ask the Quarg for help as Pug proxies, and provide proof that the Player IS working for the Pug.
+[Quarg Stuff]
+	If the Player has too low a relationship with the Quarg: upon contacting the Quarg, they proceed to send a large attack fleet to destroy the Player once and for all.
+		If the Player destroys the Quarg fleet without dying: set [something quarg-related]
+	The Quarg agree to help with the Antfolk issue, but if the Player starts attacking Quarg ships again, they'll make visiting Antfolk space very inconvenient for the Player.
+		Timer starts for a Quarg Lagrange Station to be built in Antfolk space. [No idea how long that will take.]
+	If the Player sided with the Free Worlds during the main plot:
+		The rest of the Free Worlds Council is furious that the Player had been stealing Quarg tech.
+		The Free Worlds Senate sets a date for a vote on whether or not to punish the Player for their crimes.
+		The Player starts a PR campaign in the Free Worlds to influence the vote.
+Epilogue
+	The Player brings Amy Su back to Winter.
+	While there, the Player [gives a copy of their digital journal of the Antfolk and the lessons the Player has learned] [or] [teaches about the lessons they've learned from the Antfolk and the Pug] to Ijs.
