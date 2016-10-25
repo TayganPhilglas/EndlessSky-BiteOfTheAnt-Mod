@@ -516,7 +516,7 @@ mission "Disable Miasma"
 	name "Defeat Miasma"
 	description "Disable the Korath Raider 'Miasma'."
 	on fail
-		dialog "You need to Disable the Raider to allow the antfolk to take it's Jump Drive. If you want to finsh the Antfolk story you must revert to an erlier save."
+		dialog "You need to disable the Raider to allow the antfolk to take it's Jump Drive. If you want to finsh the Antfolk story you must revert to an erlier save."
 	source "Miasma Eopto"
 	to offer
 		#mission previous
@@ -528,7 +528,7 @@ mission "Disable Miasma"
 				`Yeah, sure. Why not? Tell me about Miasma.`
 					goto story
 			label story
-				`The Antfolk explains "You see, back in very ancient times, Antfolk believed that demons came from a [hell/prison] below Ussria's surface. However, we soon learned that demons don't come from below, they come from above. A millenia ago, a massive metal monster descended from the skies. It burned the land and boiled the seas. Our only salvation from its wrath came when our [deity/goddess], the mighty {Giant Sky Spider}, also came down from the [skies/heavens] and banished Miasma from our world. It then gave us the sacred [Pipe Organ] of Spirits and instructed us in its proper use to prevent the return of Miasma.`
+				`The Antfolk explains "You see, back in very ancient times, Antfolk believed that demons came from a [hell/prison] below Ussria's surface. However, we soon learned that demons don't come from below, they come from above. A millenia ago, a massive metal monster descended from the skies. It burned the land and boiled the seas. Our only salvation from its wrath came when our [deity/goddess], the mighty {Giant Sky Spider}, also came down from the [skies/heavens] and banished Miasma from our world. It then gave us the sacred [Pipe Organ] of [Spirits/Souls] and instructed us in its proper use to prevent the return of Miasma.`
 				`[I/we/this one] was just on [my/our] way to the festival celebrating and observing the Anniversary of Miasma's Defeat. Do you wish to come?`
 				choice
 					`Alright. I'll come.`
@@ -536,7 +536,7 @@ mission "Disable Miasma"
 			label festival
 				`#brief description of the Miasma's Defeat festival`
 				`	#description of a Korath Raider rising from under Miasma Eopto and flying into space`
-				`	#something to let PC know to disable the Korath Raider and take its Jump Drive`
+				`	#something to let PC know to disable the Korath Raider but not destroy it`
 					launch
 
 	npc disable save
