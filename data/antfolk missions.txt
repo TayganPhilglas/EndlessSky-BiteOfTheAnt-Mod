@@ -497,13 +497,26 @@ mission "Antfolk Terraforming 1"
 
 #transition section (filler note for lots of stuff)
 
+ship "Korath Raider" "Korath Raider (no jump)"
+	outfits
+		"Korath Grab-Strike" 4
+		"Korath Banisher"
+		"Korath Warder"
+		"Triple Plasma Core"
+		"Systems Core (Medium)"
+		"Large Heat Shunt" 2
+		"Small Heat Shunt"
+		"Ramscoop"
+		"Intrusion Countermeasures" 4
+		"Thruster (Planetary Class)"
+		"Steering (Planetary Class)"
+
 mission "Disable Miasma"
 	landing
 	name "Defeat Miasma"
-	description "Disable the Korath Raider 'Miasma' and take its Jump Drive"
-	blocked "You need to have a Jump drive to continue."
+	description "Disable the Korath Raider 'Miasma'."
 	on fail
-		dialog "You need to Disable the Raider to take it's Jump Drive. If you want to finsh the Antfolk story you must revert to an erlier save."
+		dialog "You need to Disable the Raider to allow the antfolk to take it's Jump Drive. If you want to finsh the Antfolk story you must revert to an erlier save."
 	source "Miasma Eopto"
 	to offer
 		#mission previous
@@ -525,31 +538,26 @@ mission "Disable Miasma"
 				`	#description of a Korath Raider rising from under Miasma Eopto and flying into space`
 				`	#something to let PC know to disable the Korath Raider and take its Jump Drive`
 					launch
-	on complete
-		outfit "Jump Drive" -1
 
-#this will make the Raider persistant so the PC won't get stranded as easily, the aulternative is to give the raider a "speacle" drive for the mission to accsept. - J
-mission "Disable Miasma: enamys"
-	invisable
-	landing
-	to offer
-		#same as above
-	source "Miasma Eopto"
-	npc disable
+	npc disable save
 		personality heroic
 		government Korath
-		ship "Korath Raider" "Miasma"
-	on fail
-		fail "Disable Miasma"
+		ship "Korath Raider (no jump)" "Miasma"
 
 
 mission "Destroy Miasma"
 	description "Finish off the Korath Raider the Antfolk call Miasma"
+	source "Miasma Eopto"
+	to offer
+		"Disable Miasma: done"
+	on offer
+		conversation
+			#tell the PC to kill the raider and tell about the antfolk salvging the jump drive.
 
 	npc kill
-		personality heroic
-		government Derelict
-		ship "Korath Raider" "Miasma"
+		personality heroic derelict
+		government Korath
+		ship "Korath Raider (no jump)" "Miasma"
 
 #transition scene
 
