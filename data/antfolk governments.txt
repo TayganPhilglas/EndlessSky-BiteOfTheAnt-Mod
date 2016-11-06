@@ -11,22 +11,34 @@
 government " Drak "
 	swizzle 5
 	color 1 1 1
-	"player reputation" 1
+	"player reputation" 0
 	"attitude toward"
-		"Antfolk Union"
+		"Antfolk Union" 0
+		"Antfolk Merchant" 0
 	"fine" 0
 
 government "Antfolk Union"
 	language "APASL"
 	"player reputation" -10
 	"attitude toward"
-		"Drak" 1
-		" Drak " 1
+		"Drak" 0.5
+		" Drak " 0.5
+		"Antfolk Merchant" 0.4
+		"Antfolk Pirate" -0.2
 	"bribe" 0
 
 government "Antfolk Merchant"
 	language "APASL"
-	"player reputation" -10
+	"player reputation" 0
 	"attitude toward"
-		"Drak" 1
-		" Drak " 1
+		"Drak" 0.5
+		" Drak " 0.5
+		"Antfolk Union" 0.4
+		"Antfolk Pirate" -0.2
+
+government "Antfolk Pirate"
+	language "APASL"
+	"player reputation" 0
+	"attidude toward"
+		"Antfolk Union" -0.2
+		"Antfolk Merchant" -0.2
