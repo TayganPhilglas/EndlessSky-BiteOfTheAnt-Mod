@@ -135,7 +135,7 @@ mission "Missive from Harmony 2"
 				`You hastily apologise, and ask "For the record, I am VERY curious about what the deal is. What's with all this cloak and dagger?"`
 			label secrecy
 				`"Well, hm... Arianne, do you wish to explain it, or shall I?" Brother Greg asks the pirate girl.`
-				`"You only step in if negotiations go south. That was the agreement," Arianne responds. She then turns to you and says "I'm a pirate from Stormhold. Ya'know, the pirate planet where you Free Worlders and the Republicans came to buy info on the Syndicate from [ex-syndicate pirate guy]"`
+				`"You only step in if the talkin' goes south. That was the deal," Arianne responds. She then turns to you and says "I'm a pirate from Stormhold."`
 
 mission "Archon gets hostile"
 	invisible
