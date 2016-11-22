@@ -115,11 +115,11 @@ mission "Missive from Harmony 2"
 				`No, I don't like all this secrecy. It's too fishy.`
 					decline
 			label cave
-			`You take a flashlight and head to the mountain caves, periodically making sure you're not being followed. It's a good thing you brought the flashlight, because it takes you until dark to find the right cave. What is even more disturbing than the obscure location, is the fact that a Sparrow fighter is parked very nearby. A Sparrow fighter painted with pirate colors.`
+			`You take a flashlight and head to the mountain caves, periodically making sure you're not being followed. It's a good thing you brought the flashlight, because it takes you until dark to find the right cave.`
 			choice
 				`(Go inside. If it was a trap, the ship would be better hidden.)`
 					goto inside
-				`(Okay, NOW I'm out. No way I'm stupid enough for a trap this obvious.)`
+				`(Okay, now I'm out. No way I'm stupid enough for a trap this obvious.)`
 					decline.
 			label inside
 			`You walk inside, your gun at the ready (just in case). After going quite deep underground, you finally see a light. Getting closer, you find Brother Greg sitting on one of two logs, a campfire between them. Sitting next to Brother Greg is some scruffy teenaged girl who, by all visual cues, is most likely a pirate, or at the least, a recently reformed pirate. You can't really tell which, but you can tell that she has a poorly concealed firearm.`
@@ -159,17 +159,32 @@ mission "Missive from Harmony 2"
 			choice
 				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
 					goto alphas
+				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
+					goto travel
 				`	"Actually, nevermind. Let's just get down to business," you say.`
 					goto secrecy2
 			label alphas
 				`	Arianne looks shocked at the question. "Diedrich hates Alphas! He'd never let them so much as set foot on Stormhold! Why d'ya think he left the Syndicate? He was appaled by the Oracle deal!"`
 				`	"The what deal?" you ask.`
 				`	[Arianne explains the Oracle]`
+			choice
+				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
+					goto travel
+				`	"I guess that's a good enough interrogation. Let's get down to business," you say.`
+					goto secrecy2
+			label travel
+				`	[Arianne explains that she was dropped off in northern Syndicate space with just enough supplies and credits to pay her way to Harmony]`
+			choice
+				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
+					goto alphas
+				`	"I guess that's a good enough interrogation. Let's get down to business," you say.`
 					goto secrecy2
 			label reconcile2
 			choice
 				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
 					goto alphas2
+				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
+					goto travel2
 				`	"Actually, nevermind. Let's just get to the part where you tell me why Owen Diedrich wants me to meet up with him," you say.`
 					goto secrecy2
 			label alphas2
@@ -177,6 +192,17 @@ mission "Missive from Harmony 2"
 				`	"YOU know about the Oracle?" you ask.`
 				`	"Diedrich briefed me on it 'fore sendin' me to collect you," Arianne said.`
 				`	You find yourself starting to wonder just how high up the Syndicate's chain of command Diedrich was, how much he could possibly know, and how much he told this girl.`
+			choice
+				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
+					goto travel2
+				`	"I guess that's a good enough interrogation. Let's get down to business," you say.`
+					goto secrecy2
+			label travel2
+				`	[Arianne explains that she was dropped off in northern Syndicate space with just enough supplies and credits to pay her way to Harmony]`
+			choice
+				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
+					goto alphas2
+				`	"I guess that's a good enough interrogation. Let's get down to business," you say.`
 					goto secrecy2
 			label secrecy2
 				`[stuff about pirates and monks distrusting the Syndicate so much that they wanted to make sure there was 0% chance of the Syndicate learning what Diedrich wanted to tell PC]`
@@ -185,17 +211,16 @@ mission "Missive from Harmony 2"
 				`	"So, why exactly does Owen Diedrich want me to come meet him on Stormhold?" you ask.`
 				`	"You's an explorer, right? Well, one of the astronomers on Stormhold found a system he thinks might be worth exploring, but it's hyperlane network isn't connected to any star in human space. We need someone with a Jump Drive, and Diedrich won't trust the Syndicate to even know the system exists," Arianne said.`
 				`	"And I don't suppose I'll learn why this system is worth exploring or why Diedrich cares unless I go to Stormhold?" you ask.`
-				`	"Tha's right. I'd be escorting ya' back," Arianne said.`
+				`	"Tha's right. I'd be ridin' with ya' back," Arianne said.`
 			choice
-				`	"I don't like this, but as long as Brother Greg can vouch for you people that you're not going to try any funny business while I'm there, I guess I don't have much choice. Not like I could find the system on my own going off of what little you're telling me."`
+				`	"I don't like this, but as long as Brother Greg can vouch for you and your people that you're not going to try any funny business while I'm there - and on the way - then I guess I don't have much choice. Not like I could find the system on my own going off of what little you're telling me."`
 					accept
-				`	"You know what? I don't trust pirates, and the fact that we're having this conversation at night, in a cave, in the mountains, only reinforces that mentality. Find your own way to your mystical Jump-excludive star system."`
+				`	"You know what? I don't trust pirates, and the fact that we're having this conversation at night, in a cave, in the mountains, only reinforces that mentality. Find your own way to your mystical Jump Drive-excludive star system."`
+				`	You storm out of the cave, not waiting for a response.`
 					decline
 	on accept
-		npc accompany
-			government " Pirate "
-			personality timid
-			ship "Sparrow" "Agent of Chaos"
+		event "Stormhold-PC armistice"
+		passengers 1
 
 mission "Missive from Harmony 3"
 	landing
