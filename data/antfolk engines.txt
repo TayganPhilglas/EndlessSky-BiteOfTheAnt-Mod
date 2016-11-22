@@ -9,8 +9,8 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 outfit "Greyling's Breath Steering"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Engines"
 	"cost" 6000
 	thumbnail "outfit/tiny radiant steering"
@@ -24,8 +24,8 @@ outfit "Greyling's Breath Steering"
 	description
 
 outfit "Greyling's Breath Thruster"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Engines"
 	"cost" 8500
 	thumbnail "outfit/tiny radiant thruster"
@@ -42,8 +42,8 @@ outfit "Greyling's Breath Thruster"
 	description
 
 outfit "Imperial's Breath Steering"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Engines"
 	"cost" 20000
 	thumbnail "outfit/small radiant steering"
@@ -57,8 +57,8 @@ outfit "Imperial's Breath Steering"
 	description
 
 outfit "Imperial's Breath Thruster"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Engines"
 	"cost" 25000
 	thumbnail "outfit/small radiant thruster"
@@ -75,8 +75,8 @@ outfit "Imperial's Breath Thruster"
 	description
 
 outfit "Reaper's Breath Steering"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Engines"
 	"cost" 47000
 	thumbnail "outfit/medium radiant steering"
@@ -90,8 +90,8 @@ outfit "Reaper's Breath Steering"
 	description
 
 outfit "Reaper's Breath Thruster"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Engines"
 	"cost" 53000
 	thumbnail "outfit/medium radiant thruster"
@@ -107,8 +107,8 @@ outfit "Reaper's Breath Thruster"
 	"flare sound" "plasma medium"
 
 outfit "Widowmaker's Breath Steering"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Engines"
 	"cost" 85000
 	thumbnail "outfit/large radiant steering"
@@ -121,8 +121,8 @@ outfit "Widowmaker's Breath Steering"
 	"turning heat" 6.5
 
 outfit "Widowmaker's Breath Thruster"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Engines"
 	"cost" 105000
 	thumbnail "outfit/large radiant thruster"

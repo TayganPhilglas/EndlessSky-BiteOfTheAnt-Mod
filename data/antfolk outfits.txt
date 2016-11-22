@@ -10,8 +10,8 @@
 
 
 outfit "Antfolk Shield Matrix Generator (Weakest)" #name needs changing
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Systems"
 	cost 20000
 	thumbnail "outfit/tiny shield"
@@ -25,8 +25,8 @@ outfit "Antfolk Shield Matrix Generator (Weakest)" #name needs changing
 
 
 outfit "Eccrine Ship Glands"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Systems"
 	cost 14500
 	thumbnail "outfit/unknown"
@@ -38,8 +38,8 @@ outfit "Eccrine Ship Glands"
 	description "Antfolk cooling. Also allows use of 1 missile launcher."
 
 outfit "Apocrine Ship Glands"
-	licenses
-		Antfolk Military #might revert this to regular license...
+#	licenses
+#		Antfolk Military #might revert this to regular license...
 	category "Systems"
 	cost 48500
 	thumbnail "outfit/unknown"
@@ -52,8 +52,8 @@ outfit "Apocrine Ship Glands"
 
 
 outfit "Fuel Vacuole"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	cateogry "Systems"
 	cost 35000
 	thumbnail "outfit/fuel pod"
@@ -65,8 +65,8 @@ outfit "Fuel Vacuole"
 
 
 outfit "Antfolk Armor"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Hand to Hand"
 	cost 6000 #may need changing
 	thumbnail "outfit/unknown"
@@ -77,8 +77,8 @@ outfit "Antfolk Armor"
 	description ""
 
 outfit "Antfolk Rifle"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Hand to Hand"
 	cost 4000 #may need changing
 	thumbnail "outfit/unknown"
@@ -89,8 +89,8 @@ outfit "Antfolk Rifle"
 	description "Since hand to hand bioweapons are too powerful for civilian use, most Antfolk use old fashioned ballistic rifles for personal defense."
 
 outfit "Antfolk Biogrenades"
-	licenses
-		Antfolk Military
+#	licenses
+#		Antfolk Military
 	category "Hand to Hand"
 	cost 100000
 	thumbnail "outfit/unknown"

@@ -10,8 +10,8 @@
 
 
 outfit "Adipose Storage"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Power"
 	cost 23000
 	thumbnail "outfit/tiny battery hai"
@@ -23,8 +23,8 @@ outfit "Adipose Storage"
 #80 e/m
 
 outfit "Visceral Storage"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Power"
 	cost 175000
 	thumbnail "outfit/tiny battery hai"
@@ -37,8 +37,8 @@ outfit "Visceral Storage"
 #60 e/m
 
 outfit "Musculus Storage"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Power"
 	cost 64000
 	thumbnail "outfit/tiny battery hai"
@@ -53,8 +53,8 @@ outfit "Musculus Storage"
 
 
 outfit "Biochemical Container"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Power"
 	cost 125000
 	thumbnail "outfit/small biochemical"
@@ -69,8 +69,8 @@ outfit "Biochemical Container"
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Biochemical Tank"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Power"
 	cost 245000
 	thumbnail "outfit/small biochemical"
@@ -85,8 +85,8 @@ outfit "Biochemical Tank"
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Biochemical Vat"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Power"
 	cost 490000
 	thumbnail "outfit/small biochemical"
@@ -101,8 +101,8 @@ outfit "Biochemical Vat"
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Photosynthetic Cell"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Power"
 	cost 115000
 	thumbnail "outfit/small photovoltaic"
@@ -114,8 +114,8 @@ outfit "Photosynthetic Cell"
 	description "Antfolk energy generation. Dependent on distance from system center. Also holds energy."
 
 outfit "Photosynthetic Array"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Power"
 	cost 295000
 	thumbnail "outfit/small photovoltaic"
