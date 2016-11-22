@@ -1,3 +1,8 @@
+The Player receives a missive from Harmony, requesting the Player's presence there.
+The Player goes to Harmony to meet with monk Brother Greg and a teenage pirate girl named Arianne [name is subject to change]
+Arianne explains to the Player about an astronomer on Stormhold who may have discovered intelligent life in the Chordi system, and wants someone to make first contact, but requires someone with a jump-capable ship.
+Arianne and the Player go to Stormhold to discuss stuff with [the Syndicate manager-turned-Pirate leader], one of the big-shot Pirate leaders there, who in particular has taken up handling the issue.
+The Player and [the Syndicate manager-turned-Pirate leader] discuss [stuff].
 The Player goes to the Chordi System (available to humans via Jump Drive) to find unidentified hostile alien life, as well as an also hostile Drak Archon which hails the Player, ordering them to leave the system immediately.
 The Player goes to the nearby Pug system, and lands on the local Pug planet.
 	[Note: Will need some kind of draw to get PC to go to the local Pug system]
