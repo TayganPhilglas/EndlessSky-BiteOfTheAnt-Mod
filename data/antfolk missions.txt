@@ -82,8 +82,10 @@ mission "Missive from Harmony 1"
 			`			Sincerely, Brother Greg`
 
 mission "Missive from Harmony 2"
+	landing
 	name "Go to <destination>"
-	description ""
+	description "Escort the <npc> to <destination> to meet with Owen Diedrich."
+	destination Stormhold
 	to offer
 		has "Missive from Harmony 1: completed"
 	source Harmony
@@ -120,9 +122,9 @@ mission "Missive from Harmony 2"
 				`(Okay, NOW I'm out. No way I'm stupid enough for a trap this obvious.)`
 					decline.
 			label inside
-			`You walk inside, your gun at the ready (just in case). After going quite deep underground, you finally a light. Getting closer, you find Brother Greg sitting on one of two logs, a campfire between them. Sitting next to Brother Greg is some scruffy teenaged girl who, by all visual cues, is most likely a pirate, or at the least, a recently reformed pirate. You can't really tell which, but you can tell that she has a poorly concealed firearm.`
+			`You walk inside, your gun at the ready (just in case). After going quite deep underground, you finally see a light. Getting closer, you find Brother Greg sitting on one of two logs, a campfire between them. Sitting next to Brother Greg is some scruffy teenaged girl who, by all visual cues, is most likely a pirate, or at the least, a recently reformed pirate. You can't really tell which, but you can tell that she has a poorly concealed firearm.`
 			`"Ah, <first>, you've finally arrived. Please take a seat," says Brother Greg.`
-			`You caustiously sit down, keeping your gun ready.`
+			`You cautiously sit down, keeping your gun ready.`
 			`"I suppose you're wondering what's been going on," Brother Greg said.`
 			choice
 				`"Yes, I am. What's with all this cloak and dagger?"`
@@ -130,12 +132,79 @@ mission "Missive from Harmony 2"
 				`"First, I'd like to say that this isn't what I imagined when you said you performed 'pirate outreach.'"`
 					goto outreach
 			label outreach
-				`Brother Greg, as well as the pirate girl, instantly become fully flabbergasted. The pirate girl inches to the far end of the log.`
-				`Brother Greg, meanwhile, states angrily "Ugh! I took a vow of chastity! And that sort of irreputable behavior hasn't been a problem among the clergy since before the space age! Now if you please, this girl was sent here because her employer has business with YOU specifically. I'm only to be a mediator! Nothing more!"`
-				`You hastily apologise, and ask "For the record, I am VERY curious about what the deal is. What's with all this cloak and dagger?"`
+			`Brother Greg, as well as the pirate girl, instantly become fully flabbergasted. The pirate girl inches to the far end of the log.`
+			`Brother Greg, meanwhile, states angrily "Ugh! I took a vow of chastity! And that sort of irreputable behavior hasn't been a problem among the clergy since before the space age! Now if you please, this girl was sent here because her employer has business with YOU specifically. I'm only to be a mediator! Nothing more!"`
+			`You hastily apologise, and ask "For the record, I am VERY curious about what the deal is. What's with all this cloak and dagger?"`
+				got secrecy
 			label secrecy
-				`"Well, hm... Arianne, do you wish to explain it, or shall I?" Brother Greg asks the pirate girl.`
-				`"You only step in if the talkin' goes south. That was the deal," Arianne responds. She then turns to you and says "I'm a pirate from Stormhold."`
+			`"Well, hm... Arianne, do you wish to explain it, or shall I?" Brother Greg asks the pirate girl.`
+			`"You only step in if the talkin' goes south. That was the deal," Arianne responds. She then turns to you and says "I's a pirate from Stormhold. One of the higher-ups, Owen Diedrich, sent me ta Harmony, givin' me jus' a Sparrow with a ramscoop ta get here, ta beg the monks here ta contact ya'."`
+			branch reconcile
+				has "event: fw armistice"
+			choice
+				`	"Stormhold... That planet is just north of Syndicate space, right? Can't say I know anyone from there. Who is this 'Owen Diedrich'? What does he want with me?" you ask.`
+			`	"Owen Diedrich is the greatest of the pirate leaders on Stormhold," says Arianne. "He was once a manager fer the Syndicate, but one day decided to stop givin' money to the Syndicate an' ta start takin' some of it back. He was the one pirate leader who refused to go after the bounty on Ijs Springborn."`
+				goto questions
+			label reconcile
+			`	"Stormhold... That planet is just north of Syndicate space, right? Can't say I know anyone from there. Who is this 'Owen Diedrich'? What does he want with me?" you ask.`
+			`	Arianne looks at you with a surprised look. "Ya' don' remember him? He remembers you vividly. He sold ya' information ya' needed to bring justice ta a bunch of Syndicate guys."`
+			`	You think for a moment. Then it hits you. "OH! That guy! Yeah, I never got his name, and I'm sure there are several rival leaders on Stormhold," you say, sheepishly. "I actually do remember him."`
+			`	Arianne looks pleased at your reaction, saying "Tha's more like it. A meeting of two great leaders like tha' should be remembered."`
+				goto questions
+			label questions
+			`"Before we move on to discussing anything like me going to Stormhold, I do still have a couple of questions," you say.`
+			`"Ask away. I'll answer best I can," Arianne said.`
+			branch reconcile2
+				has "event: fw armistice"
+			choice
+				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
+					goto alphas
+				`	"Actually, nevermind. Let's just get down to business," you say.`
+					goto secrecy2
+			label alphas
+				`	Arianne looks shocked at the question. "Diedrich hates Alphas! He'd never let them so much as set foot on Stormhold! Why d'ya think he left the Syndicate? He was appaled by the Oracle deal!"`
+				`	"The what deal?" you ask.`
+				`	[Arianne explains the Oracle]`
+					goto secrecy2
+			label reconcile2
+			choice
+				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
+					goto alphas2
+				`	"Actually, nevermind. Let's just get to the part where you tell me why Owen Diedrich wants me to meet up with him," you say.`
+					goto secrecy2
+			label alphas2
+				`	Arianne looks shocked at the question. "Diedrich hates Alphas! He'd never let them so much as set foot on Stormhold! Why d'ya think he left the Syndicate? He was appaled by the Oracle deal!"`
+				`	"YOU know about the Oracle?" you ask.`
+				`	"Diedrich briefed me on it 'fore sendin' me to collect you," Arianne said.`
+				`	You find yourself starting to wonder just how high up the Syndicate's chain of command Diedrich was, how much he could possibly know, and how much he told this girl.`
+					goto secrecy2
+			label secrecy2
+				`[stuff about pirates and monks distrusting the Syndicate so much that they wanted to make sure there was 0% chance of the Syndicate learning what Diedrich wanted to tell PC]`
+					goto why
+			label why
+				`	"So, why exactly does Owen Diedrich want me to come meet him on Stormhold?" you ask.`
+				`	"You's an explorer, right? Well, one of the astronomers on Stormhold found a system he thinks might be worth exploring, but it's hyperlane network isn't connected to any star in human space. We need someone with a Jump Drive, and Diedrich won't trust the Syndicate to even know the system exists," Arianne said.`
+				`	"And I don't suppose I'll learn why this system is worth exploring or why Diedrich cares unless I go to Stormhold?" you ask.`
+				`	"Tha's right. I'd be escorting ya' back," Arianne said.`
+			choice
+				`	"I don't like this, but as long as Brother Greg can vouch for you people that you're not going to try any funny business while I'm there, I guess I don't have much choice. Not like I could find the system on my own going off of what little you're telling me."`
+					accept
+				`	"You know what? I don't trust pirates, and the fact that we're having this conversation at night, in a cave, in the mountains, only reinforces that mentality. Find your own way to your mystical Jump-excludive star system."`
+					decline
+	on accept
+		npc accompany
+			government " Pirate "
+			personality timid
+			ship "Sparrow" "Agent of Chaos"
+
+mission "Missive from Harmony 3"
+	landing
+	to offer
+		has "Missive from Harmony 2: completed"
+	source Stormhold
+	on offer
+		conversation
+			`[PC speaks with Owen Diedrich]`
 
 mission "Archon gets hostile"
 	invisible
