@@ -23,9 +23,6 @@ The Player receives the Antfolk License next visit after the Antfolk begin mass 
 [Transition Section]
 The Antfolk colonize [nearby star systems].
 	[Will be using periodic timed events for this.]
-Optional: Pug Visit
-	The Player reports to the Pug about the Hyperdrives and the Pug give advice about the Terraforming stuff.
-	Pug Visit +1
 The Antfolk ask the Player for the knowledge to terraform planets to make them more habitable and therefore able to sustain a higher population.
 The Player explains how Humans usually do it to the best of their ability. The Antfolk say something like “We couldn't have thought of a less efficient way to do that if we tried! Please go find a better way!”
 So the Player goes to Rand to look for Amy. They find out that Amy is now teaching terraforming, working under Ijs at the Conservatory on Winter.
