@@ -347,8 +347,8 @@ mission "Land at Atilt San Pug 2a"
 			`"A... Cloaking Device? That's a thing?" you ask.`
 			`"Yes. Your Syndicate has one, though they prefer to salt their soup before they taste it. So you won't be able to just take theirs without drawing far too much attention to us. So we'll just give you one of ours."`
 			`"Drak sensors can't detect cloaked ships?" you ask, disregarding the randomly inserted and meaningless use of a human phrase.`
-			`"No. Nothing can detect something that has been cloaked."`
-			`"Really? How come?"`
+			`"No. Nothing but gravitic sensors can detect something that has been cloaked. And no ship uses gravitic sensors, because they're terrible for detecting anything else."`
+			`"Really? That's the only way to detect it? How come?"`
 			`"Because. You don't need to know that. Just know that Drak Archons couldn't detect a cloaked ship if it was flying right under them. Coincidentally, Drak sensors are also surprisingly easily [blocked] [with lead.]"`
 			`"Wow. That's pretty amazing. At which particular step of the process will you want the device back?" you ask.`
 			`The Pug appears to think for a short moment, then says "You can just keep it. We find the idea of the Hero of Humanity having a Cloaking Device amusing. And the Drak won't. Which is even better. Oh, we should warn you, Cloaking Devices do consume a small amount of deuterium fuel while running, so don't just leave it running all the time unless you've got a good ramscoop. Also, we're only giving you one, so for now, just enter Chordi with one ship - the one with the Cloaking Device."`
@@ -407,10 +407,75 @@ mission "Land at Atilt San Pug 2b"
 	on offer
 		set "antfolk pug intro"
 		conversation
-			#`[stuff about PC deciding to help the Pug]`
-			#`[stuff about Pug figuring out PC already HAS a Cloaking Device]`
-			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
-			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
+			`How making you lift off of Atilt San Pug and then land again on the exact same landing pad improves security is beyond you. Nonetheless, you do it. When you land, you head inside the terminal.`
+			`Inside the Pug spaceport terminal - which is constructed as oddly as all other examples of Pug architecture that you know of - you see relatively few actual Pug. The fact that you - a human - somewhat stands out in an alien spaceport also did nothing to prevent the Pug from earlier from finding you immediately and (almost literally) dragging you to what must be some kind of Pug spaceport bar or restaurant. The Pug orders for you.`
+			`"Human," is all the Pug ringleader says to you before being silent.`
+			choice
+				`	"Pug," you reply with mild sarcasm.`
+					goto sarcasm
+				`	(Wait for it to say something.)`
+					goto silence
+			label sarcasm
+			`"Wit. An interesting choice of a reply," the Pug says. "You should do well enough, I suppose."`
+				goto help
+			label silence
+			`"Feline got your tongue?" the Pug asks.`
+			`"You haven't said anything for me to respond to," you reply.`
+			`"Haven't I? Even some humans know that, sometimes, to say nothing is to scream louder than a Korath thruster. I was hoping you were one of them. Oh, well. You'll have to do."`
+				goto help
+			label help
+			`"Can you PLEASE stop testing me and just be SOMEWHAT straightforward!" you yell, exasperated with the cryptic Pug.`
+			`"Very well, very well. We, the Pug, for reasons we are disinterested in disclosing, are interested in technologically uplifting the insectoid race living in the Chordi system which we have made known to you as 'Antfolk.' However, we do not want to, what's the human phrase, 'get our hands dirty.' We require a human proxy to interact with the Antfolk of Chordi, give them some lower-end human tech, and to specifically say NOTHING to them of being a Pug agent."`
+			`"Ignoring how crypticly specific that is, how do you plan on me getting past that Drak Archon?" you ask.`
+			`"Well, you just use that Cloaking Device of yours, DUH," the Pug says.`
+			`"You... know about my Cloaking Device?" you ask.`
+			`"Yes. You got it from the Syndicate, the Syndicate stole it from the Korath, and the Korath stole it from us. We thought that by now you would have figured out that your Cloaking Device can cloak your ship from literally ANYTHING. Well, except those old fashioned gravitic sensors, but no one cares about them," the Pug said.`
+			`"So, even Drak sensors can't detect cloaked ships?" you ask.`
+			`"No. Nothing but gravitic sensors can detect something that has been cloaked. And no ship uses gravitic sensors, because they're terrible for detecting anything else."`
+			`"Really? That's the only way to detect it? How come?"`
+			`"Because. You don't need to know that. Just know that Drak Archons couldn't detect a cloaked ship if it was flying right under them. Coincidentally, Drak sensors are also surprisingly easily [blocked] [with lead.]"`
+			`"Wow. That's pretty amazing. I didn't know I had something that powerful," you say.`
+			`"Oh, and we must warn you: you've only got one, and we're not giving you more, so for now, just enter Chordi with one ship - the one with your Cloaking Device installed."`
+			`"Is that all?"`
+			`"One last thing: when you are just flying your one cloak-capable ship, it is of vital importance that you enter cloak BEFORE jumping to Chordi. Otherwise, Archon Defensive Nanny will notice you've returned. It would be even worse if you entered Chordi uncloaked and then cloaked. Do you understand why?"`
+			choice
+				`	"Yes. It is a childishly simple deduction."`
+					goto yes
+				`	"I'm afraid not. Please explain."`
+					goto no
+			label yes
+			`"Explain it, then."`
+			`"Because if I did that, the Drak would assume - correctly - that you guys were interfering with the life in Chordi and that I was your instrument. That would cause a lot of problems for both of us."`
+				goto modifications
+			label no
+			`"You have no deductive reasoning skills, and yet you live to this day. Very well, we will explain. If you entered the Chordi system uncloaked, the Archon WILL attack you. If you cloaked so that the Archon would notice you vanishing from their sensors as only a cloaked ship can, then you will survive, but the Drak will know that you have a Cloaking Device and correctly assume - for the wrong reasons - that whatever business you have with the Chordi system, we played a part in it. That would be highly undesirable for everyone except the Drak. Understand, foolish human?"`
+			`"Yes, I get it now."`
+				goto modifications
+			label modifications
+			`"Good. Now there's still one last problem to solve."`
+			`"Wait, I'm not ready to go, yet?"`
+			`The Pug made a sound vaguely reminiscent of laughing. "How do you expect to speak with the Chordi life forms?"`
+			`"Right. You haven't given me that translation machine yet," you say.`
+			`"That's not all that needs doing. The Antfolk speak a language best translated in your tongue as 'Assimilated Pheromonal, Anatonmical, and Sonic Language,' or 'APASL.' It is a very insectoid mix of vocalized clicks, body language, and pheromone communication. To translate it into an entirely vocal language like your own, and back, you will require much more than what the Hai use. We also need to modify your ship to be able to receive this broadcasting frequencies."`
+			`"How long will that take?" you ask.`
+			`"It's already done, but we still should teach you how to do it yourself for any other ships you feel like using, and how to undo the changes for any ship you wish to sell," said the Pug.`
+			`"Well, what are we waiting for? Let's get started," you say.`
+			`The Pug takes out some kind of handheld device with two forward-facing prongs. "Don't blink," it says.`
+			`Too terrified to disobey, your eyelids somehow end up locked wide open. The Pug points the device at your eyes, and beams shoot from the prongs into your eyes for a few seconds. As it does so, you feel texbooks upon textbooks of new technical knowledge being shoved into your brain at once.`
+			`"Done," the Pug says.`
+			`You find yourself able to blink again, but you now also have a splitting headache.`
+			`"Rest for however long you need. The Antfolk aren't going anywhere," the Pug said.`
+			`You head back to your quarters and rest. Oddly, the moment your headache is fully gone, you hear the buzz of someone outside your ship requesting in.`
+			`Groggily, you open your bay doors. A single Pug is standing there, in some kind of uniform. You never were good at telling individual Pug apart, but you suspect that this Pug is female.`
+			`"Can I help you?" you ask.`
+			`"We have elected to send one of us as a passenger on your ship, to provide useful advice when necessary," the Pug said.`
+			`"For an extended stay, I presume?" you ask.`
+			`"Yes," the Pug said, before amending the answe with "Sir."`
+			`You give a long, tired sigh. "Find, fine. Come on in."`
+			`You show the Pug to an empty bunk and storage locker. Then, you say "By the way, do you Pug have names? I'd rather not just call you 'Pug' for who-knows-how-long."`
+			`The Pug thinks for a moment, then says "For your convinence, you may call me 'Steve'."`
+			`You resist rolling your eyes, and say "Well, we'll be lifting off soon. Do whatever you need to, then meet me [on the bridge]."`
+			passengers 1
 			decline
 
 mission "Land at Atilt San Pug 2c"
@@ -575,7 +640,7 @@ mission "Antfolk Hyperdrives Prep 1"
 		conversation
 			`It occurs to you that you know very little about how Hyperdrives work or how to make them, and even less about Jump Drives. Not to mention that what little you know of the two makes just giving tons of either one to a race that hasn't earned the knowledge for themselves sounds like more of a terrible idea the more you think about it.`
 			`You decide to ask Steve her opinion.`
-			#`[Steve teaches PC about simplified models and giving tech slowly and incrementally]`
+			`[Steve teaches PC about simplified models and giving tech slowly and incrementally]`
 			`"So I should give the Antfolk simplified, educational models of Hyperdrives rather than actual Hyperdrives, and *only* give them models for Hyperdrives, nothing else, at least for now," you say, summarizing and clarifying what [the Pug] said. Then you ask, "But... where am I supposed to find something like that? And how many do I need?"`
 			`Steve smirks. At least, you think she's smirking. "Telling you all of that would defeat the point of you doing this instead of us. If you *must* have a hint, then I'd recommend contacting one of your species' 'corporations' that manufactures Hyperdrives and see if any of them can - or will - help you. As for how many you need, only the Antfolk scientists looking at such a model *may* be able to know how many they need in advance."`
 
