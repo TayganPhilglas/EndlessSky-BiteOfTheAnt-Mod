@@ -9,8 +9,8 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 outfit "Thorn Gun"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Guns"
 	"cost" 12000
 	thumbnail "outfit/unknown"
@@ -32,9 +32,33 @@ outfit "Thorn Gun"
 		"shield damage" 1
 		"hull damage" 3.5
 
+outfit "Thorn Turret"
+#	licenses
+#		Antfolk
+	category "Turrets"
+	"cost" 36000
+	thumbnail "outfit/unknown"
+	"mass" 22
+	"outfit space" -22
+	"weapon capacity" -22
+	"turret mounts" -1
+	"biotech capacity" -22
+	weapon
+		sprite "projectile/repeater"
+		sound "repeater"
+		"hit effect" "repeater impact"
+		"inaccuracy" 2
+		"velocity" 14
+		"lifetime" 30
+		"reload" 3
+		"firing energy" 5
+		"firing heat" 15
+		"shield damage" 1
+		"hull damage" 3.5
+
 outfit "Antfolk Coolant Missile"
-	licenses
-		Antfolk
+#	licenses
+#		Antfolk
 	category "Guns"
 	"cost" 45000
 	thumbnail "outfit/meteor launcher"
