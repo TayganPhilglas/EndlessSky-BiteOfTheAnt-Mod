@@ -96,7 +96,7 @@ outfit "Antfolk Coolant Missile Launcher"
 		"slowing damage" 15
 		"hit force" 30
 		"missile strength" 4
-	description "One of the Antfolk's more inventive weapons, they have managed to repurpose the waste from their cooling systems into acidic splash projectiles as ammunition for organic missile launchers. While not the fastest missiles around, and actually being closer to acidic snot balls than real missiles, these projectiles are relatively nasty to any ship they're hit with and will 'splash' onto nearby ships similar to the shrapnel of some human-made missiles."
+	description "One of the Antfolk's more inventive weapons, they have managed to repurpose the waste from their cooling systems into acidic splash projectiles as ammunition for organic missile launchers. While not the fastest missiles around, and actually being closer to acidic snot balls than real missiles, these projectiles stick to any ship they're hit with, slowing them down, and will 'splash' onto nearby ships similar to the shrapnel of some human-made missiles."
 
 outfit "Antfolk Anti-Missile" #just about everything for this outfit except the licenses and category are subject to (massive) change
 #	licenses
