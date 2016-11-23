@@ -24,7 +24,20 @@ mission "deep sky sells power armor"
 		conversation
 			`"Attention all space captains! Deep Sky is proud to announce the latest in hand-to-hand defensive combat: Power Armor! 'It's the Security Station you can wear wherever you go!' DISCLAIMER: The Deep Sky Power Armor does not possess any offensive capabilities."`
 
+mission "Pirates don't fight ' Pirates '"
+	invisible
+	landing
+	on offer
+		government Pirate
+			"attitude toward"
+				" Pirate " .3 #may need changing
+
+event "Stormhold-PC armistice"
+	system Alcyone
+		government " Pirate "
+
 event "player has english-apasl translation machine"
+	set "language: APASL"
 
 event "antfolk gain hyperdrives"
 	"reputation: Antfolk Union" >?= 20

@@ -104,4 +104,5 @@ outfit "Power Armor"
 	thumbnail "outfit/unknown"
 	"capture defense" 2.1
 	"unplunderable" 1
+	description "The Deep Sky 'Powered Knight Suit' is the first form of Power Armor to ever be commercially available in human space. While it lacks any kind of offensive capabilities, it is a defensive tank."
 	description ""
