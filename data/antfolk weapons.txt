@@ -91,3 +91,24 @@ outfit "Antfolk Coolant Missile"
 		"hull damage" 90
 		"hit force" 30
 		"missile strength" 4
+
+outfit "Antfolk Anti-Missile" #just about everything for this outfit except the licenses and category are subject to (massive) change
+#	licenses
+#		Antfolk
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 1
+	"outfit space" -1
+	"weapon capacity" -1
+	"turret mounts" -1
+	"biotech capacity" -1
+	weapon
+		"hit effect" "small anti-missile"
+		"velocity" 150
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 5
+		"firing heat" 2
+		"anti-missile" 3
+	description "Antfolk anti-missile defense turret."
