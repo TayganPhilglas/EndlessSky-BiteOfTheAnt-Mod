@@ -8,10 +8,10 @@ The Player goes to the nearby Pug system, and lands on the local Pug planet.
 	[Note: Will need some kind of draw to get PC to go to the local Pug system]
 If the Player lacks a Cloaking Device, the Pug give them one. Also, the Pug give the Player a translation machine to speak with the Antfolk in the Chordi System.
 	The Pug ask the Player to report back after each incident to explain what they learned and to receive any warranted advice on future issues. “But only if you want to.”
-The player, with only their one ship in cloak, go to Planet Mikula, the Antfolk homeworld.
+The player, with only their one ship in cloak, go to Planet Ussria, the Antfolk homeworld.
 Player gives the Antfolk the knowledge of hyperspace links to earn a small amount of their trust.
 The Antfolk ask for the knowledge of how to make Hyperdrives.
-The Player goes to Tarazed Corporation and does missions for the President of said company to get Hyperdrive Educational Models one at a time and deliver them to Mikula one at a time under the cover of cloaking.
+The Player goes to Tarazed Corporation and does missions for the President of said company to get Hyperdrive Educational Models one at a time and deliver them to Ussria one at a time under the cover of cloaking.
 	This will work on a counter kind of like the Unfettered Jump Drive missions.
 		It will be 3.
 [Transition Section]
@@ -43,22 +43,22 @@ The Player has to convince a now-arrogant and attention hog-ish Amy Su to help w
 		set manipulative
 The Player brings Amy to Antfolk space, but stops by the Pug world nearby to ask for a second Pug Translation Machine.
 has patronizing
-Amy considers changing her mind about helping because of the Pug War, but reluctantly accepts the translator and agrees to continue to Planet Mikula.
-The Player + Amy Su land on Mikula. Amy introduces herself to the Antfolk ambassador they send.
+Amy considers changing her mind about helping because of the Pug War, but reluctantly accepts the translator and agrees to continue to Planet Ussria.
+The Player + Amy Su land on Ussria. Amy introduces herself to the Antfolk ambassador they send.
 The Player escorts Amy in collecting data on what the ideal environment is for the Antfolk.
-	Side Note: Planet Mikula is extremely similar to how Earth was in the Devonian Period.
-The Player leaves Mikula with Amy, escorting an Antfolk bioship to the planet <planet 1>, still in the Chordi System.
+	Side Note: Planet Ussria is extremely similar to how Earth was in the Devonian Period.
+The Player leaves Ussria with Amy, escorting an Antfolk bioship to the planet <planet 1>, still in the Chordi System.
 Terraforming <planet 1>
 	has patronizing
 	Amy does an atmospheric analysis and geological survey of Planet <planet 1> with the Player's ship’s sensors.
 	[Amy terraforms Planet <planet 1>]
-The Player and Amy realize that she shouldn't just do all the Antfolk’s terraforming for them forever. She needs to take on Antfolk apprentices, which means living on an Antfolk world, most likely Mikula, which means the Antfolk need to know how to design living spaces designed for humans.
+The Player and Amy realize that she shouldn't just do all the Antfolk’s terraforming for them forever. She needs to take on Antfolk apprentices, which means living on an Antfolk world, most likely Ussria, which means the Antfolk need to know how to design living spaces designed for humans.
 The Antfolk eagerly agree to the idea and ask the Player to fetch them designs for a human luxury apartment complex.
 The Player returns to human space. Upon searching the internet, the Player finds out that all non-government construction blueprints are considered company secrets by the companies owning their respective building designs.
 The Player goes to <planet>, home of the <company> Construction Firm headquarters, to try to strike up a deal of some kind.
 	The representative of <company> Construction Firm says that the Player can buy a copy of the blueprints as well as the rights to build what they depict IF the Player [does a Bounty Mission].
 The Player [does a Bounty Mission], and buys a data chip with a copy of the blueprints and the [construction rights confirmation] [<--- whatever the term is] document on them.
-The Player and Amy return to Antfolk space. On Planet Mikula, the Player delivers a copy of the blueprints to the Antfolk, who proceed to begin preparations for building the structure to the best of their ability immediately.
+The Player and Amy return to Antfolk space. On Planet Ussria, the Player delivers a copy of the blueprints to the Antfolk, who proceed to begin preparations for building the structure to the best of their ability immediately.
 	Timer for when the Antfolk complete their “Palace of the Giants” human guest facility. [What should this timer’s countdown be?]
 When the “Palace of the Giants” is completed, the next time PC visits the Antfolk give PC an Antfolk Military License “in case the need arises”.
 Optional: Visit the Pug
@@ -74,7 +74,7 @@ The Korath War
 	[Transition Scene]
 	Korath Raiders attack Antfolk space.
 	[Transition Scene]
-	The Antfolk Union asks PC to rescue certain key scientists and engineers on Antfolk colonies and bring them to the Antfolk homeworld of Mikula so they can begin building new ships of war while the PC defends the Chordi home star system and its neighbors.
+	The Antfolk Union asks PC to rescue certain key scientists and engineers on Antfolk colonies and bring them to the Antfolk homeworld of Ussria so they can begin building new ships of war while the PC defends the Chordi home star system and its neighbors.
 	[Transition Section]
 	#[may need removal] If the player hasn’t been reporting in to the Pug enough times prior to the Korath War…
 		The Player is forced to deliver 1000 tons of Pugging Supplies to the Wanderer Branch while dealing with pirates en route, and then has to deal with hellucination ships on the way back to the Antfolk Branch.
