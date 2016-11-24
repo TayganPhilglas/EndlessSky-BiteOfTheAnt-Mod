@@ -172,6 +172,33 @@ outfit "Antfolk Anti-Missile" #just about everything for this outfit except the 
 		"anti-missile" 3
 	description "Antfolk anti-missile defense turret."
 
+outfit "Larval Flamethrower"
+#	licenses
+#		Antfolk Military
+	category "Guns"
+	cost 0
+	thumbnail "outfit/flamethrower"
+	"mass" 13
+	"outfit space" -13
+	"weapon capacity" -9
+	"gun ports" -1
+	"biotech capacity" -4 #this one is arguable
+	weapon
+		sprite "effect/explosion/small"
+			"frame rate" 60
+			"no repeat"
+		sound "flamethrower"
+		icon "icon/flamethrower"
+		"submunition" "Flamethrower Projectile"
+		"inaccuracy" 12
+		"velocity" 9
+		"lifetime" 5
+		"reload" 1
+		"firing energy" .1
+		"firing fuel" .25
+		"firing heat" 2
+	description "For their fighters to use, the Antfolk have attached a small fuel pod to the original Flamethrower design."
+
 outfit "Flame Turret"
 #	licenses
 #		Antfolk Military
