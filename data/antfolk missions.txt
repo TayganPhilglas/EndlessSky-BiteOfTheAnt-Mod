@@ -698,8 +698,15 @@ mission "Antfolk Hyperdrives Prep 2"
 				`[placeholder] [The Syndicate have resources, but they are jerks]`
 				`(You also recall that Owen Diedrich didn't trust the Syndicate to know anything about this, so you'll need to carefully withhold from them as much information as you can about why you're coming to them.)`
 					goto list
-			label tarazed
+			label tarazed #not sure how solid the coding nested here is. Another thing to test, I suppose.
 				`[placeholder]`
+					goto return
+				branch kestrel
+					has "kestrel available"
+				label kestrel
+				`(You also recall that the Tarazed Corporation seems to like you, seeing as they sought you out to test their new model of warship, the Kestrel.)`
+					goto return
+				label return
 					goto list
 			label stop
 			`	You feel like you've read enough to have some idea of how to ask each group for help.`
