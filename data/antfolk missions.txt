@@ -837,7 +837,7 @@ mission "Antfolk Hyperdrive Model 2"
 	to offer
 		has "Antfolk Hyperdrive Model 1: done"
 	source "Ussria"
-	destination Tarazed
+	destination "Wayfarer"
 	on complete
 		dialog "Tarazed Corp workers load another Hyperdrive Model onto your ship."
 
@@ -847,7 +847,7 @@ mission "Antfolk Hyperdrive Model 2A"
 	description "Bring another Hyperdrive Model from <orgin> to the Antfolk on <destination>"
 	to offer
 		has "Antfolk Hyperdrive Model 2: done"
-	source Tarazed
+	source "Wayfarer"
 	destination "Ussria"
 	cargo "Hyperdrive Educational Model" 20
 	on complete
@@ -862,7 +862,7 @@ mission "Antfolk Hyperdrive Model 3"
 	to offer
 		has "Antfolk Hyperdrive Model 2A: done"
 	source "Ussria"
-	destination Tarazed
+	destination "Wayfarer"
 	on complete
 		dialog "Tarazed Corp workers load another Hyperdrive Model onto your ship."
 
@@ -872,7 +872,7 @@ mission "Antfolk Hyperdrive Model 3A"
 	description "Bring another Hyperdrive Model from <orgin> to the Antfolk on <destination>"
 	to offer
 		has "Antfolk Hyperdrive Model 3: done"
-	source Tarazed
+	source "Wayfarer"
 	destination "Ussria"
 	cargo "Hyperdrive Educational Model" 20
 	on complete
@@ -892,7 +892,7 @@ mission "Drak stop guarding Chordi"
 
 mission "Message from the Pug"
 	name "Check on the Antfolk"
-	description "The Pug want you to return to Antfolk space; plus, you're curious how things might've changed"
+	description "The Pug want you to return to Antfolk space. Besides, you're curious how things might've changed."
 	landing
 	destination "Ussria"
 	to offer
@@ -900,7 +900,9 @@ mission "Message from the Pug"
 	on offer
 		conversation
 			`You recieve a heavily encrypted transmission that turns out to be from the Pug.`
-			`"Attention Captain <name>. The 'winds of change', as your species says, have begun blowing in Antfolk space since you delivered those Hyperdrive models. It would be in your interests to return to the Antfolk homeworld and see for yourself."`
+			`"Attention Captain <name>. The 'winds of change', as your species says, have begun blowing in Antfolk space since you delivered those Hyperdrive models. It would be in your interests to return to the Antfolk homeworld and see for yourself. But first, please stop by Altilt San Pug and pick up 'Steve'."`
+	to complete
+		stopover "Altilt San Pug"
 	on complete
 		conversation
 			`When you exit your ship, you find that the Antfolk have already sent [Ambassador/Ambassadors] [named antfolk sapience 1], along with a good twenty more Antfolk (you can't tell how many actual sapiences there are among them, though), about five of which are wearing battle armor and are carrying some kind of gas grenade.`
