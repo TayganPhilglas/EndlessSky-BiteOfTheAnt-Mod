@@ -251,6 +251,7 @@ mission "Missive from Harmony 2"
 	on complete
 		conversation
 			`[PC speaks with Owen Diedrich, and things are discussed like what Diedrich hopes to gain from PC exploring the Chordi system]`
+			outfit "Power Armor" 1
 
 
 mission "Archon gets hostile"
@@ -606,15 +607,19 @@ mission "Land at Ussria"
 			`"[Steve's response]"`
 			choice
 				`	(Don't worry about it, it's not like Earth had a toxic atmosphere in the Devonian Period or anything, right?)`
-					goto noevasuit
+					goto nosuit
 				`	(Don't risk it, wear an EVA suit and oxygen tank.)`
-					goto yesevasuit
+					goto evasuit
+				`	(Definitely don't take any risks, wear that Power Armor that Diedrich loaned you.)`
+					goto powersuit
 			`You leave the ship.`
-			label noevasuit
+			label nosuit
 				#less bad reaction
 				set "pc contracts ussrian pox"
-			label yesevasuit
+			label evasuit
 				#more bad reaction
+			label powersuit
+				#even more bad reaction
 			#`[stuff about meeting the Antfolk]`
 			`"My name is <first>, Captain <name>," you say to introduce yourself.`
 			`"We are [Scent of Blood], all Warrior Caste. We and you have met now, <first> Captain <name>," said the band of giant ants, in unison. They continued with "With what [purpose/desire] have you come to our star system?"`
