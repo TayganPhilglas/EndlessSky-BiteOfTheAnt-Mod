@@ -183,6 +183,7 @@ outfit "Larval Flamethrower"
 	"weapon capacity" -9
 	"gun ports" -1
 	"biotech capacity" -4 #this one is arguable
+	"fuel capacity" 50
 	weapon
 		sprite "effect/explosion/small"
 			"frame rate" 60
