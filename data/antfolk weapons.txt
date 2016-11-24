@@ -198,30 +198,3 @@ outfit "Larval Flamethrower"
 		"firing fuel" .25
 		"firing heat" 2
 	description "For their fighters to use, the Antfolk have attached a small fuel pod to the original Flamethrower design."
-
-outfit "Flame Turret"
-#	licenses
-#		Antfolk Military
-	category "Turrets"
-	cost 0
-	thumbnail "outfit/flamethrower"
-	"mass" 12
-	"outfit space" -12 #debatable I suppose
-	"weapon capacity" -12 #by extension, also debatable
-	"turret mounts" -1
-	"biotech capacity" -12 #subject to change on basis that this outfit isn't fully biological in design
-	weapon
-		sprite "effect/explosion/small"
-			"frame rate" 60
-			"no repeat"
-		sound "flamethrower"
-		icon "icon/flamethrower"
-		"submunition" "Flamethrower Projectile"
-		"inaccuracy" 12
-		"velocity" 9
-		"lifetime" 5
-		"reload" 1
-		"firing energy" .1
-		"firing fuel" .25
-		"firing heat" 2
-	description "The Antfolk have taken the reverse-engineered human Flamethrower weapon and mounted it on the same sort of biologial turret that the used for the Thorn Turret."
