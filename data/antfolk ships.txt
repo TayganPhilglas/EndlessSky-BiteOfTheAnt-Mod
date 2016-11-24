@@ -11,7 +11,7 @@
 ship "Battle Larva"
 	sprite "ship/surveillance drone"
 #	licenses
-#		Antfolk Military
+#		Antfolk
 	attributes
 		category "Fighter"
 		"cost" 30000
