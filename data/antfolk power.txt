@@ -18,7 +18,7 @@ outfit "Adipose Storage"
 	"mass" 18
 	"outfit space" -18
 	"energy capacity" 1440
-	"biotech capacity" -18
+	"biomass capacity" -18
 	description "Antfolk battery. Best in terms of energy capacity efficiency between Antfolk batteries."
 #80 e/m
 
@@ -32,7 +32,7 @@ outfit "Visceral Storage"
 	"outfit space" -56
 	"energy capacity" 2520
 	"hull" 250
-	"biotech capacity" -56
+	"biomass capacity" -56
 	description "Antfolk battery. Also increases hull strength."
 #60 e/m
 
@@ -47,7 +47,7 @@ outfit "Musculus Storage"
 	"energy capacity" 1980
 	"energy generation" 1.375
 	"heat generation" 3.3
-	"biotech capacity" -33
+	"biomass capacity" -33
 	description "Antfolk battery. Also produces small amounts of energy."
 #45 e/m
 
@@ -65,7 +65,7 @@ outfit "Biochemical Container"
 	"hull repair rate" 0.075
 	"hull energy" 0.15
 	"hull heat" 0.6
-	"biotech capacity" -14
+	"biomass capacity" -14
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Biochemical Tank"
@@ -81,7 +81,7 @@ outfit "Biochemical Tank"
 	"hull repair rate" 0.15
 	"hull energy" 0.3
 	"hull heat" 1.2
-	"biotech capacity" -26
+	"biomass capacity" -26
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Biochemical Vat"
@@ -97,7 +97,7 @@ outfit "Biochemical Vat"
 	"hull repair rate" 0.4
 	"hull energy" 0.8
 	"hull heat" 3.2
-	"biotech capacity" -51
+	"biomass capacity" -51
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Photosynthetic Cell"
@@ -110,7 +110,7 @@ outfit "Photosynthetic Cell"
 	"outfit space" -12
 	"solar collection" 1
 	"energy capacity" 150
-	"biotech capacity" -12
+	"biomass capacity" -12
 	description "Antfolk energy generation. Dependent on distance from system center. Also holds energy."
 
 outfit "Photosynthetic Array"
@@ -123,5 +123,5 @@ outfit "Photosynthetic Array"
 	"outfit space" -22
 	"solar collection" 2.5
 	"energy capacity" 225
-	"biotech capacity" -22
+	"biomass capacity" -22
 	description "Antfolk energy generation. Dependent on distance from system center. Also holds energy."

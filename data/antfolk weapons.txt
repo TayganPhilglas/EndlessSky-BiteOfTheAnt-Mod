@@ -18,7 +18,7 @@ outfit "Thorn Gun"
 	"outfit space" -10
 	"weapon capacity" -10
 	"gun ports" -1
-	"biotech capacity" -10
+	"biomass capacity" -10
 	weapon
 		sprite "projectile/repeater"
 		sound "repeater"
@@ -44,7 +44,7 @@ outfit "Thorn Turret"
 	"outfit space" -22
 	"weapon capacity" -22
 	"turret mounts" -1
-	"biotech capacity" -22
+	"biomass capacity" -22
 	weapon
 		sprite "projectile/repeater"
 		sound "repeater"
@@ -69,7 +69,7 @@ outfit "Antfolk Coolant Missile Launcher"
 	"outfit space" -15
 	"weapon capacity" -15
 	"gun ports" -1
-	"biotech capacity" -15
+	"biomass capacity" -15
 	"launcher capacity" -1
 	weapon
 		sprite "projectile/meteor"
@@ -108,7 +108,7 @@ outfit "Proto-Beam"
 	"outfit space" -1
 	"weapon capacity" -1
 	"gun ports" -1
-#	"biotech capacity" -1
+#	"biomass capacity" -1
 	weapon
 		sprite "projectile/laser"
 			"frame rate" 1
@@ -134,7 +134,7 @@ outfit "Proto-Beam Turret"
 	"outfit space" -1
 	"weapon capacity" -1
 	"turret mounts" -1
-#	"biotech capacity" -1
+#	"biomass capacity" -1
 	"required crew" 1
 	weapon
 		sprite "projectile/2x laser"
@@ -161,7 +161,7 @@ outfit "Antfolk Anti-Missile" #just about everything for this outfit except the 
 	"outfit space" -1
 	"weapon capacity" -1
 	"turret mounts" -1
-#	"biotech capacity" -1
+#	"biomass capacity" -1
 	weapon
 		"hit effect" "small anti-missile"
 		"velocity" 150
@@ -182,7 +182,7 @@ outfit "Larval Flamethrower"
 	"outfit space" -13
 	"weapon capacity" -9
 	"gun ports" -1
-	"biotech capacity" -4 #this one is arguable
+	"biomass capacity" -4 #this one is arguable
 	"fuel capacity" 50
 	weapon
 		sprite "effect/explosion/small"

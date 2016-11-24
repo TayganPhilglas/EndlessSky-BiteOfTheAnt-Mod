@@ -25,7 +25,7 @@ ship "Battle Larva"
 		"weapon capacity" 15
 		"engine capacity" 24
 		
-		"biotech capacity" 75
+		"biomass capacity" 75
 		"hull repair rate" 1
 		"hull energy" 0.06
 		weapon
@@ -67,7 +67,7 @@ ship "Slave Maker"
 		"weapon capacity" 66
 		"engine capacity" 100
 
-		"biotech capacity" 350
+		"biomass capacity" 350
 		"hull repair rate" 1
 		"hull energy" 0.06
 		weapon
@@ -117,7 +117,7 @@ ship "Honey Pot"
 		"weapon capacity" 52
 		"engine capacity" 65
 
-		"biotech capacity" 220
+		"biomass capacity" 220
 		"hull repair rate" 1
 		"hull energy" 0.06
 		weapon
@@ -167,7 +167,7 @@ ship "Leaf Cutter"
 		"weapon capacity" 104
 		"engine capacity" 98
 
-		"biotech capacity" 375
+		"biomass capacity" 375
 		"hull repair rate" 1
 		"hull energy" 0.06
 		weapon
@@ -217,7 +217,7 @@ ship "Fire Frigate"
 		"weapon capacity" 84
 		"engine capacity" 80
 		
-		"biotech capacity" 240
+		"biomass capacity" 240
 		"hull repair rate" 1
 		"hull energy" 0.06
 		weapon
@@ -266,7 +266,7 @@ ship "Army Cruiser"
 		"weapon capacity" 130
 		"engine capacity" 110
 
-		"biotech capacity" 350
+		"biomass capacity" 350
 		"hull repair rate" 1
 		"hull energy" 0.06
 		weapon
@@ -321,7 +321,7 @@ ship "Queen Carrier"
 		"weapon capacity" 130
 		"engine capacity" 180
 
-		"biotech capacity" 700
+		"biomass capacity" 700
 		"hull repair rate" 1
 		"hull energy" 0.06
 		weapon
@@ -394,7 +394,7 @@ ship "Bullet Battleship"
 		"weapon capacity" 190
 		"engine capacity" 140
 
-		"biotech capacity" 550
+		"biomass capacity" 550
 		"hull repair rate" 2
 		"hull energy" 0.24
 		weapon

@@ -20,7 +20,7 @@ outfit "Antfolk Shield Matrix Generator (Weakest)" #name needs changing
 	"shield generation" .2
 	"shield energy" .2
 	"shields"
-	"biotech capacity" -15
+	"biomass capacity" -15
 	description ""
 
 
@@ -34,7 +34,7 @@ outfit "Eccrine Ship Glands"
 	"outfit space" -12
 	"cooling" 7
 	"launcher capacity" 1
-	"biotech capacity" -12
+	"biomass capacity" -12
 	description "Antfolk cooling. Also allows use of 1 missile launcher."
 
 outfit "Apocrine Ship Glands"
@@ -47,7 +47,7 @@ outfit "Apocrine Ship Glands"
 	"outfit space" -19
 	"cooling" 19
 	"launcher capacity" 2
-	"biotech capacity" -19
+	"biomass capacity" -19
 	description "Antfolk cooling. Also allows use of 2 missile launchers."
 
 
@@ -60,7 +60,7 @@ outfit "Fuel Vacuole"
 	"mass" 12
 	"outfit space" -12
 	"fuel capacity" 200
-	"biotech capacity" -12
+	"biomass capacity" -12
 	description "Antfolk fuel hold. Better than human in fuel/mass."
 
 
