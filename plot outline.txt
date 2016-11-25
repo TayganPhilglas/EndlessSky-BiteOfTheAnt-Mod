@@ -65,16 +65,13 @@ When the “Palace of the Giants” is completed, the next time PC visits the An
 [The Player gives the Antfolk energy shielding technology]
 	[This needs to be somehow way more complicated to do than it really should be.]
 [Transition Section]
-The Korath War
+The Antfolk-Korath War
 	A Korath Raider ship is uncovered from under the sands of Miasma Eopto.
 		The Korath Raider sends a distress signal to the Korath Exiles.
 	[Transition Scene]
 	Korath Raiders attack Antfolk space.
 	[Transition Scene]
 	The Antfolk Union asks PC to rescue certain key scientists and engineers on Antfolk colonies and bring them to the Antfolk homeworld of Ussria so they can begin building new ships of war while the PC defends the Chordi home star system and its neighbors.
-	[Transition Section]
-	#[may need removal] If the player hasn’t been reporting in to the Pug enough times prior to the Korath War…
-		The Player is forced to deliver 1000 tons of Pugging Supplies to the Wanderer Branch while dealing with pirates en route, and then has to deal with hellucination ships on the way back to the Antfolk Branch.
 	[Transition Section]
 	The Pug let the Player ask the Quarg for help as Pug proxies, and provide proof that the Player IS working for the Pug.
 [Quarg Stuff]
