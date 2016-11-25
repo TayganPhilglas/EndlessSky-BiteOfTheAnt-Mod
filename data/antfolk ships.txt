@@ -340,7 +340,7 @@ ship "Queen Carrier"
 		"Apocrine Ship Glands"
 
 		"Widowmaker's Breath Thruster"
-		"Widowmaker's Breath Thruster"
+		"Widowmaker's Breath Steering"
 
 	gun 0 0
 	gun 0 0
