@@ -253,3 +253,15 @@ event "orbital terraforming management station 1: built"
 		description `"OTMS" apparently stands for "Orbital Terraforming Management Station", and is an ingenius solution to Aicmaer's weather problems. By building as large a space station as they could, the Antfolk have basicly managed to build an artificial moon for Aicmaer that noticably tempers the planet's weather just by being there.`
 		description `And yet the Antfolk did not invest so many resources into such a large space station just for it to sit there and be only marginally cheaper than a normal Glory terraforming machine. OTMS 1 also serves as a deuterium refinery using the local stars' solar winds, and teams of Antfolk scientists on the station run numerous tests and monitoring functions on the planet below to calculate when and how to adjust the planet's environment next.`
 		spaceport `[spaceport description here]`
+
+event "Antfolk gain Energy Shielding tech"
+#	outfitter "Antfolk Civilian"
+#	outfitter "Antfolk Military"
+
+event "Antfolk mass producing Flamethrowers"
+	outfitter "Antfolk Military"
+		"Flamethrower"
+
+event "Antfolk mass producing Larval Flamethrowers"
+	outfitter "Antfolk Military"
+		"Larval Flamethrower"
