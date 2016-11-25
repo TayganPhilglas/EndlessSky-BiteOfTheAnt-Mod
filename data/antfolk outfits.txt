@@ -9,17 +9,32 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 
-outfit "Antfolk Shield Matrix Generator (Weakest)" #name needs changing
+#These two shield generators are a temporary solution to a multitude of balancing questions I can't quite answer yet compounded onto each other
+outfit "Antfolk Civilian Shield Matrix Generator" #name could use some changing
 #	licenses
 #		Antfolk
 	category "Systems"
-	cost 20000
+	cost 25000
 	thumbnail "outfit/tiny shield"
 	"mass" 15
 	"outfit space" -15
-	"shield generation" .2
-	"shield energy" .2
-	"shields"
+	"shield generation" .17
+	"shield energy" .17
+	"shields" 600
+	"biomass capacity" -15
+	description ""
+
+outfit "Antfolk Military Shield Matrix Generator" #name could also stand to be changed
+#	licenses
+#		Antfolk Military
+	category "Systems"
+	cost 50000
+	thumbnail "outfit/tiny shield"
+	"mass" 15
+	"outfit space" -15
+	"shield generation" .17
+	"shield energy" .17
+	"shields" 1200
 	"biomass capacity" -15
 	description ""
 
