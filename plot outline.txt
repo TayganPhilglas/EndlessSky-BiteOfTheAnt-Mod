@@ -33,7 +33,7 @@ The Player has to convince a now-arrogant and attention hog-ish Amy Su to help w
 		Possible Conversation Snip-it
 			Context: The Player is publicly embarrassing Amy Su to smash her oversized ego.
 			<name>: Kid, you're nothing more than a college dropout who just so happened to have the spine to say 'throwing asteroids at planets changes their climates'. That's all.
-			Amy: Oh yeah, and what are you without your [ship/fleet]?
+			Amy: Oh yeah, and what are you without your ship?
 			<name>: Billionaire War Hero Alpha Slayer.
 		While the Player waits for Amy to chill and get a cool head again, the Antfolk are continuing to expand [and are getting impatient that the Player hasn’t brought back the secret to Terraforming.] [<--- well, they might not be. I mean, they had to wait a while for the Hyperdrive models.]
 		set patronizing
