@@ -47,11 +47,11 @@ Amy considers changing her mind about helping because of the Pug War, but reluct
 The Player + Amy Su land on Ussria. Amy introduces herself to the Antfolk ambassador they send.
 The Player escorts Amy in collecting data on what the ideal environment is for the Antfolk.
 	Side Note: Planet Ussria is extremely similar to how Earth was in the Devonian Period.
-The Player leaves Ussria with Amy, escorting an Antfolk bioship to the planet <planet 1>, still in the Chordi System.
-Terraforming <planet 1>
+The Player leaves Ussria with Amy, escorting an Antfolk bioship to the planet Miasma Eopto, still in the Chordi System.
+Terraforming Miasma Eopto
 	has patronizing
 	Amy does an atmospheric analysis and geological survey of Planet <planet 1> with the Player's ship’s sensors.
-	[Amy terraforms Planet <planet 1>]
+	[Amy terraforms Planet Miasma Eopto]
 The Player and Amy realize that she shouldn't just do all the Antfolk’s terraforming for them forever. She needs to take on Antfolk apprentices, which means living on an Antfolk world, most likely Ussria, which means the Antfolk need to know how to design living spaces designed for humans.
 The Antfolk eagerly agree to the idea and ask the Player to fetch them designs for a human luxury apartment complex.
 The Player returns to human space. Upon searching the internet, the Player finds out that all non-government construction blueprints are considered company secrets by the companies owning their respective building designs.
@@ -78,14 +78,15 @@ The Korath War
 	[Transition Section]
 	The Pug let the Player ask the Quarg for help as Pug proxies, and provide proof that the Player IS working for the Pug.
 [Quarg Stuff]
-	If the Player has too low a relationship with the Quarg: upon contacting the Quarg, they proceed to send a large attack fleet to destroy the Player once and for all.
-		If the Player destroys the Quarg fleet without dying: set [something quarg-related]
-	The Quarg agree to help with the Antfolk issue, but if the Player starts attacking Quarg ships again, they'll make visiting Antfolk space very inconvenient for the Player.
-		Timer starts for a Quarg Lagrange Station to be built in Antfolk space. [No idea how long that will take.]
-	If the Player sided with the Free Worlds during the main plot:
-		The rest of the Free Worlds Council is furious that the Player had been stealing Quarg tech.
-		The Free Worlds Senate sets a date for a vote on whether or not to punish the Player for their crimes.
-		The Player starts a PR campaign in the Free Worlds to influence the vote.
+	If the Player has too low a relationship with the Quarg:
+		Upon contacting the Quarg, they proceed to send a large attack fleet to destroy the Player once and for all.
+			If the Player destroys the Quarg fleet without dying: set [something quarg-related]
+		The Quarg agree to help with the Antfolk issue, but if the Player starts attacking Quarg ships again, they'll make visiting Antfolk space very inconvenient for the Player.
+			Timer starts for a Quarg Lagrange Station to be built in Antfolk space. [No idea how long that will take.]
+		If the Player sided with the Free Worlds during the main plot:
+			The rest of the Free Worlds Council is furious that the Player had been stealing Quarg tech.
+			The Free Worlds Senate sets a date for a vote on whether or not to punish the Player for their crimes.
+			The Player starts a PR campaign in the Free Worlds to influence the vote.
 Epilogue
 	The Player brings Amy Su back to Winter.
 	While there, the Player [gives a copy of their digital journal of the Antfolk and the lessons the Player has learned] [or] [teaches about the lessons they've learned from the Antfolk and the Pug] to Ijs.
