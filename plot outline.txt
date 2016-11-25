@@ -61,9 +61,6 @@ The Player [does a Bounty Mission], and buys a data chip with a copy of the blue
 The Player and Amy return to Antfolk space. On Planet Ussria, the Player delivers a copy of the blueprints to the Antfolk, who proceed to begin preparations for building the structure to the best of their ability immediately.
 	Timer for when the Antfolk complete their “Palace of the Giants” human guest facility. [What should this timer’s countdown be?]
 When the “Palace of the Giants” is completed, the next time PC visits the Antfolk give PC an Antfolk Military License “in case the need arises”.
-Optional: Visit the Pug
-	The Player reports to the Pug about the Terraforming stuff and the Pug give advice about the [something goes here; maybe “energy shielding”] stuff.
-	Pug Visit +1
 [Transition Section]
 [The Player gives the Antfolk energy shielding technology]
 	[This needs to be somehow way more complicated to do than it really should be.]
