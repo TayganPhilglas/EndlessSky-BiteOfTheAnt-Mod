@@ -43,17 +43,17 @@ The Player has to convince a now-arrogant and attention hog-ish Amy Su to help w
 		set manipulative
 The Player brings Amy to Antfolk space, but stops by the Pug world nearby to ask for a second Pug Translation Machine.
 has patronizing
-Amy considers changing her mind about helping because of the Pug War, but reluctantly accepts the translator and agrees to continue to Planet Ussria.
+	Amy considers changing her mind about helping because of the Pug War, but reluctantly accepts the translator and agrees to continue to Planet Ussria.
 The Player + Amy Su land on Ussria. Amy introduces herself to the Antfolk ambassador they send.
 The Player escorts Amy in collecting data on what the ideal environment is for the Antfolk.
 	Side Note: Planet Ussria is extremely similar to how Earth was in the Devonian Period.
-The Player leaves Ussria with Amy, escorting an Antfolk bioship to the planet Miasma Eopto, still in the Chordi System.
+The Player leaves Ussria with Amy, [escorting an Antfolk bioship][<-- what was the point of this, again?] to the planet Miasma Eopto, still in the Chordi System.
 Terraforming Miasma Eopto
 	has patronizing
 	Amy does an atmospheric analysis and geological survey of Planet Miasma Eopto with the Player's ship’s sensors.
 	[Amy terraforms Planet Miasma Eopto]
 The Player and Amy realize that she shouldn't just do all the Antfolk’s terraforming for them forever. She needs to take on Antfolk apprentices, which means living on an Antfolk world, most likely Ussria, which means the Antfolk need to know how to design living spaces designed for humans.
-The Antfolk eagerly agree to the idea and ask the Player to fetch them designs for a human luxury apartment complex.
+The Antfolk [eagerly/tentatively] agree to the idea and ask the Player to fetch them designs for a human luxury apartment complex.
 The Player returns to human space. Upon searching the internet, the Player finds out that all non-government construction blueprints are considered company secrets by the companies owning their respective building designs.
 The Player goes to <planet>, home of the <company> Construction Firm headquarters, to try to strike up a deal of some kind.
 	The representative of <company> Construction Firm says that the Player can buy a copy of the blueprints as well as the rights to build what they depict IF the Player [does a Bounty Mission].
