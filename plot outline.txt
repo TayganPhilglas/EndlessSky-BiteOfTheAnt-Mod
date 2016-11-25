@@ -50,7 +50,7 @@ The Player escorts Amy in collecting data on what the ideal environment is for t
 The Player leaves Ussria with Amy, escorting an Antfolk bioship to the planet Miasma Eopto, still in the Chordi System.
 Terraforming Miasma Eopto
 	has patronizing
-	Amy does an atmospheric analysis and geological survey of Planet <planet 1> with the Player's ship’s sensors.
+	Amy does an atmospheric analysis and geological survey of Planet Miasma Eopto with the Player's ship’s sensors.
 	[Amy terraforms Planet Miasma Eopto]
 The Player and Amy realize that she shouldn't just do all the Antfolk’s terraforming for them forever. She needs to take on Antfolk apprentices, which means living on an Antfolk world, most likely Ussria, which means the Antfolk need to know how to design living spaces designed for humans.
 The Antfolk eagerly agree to the idea and ask the Player to fetch them designs for a human luxury apartment complex.
