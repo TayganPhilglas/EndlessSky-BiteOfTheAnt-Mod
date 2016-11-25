@@ -287,7 +287,6 @@ mission "Land at Atilt San Pug 1"
 		has "Missive from Harmony 3: completed"
 		has "Drak guarding Chordi: active"
 	on enter "Pug Formici"
-		set "reputation: Pug" 1
 		dialog `Upon entering the system, a Pug ship jumps in as well. It hails you, asking you to land on the only inhabited planet.`
 	on complete
 		conversation
