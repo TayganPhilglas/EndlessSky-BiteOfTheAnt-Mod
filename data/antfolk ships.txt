@@ -400,7 +400,8 @@ ship "Bullet Battleship"
 	outfits
 		"Antfolk Coolant Missile" 2
 		"Thorn Gun" 2
-		"Thorn Turret" 6
+		"Thorn Turret" 4
+		"Antfolk Anti-Missile" 2
 
 		"Biochemical Vat" 2
 		"Adipose Storage"
