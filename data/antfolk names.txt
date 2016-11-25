@@ -8,7 +8,26 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+phrase "sensory adjectives"
+	word
+		"Scent of"
+		"Smells Like"
+		"Image of"
+		"Looks Like"
+		"Touch of"
+		"Feels Like"
+		"Taste of"
+		"Tastes Like"
+		"Sound of"
+		"Sounds Like"
+
 phrase "antfolk civilian"
+	phrase
+		"sensory adjectives"
+	word
+		" "
+	phrase
+		"colors"
 
 phrase "antfolk military"
 	word
