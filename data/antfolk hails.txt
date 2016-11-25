@@ -7,3 +7,15 @@
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+phrase "friendly antfolk civilian"
+
+phrase "friendly antfolk military"
+
+phrase "hostile antfolk disabled"
+
+phrase "hostile antfolk civilian"
+
+phrase "hostile antfolk military"
+
+phrase "hostile antfolk pirate"
