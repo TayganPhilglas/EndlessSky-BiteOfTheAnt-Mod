@@ -373,7 +373,7 @@ mission "Land at Atilt San Pug 2a"
 			`"So, I'm ready to go?"`
 			`The Pug made a sound vaguely reminiscent of laughing. "How do you expect to speak with the Chordi life forms?"`
 			`"Right. You haven't given me that translation machine yet," you say.`
-			`"That's not all that needs doing. The Antfolk speak a language best translated in your tongue as 'Assimilated Pheromonal, Anatonmical, and Sonic Language,' or 'APASL.' It is a very insectoid mix of vocalized clicks, body language, and pheromone communication. To translate it into an entirely vocal language like your own, and back, you will require much more than what the Hai use. We also need to modify your ship to be able to receive this broadcasting frequencies."`
+			`"That's not all that needs doing. The Antfolk speak a language best translated in your tongue as 'Assimilated Pheromonal, Anatonmical, and Sonic Language,' or 'APASL.' It is a very insectoid mix of vocalized clicks, body language, and pheromone communication. To translate it into an entirely vocal language like your own, and back, you will require much more than what the Hai use. We also need to modify your ship to be able to receive their broadcasting frequencies."`
 			`"How long will that take?" you ask.`
 			`"Long enough for us to teach you how to do it yourself for any other ships you feel like using, and how to undo the changes for any ship you wish to sell," said the Pug.`
 			`"That long? Well, let's get started," you say.`
@@ -457,7 +457,7 @@ mission "Land at Atilt San Pug 2b"
 			`"Wait, I'm not ready to go, yet?"`
 			`The Pug made a sound vaguely reminiscent of laughing. "How do you expect to speak with the Chordi life forms?"`
 			`"Right. You haven't given me that translation machine yet," you say.`
-			`"That's not all that needs doing. The Antfolk speak a language best translated in your tongue as 'Assimilated Pheromonal, Anatonmical, and Sonic Language,' or 'APASL.' It is a very insectoid mix of vocalized clicks, body language, and pheromone communication. To translate it into an entirely vocal language like your own, and back, you will require much more than what the Hai use. We also need to modify your ship to be able to receive this broadcasting frequencies."`
+			`"That's not all that needs doing. The Antfolk speak a language best translated in your tongue as 'Assimilated Pheromonal, Anatonmical, and Sonic Language,' or 'APASL.' It is a very insectoid mix of vocalized clicks, body language, and pheromone communication. To translate it into an entirely vocal language like your own, and back, you will require much more than what the Hai use. We also need to modify your ship to be able to receive their broadcasting frequencies."`
 			`"How long will that take?" you ask.`
 			`"It's already done, but we still should teach you how to do it yourself for any other ships you feel like using, and how to undo the changes for any ship you wish to sell," said the Pug.`
 			`"Well, what are we waiting for? Let's get started," you say.`
