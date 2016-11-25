@@ -10,9 +10,11 @@
 
 phrase "antfolk civilian"
 
-phrase "antfolk union"
+phrase "antfolk military"
 	word
 		"Her Royal Majesty's "
 	word
 		"Grace"
 		"Warrior"
+
+phrase "antfolk pirate"
