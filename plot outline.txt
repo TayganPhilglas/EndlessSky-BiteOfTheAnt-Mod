@@ -11,7 +11,7 @@ If the Player lacks a Cloaking Device, the Pug give them one. Also, the Pug give
 The player, with only their one ship in cloak, go to Planet Ussria, the Antfolk homeworld.
 Player gives the Antfolk the knowledge of hyperspace links to earn a small amount of their trust.
 The Antfolk ask for the knowledge of how to make Hyperdrives.
-The Player goes to Tarazed Corporation and does missions for the President of said company to get Hyperdrive Educational Models one at a time and deliver them to Ussria one at a time under the cover of cloaking.
+The Player goes to Tarazed Corporation and gets Hyperdrive Educational Models one at a time and delivers them to Ussria one at a time under the cover of cloaking.
 	This will work on a counter kind of like the Unfettered Jump Drive missions.
 		It will be 3.
 [Transition Section]
