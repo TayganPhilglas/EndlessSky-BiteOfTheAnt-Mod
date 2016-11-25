@@ -396,7 +396,7 @@ ship "Bullet Battleship"
 
 		"biomass capacity" 550
 		"hull repair rate" 2
-		"hull energy" 0.24
+		"hull energy" 0.24 #this is 4x the energy cost of other ships, for only twice the repair rate; may need to rebalance this
 		weapon
 			"blast radius" 160
 			"shield damage" 1600
