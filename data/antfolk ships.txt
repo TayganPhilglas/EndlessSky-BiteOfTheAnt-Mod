@@ -330,8 +330,7 @@ ship "Queen Carrier"
 			"hull damage" 800
 			"hit force" 2400
 	outfits
-		"Thorn Gun" 2
-		"Thorn Turret" 5
+		"Antfolk Anti-Missile" 3
 
 		"Biochemical Vat" 3
 		"Adipose Storage" 2
@@ -342,10 +341,6 @@ ship "Queen Carrier"
 		"Widowmaker's Breath Thruster"
 		"Widowmaker's Breath Steering"
 
-	gun 0 0
-	gun 0 0
-	turret 0 0
-	turret 0 0
 	turret 0 0
 	turret 0 0
 	turret 0 0
