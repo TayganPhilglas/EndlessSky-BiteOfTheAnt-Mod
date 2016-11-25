@@ -529,6 +529,9 @@ planet "Ad Elans"
 
 planet "Atilt San Pug"
 	landscape land/space6
+	"required reputation" 2
+	bribe 0
+	security 1
 
 planet "Miasma Eopto"
 	attributes antfolk
