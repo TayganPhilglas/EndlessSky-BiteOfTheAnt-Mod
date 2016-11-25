@@ -485,25 +485,30 @@ system Vorloo
 		sprite star/m4
 		period 10
 	object
-		sprite planet/desert0
-		distance 286.25
-		period 126.835
+		sprite planet/ice6
+		distance 244
+		period 99.8173
+		offset 299.726
 		object
 			sprite planet/europa
 			distance 145
 			period 21.949
+			offset 359.99
 	object
 		sprite planet/luna
-		distance 603.54
-		period 388.312
+		distance 561.29
+		period 348.259
+		offset 252.384
 	object
 		sprite planet/dust6
-		distance 798.95
-		period 591.426
+		distance 756.7
+		period 545.138
+		offset 307.835
 	object
 		sprite planet/gas3
-		distance 1684.79
-		period 1811.09
+		distance 1642.54
+		period 1743.39
+		offset 352.21
 		object
 			sprite planet/dust1
 			distance 290
@@ -524,9 +529,6 @@ planet "Ad Elans"
 
 planet "Atilt San Pug"
 	landscape land/space6
-	"required reputation" 2
-	bribe 0
-	security 1
 
 planet "Miasma Eopto"
 	attributes antfolk
