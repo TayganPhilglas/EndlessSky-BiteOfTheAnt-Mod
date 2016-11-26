@@ -89,6 +89,7 @@ Ending
 	[PC agrees in some way, shape, or form, be it implicity or explicitly] [<-- Not sure if to give PC a chance to say "no" or not. Probably should, but not sure if doing so locks PC from secret ending]
 Epilogue
 	The Player brings Amy Su back to Winter.
+#everything after this, if disapproved of by MZ, will be removed to be put in some supplementary mod that would be seperate from, but dependant on, "Bite of the Ant". A "Bite of the Ant: Supplement" mod or something.
 	Secret Ending (Optional)
 		When the Player next lands on Harmony, they are given a choice to speak with Brother Greg about the Pug and the Antfolk. While there, PC shows Brother Greg a copy of all of PC's Captain's Log entries from starting the mission "Missive from Harmony 1" to completing the main plotline of the mod, combined with all of the <ship>'s relevant sensor logs.
 			Note: PC should get a choice to say why PC is doing this, but it likely won't end up affecting the epilogue's plot much.
