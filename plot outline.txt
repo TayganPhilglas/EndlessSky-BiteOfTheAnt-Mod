@@ -7,7 +7,6 @@ The Player goes to the Chordi System (available to humans via Jump Drive) to fin
 The Player goes to the nearby Pug system, and lands on the local Pug planet.
 	[Note: Will need some kind of draw to get PC to go to the local Pug system]
 If the Player lacks a Cloaking Device, the Pug give them one. Also, the Pug give the Player a translation machine to speak with the Antfolk in the Chordi System.
-	The Pug ask the Player to report back after each incident to explain what they learned and to receive any warranted advice on future issues. “But only if you want to.”
 The player, with only their one ship in cloak, go to Planet Ussria, the Antfolk homeworld.
 Player gives the Antfolk the knowledge of hyperspace links to earn a small amount of their trust.
 The Antfolk ask for the knowledge of how to make Hyperdrives.
