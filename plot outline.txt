@@ -89,11 +89,11 @@ Ending
 	[PC agrees in some way, shape, or form, be it implicity or explicitly] [<-- Not sure if to give PC a chance to say "no" or not. Probably should, but not sure if doing so locks PC from secret ending]
 Epilogue
 	The Player brings Amy Su back to Winter.
-Secret Ending (Optional)
-	When the Player next lands on Harmony, they are given a choice to speak with Brother Greg about the Pug and the Antfolk. While there, PC shows Brother Greg a copy of all of PC's Captain's Log entries from starting the mission "Missive from Harmony 1" to completing the main plotline of the mod, combined with all of the <ship>'s relevant sensor logs.
-		Note: PC should get a choice to say why PC is doing this, but it likely won't end up affecting the epilogue's plot much.
-	After PC leaves and without PC's knowledge, one of the other monks from Brother Greg's monestary ghostwrites the PC's Captain's Logs and ship sensor data into a sort of "Race Shepharding 101" book, but with heavy religious tones, called "The Book of <first>".
-		This will be represented by an event with a delay of 730 days (two in-game years) until the book is completed.
-	Once the Book of <first> is published, there will be a series of events connected to random semi-mutually exclusive missions of increasing probability for PC to get in which PC gets recognized by some follower.
-		Upon the occurance of the last "growing follower base" event, there will be a mission with 100% chance of occuring anywhere Human populations can be found, lore-wise (including Allhome in Hai space and Humanika in Quarg space), where upon landing, PC is beset with devout followers.
-	PC will have to make multiple choices about how to deal with their exponentially growing follower base. [what those choices will be has yet to be decided]
+	Secret Ending (Optional)
+		When the Player next lands on Harmony, they are given a choice to speak with Brother Greg about the Pug and the Antfolk. While there, PC shows Brother Greg a copy of all of PC's Captain's Log entries from starting the mission "Missive from Harmony 1" to completing the main plotline of the mod, combined with all of the <ship>'s relevant sensor logs.
+			Note: PC should get a choice to say why PC is doing this, but it likely won't end up affecting the epilogue's plot much.
+		After PC leaves and without PC's knowledge, one of the other monks from Brother Greg's monestary ghostwrites the PC's Captain's Logs and ship sensor data into a sort of "Race Shepharding 101" book, but with heavy religious tones, called "The Book of <first>".
+			This will be represented by an event with a delay of 730 days (two in-game years) until the book is completed.
+		Once the Book of <first> is published, there will be a series of events connected to random semi-mutually exclusive missions of increasing probability for PC to get in which PC gets recognized by some follower.
+			Upon the occurance of the last "growing follower base" event, there will be a mission with 100% chance of occuring anywhere Human populations can be found, lore-wise (including Allhome in Hai space and Humanika in Quarg space), where upon landing, PC is beset with devout followers.
+		PC will have to make multiple choices about how to deal with their exponentially growing follower base. [what those choices will be has yet to be decided]
