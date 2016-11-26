@@ -117,7 +117,7 @@ event "antfolk colonize voida"
 				distance 229
 				period 14.8056
 				offset 113.431
-			object Lovsai
+			object Voscal
 				sprite planet/dust4
 				distance 317
 				period 24.1136
@@ -132,7 +132,7 @@ event "antfolk colonize voida"
 		landscape #land/something
 		description `[planet description here]`
 		spaceport `[spaceport description here]`
-	planet Lovsai
+	planet Voscal
 		attributes antfolk
 		landscape #land/something
 		description `[planet description here]`
