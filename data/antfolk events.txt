@@ -107,36 +107,21 @@ event "antfolk colonize voida"
 			sprite planet/rock16
 			distance 546.25
 			period 104.838
-		object
-			sprite planet/gas17
-			distance 2321.25
-			period 918.366
-			offset 258.89
-			object Zcehc
-				sprite planet/io
-				distance 229
-				period 14.8056
-				offset 113.431
-			object Voscal
-				sprite planet/dust4
-				distance 317
-				period 24.1136
-				offset 242.517
+		object Aicmaer
+			sprite planet/forest6
+			distance 2368.12
+			period 946.321
+			offset 270.51
 		object
 			sprite planet/rhea
-			distance 3984.29
-			period 2065.19
-			offset 111.897
-	planet Zcehc
+			distance 4031.16
+			period 2101.74
+			offset 114.954
+	planet Aicmaer
 		attributes antfolk
 		landscape #land/something
-		description `[planet description here]`
-		spaceport `[spaceport description here]`
-	planet Voscal
-		attributes antfolk
-		landscape #land/something
-		description `[planet description here]`
-		spaceport `[spaceport description here]`
+		description `Aicmaer at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
+		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Aicmaer lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Aicmaer has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
 
 event "antfolk colonize alecto"
 	system Alecto
@@ -151,44 +136,44 @@ event "antfolk colonize alecto"
 			distance 89.6382
 			period 12.5609
 		object
-			sprite planet/ice6
+			sprite planet/lava3
 			distance 299.878
 			period 57.319
 		object
 			sprite planet/gas8
-			distance 656.128
-			period 185.509
+			distance 660.128
+			period 187.208
+			offset 17.7226
 			object
-				sprite planet/europa
-				distance 180
-				period 12.8554
-		object Aicmaer
-			sprite planet/fog0
-			distance 1300
-			period 517.367
-			offset 246.176
+				sprite planet/dust0
+				distance 198.904
+				period 14.9328
+				offset 319.61
 		object
-			sprite planet/gas0
-			distance 2683.89
-			period 1534.72
-			offset 343.663
-			object
-				sprite planet/rock14
-				distance 294
-				period 14.7733
-			object
-				sprite planet/tethys
-				distance 431
-				period 26.2224
-			object
-				sprite planet/lava0
-				distance 536
-				period 36.3667
-	planet Aicmaer
+			sprite planet/gas4
+			distance 1339.32
+			period 541.015
+			offset 276.981
+			object Zcehc
+				sprite planet/europa
+				distance 272.03
+				period 15.8243
+				offset 15.2957
+			object Voscal
+				sprite planet/io
+				distance 361.292
+				period 24.2206
+				offset 303.562
+	planet Zcehc
 		attributes antfolk
 		landscape #land/something
-		description `Aicmaer at first seemed like a perfectly habitable for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
-		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Aicmaer lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Aicmaer has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
+		description `[planet description here]`
+		spaceport `[spaceport description here]`
+	planet Voscal
+		attributes antfolk
+		landscape #land/something
+		description `[planet description here]`
+		spaceport `[spaceport description here]`
 
 event "antfolk dissidents colonize vorloo"
 	system Vorloo

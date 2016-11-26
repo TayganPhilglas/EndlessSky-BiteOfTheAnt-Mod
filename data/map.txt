@@ -40,39 +40,34 @@ system Alecto
 		distance 89.6382
 		period 12.5609
 	object
-		sprite planet/ice6
+		sprite planet/lava3
 		distance 299.878
 		period 57.319
 	object
 		sprite planet/gas8
-		distance 656.128
-		period 185.509
+		distance 660.128
+		period 187.208
+		offset 17.7226
+		object
+			sprite planet/dust0
+			distance 198.904
+			period 14.9328
+			offset 319.61
+	object
+		sprite planet/gas4
+		distance 1339.32
+		period 541.015
+		offset 276.981
 		object
 			sprite planet/europa
-			distance 180
-			period 12.8554
-	object
-		sprite planet/fog0
-		distance 1300
-		period 517.367
-		offset 246.176
-	object
-		sprite planet/gas0
-		distance 2683.89
-		period 1534.72
-		offset 343.663
+			distance 272.03
+			period 15.8243
+			offset 15.2957
 		object
-			sprite planet/rock14
-			distance 294
-			period 14.7733
-		object
-			sprite planet/tethys
-			distance 431
-			period 26.2224
-		object
-			sprite planet/lava0
-			distance 536
-			period 36.3667
+			sprite planet/io
+			distance 361.292
+			period 24.2206
+			offset 303.562
 
 system Annatar
 	pos 233.371 -3.08889
@@ -219,7 +214,7 @@ system Chordi
 		period 14.9369
 		offset 180
 	object Ussria
-		sprite planet/forest1
+		sprite planet/earth
 		distance 710.562
 		period 266.755
 		offset 353.093
@@ -440,25 +435,15 @@ system Voida
 		distance 546.25
 		period 104.838
 	object
-		sprite planet/gas17
-		distance 2345.57
-		period 932.835
-		offset 265.125
-		object
-			sprite planet/io
-			distance 229
-			period 14.8056
-			offset 113.431
-		object
-			sprite planet/dust4
-			distance 317
-			period 24.1136
-			offset 242.517
+		sprite planet/forest6
+		distance 2368.12
+		period 946.321
+		offset 270.51
 	object
 		sprite planet/rhea
-		distance 4008.61
-		period 2084.12
-		offset 113.497
+		distance 4031.16
+		period 2101.74
+		offset 114.954
 
 system Vorloo
 	pos 99.3708 -31.7863
