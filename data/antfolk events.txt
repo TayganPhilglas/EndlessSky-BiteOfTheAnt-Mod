@@ -222,6 +222,7 @@ event "antfolk dissidents colonize vorloo"
 		spaceport `The spaceport is basically just a landing pad on stilts (should the ice under the landing pad break - which it won't - the pad itself should still function) with a walkway into the largest planetbase on the planet.`
 
 mission "event: antfolk begin colonizing"
+	invisible
 	landing
 	to offer
 		has "event: antfolk gain hyperdrives"
@@ -231,6 +232,7 @@ mission "event: antfolk begin colonizing"
 		event "antfolk colonize alecto" 60 #also needs changing
 
 #mission "event: political dissidents kicked from ussria"
+	invisible
 	landing
 	to offer
 		has "event: antfolk gain hyperdrives"
@@ -313,3 +315,89 @@ event "Antfolk mass producing Flamethrowers"
 event "Antfolk mass producing Larval Flamethrowers"
 	outfitter "Antfolk Military"
 		"Larval Flamethrower"
+
+#everything after this, if disapproved of by MZ, will be removed to be put in some supplementary mod that would be seperate from, but dependant on, "Bite of the Ant". A "Bite of the Ant: Supplement" mod or something.
+
+event "Book of First being written"
+
+mission "Book of First writing progress 1"
+	invisible
+	landing
+	to offer
+		has "Book of First being written"
+	to complete
+		random <= 2
+	on fail
+		"Book of First progress" ++
+
+mission "Book of First writing progress 2"
+	invisible
+	landing
+	to offer
+		has "Book of First progress" 1
+	to complete
+		random <= 2
+	on fail
+		"Book of First progress" ++
+
+mission "Book of First writing progress 3"
+	invisible
+	landing
+	to offer
+		has "Book of First progress" 2
+	to complete
+		random <= 2
+	on fail
+		"Book of First progress" ++
+
+event "Book of First is published on Harmony"
+
+mission "Book of First is published on Harmony"
+	invisible
+	landing
+	to offer
+		has "Book of First writing progress 1"
+		or
+		has "Book of First writing progress 2"
+		or
+		has "Book of First writing progress 3"
+		or
+		has "Book of First progress" 3
+	on offer
+		"Book of First is published on Harmony"
+
+event "Player can be recognized 1"
+
+event "Player can be recognized 2"
+
+mission "Player develops a follower base"
+	invisible
+	landing
+	to offer
+		has "Book of First is published on Harmony"
+	on offer
+		event "Player can be recognized 1" 365
+
+mission "Player's follower base grows 1"
+	invisible
+	landing
+	to offer
+		has "event: Player can be recognized 1"
+	on offer
+		event "Player can be recognized 2" 365
+
+mission "Player's follower base grows [X1 (placeholder)]"
+	invisible
+	landing
+	to offer
+		has "event: Player can be recognized [X1 (placeholder)]"
+	on offer
+		event "Player can be recognized [X2 (placeholder)]" #arbitrary delay here
+
+mission "Player's follower base grows [X1 (placeholder)]"
+	invisible
+	landing
+	to offer
+		has "event: Player can be recognized [X2 (placeholder)]"
+	on offer
+		event "Player can be recognized [X3 (placeholder)]" #arbitrary delay here
