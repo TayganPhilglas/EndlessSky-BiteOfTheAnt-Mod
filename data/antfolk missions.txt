@@ -123,7 +123,7 @@ mission "Missive from Harmony 2"
 				`(Okay, now I'm out. No way I'm stupid enough for a trap this obvious.)`
 					decline.
 			label inside
-			`You walk inside, your gun at the ready (just in case). After going quite deep underground, you finally see a light. Getting closer, you find Brother Greg sitting on one of two logs, a campfire between them. Sitting next to Brother Greg is some scruffy teenaged girl who, by all visual cues, is most likely a pirate, or at the least, a recently reformed pirate. You can't really tell which, but you can tell that she has a poorly concealed firearm.`
+			`You walk inside, your gun at the ready (just in case). After going quite deep underground, you finally see a light. Getting closer, you find Brother Greg sitting on one of two logs, a campfire between them. Sitting next to Brother Greg is some scruffy teenaged girl who, by all visual cues, is most likely a pirate, or at the least, a recently reformed pirate. You can't really tell which, but you can tell that she has a fairly well-concealed firearm.`
 			`"Ah, <first>, you've finally arrived. Please take a seat," says Brother Greg.`
 			`You cautiously sit down, keeping your gun ready.`
 			`"I suppose you're wondering what's been going on," Brother Greg said.`
@@ -139,7 +139,7 @@ mission "Missive from Harmony 2"
 				got secrecy
 			label secrecy
 			`"Well, hm... Arianne, do you wish to explain it, or shall I?" Brother Greg asks the pirate girl.`
-			`"You only step in if the talkin' goes south. That was the deal," Arianne responds. She then turns to you and says "I's a pirate from Stormhold. One of the higher-ups, Owen Diedrich, sent me ta Harmony, givin' me jus' a Sparrow with a ramscoop ta get here, ta beg the monks here ta contact ya'."`
+			`"You only step in if the talkin' goes south. That was the deal," Arianne responds. She then turns to you and says "I's a pirate from Stormhold. One of the higher-ups, Owen Diedrich, sent me ta Harmony, givin' me jus' enough credits ta get here, ta beg the monks here ta contact ya'."`
 			branch reconcile
 				has "event: fw armistice"
 			choice
@@ -158,11 +158,11 @@ mission "Missive from Harmony 2"
 			branch reconcile2
 				has "event: fw armistice"
 			choice
-				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
+				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?"`
 					goto alphas
 				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
 					goto travel
-				`	"Actually, nevermind. Let's just get down to business," you say.`
+				`	"Actually, nevermind. Let's just get down to business,"`
 					goto secrecy2
 			label alphas
 				`	Arianne looks shocked at the question. "Diedrich hates Alphas! He'd never let them so much as set foot on Stormhold! Why d'ya think he left the Syndicate? He was appaled by the Oracle deal!"`
@@ -371,7 +371,7 @@ mission "Land at Atilt San Pug 2a"
 			label modifications
 			`"Good. Now, we've already installed the Cloaking Device on your ship while you and we have been talking."`
 			`"So, I'm ready to go?"`
-			`The Pug made a sound vaguely reminiscent of laughing. "How do you expect to speak with the Chordi life forms?"`
+			`The Pug makes a sound vaguely reminiscent of laughing. "How do you expect to speak with the Chordi life forms?"`
 			`"Right. You haven't given me that translation machine yet," you say.`
 			`"That's not all that needs doing. The Antfolk speak a language best translated in your tongue as 'Assimilated Pheromonal, Anatonmical, and Sonic Language,' or 'APASL.' It is a very insectoid mix of vocalized clicks, body language, and pheromone communication. To translate it into an entirely vocal language like your own, and back, you will require much more than what the Hai use. We also need to modify your ship to be able to receive their broadcasting frequencies."`
 			`"How long will that take?" you ask.`
@@ -621,7 +621,7 @@ mission "Land at Ussria"
 			label powersuit
 				#even more bad reaction
 			#`[stuff about meeting the Antfolk]`
-			`"My name is <first>, Captain <name>," you say to introduce yourself.`
+			`"My name is <first>, Captain <first> <last>," you say to introduce yourself.`
 			`"We are [Scent of Blood], all Warrior Caste. We and you have met now, <first> Captain <name>," said the band of giant ants, in unison. They continued with "With what [purpose/desire] have you come to our star system?"`
 			choice
 				`	"I am an explorer. I travel the galaxy to meet new species, to learn new things, and to do good where I can."`
@@ -1097,10 +1097,10 @@ mission "Player gets recognized 1"
 		random = 1
 	on offer
 		conversation
-			`[some minor character recognizes PC as a religious figure from the "holy book" called "The Book of <First>"]`
+			`[some minor character recognizes PC as a religious figure from the "holy book" called "The Book of <first>"]`
 			`[PC laughs and ignores the minor character, walking off to do their thing]`
 			set "PC met crazy fan 1"
-			set "heard of Firstism 1"
+			set "heard of firstism"
 
 mission "Player gets recognized 2"
 	invisible
@@ -1111,14 +1111,14 @@ mission "Player gets recognized 2"
 		random = 1
 	on offer
 		conversation
-			`[some minor character recognizes PC as a religious figure from the "holy book" called "The Book of <First>"]`
+			`[some minor character recognizes PC as a religious figure from the "holy book" called "The Book of <first>"]`
 			`[PC laughs and ignores the minor character, walking off to do their thing]`
 			branch happenedtwice
 				has "PC met crazy fan 1"
 			label happenedtwice
 			`[PC passively comments on this having happened twice. "What're the odds...?" etc.]`
 			set "PC met crazy fan 2"
-			set "heard of Firstism 1"
+			set "heard of firstism"
 
 mission "Player gets recognized 3"
 	invisible
@@ -1130,6 +1130,7 @@ mission "Player gets recognized 3"
 	on offer
 		conversation
 			`[stuff]`
+			set "heard of firstism"
 
 mission "Player gets recognized [X2 (placeholder)]"
 	invisible
@@ -1141,7 +1142,7 @@ mission "Player gets recognized [X2 (placeholder)]"
 		#random condition here
 	on offer
 		conversation
-			`[some minor character recognizes PC as a religious figure from the "holy book" called "The Book of <First>"]`
+			`[some minor character recognizes PC as a religious figure from the "holy book" called "The Book of <first>"]`
 			branch happyquarg
 				has "reputation: Quarg" >= 400 #somewhat arbitrary number, can (and probably will) be changed
 			branch uncaringquarg
@@ -1171,7 +1172,7 @@ mission "Player gets recognized [X2 (placeholder)]"
 			`["The Quarg don't seem happy about it, but who cares? They can't stop what's happening and everyone knows it!]"`
 				goto end
 			label end
-				set "heard of Firstism [X2 (placeholder)]"
+				set "heard of firstism"
 
 mission "Player gets recognized [X3 (placeholder)]"
 	invisible
@@ -1184,7 +1185,7 @@ mission "Player gets recognized [X3 (placeholder)]"
 	on offer
 		conversation
 			`[some human citizen of Allhome recognizes PC as the Prophet of <first>ism.]`
-			set "heard of Firstism [X3 (placeholder)]"
+			set "heard of firstism"
 
 mission "Player gets recognized [X3.1 (placeholder)]"
 	invisible
@@ -1208,4 +1209,29 @@ mission "Player gets recognized [X3.1 (placeholder)]"
 			`[A space alien explains a new Human religion to the Human prophet of that religion]`
 				goto end
 			label end
-				set "heard of Firstism [X3 (placeholder)]"
+				set "heard of firstism"
+
+mission "Player investigates Firstism 1"
+	landing
+	name "Investigate the religion of <first>ism"
+	description "Somehow, a new religion got started with you at the center of it. Brother Greg on <destination> might know more."
+	destination Harmony
+	to offer
+		has "heard of firstism"
+	on offer
+		conversation
+			`Somehow, somewhere, someone managed to start an entirely new religion based on what you've learned from your experiences dealing with the Pug and the Antfolk. Seeing as you only ever shared that knowledge with Brother Greg, he should have some idea of how this happened. You might want to visit him at his monestary on Harmony, and soon - you are suddenly even more important of a public figure than before, and you don't want to make too many mistakes, of any kind.`
+	on complete
+		conversation
+			`[Brother Greg explains to PC "I didn't do it, it was this other monk who is now expelled from the order"]`
+			`"Last I heard, Eric is still on Harmony, preaching <first>ism at the spaceport bar every Sunday afternoon. If you want to confront him about it, you know where to find him."`
+
+mission "Player investigates Firstism 2"
+	invisible
+	source Harmony
+	to offer
+		has "Player investigates Firstism 1: completed"
+	on offer
+		conversation
+			`[PC is given the original "Book of <First>" that Eric Johansson wrote based on PC's notes; the rest of this conversation can be decided on later (probably will involve a metric crudton of choices anyway)]`
+#			set "original book of first in pc's possession" #not sure this line is really necessary, may just remove it later
