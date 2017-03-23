@@ -1,0 +1,9 @@
+Bite of the Ant ES Mod Development To-do List:
+- design the Antfolk gradual colonization system
+- design the planet and spaceport descriptions for the planets for said colonization system
+- write hails for the Antfolk ships
+- write the names.txt file for Antfolk ship names
+- double check the completion of Antfolk ship and outfit stats
+- finish the plot outline for BotA
+- find and remove any outdated or inconsistant information
+- make a Mod Author ship
