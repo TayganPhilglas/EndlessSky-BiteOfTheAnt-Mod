@@ -8,4 +8,5 @@ Bite of the Ant ES Mod Development To-do List:
 - find and remove any outdated or inconsistant information
 - obtain ship sprites
 - obtain outfit sprites
+- code fleets
 - make a Mod Author ship
