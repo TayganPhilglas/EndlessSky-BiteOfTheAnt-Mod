@@ -215,24 +215,38 @@ system Chordi
 		offset 180
 	object Ussria
 		sprite planet/earth
-		distance 710.562
-		period 266.755
-		offset 353.093
+		distance 814.725
+		period 327.511
+		offset 248.059
 		object
 			sprite planet/desert4
 			distance 146.104
 			period 21.7634
 			offset 343.88
-	object "Ad Elans"
-		sprite planet/water0
-		distance 1011.67
-		period 453.174
-		offset 316.477
+		object Sheastheup
+			sprite planet/station2
+			distance 285.055
+			period 49.272
+			offset 222.795
 	object "Miasma Eopto"
 		sprite planet/desert7
-		distance 1197.67
-		period 583.731
-		offset 22.0675
+		distance 1330.78
+		period 683.708
+		offset 113.945
+	object
+		sprite planet/neptune
+		distance 1840.07
+		period 1111.64
+		offset 78.9082
+		object
+			sprite planet/ice8
+			distance 197
+			period 13.7763
+	object
+		sprite planet/dust5
+		distance 2841.88
+		period 2133.63
+		offset 24.9044
 
 system Polevik
 	pos 287.794 35.4211
@@ -503,15 +517,6 @@ system Vorloo
 			distance 446
 			period 24.0584
 
-planet "Ad Elans"
-	attributes antfolk
-	landscape land/sea1
-	description `Ad Elans is home to the oldest off-homeworld colonies the Antfolk have. Due to the planet's surface being ninty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
-	spaceport `Due to the heavy space traffic Ad Elans recieves, the city the spaceport is on one of the largest platforms of the largest and oldest of the mobile floating cities sailing the planet's oceans. While the Antfolk's choice to do this rather than letting docked ships take up valuable landmass makes sense, it has the side effect that ships can only land on one specific part of the planet, and which part that is constantly changes. As a result, traffic controllers have to stay in constant communication with the ships they're trying to help land, so as to send them new coordinates for the spaceport should they change significantly before the ship can find the correct floating city.`
-	"required reputation" 10
-	bribe 0
-	security 0.2
-
 planet "Atilt San Pug"
 	landscape land/space6
 	description `[planet description placeholder]`
@@ -523,20 +528,30 @@ planet "Atilt San Pug"
 planet "Miasma Eopto"
 	attributes antfolk
 	landscape land/hills0
-	description `Just as Mars in the Sol System was named after a destructive god from Human mythology, Miasma Eopto is named after a deity in Antfolk religion called "Miasma", who seems to be some kind of god of the apocalypse. Despite the general decline of religious belief in Antfolk society since the dawn of their space age, some fringe groups still hold a sacrificial ceremony to "hold back Miasma from rising up and destroying us [the Antfolk] all."`
+	description `Similar to how Mars was prior to Humanity's discovery of terraforming, Miasma Eopto lacks an atmosphere that humans can survive. The Antfolk are capable of breathing the air here for a short time if necessary, but it is hard on them and even their hard chitin carapaces can't stand the pressure all that long, either. As a result, the Antfolk here all live inside planetbases equipped with atmospheric generators, hydroponic farms, and the like. While the Antfolk do go outside in envirosuits when a task requires skilled labor, they prefer to use remote-controlled drones for the mines and transportation of goods outside or between bases.`
+	spaceport `The spaceport is composed of numerous outdoor landing pads with walkways that funnel all traffic through one of multiple security checkpoints filled with armed guards. Past those, the anemeties you have come to associate with a spaceport turn out to be spread all over the local planetbase. A planetbase which was designed for large numbers of life forms less than a third your height. Instead of crawling around their planetbase on all fours and causing all sorts of accidents, you and the local Antfolk Queen in charge both agree for whatever goods you need to buy or sell to be handled by carrier bots, and for you to pay and be paid electronically.`
 	"required reputation" 10
 	bribe 0
 	security 0.2
+
+planet Sheastheup
+	attributes antfolk station
+	landscape land/station1
+	description `[stuff about this station serving as an orbital yard for the Antfolk]`
+	spaceport `[spaceport description placeholder]`
+	shipyard "Antfolk Basics"
+	shipyard "Antfolk Advanced"
+	outfitter "Antfolk Civilian"
+	outfitter "Antfolk Military"
+	"required reputation" 10
+	bribe 0
+	security 0.3
 
 planet Ussria
 	attributes antfolk
 	landscape land/mfield3
 	description `Ussria is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
 	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of leasuire break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
-	shipyard "Antfolk Basics"
-	shipyard "Antfolk Advanced"
-	outfitter "Antfolk Civilian"
-	outfitter "Antfolk Military"
 	"required reputation" 10
 	bribe 0
 	security 0.3
