@@ -962,7 +962,7 @@ mission "Chance to let Antfolk contact PC whenever"
 			label pda
 				`["Woah, cool. Now we can pester you for help whenever we feel like it!"]`
 
-mission "Antfolk Terraforming 1"
+#mission "Antfolk Terraforming 1"
 #introduction to the Terraforming Miasma Eopto mission chain
 
 #transition section (filler note for lots of stuff)
@@ -1031,7 +1031,7 @@ mission "Destroy Miasma"
 
 #transition scene
 
-mission "Deliver the Jump Drive to <destination>"
+#mission "Deliver the Jump Drive to <destination>"
 #this mission will be important to the Korath-Antfolk War in that the Jump Drive from the Miasma ship (which is delivered to some arbitrary Antfolk-controlled planet for safe storage in this mission) serves to allow the Antfolk to perform ANY forward operations in Korath Exiles space
 	description "Transport Miasma's Jump Drive to <destination> for safe keeping"
 

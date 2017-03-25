@@ -115,9 +115,10 @@ outfit "Antfolk Biogrenades"
 
 outfit "Power Armor"
 	category "Hand to Hand"
-	cost 20000
+	cost 135000
 	thumbnail "outfit/unknown"
-	"capture defense" 2.1
+	"capture attack" 3.3
+	"capture defense" 3.6
 	"unplunderable" 1
-	description "The Deep Sky 'Powered Knight Suit' is the first form of Power Armor to ever be commercially available in human space. While it lacks any kind of offensive capabilities, it is a defensive tank."
+	description "The Deep Sky 'Powered Knight Suit' is the first form of Power Armor to ever be commercially available in human space."
 	description ""

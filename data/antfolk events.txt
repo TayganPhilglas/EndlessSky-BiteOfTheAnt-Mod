@@ -12,17 +12,40 @@ event "deep sky sells power armor"
 	outfitter "Deep Sky Advanced"
 		"Power Armor"
 
-mission "deep sky sells power armor"
+#mission "deep sky sells power armor"
+#	invisible
+#	landing
+#	source
+#		near Sol 100
+#	to offer
+#		has "main plot completed"
+#	on offer
+#		event "deep sky sells power armor"
+#		conversation
+#			`"Attention all space captains! Deep Sky is proud to announce the latest in hand-to-hand defensive combat: Power Armor!"`
+
+event "Milky Way-Acallaris Wormhole opens"
+	system "Kor Ak'Mari"
+		object "Wormhole of Truth"
+			sprite planet/wormhole
+			distance 4932.91
+			period 1959.88
+			offset 245.709
+	system "Galactic Core"
+		object "Wormhole of Truth"
+			sprite planet/wormhole
+			distance 4932.91
+			period 1959.88
+			offset 245.709
+	planet "Wormhole of Truth"
+
+mission "Milky Way-Acallaris Wormhole opens"
 	invisible
 	landing
-	source
-		near Sol 100
 	to offer
 		has "main plot completed"
 	on offer
-		event "deep sky sells power armor"
-		conversation
-			`"Attention all space captains! Deep Sky is proud to announce the latest in hand-to-hand defensive combat: Power Armor! 'It's the Security Station you can wear wherever you go!' DISCLAIMER: The Deep Sky Power Armor does not possess any offensive capabilities."`
+		event "Milky Way-Acallaris Wormhole opens"
 
 mission "Pirates don't fight ' Pirates '"
 	invisible
@@ -36,7 +59,7 @@ event "Stormhold-PC armistice"
 	system Alcyone
 		government " Pirate "
 
-event "player has english-apasl translation machine"
+event "player has antfolk translation machine"
 	set "language: APASL"
 
 event "antfolk gain hyperdrives"
