@@ -25,13 +25,44 @@ event "deep sky sells power armor"
 #			`"Attention all space captains! Deep Sky is proud to announce the latest in hand-to-hand defensive combat: Power Armor!"`
 
 event "Milky Way-Acallaris Wormhole opens"
+	unvisit "Kor Ak'Mari"
 	system "Kor Ak'Mari"
+		object
+			sprite star/wr
+			period 100
+		object
+			sprite planet/lava6
+			distance 179.89
+			period 38.6038
+		object
+			sprite planet/lava0
+			distance 492.58
+			period 174.918
+		object
+			sprite planet/ocean6
+			distance 874.19
+			period 413.551
+			object
+				sprite planet/callisto
+				distance 166
+				period 16.2305
+		object
+			sprite planet/ice0
+			distance 1777.8
+			period 1199.35
+		object
+			sprite planet/oberon
+			distance 2107.64
+			period 1548.16
 		object "Wormhole of Truth"
 			sprite planet/wormhole
 			distance 4932.91
 			period 1959.88
 			offset 245.709
 	system "Galactic Core"
+		object
+			sprite star/a0
+			period 10
 		object "Wormhole of Truth"
 			sprite planet/wormhole
 			distance 4932.91
@@ -45,7 +76,7 @@ mission "Milky Way-Acallaris Wormhole opens"
 	to offer
 		has "main plot completed"
 	on offer
-		event "Milky Way-Acallaris Wormhole opens"
+		event "Milky Way-Acallaris Wormhole opens" 1
 
 mission "Pirates don't fight ' Pirates '"
 	invisible
@@ -387,7 +418,7 @@ mission "Book of First is published on Harmony"
 		or
 		has "Book of First progress" 3
 	on offer
-		"Book of First is published on Harmony"
+		event "Book of First is published on Harmony"
 
 event "Player can be recognized 1"
 
