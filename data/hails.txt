@@ -8,14 +8,18 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+phrase "antfolk untranslated"
+
 phrase "friendly antfolk civilian"
 
 phrase "friendly antfolk military"
 
-phrase "hostile antfolk disabled"
+phrase "friendly antfolk disabled"
 
 phrase "hostile antfolk civilian"
 
 phrase "hostile antfolk military"
+
+phrase "hostile antfolk disabled"
 
 phrase "hostile antfolk pirate"
