@@ -303,7 +303,7 @@ ship "Army Cruiser"
 	description "As a response to an increase in Antfolk pirate activity after the discovery of the Hyperdrive, the Army Cruiser is the first Antfolk ship created for pure combat. A step up in size and power compared to the Fire Frigate, the cruiser is considerably less manueverable, while boasting not only increased fire power and hull strength, but also integrated shield technology, something that older ships do not have. This allows it to last longer in sustained battle while also cleaning up targets far quicker."
 
 ship "Queen Carrier"
-	sprite "ship/hai solifuge"
+	sprite "ship/hai solifuge" #needs own sprite
 #	licenses
 #		Antfolk Military
 	attributes
