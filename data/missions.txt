@@ -8,57 +8,7 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-mission "Cloak Check 1"
-	invisible
-	to offer
-		has "main plot completed"
-		has "Land at Atilt San Pug 1: done"
-	on offer
-		require Cloaking Device 1
-		set "has 1 real cloak"
-	fail
-
-mission "Cloak Check 2"
-	invisible
-	to offer
-		has "main plot completed"
-		has "UPStock Cloaking Device available"
-		has "Land at Atilt San Pug 1: done"
-	on offer
-		require Cloaking Device 2
-		set "has 2 real cloaks"
-	fail
-
-mission "Cloak Check 3"
-	invisible
-	to offer
-		has "main plot completed"
-		has "Land at Atilt San Pug 1: done"
-	on offer
-		require Civilian Cloaking Device 1
-		set "has 1 civ cloak"
-	fail
-
-mission "Cloak Check 4"
-	invisible
-	to offer
-		has "main plot completed"
-		has "Land at Atilt San Pug 1: done"
-	on offer
-		require Civilian Cloaking Device 2
-		set "has 2 civ cloaks"
-	fail
-
-mission "Drak guarding Chordi"
-	invisible
-	landing
-	on enter Chordi
-		dialog 'Immediately upon entering this system, you notice that the local lifeforms are registering as hostile. Even more importantly, you find yourself face-to-face with a Drak Archon. A voice in your head, presumably the Drak Archon, says, "This system is under the protection of the Drak. Leave now, or die, human."'
-	npc
-		government " Drak "
-		personality heroic vindictive staying
-		system "Chordi"
-		ship "Archon" "Defensive Nanny"
+#mission "Transport Power Armor Prototype"
 
 mission "Missive from Harmony 1"
 	landing
@@ -81,7 +31,7 @@ mission "Missive from Harmony 1"
 			`		It is imperative that you come to Harmony and meet me at the Monestary as soon as you possibly can. I will explain more when you arrive. And, make sure you're not being followed. Just in case.`
 			`			Sincerely, Brother Greg`
 
-mission "Missive from Harmony 2"
+mission "Missive from Harmony 2" #was worth keeping, but is in serious need of editing
 	landing
 	clearance
 	name "Go to <destination>"
@@ -251,396 +201,31 @@ mission "Missive from Harmony 2"
 	on complete
 		conversation
 			`[PC speaks with Owen Diedrich, and things are discussed like what Diedrich hopes to gain from PC exploring the Chordi system]`
-			outfit "Power Armor" 1
 
-
-mission "Archon gets hostile"
-	invisible
-	to offer
-		has "Drak guarding Chordi: active"
-	npc disable
-		government "Test Dummy"
-		system "Chordi"
-		personality unconstrained heroic nemesis
-		ship "Timer Ship"
-		dialog `After a while, you notice the Archon getting very close to your ship. "I shall spare you this once. You will not be so welcome next time," it says to you in your head. It might be good to report to Stormhold and find out what to do next, if anything.`
-
-
-mission "Missive from Harmony 3"
-	landing
-	name "Investigate the <waypoint> system"
-	description "Investigate the <waypoint> system, then report back to Owen Diedrich on <destination>."
-	waypoint Chordi
-	destination Stormhold
-	to offer
-		has "Missive from Harmony 2: completed"
-	source Stormhold
-	on complete
-		conversation
-			`	[placeholder for dialog which will include stuff like Diedrich saying "Well, not like I expect you to outgun the Drak. Shame. If you ever find a way around that Archon, please let me know."]`
-
-mission "Land at Atilt San Pug 1"
-	landing
-	invisible
-	destination "Atilt San Pug"
-	to offer
-		has "Missive from Harmony 3: completed"
-		has "Drak guarding Chordi: active"
-	on enter "Pug Formici"
-		"reputation: Pug" >?= 2
-		dialog `Upon entering the system, a Pug ship jumps in as well. It hails you, asking you to land on the only inhabited planet.`
-	on complete
-		conversation
-			`You settle your ship onto a landing pad in the Pug's spaceport. After exiting the <ship>, you are met with a sudden stare from some Pug nearby. One of them takes some device out of it's pocket and speaks into it.`
-			`Soon after, a contingent of Pug guards surrounding a single, more formally-dressed, Pug approaches you. You notice that the formally-dressed Pug is holding a cuboid device.`
-			`"At last, we meet," it says, speaking into the device, which seems to be a fairly simple translator. "Tell me, <name>, what brings you to Pug space this time?" it asks.`
-			`This Pug seems far more talkative than they have previously been. You might be able to get some answers about them if you play its game.`
-			choice
-				`	"I was exploring nearby and I jumped into a system guarded by an Archon. I'm kind of wondering why the Drak are guarding that system in particular."`
-					#goto guarded				
-				`	I was exploring space and wanted to see what was inside this system.`
-				`	I was exploring space and I jumped into a system containing an Archon. Then I quickly jumped to this system.`
-			`	"The Drak Archon is guarding the system known as Chordi. In that system there is a species of what you humans would likely call large ants. A species of 'Antfolk' so to speak. We would appreciate your help to nudge along their advancement."`
-			`	"We will provide you with a translator for the language of this species," the Pug says, who is now looking at you, waiting for an answer."
-			choice
-				`	"I will help you."`
-					goto help
-				`	"I will not help you."`
-			`	"Very well. We will give you time to rethink but you are always allowed to land here and help us. When you do land here we will provide you with the translator and instructions."
-				goto end
-			label help
-			`Thank you. Due to security regulations, we are required to ask you to lift off and then land again. After that, come inside and we will explain further.`
-			label end
-			`	The guards walk away from your ship and enter the nearby spaceport terminal.`
-
-mission "Land at Atilt San Pug 2a"
-	landing
-	source "Atilt San Pug"
-	to offer
-		has "Land at Atilt San Pug 1: done"
-		not "has 1 real cloak"
-		not "has 1 civ cloak"
-		not "antfolk pug intro"
-	on offer
-		set "antfolk pug intro"
-		conversation
-			`How making you lift off of Atilt San Pug and then land again on the exact same landing pad improves security is beyond you. Nonetheless, you do it. When you land, you head inside the terminal.`
-			`Inside the Pug spaceport terminal - which is constructed as oddly as all other examples of Pug architecture that you know of - you see relatively few actual Pug. The fact that you - a human - somewhat stands out in an alien spaceport also did nothing to prevent the Pug from earlier from finding you immediately and (almost literally) dragging you to what must be some kind of Pug spaceport bar or restaurant. The Pug orders for you.`
-			`"Human," is all the Pug ringleader says to you before being silent.`
-			choice
-				`	"Pug," you reply with mild sarcasm.`
-					goto sarcasm
-				`	(Wait for it to say something.)`
-					goto silence
-			label sarcasm
-			`"Wit. An interesting choice of a reply," the Pug says. "You should do well enough, I suppose."`
-				goto help
-			label silence
-			`"Feline got your tongue?" the Pug asks.`
-			`"You haven't said anything for me to respond to," you reply.`
-			`"Haven't I? Even some humans know that, sometimes, to say nothing is to scream louder than a Korath thruster. I was hoping you were one of them. Oh, well. You'll have to do."`
-				goto help
-			label help
-			`"Can you PLEASE stop testing me and just be SOMEWHAT straightforward!" you yell, exasperated with the cryptic Pug.`
-			`"Very well, very well. We, the Pug, for reasons we are disinterested in disclosing, are interested in technologically uplifting the insectoid race living in the Chordi system which we have made known to you as 'Antfolk.' However, we do not want to, what's the human phrase, 'get our hands dirty.' We require a human proxy to interact with the Antfolk of Chordi, give them some lower-end human tech, and to specifically say NOTHING to them of being a Pug agent."`
-			`"Ignoring how crypticly specific that is, how do you plan on me getting past that Drak Archon?" you ask.`
-			`"Well, we just give you a Cloaking Device, DUH," the Pug says.`
-			`"A... Cloaking Device? That's a thing?" you ask.`
-			`"Yes. Your Syndicate has one, though they prefer to salt their soup before they taste it. So you won't be able to just take theirs without drawing far too much attention to us. So we'll just give you one of ours."`
-			`"Drak sensors can't detect cloaked ships?" you ask, disregarding the randomly inserted and meaningless use of a human phrase.`
-			`"No. Nothing but gravitic sensors can detect something that has been cloaked. And no ship uses gravitic sensors, because they're terrible for detecting anything else."`
-			`"Really? That's the only way to detect it? How come?"`
-			`"Because. You don't need to know that. Just know that Drak Archons couldn't detect a cloaked ship if it was flying right under them. Coincidentally, Drak sensors are also surprisingly easily [blocked] [with lead.]"`
-			`"Wow. That's pretty amazing. At which particular step of the process will you want the device back?" you ask.`
-			`The Pug appears to think for a short moment, then says "You can just keep it. We find the idea of the Hero of Humanity having a Cloaking Device amusing. And the Drak won't. Which is even better. Oh, we should warn you, Cloaking Devices do consume a small amount of deuterium fuel while running, so don't just leave it running all the time unless you've got a good ramscoop. Also, we're only giving you one, so for now, just enter Chordi with one ship - the one with the Cloaking Device."`
-			`"Is that all?"`
-			`"One last thing: when you are just flying your one cloak-capable ship, it is of vital importance that you enter cloak BEFORE jumping to Chordi. Otherwise, Archon Defensive Nanny will notice you've returned. It would be even worse if you entered Chordi uncloaked and then cloaked. Do you understand why?"`
-			choice
-				`	"Yes. It is a childishly simple deduction."`
-					goto yes
-				`	"I'm afraid not. Please explain."`
-					goto no
-			label yes
-			`"Explain it, then."`
-			`"Because if I did that, the Drak would be able to deduce that you guys were interfering with the life in Chordi and that I was your instrument. That would cause a lot of problems for both of us."`
-				goto modifications
-			label no
-			`"You have no deductive reasoning skills, and yet you live to this day. Very well, we will explain. If you entered the Chordi system uncloaked, the Archon WILL attack you. If you cloaked so that the Archon would notice you vanishing from their sensors as only a cloaked ship can, then you will survive, but the Drak will know that whatever business you have with the Chordi system, we played a part in it. That would be highly undesirable for everyone except the Drak. Understand, foolish human?"`
-			`"Yes, I get it now."`
-				goto modifications
-			label modifications
-			`"Good. Now, we've already installed the Cloaking Device on your ship while you and we have been talking."`
-			`"So, I'm ready to go?"`
-			`The Pug makes a sound vaguely reminiscent of laughing. "How do you expect to speak with the Chordi life forms?"`
-			`"Right. You haven't given me that translation machine yet," you say.`
-			`"That's not all that needs doing. The Antfolk speak a language best translated in your tongue as 'Assimilated Pheromonal, Anatonmical, and Sonic Language,' or 'APASL.' It is a very insectoid mix of vocalized clicks, body language, and pheromone communication. To translate it into an entirely vocal language like your own, and back, you will require much more than what the Hai use. We also need to modify your ship to be able to receive their broadcasting frequencies."`
-			`"How long will that take?" you ask.`
-			`"Long enough for us to teach you how to do it yourself for any other ships you feel like using, and how to undo the changes for any ship you wish to sell," said the Pug.`
-			`"That long? Well, let's get started," you say.`
-			`The Pug takes out some kind of handheld device with two forward-facing prongs. "Don't blink," it says.`
-			`Too terrified to disobey, your eyelids somehow end up locked wide open. The Pug points the device at your eyes, and beams shoot from the prongs into your eyes for a few seconds. As it does so, you feel texbooks upon textbooks of new technical knowledge being shoved into your brain at once.`
-			`"Done," the Pug says.`
-			`You find yourself able to blink again, but you now also have a splitting headache.`
-			`"Rest for however long you need. The Antfolk aren't going anywhere," the Pug said.`
-			`You head back to your quarters and rest. Oddly, the moment your headache is fully gone, you hear the buzz of someone outside your ship requesting in.`
-			`Groggily, you open your bay doors. A single Pug is standing there, in some kind of uniform. You never were good at telling individual Pug apart, but you suspect that this Pug is female.`
-			`"Can I help you?" you ask.`
-			`"We have elected to send one of us as a passenger on your ship, to provide useful advice when necessary," the Pug said.`
-			`"For an extended stay, I presume?" you ask.`
-			`"Yes," the Pug said, before amending the answe with "Sir."`
-			`You give a long, tired sigh. "Find, fine. Come on in."`
-			`You show the Pug to an empty bunk and storage locker. Then, you say "By the way, do you Pug have names? I'd rather not just call you 'Pug' for who-knows-how-long."`
-			`The Pug thinks for a moment, then says "For your convinence, you may call me 'Steve'."`
-			`You resist rolling your eyes, and say "Well, we'll be lifting off soon. Do whatever you need to, then meet me [on the bridge]."`
-			outfit Cloaking Device
-			passengers 1
-			decline
-
-mission "Land at Atilt San Pug 2b"
-	landing
-	source "Atilt San Pug"
-	to offer
-		has "Land at Atilt San Pug 1: done"
-		has "has 1 real cloak"
-		not "has 2 real cloaks"
-		not "has 1 civ cloak"
-		not "antfolk pug intro"
-	on offer
-		set "antfolk pug intro"
-		conversation
-			`How making you lift off of Atilt San Pug and then land again on the exact same landing pad improves security is beyond you. Nonetheless, you do it. When you land, you head inside the terminal.`
-			`Inside the Pug spaceport terminal - which is constructed as oddly as all other examples of Pug architecture that you know of - you see relatively few actual Pug. The fact that you - a human - somewhat stands out in an alien spaceport also did nothing to prevent the Pug from earlier from finding you immediately and (almost literally) dragging you to what must be some kind of Pug spaceport bar or restaurant. The Pug orders for you.`
-			`"Human," is all the Pug ringleader says to you before being silent.`
-			choice
-				`	"Pug," you reply with mild sarcasm.`
-					goto sarcasm
-				`	(Wait for it to say something.)`
-					goto silence
-			label sarcasm
-			`"Wit. An interesting choice of a reply," the Pug says. "You should do well enough, I suppose."`
-				goto help
-			label silence
-			`"Feline got your tongue?" the Pug asks.`
-			`"You haven't said anything for me to respond to," you reply.`
-			`"Haven't I? Even some humans know that, sometimes, to say nothing is to scream louder than a Korath thruster. I was hoping you were one of them. Oh, well. You'll have to do."`
-				goto help
-			label help
-			`"Can you PLEASE stop testing me and just be SOMEWHAT straightforward!" you yell, exasperated with the cryptic Pug.`
-			`"Very well, very well. We, the Pug, for reasons we are disinterested in disclosing, are interested in technologically uplifting the insectoid race living in the Chordi system which we have made known to you as 'Antfolk.' However, we do not want to, what's the human phrase, 'get our hands dirty.' We require a human proxy to interact with the Antfolk of Chordi, give them some lower-end human tech, and to specifically say NOTHING to them of being a Pug agent."`
-			`"Ignoring how crypticly specific that is, how do you plan on me getting past that Drak Archon?" you ask.`
-			`"Well, you just use that Cloaking Device of yours, DUH," the Pug says.`
-			`"You... know about my Cloaking Device?" you ask.`
-			`"Yes. You got it from the Syndicate, the Syndicate stole it from the Korath, and the Korath stole it from us. We thought that by now you would have figured out that your Cloaking Device can cloak your ship from literally ANYTHING. Well, except those old fashioned gravitic sensors, but no one cares about them," the Pug said.`
-			`"So, even Drak sensors can't detect cloaked ships?" you ask.`
-			`"No. Nothing but gravitic sensors can detect something that has been cloaked. And no ship uses gravitic sensors, because they're terrible for detecting anything else."`
-			`"Really? That's the only way to detect it? How come?"`
-			`"Because. You don't need to know that. Just know that Drak Archons couldn't detect a cloaked ship if it was flying right under them. Coincidentally, Drak sensors are also surprisingly easily [blocked] [with lead.]"`
-			`"Wow. That's pretty amazing. I didn't know I had something that powerful," you say.`
-			`"Oh, and we must warn you: you've only got one, and we're not giving you more, so for now, just enter Chordi with one ship - the one with your Cloaking Device installed."`
-			`"Is that all?"`
-			`"One last thing: when you are just flying your one cloak-capable ship, it is of vital importance that you enter cloak BEFORE jumping to Chordi. Otherwise, Archon Defensive Nanny will notice you've returned. It would be even worse if you entered Chordi uncloaked and then cloaked. Do you understand why?"`
-			choice
-				`	"Yes. It is a childishly simple deduction."`
-					goto yes
-				`	"I'm afraid not. Please explain."`
-					goto no
-			label yes
-			`"Explain it, then."`
-			`"Because if I did that, the Drak would assume - correctly - that you guys were interfering with the life in Chordi and that I was your instrument. That would cause a lot of problems for both of us."`
-				goto modifications
-			label no
-			`"You have no deductive reasoning skills, and yet you live to this day. Very well, we will explain. If you entered the Chordi system uncloaked, the Archon WILL attack you. If you cloaked so that the Archon would notice you vanishing from their sensors as only a cloaked ship can, then you will survive, but the Drak will know that you have a Cloaking Device and correctly assume - for the wrong reasons - that whatever business you have with the Chordi system, we played a part in it. That would be highly undesirable for everyone except the Drak. Understand, foolish human?"`
-			`"Yes, I get it now."`
-				goto modifications
-			label modifications
-			`"Good. Now there's still one last problem to solve."`
-			`"Wait, I'm not ready to go, yet?"`
-			`The Pug made a sound vaguely reminiscent of laughing. "How do you expect to speak with the Chordi life forms?"`
-			`"Right. You haven't given me that translation machine yet," you say.`
-			`"That's not all that needs doing. The Antfolk speak a language best translated in your tongue as 'Assimilated Pheromonal, Anatonmical, and Sonic Language,' or 'APASL.' It is a very insectoid mix of vocalized clicks, body language, and pheromone communication. To translate it into an entirely vocal language like your own, and back, you will require much more than what the Hai use. We also need to modify your ship to be able to receive their broadcasting frequencies."`
-			`"How long will that take?" you ask.`
-			`"It's already done, but we still should teach you how to do it yourself for any other ships you feel like using, and how to undo the changes for any ship you wish to sell," said the Pug.`
-			`"Well, what are we waiting for? Let's get started," you say.`
-			`The Pug takes out some kind of handheld device with two forward-facing prongs. "Don't blink," it says.`
-			`Too terrified to disobey, your eyelids somehow end up locked wide open. The Pug points the device at your eyes, and beams shoot from the prongs into your eyes for a few seconds. As it does so, you feel texbooks upon textbooks of new technical knowledge being shoved into your brain at once.`
-			`"Done," the Pug says.`
-			`You find yourself able to blink again, but you now also have a splitting headache.`
-			`"Rest for however long you need. The Antfolk aren't going anywhere," the Pug said.`
-			`You head back to your quarters and rest. Oddly, the moment your headache is fully gone, you hear the buzz of someone outside your ship requesting in.`
-			`Groggily, you open your bay doors. A single Pug is standing there, in some kind of uniform. You never were good at telling individual Pug apart, but you suspect that this Pug is female.`
-			`"Can I help you?" you ask.`
-			`"We have elected to send one of us as a passenger on your ship, to provide useful advice when necessary," the Pug said.`
-			`"For an extended stay, I presume?" you ask.`
-			`"Yes," the Pug said, before amending the answe with "Sir."`
-			`You give a long, tired sigh. "Find, fine. Come on in."`
-			`You show the Pug to an empty bunk and storage locker. Then, you say "By the way, do you Pug have names? I'd rather not just call you 'Pug' for who-knows-how-long."`
-			`The Pug thinks for a moment, then says "For your convinence, you may call me 'Steve'."`
-			`You resist rolling your eyes, and say "Well, we'll be lifting off soon. Do whatever you need to, then meet me [on the bridge]."`
-			passengers 1
-			decline
-
-mission "Land at Atilt San Pug 2c"
-	landing
-	source "Atilt San Pug"
-	to offer
-		has "Land at Atilt San Pug 1: done"
-		has "has 2 real cloaks"
-		not "has 1 civ cloak"
-		not "antfolk pug intro"
-	on offer
-		set "antfolk pug intro"
-		conversation
-			#`[stuff about PC deciding to help the Pug]`
-			#`[stuff about Pug figuring out PC ALREADY has not only 1, but MORE THAN ONE Cloaking Device]`
-			#`[choices about whether or not to tell the Pug about Ursa Polaris]`
-			#`[possible Pug reactions to different choices mentioned above]`
-			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
-			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
-
-mission "Land at Atilt San Pug 2d"
-	landing
-	source "Atilt San Pug"
-	to offer
-		has "Land at Atilt San Pug 1: done"
-		not "has 1 real cloak"
-		has "has 1 civ cloak"
-		not "has 2 civ cloaks"
-		not "antfolk pug intro"
-	on offer
-		set "antfolk pug intro"
-		conversation
-			#`[stuff about PC deciding to help the Pug]`
-			#`[stuff about Pug figuring out PC already has a Cloaking Device, but it's worse than what the Pug have {probably some minor mockery, to boot}]`
-			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
-			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
-
-mission "Land at Atilt San Pug 2e"
-	landing
-	source "Atilt San Pug"
-	to offer
-		has "Land at Atilt San Pug 1: done"
-		not "has 1 real cloak"
-		has "has 2 civ cloaks"
-		not "antfolk pug intro"
-	on offer
-		set "antfolk pug intro"
-		conversation
-			#`[stuff about PC deciding to help the Pug]`
-			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, and that they're all specifically WORSE than what the Pug have {probably some level of mockery to boot}]`
-			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
-			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
-
-mission "Land at Atilt San Pug 2f"
-	landing
-	source "Atilt San Pug"
-	to offer
-		has "Land at Atilt San Pug 1: done"
-		has "has 1 real cloak"
-		not "has 2 real cloaks"
-		has "has 1 civ cloak"
-		not "has 2 civ cloaks"
-		not "antfolk pug intro"
-	on offer
-		set "antfolk pug intro"
-		conversation
-			#`[stuff about PC deciding to help the Pug]`
-			#`[stuff about Pug figuring out PC already has TWO Cloaking Devices, but one of them is crap compared to what the Pug have {probably some level of mockery to boot}]`
-			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
-			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
-
-mission "Land at Atilt San Pug 2g"
-	landing
-	source "Atilt San Pug"
-	to offer
-		has "Land at Atilt San Pug 1: done"
-		has "has 1 real cloak"
-		not "has 2 real cloaks"
-		has "has 2 civ cloaks"
-		not "antfolk pug intro"
-	on offer
-		set "antfolk pug intro"
-		conversation
-			#`[stuff about PC deciding to help the Pug]`
-			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, but all but one of them is crap compared to what the Pug have {probably some level of mockery to boot}]`
-			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
-			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
-
-mission "Land at Atilt San Pug 2h"
-	landing
-	source "Atilt San Pug"
-	to offer
-		has "Land at Atilt San Pug 1: done"
-		has "has 1 real cloak"
-		not "has 2 real cloaks"
-		has "has 2 civ cloaks"
-		not "antfolk pug intro"
-	on offer
-		set "antfolk pug intro"
-		conversation
-			#`[stuff about PC deciding to help the Pug]`
-			#`[stuff about Pug figuring out PC already has MULTIPLE Cloaking Devices, and they're a mix of real, good Cloaking Devices and some sort of crudware Civilian version {probably a ton of mockery to boot, like 'Who even does that?!' or something}]`
-			#`[stuff about PC being given translation device and PC's ship's communications systems being modified to be compatible with Antfolk hailing message formats]`
-			#`[stuff about PC being taught how to make said modifications to other ships, including the rest of their fleet]`
-			decline
-
-mission "Land at Ussria"
+mission "antfolk first contact"
 	landing
 	name "First Contact: Antfolk"
-	description "Enter the Chordi System while cloaked to make first-contact with the 'Antfolk'"
-	source "Atilt San Pug"
-	destination Ussria
-	clearance "You try hailing Ussria using the translation device the Pug gave you in conjunction with the modifications they made to your ship's communications systems. The traffic controllers panic and leave their post. You are left waiting for a good five hours before what you think is a different group of Antfolk come on and grant permission to land in an open wasteland instead of the spaceport."
-	infiltrating
+	description "meet the ants"
+	source "Beob Sb Evtva"
 	to offer
-		has "antfolk pug intro"
-	on complete
+		has "Missive from Harmony 2: done"
+	on offer
 		conversation
-			`You slowly guide your ship into landing just inside a large cave that has a high enough lead content that it might hide your ship from the Archon even if you decloak. You hesitate over the on/off button for your cloaking device... if the Pug are wrong about lead being able to sufficiently interfere with Drak ship sensors, you'll be accosted by the Drak Archon nearby in a matter of seconds. Eventually you work up the nerve to turn off your ship's cloaking device.`
-			`You tense up and franticly check your own sensors to see if there are any nearby hostile ships. There are, and quite a lot of them. They even kind of - kind of - look like Drak ships, but they're not. The Drak Archon is still in the system, but has made no obvious moves towards this planet that could be correlated to your ship decloaking. These false-Archons are somehow... more primitive, less sophisticated. You scan them, and find that they're really not made of stuff that's THAT tough. Despite obviously being bioships, you estimate that even a Free Worlds Militia fleet of sufficient size could wipe out every ship here quite easily. Assuming the two forces ever actually were to meet at all, much less lock in combat.`
-			`[Still, though, the local lifeforms' ships could fairly easily kill you with one shot if they spot you out in the open - you ARE only human, after all.] You run an atmospheric scan of the planet to see if you need to be wearing an EVA suit and oxygen tank. The planet's atmosphere turns out to be not dissimilar to Earth... back in the Devonian Period.`
-			`"Steve, what do you think? EVA suits or not?" you ask.`
-			`"[Steve's response]"`
+			`[stuff happens]`
+			`[PC wonders how to dress for the meeting]`
 			choice
 				`	(Don't worry about it, it's not like Earth had a toxic atmosphere in the Devonian Period or anything, right?)`
 					goto nosuit
 				`	(Don't risk it, wear an EVA suit and oxygen tank.)`
 					goto evasuit
-				`	(Definitely don't take any risks, wear that Power Armor that Diedrich loaned you.)`
-					goto powersuit
-			`You leave the ship.`
-			label nosuit
-				#less bad reaction
-				set "pc contracts ussrian pox"
-			label evasuit
-				#more bad reaction
-			label powersuit
-				#even more bad reaction
-			#`[stuff about meeting the Antfolk]`
-			`"My name is <first>, Captain <first> <last>," you say to introduce yourself.`
-			`"We are [Scent of Blood], all Warrior Caste. We and you have met now, <first> Captain <name>," said the band of giant ants, in unison. They continued with "With what [purpose/desire] have you come to our star system?"`
-			choice
-				`	"I am an explorer. I travel the galaxy to meet new species, to learn new things, and to do good where I can."`
-					goto explorer
-			label explorer
-			``
-			#`[PC does the whole "take me to your leader" routine]`
-			#`[stuff about the Antfolk wanting Jump Drive tech]`
-			#`[at some point, try to explain that the Antfolk language is called 'Assimilated Pheromonal, Anatonmical, and Sonic Language', or 'APASL' for short]`
-		"reputation: Antfolk Union" >?= 10
-		"reputation: Antfolk Merchant" >?= 10
 
 mission "Antfolk Hyperdrives Prep 1"
 	landing
 	name "Race Shepharding 101"
 	description "Learn about how to best provide new technology to a younger race"
-	source Ussria
+	source "Beob Sb Evtva"
 	to offer
-		has "Land at Ussria: done"
+		has "antfolk first contact: done"
 	on offer
 		conversation
 			`It occurs to you that you know very little about how Hyperdrives work or how to make them, and even less about Jump Drives. Not to mention that what little you know of the two makes just giving tons of either one to a race that hasn't earned the knowledge for themselves sounds like more of a terrible idea the more you think about it.`
@@ -714,7 +299,7 @@ mission "Antfolk Hyperdrives Prep 2"
 		stopover Wayfarer
 			dialog
 				
-					done
+					done #how does this even work??
 
 mission "Antfolk Hyperdrives Prep 3a"
 	#lovelace
@@ -808,13 +393,13 @@ mission "Antfolk Hyperdrive Model 1"
 	cargo "Hyperdrive Educational Model" 20
 	on offer
 		dialog "Some Tarazed Corp workers load the Hyperdrive Educational Model onto your ship."
-	destination "Ussria"
+	destination "Beob Sb Evtva"
 	on complete
 		conversation
 			`The Antfolk unload the simplified model of a Hyperdrive from your ship and carry it off. You try asking them how many more they think they'll need, but they just look at you and then walk away, carrying the model.`
 			`You go back to your ship and try contacting the Antfolk government. You manage to get a response from a politician hive mind of Antfolk calling themselves "[[Ambassador/Ambassadors]/[Ambassador/Ambassadors]s] [named antfolk sapience 1]" who says "This 'Hyperdrive' you gave us does not [appear/seem] [real/authentic]. It does not [work/function]. What is the meaning of this?"`
 			`"I gave you a simplified educational model of a Hyperdrive," you say.`
-			`"Why? What is your [purpose/reasoning] for doing so?" [Ambassador/Ambassadors] [named antfolk sapience 1] asks
+			`"Why? What is your [purpose/reasoning] for doing so?" [Ambassador/Ambassadors] [named antfolk sapience 1] asks.
 			choice
 				`"Because real Hyperdrives are dangerous and I wished for you to have something safer to reverse-engineer."`
 					goto safer
@@ -836,7 +421,7 @@ mission "Antfolk Hyperdrive Model 2"
 	description "Pickup another Hyperdrive Model from <destination> to give to the Antfolk on <origin>"
 	to offer
 		has "Antfolk Hyperdrive Model 1: done"
-	source "Ussria"
+	source "Beob Sb Evtva"
 	destination "Wayfarer"
 	on complete
 		dialog "Tarazed Corp workers load another Hyperdrive Model onto your ship."
@@ -848,7 +433,7 @@ mission "Antfolk Hyperdrive Model 2A"
 	to offer
 		has "Antfolk Hyperdrive Model 2: done"
 	source "Wayfarer"
-	destination "Ussria"
+	destination "Beob Sb Evtva"
 	cargo "Hyperdrive Educational Model" 20
 	on complete
 		conversation
@@ -861,7 +446,7 @@ mission "Antfolk Hyperdrive Model 3"
 	description "Pickup another Hyperdrive Model from <destination> to give to the Antfolk on <origin>"
 	to offer
 		has "Antfolk Hyperdrive Model 2A: done"
-	source "Ussria"
+	source "Beob Sb Evtva"
 	destination "Wayfarer"
 	on complete
 		dialog "Tarazed Corp workers load another Hyperdrive Model onto your ship."
@@ -873,30 +458,25 @@ mission "Antfolk Hyperdrive Model 3A"
 	to offer
 		has "Antfolk Hyperdrive Model 3: done"
 	source "Wayfarer"
-	destination "Ussria"
+	destination "Beob Sb Evtva"
 	cargo "Hyperdrive Educational Model" 20
 	on complete
 		conversation
 			`"This is enough of them. On behalf of the High Queen, [I/we/this one] thank you," says [Ambassador/Ambassadors] [named antfolk sapience 1]`
 		event "antfolk gain hyperdrives" 60 #the exact delay is debatable
 
-mission "Drak stop guarding Chordi"
-	invisible
-	landing
-	to offer
-		has "antfolk gain hyperdrives"
-	on offer
-		fail "Drak guarding Chordi"
-
-#transition scene (means that some stuff is missing that will go here later [heh, probably])
-
 mission "Message from the Pug"
 	name "Check on the Antfolk"
 	description "The Pug want you to return to Antfolk space. Besides, you're curious how things might've changed."
 	landing
-	destination "Ussria"
+	destination "Beob Sb Evtva"
 	to offer
 		has "event: antfolk gain hyperdrives"
+#		and
+#			or
+#				has "event: antfolk colonize pybfrfga rvtuobe"
+#				has "event: antfolk colonize znalc nguf"
+#				has "event: antfolk colonize ubylf gne"
 	on offer
 		conversation
 			`You recieve a heavily encrypted transmission that turns out to be from the Pug.`
@@ -909,7 +489,7 @@ mission "Message from the Pug"
 			`"Honored Human <first> Captain <name>! It has been a while! Come, come. We will prepare for you a [banquet/feast] fit for a [deity/spirit]!" says [Ambassador/Ambassadors] [named antfolk sapience 1].`
 			`You start to walk off with the Antfolk before [Ambassador/Ambassadors] [named antfolk sapience 1] stop and turn around. They then say "It has occured to [I/we/this one] that not even the greatest chef in the Antfolk Union could guarente a correct guess at what you would find [appitizing/edible]. Would you mind informing [I/we/this one] of Human dietary habits?"`
 			choice
-				`You explain as best you can what sort of things humans normally eat.`
+				`(I explain as best I can what sort of things humans normally eat.)`
 					goto humanfood
 			label humanfood
 				`[Ambassador/Ambassadors] [named antfolk sapience 1] think for a while, then say "[I/we/this one] does not know if we can produce food to such... specific specifications. Perhaps we should skip the feast for now. [I/we/this one] shall inform those who need to know so that we can dine next time."`
@@ -920,124 +500,21 @@ mission "Message from the Pug"
 			`"To change the topic," [Ambassador/Ambassadors] [named antfolk sapience 1] say, "Because of your critical role in our development of Hyperdrive technology, the High Queen has decreed that the Antfolk Union will accept your curreny. We will also allow you to purchase our civilian-grade ships and outfits. In addition, the High Queen has decreed that every planet in the Antfolk Union must pay a salary to you in [honor/thankfulness] of your assistance."`
 		set "license: Antfolk"
 
-mission "Antfolk Salary 1"
-	invisible
+mission "obtain human deitary data chip"
+	name "Human Deitary Data Card"
+	description "Obtain a data card containing detailed information on human deitary needs."
 	landing
-	source "Ussria"
+	destination "Beob Sb Evtva"
 	to offer
-		has "Message from the Pug"
-	on offer
-		"salary: Antfolk Union" = 700 #working number
-		fail
-
-mission "Pug Visit 1"
-	name "Visit the Pug (Optional)"
-	description "The Pug mentioned wanting you to visit between assignments from the Antfolk. You could go visit them now"
-	destination "Atilt San Pug"
-	to offer
-		has "Message from the Pug"
+		has "human food data chip fetch quest"
+	to complete
+		stopover Alexandria
+	on stopover
+		conversation
+			`[nothing's written, yet!]`
 	on complete
 		conversation
-			`[stuff about PC saying "What I learned from helping the Antfolk grow today is..." to the Pug]`
-			`[stuff about the Pug giving transchronological advice on the matter of Amy and terraforming Antfolk worlds {make it not obvious at the time that the Pug are trying to advise about future crap}]`
-			`[stuff about Pug giving PC what basically amounts to a pair of quantum entangled PDAs or something and telling PC to give one to the Antfolk]`
-				set "both quantum pdas in pc possession"
-
-mission "Chance to let Antfolk contact PC whenever"
-	name "Deliver a Quantum PDA to <destination>"
-	description "Deliver one of the Pug's Quantum PDAs to the Antfolk Union's High Queen"
-	destination "Ussria"
-	to offer
-		has "both quantum pdas in pc possession"
-	on complete
-		conversation
-			`You return to High Queen Bringer of Law XVI's [place].`
-			`"Hello, High Queen," you say.`
-			`"Hello, <first> Captain <name>. What brings you here on this day?" asks High Queen Bringer of Law.`
-			choice
-				`["Yeah, take this quantum pda so we can talk to each other when I'm not in Antfolk space," PC probably wouldn't say, but is reasonably close to real dialog]`
-					clear "both qantum pdas in pc possession"
-					set "antfolk have a quantum pda"
-					goto pda
-			label pda
-				`["Woah, cool. Now we can pester you for help whenever we feel like it!"]`
-
-#mission "Antfolk Terraforming 1"
-#introduction to the Terraforming Miasma Eopto mission chain
-
-#transition section (filler note for lots of stuff)
-
-ship "Korath Raider" "Korath Raider (no jump)"
-	outfits
-		"Korath Grab-Strike" 4
-		"Korath Banisher"
-		"Korath Warder"
-		"Triple Plasma Core"
-		"Systems Core (Medium)"
-		"Large Heat Shunt" 2
-		"Small Heat Shunt"
-		"Ramscoop"
-		"Intrusion Countermeasures" 4
-		"Thruster (Planetary Class)"
-		"Steering (Planetary Class)"
-
-mission "Disable Miasma"
-	landing
-	name "Defeat Miasma"
-	description "Disable the Korath Raider 'Miasma'."
-	on fail
-		dialog "You need to disable the Raider to allow the antfolk to take it's Jump Drive. If you want to finsh the Antfolk story you must revert to an erlier save."
-	source "Miasma Eopto"
-	to offer
-		#mission previous
-	on offer
-		conversation
-			`When you land on the Miasma Eopto Spaceport, you notice that the entire spaceport is decked out with what you think - or at least hope - are decorations for some kind of holiday. While staring at the decorations, a small group of Antfolk (no more than ten) approach you and say "<first> Captain <name> is [in awe/amazed by] the decorations. This pleases [me/us/this one]. Do you wish to learn about the holiday that is the Aniversary of Miasma's Defeat?"`
-			`Do you? This could be a chance to learn more about Antfolk religion and culture, which theoretically would help in interacting with them.  Or it could turn out to be a complete waste of time.`
-			choice
-				`Yeah, sure. Why not? Tell me about Miasma.`
-					goto story
-			label story
-				`The Antfolk explains "You see, back in very ancient times, Antfolk believed that demons came from a [hell/prison] below Ussria's surface. However, we soon learned that demons don't come from below, they come from above. A millenia ago, a massive metal monster descended from the skies. It burned the land and boiled the seas. Our only salvation from its wrath came when our [deity/goddess], the mighty {Giant Sky Spider}, also came down from the [skies/heavens] and banished Miasma from our world. It then gave us the sacred [Pipe Organ] of [Spirits/Souls] and instructed us in its proper use to prevent the return of Miasma.`
-				`[I/we/this one] was just on [my/our] way to the festival celebrating and observing the Anniversary of Miasma's Defeat. Do you wish to come?`
-				choice
-					`Alright. I'll come.`
-						goto festival
-			label festival
-				`#brief description of the Miasma's Defeat festival`
-				`	#description of a Korath Raider rising from under Miasma Eopto and flying into space`
-				`	#something to let PC know to disable the Korath Raider but not destroy it`
-					launch
-
-	npc disable save
-		personality heroic
-		government Korath
-		ship "Korath Raider (no jump)" "Miasma"
-
-
-mission "Destroy Miasma"
-	description "Finish off the Korath Raider the Antfolk call Miasma"
-	source "Miasma Eopto"
-	to offer
-		has "Disable Miasma: done"
-	on offer
-		conversation
-			#tell the PC to kill the raider and tell about the antfolk salvging the jump drive.
-
-	npc kill
-		personality heroic derelict
-		government Korath
-		ship "Korath Raider (no jump)" "Miasma"
-
-#transition scene
-
-#mission "Deliver the Jump Drive to <destination>"
-#this mission will be important to the Korath-Antfolk War in that the Jump Drive from the Miasma ship (which is delivered to some arbitrary Antfolk-controlled planet for safe storage in this mission) serves to allow the Antfolk to perform ANY forward operations in Korath Exiles space
-	description "Transport Miasma's Jump Drive to <destination> for safe keeping"
-
-#transition section
-
-#everything after this, if disapproved of by MZ, will be removed to be put in some supplementary mod that would be seperate from, but dependant on, "Bite of the Ant". A "Bite of the Ant: Supplement" mod or something.
+			`[nothing's written, yet!]`
 
 mission "Book of First Trigger A"
 	invisible
@@ -1047,7 +524,7 @@ mission "Book of First Trigger A"
 		has "antfolk main plot completed"
 	on offer
 		conversation
-			`You recall that the Pug who called herself (itself?) Steve wanted you to share all the lessons you've learned from shepharding the Antfolk with the rest of Humankind. Speaking with the Brothers on Harmony about how to do that might be a good place to start. Do you want to go to the Monestary and request an audience with Brother Greg?`
+			`You recall that the Pug wanted you to share all the lessons you've learned from shepharding the Antfolk with the rest of Humankind. Speaking with the Brothers on Harmony about how to do that might be a good place to start. Do you want to go to the Monestary and request an audience with Brother Greg?`
 			choice
 				`Yes, it sounds like a good idea.`
 					goto yes
