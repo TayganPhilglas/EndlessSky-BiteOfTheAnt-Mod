@@ -34,7 +34,7 @@ system "Bevtvab Sj Rveqf Vtany"
 	object
 		sprite star/k5
 		period 10
-	object "Atilt San Pug"
+	object "Chtb Eob sn Agsbyx"
 		sprite planet/ice3
 		distance 409.983
 		period 160.896
@@ -70,63 +70,57 @@ system "Bevtvab Sj Rveqf Vtany"
 			distance 517
 			period 30.876
 
-system Edvxn
-	pos -696.59 -8697.77
+system "Frpbaqy Rncb ss Nvgu"
+	pos -552.441 -8518.8
 	government Uninhabited
-	habitable 1705
-	link "Vsde Ztoox"
-	link Keqio
-	link Ozitng
-	link Ssjg
-	asteroids "small rock" 1 6.0345
-	asteroids "medium rock" 10 5.7915
-	asteroids "large rock" 7 3.807
-	asteroids "small metal" 11 2.5515
-	asteroids "medium metal" 66 3.321
-	asteroids "large metal" 1 2.6325
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
+	habitable 486.68
+	asteroids "small rock" 5 1.8744
+	asteroids "medium rock" 2 3.5112
+	asteroids "large rock" 2 2.6664
+	asteroids "small metal" 19 1.7688
+	asteroids "medium metal" 21 3.2736
+	asteroids "large metal" 2 1.848
+	trade Clothing 280
+	trade Electronics 730
+	trade Equipment 520
 	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
+	trade "Heavy Metals" 950
+	trade Industrial 700
+	trade "Luxury Goods" 1200
+	trade Medical 650
 	trade Metal 390
-	trade Plastic 390
+	trade Plastic 370
 	object
-		sprite star/g0
-		distance 48.0205
-		period 14.5246
+		sprite star/k0
+		period 10
 	object
-		sprite star/g5
-		distance 82.9795
-		period 14.5246
-		offset 180
+		sprite planet/rock9
+		distance 150.61
+		period 33.5134
 	object
-		sprite planet/lava1
-		distance 293.789
-		period 48.7812
+		sprite planet/lava6
+		distance 344.3
+		period 115.836
 	object
-		sprite planet/cloud1
-		distance 609.149
-		period 145.641
+		sprite planet/ocean8
+		distance 933.39
+		period 517.05
 	object
-		sprite planet/gas7
-		distance 1185.96
-		period 395.642
+		sprite planet/rock6
+		distance 1156.63
+		period 713.231
 	object
-		sprite planet/jupiter
-		distance 2107.2
-		period 937.036
+		sprite planet/ice2
+		distance 1365.63
+		period 915.035
+	object
+		sprite planet/gas16
+		distance 2549.63
+		period 2334.29
 		object
-			sprite planet/ice0
-			distance 237
-			period 11.4653
-		object
-			sprite planet/luna
-			distance 377
-			period 23.0024
+			sprite planet/dust5
+			distance 228
+			period 18.1217
 
 system "Gurt Ngrjnl"
 	pos -466.633 -8452.56
@@ -145,6 +139,45 @@ system "Gurt Ngrjnl"
 	object
 		sprite star/a0
 		period 10
+
+system "Guveqy Rncb ss Nvgu"
+	pos -627.441 -8562.8
+	government Uninhabited
+	habitable 320
+	asteroids "small rock" 10 3.0096
+	asteroids "medium rock" 3 3.1944
+	asteroids "large rock" 18 1.5048
+	asteroids "medium metal" 1 1.5312
+	asteroids "large metal" 1 1.7688
+	trade Clothing 280
+	trade Electronics 730
+	trade Equipment 520
+	trade Food 350
+	trade "Heavy Metals" 950
+	trade Industrial 700
+	trade "Luxury Goods" 1200
+	trade Medical 650
+	trade Metal 390
+	trade Plastic 370
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/ice1
+		distance 199.49
+		period 63.0038
+	object
+		sprite planet/rock5
+		distance 580.73
+		period 312.929
+	object
+		sprite planet/rock6
+		distance 766.37
+		period 474.398
+	object
+		sprite planet/dust1
+		distance 2022.37
+		period 2033.65
 
 system "Ibvqf Gne"
 	pos -830.703 -8721.88
@@ -170,7 +203,7 @@ system "Ibvqf Gne"
 	object
 		sprite star/k5
 		period 10
-	object "[New Human Branch Headquarters]"
+	object "Chtb Eob su Hzna"
 		sprite planet/cloud1
 		distance 394.872
 		period 152.083
@@ -203,15 +236,299 @@ system "Ibvqf Gne"
 			distance 417
 			period 28.3173
 
-system Keqio
+system "Pybfrfga Rvtuobe"
+	pos -800.436 -8661.08
+	government Uninhabited
+	habitable 659.2
+	link "Terngq Nlf Gne"
+	link "[unnamed 1]"
+	link "Znalc Nguf"
+	link "[unnamed 2]"
+	asteroids "small rock" 57 1.7355
+	asteroids "medium rock" 41 2.925
+	asteroids "large rock" 104 1.404
+	asteroids "small metal" 6 2.808
+	asteroids "medium metal" 79 1.248
+	asteroids "large metal" 2 1.56
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k5
+		distance 39.2811
+		period 18.2195
+	object
+		sprite star/m4
+		distance 71.7189
+		period 18.2195
+		offset 180
+	object
+		sprite planet/ice2
+		distance 308.809
+		period 84.5447
+	object
+		sprite planet/forest0
+		distance 577.049
+		period 215.959
+	object
+		sprite planet/gas13
+		distance 1104.21
+		period 571.647
+		object
+			sprite planet/rock7
+			distance 256
+			period 11.563
+	object
+		sprite planet/gas12
+		distance 1729.17
+		period 1120.23
+	object
+		sprite planet/gas11
+		distance 2264.17
+		period 1678.47
+		object
+			sprite planet/ice8
+			distance 231
+			period 11.5797
+
+system "Svefgy Rncb ss Nvgu"
+	pos -519.441 -8472.8
+	government Uninhabited
+	habitable 425.92
+	asteroids "small rock" 2 5.9616
+	asteroids "medium rock" 62 2.9808
+	asteroids "large rock" 23 4.968
+	asteroids "small metal" 3 3.6984
+	asteroids "medium metal" 117 3.0912
+	asteroids "large metal" 28 6.348
+	trade Clothing 280
+	trade Electronics 730
+	trade Equipment 520
+	trade Food 350
+	trade "Heavy Metals" 950
+	trade Industrial 700
+	trade "Luxury Goods" 1200
+	trade Medical 650
+	trade Metal 390
+	trade Plastic 370
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/desert1
+		distance 258.25
+		period 80.4371
+	object
+		sprite planet/earth
+		distance 623.25
+		period 301.571
+		object
+			sprite planet/oberon
+			distance 127
+			period 14.6525
+	object
+		sprite planet/gas15
+		distance 1043.25
+		period 653.098
+	object
+		sprite planet/gas2
+		distance 1762.54
+		period 1434.18
+		object
+			sprite planet/tethys
+			distance 175
+			period 14.0272
+		object
+			sprite planet/callisto
+			distance 327
+			period 35.8291
+
+system "Terngq Nlf Gne"
+	pos -757.59 -8645.77
+	government "Antfolk Union"
+	habitable 806.68
+	link "Pybfrfga Rvtuobe"
+	link "Znalc Nguf"
+	link "Ubylf Gne"
+	asteroids "small metal" 5 0.9516
+	asteroids "medium metal" 61 1.9812
+	asteroids "large metal" 87 1.092
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 570
+	trade Food 500
+	trade "Heavy Metals" 960
+	trade Industrial 760
+	trade "Luxury Goods" 1150
+	trade Medical 830
+	trade Metal 430
+	trade Plastic 350
+	object
+		sprite star/k0
+		distance 41.2555
+		period 14.9369
+	object
+		sprite star/m0
+		distance 62.7445
+		period 14.9369
+		offset 180
+	object "Beob Sb Evtva"
+		sprite planet/earth
+		distance 814.725
+		period 327.511
+		offset 248.059
+		object
+			sprite planet/desert4
+			distance 146.104
+			period 21.7634
+			offset 343.88
+		object "Fxls Npgbel"
+			sprite planet/station2
+			distance 285.055
+			period 49.272
+			offset 222.795
+	object "Beob ss Vefgp Bybal"
+		sprite planet/desert7
+		distance 1330.78
+		period 683.708
+		offset 113.945
+	object
+		sprite planet/neptune
+		distance 1840.07
+		period 1111.64
+		offset 78.9082
+		object
+			sprite planet/ice8
+			distance 197
+			period 13.7763
+	object
+		sprite planet/dust5
+		distance 2841.88
+		period 2133.63
+		offset 24.9044
+
+system "Ubylf Gne"
+	pos -712.441 -8610.8
+	government Uninhabited
+	habitable 625
+	link "Terngq Nlf Gne"
+	link "[unnamed 1]"
+	link "[unnamed 3]"
+	asteroids "medium rock" 5 7.3728
+	asteroids "large rock" 1 8.1792
+	asteroids "small metal" 25 3.3408
+	asteroids "medium metal" 2 4.5504
+	asteroids "large metal" 3 8.5248
+	trade Clothing 280
+	trade Electronics 730
+	trade Equipment 520
+	trade Food 350
+	trade "Heavy Metals" 950
+	trade Industrial 700
+	trade "Luxury Goods" 1200
+	trade Medical 650
+	trade Metal 390
+	trade Plastic 370
+	object
+		sprite star/g5
+		period 10
+	object
+		sprite planet/rock18
+		distance 586.843
+		period 227.459
+		offset 157.826
+		object
+			sprite planet/luna
+			distance 147
+			period 22.4047
+	object
+		sprite planet/lava7
+		distance 905.853
+		period 436.221
+		offset 23.4354
+	object
+		sprite planet/gas15
+		distance 1171.94
+		period 641.918
+		offset 295.571
+	object
+		sprite planet/gas16
+		distance 2618.1
+		period 2143.38
+		offset 335.603
+		object
+			sprite planet/europa
+			distance 211
+			period 16.1332
+		object
+			sprite planet/ice8
+			distance 349
+			period 34.3191
+
+system "Yrnqfg ba Bjurer"
+	pos -792.703 -8733.88
+	government Uninhabited
+	habitable 486.68
+	link "Znalc Nguf"
+	asteroids "medium rock" 4 3.7296
+	asteroids "large rock" 2 2.184
+	asteroids "small metal" 2 3.1248
+	asteroids "medium metal" 1 3.1584
+	asteroids "large metal" 12 2.352
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/rock2
+		distance 156.49
+		period 35.4951
+	object
+		sprite planet/forest2
+		distance 427.1
+		period 160.041
+	object
+		sprite planet/rock11
+		distance 634.35
+		period 289.689
+	object
+		sprite planet/rock10
+		distance 1116.24
+		period 676.199
+	object
+		sprite planet/gas7
+		distance 1841.13
+		period 1432.4
+		object
+			sprite planet/tethys
+			distance 214
+			period 11.1366
+
+system "Znalc Nguf"
 	pos -755.436 -8700.08
 	government Uninhabited
 	habitable 560.92
 	link "Terngq Nlf Gne"
 	link "Pybfrfga Rvtuobe"
-	link Edvxn
-	link Ozitng
-	link "Unnamed 1"
+	link "[unnamed 4]"
+	link "[unnamed 5]"
+	link "Yrnqfg ba Bjurer"
 	asteroids "small rock" 18 3.84
 	asteroids "medium rock" 37 3.6
 	asteroids "large rock" 28 5.472
@@ -270,13 +587,63 @@ system Keqio
 			distance 395
 			period 41.79
 
-system Oigex
+system "[chokepoint 1]"
+	pos -668.59 -8754.77
+	government Uninhabited
+	habitable 1715
+	link "[unnamed 4]"
+	link "[unnamed 5]"
+	asteroids "small rock" 8 3.6816
+	asteroids "medium rock" 81 2.5896
+	asteroids "large rock" 34 2.5896
+	asteroids "small metal" 16 4.3056
+	asteroids "medium metal" 83 2.0592
+	asteroids "large metal" 19 3.6816
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/desert1
+		distance 277.04
+		period 44.5391
+	object
+		sprite planet/lava7
+		distance 484.04
+		period 102.861
+	object
+		sprite planet/gas14
+		distance 944.85
+		period 280.525
+		object
+			sprite planet/rock7
+			distance 236
+			period 14.7648
+	object
+		sprite planet/gas11
+		distance 2367.06
+		period 1112.35
+		object
+			sprite planet/rock0
+			distance 232
+			period 11.6549
+
+system "[unnamed 1]"
 	pos -775.59 -8600.77
 	government Uninhabited
 	habitable 1705
 	link "Pybfrfga Rvtuobe"
 	link "Ubylf Gne"
-	link Qno
+	link "[unnamed 2]"
 	asteroids "small rock" 6 8.073
 	asteroids "medium rock" 4 10.005
 	asteroids "large rock" 3 10.212
@@ -326,120 +693,11 @@ system Oigex
 		distance 2099.94
 		period 932.199
 
-system Ozitng
-	pos -717.59 -8742.77
-	government Uninhabited
-	habitable 233.28
-	link Keqio
-	link Edvxn
-	link Ssjg
-	asteroids "small rock" 2 3.625
-	asteroids "medium rock" 58 2.725
-	asteroids "large rock" 6 3.175
-	asteroids "small metal" 2 1.825
-	asteroids "medium metal" 5 3.55
-	asteroids "large metal" 4 2.625
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
-	object
-		sprite star/m4
-		period 10
-	object
-		sprite planet/rock4
-		distance 184.04
-		period 65.3867
-	object
-		sprite planet/desert7
-		distance 573.29
-		period 359.487
-	object
-		sprite planet/ice2
-		distance 766.29
-		period 555.534
-	object
-		sprite planet/jupiter
-		distance 1710.7
-		period 1853.03
-		object
-			sprite planet/tethys
-			distance 267
-			period 13.7097
-
-system "Pybfrfga Rvtuobe"
-	pos -800.436 -8661.08
-	government Uninhabited
-	habitable 659.2
-	link "Terngq Nlf Gne"
-	link Oigex
-	link Keqio
-	link Qno
-	asteroids "small rock" 57 1.7355
-	asteroids "medium rock" 41 2.925
-	asteroids "large rock" 104 1.404
-	asteroids "small metal" 6 2.808
-	asteroids "medium metal" 79 1.248
-	asteroids "large metal" 2 1.56
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
-	object
-		sprite star/k5
-		distance 39.2811
-		period 18.2195
-	object
-		sprite star/m4
-		distance 71.7189
-		period 18.2195
-		offset 180
-	object
-		sprite planet/ice2
-		distance 308.809
-		period 84.5447
-	object
-		sprite planet/forest0
-		distance 577.049
-		period 215.959
-	object
-		sprite planet/gas13
-		distance 1104.21
-		period 571.647
-		object
-			sprite planet/rock7
-			distance 256
-			period 11.563
-	object
-		sprite planet/gas12
-		distance 1729.17
-		period 1120.23
-	object
-		sprite planet/gas11
-		distance 2264.17
-		period 1678.47
-		object
-			sprite planet/ice8
-			distance 231
-			period 11.5797
-
-system Qno
+system "[unnamed 2]"
 	pos -826.441 -8581.8
 	government Uninhabited
 	habitable 1715
-	link Oigex
+	link "[unnamed 1]"
 	link "Pybfrfga Rvtuobe"
 	asteroids "medium rock" 2 3.564
 	asteroids "large rock" 1 4.3362
@@ -483,375 +741,12 @@ system Qno
 			distance 217
 			period 12.7763
 
-system Ssjg
-	pos -646.59 -8724.77
-	government Uninhabited
-	habitable 1715
-	link Edvxn
-	link Ozitng
-	asteroids "small rock" 8 3.6816
-	asteroids "medium rock" 81 2.5896
-	asteroids "large rock" 34 2.5896
-	asteroids "small metal" 16 4.3056
-	asteroids "medium metal" 83 2.0592
-	asteroids "large metal" 19 3.6816
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
-	object
-		sprite star/f5
-		period 10
-	object
-		sprite planet/desert1
-		distance 277.04
-		period 44.5391
-	object
-		sprite planet/lava7
-		distance 484.04
-		period 102.861
-	object
-		sprite planet/gas14
-		distance 944.85
-		period 280.525
-		object
-			sprite planet/rock7
-			distance 236
-			period 14.7648
-	object
-		sprite planet/gas11
-		distance 2367.06
-		period 1112.35
-		object
-			sprite planet/rock0
-			distance 232
-			period 11.6549
-
-system "Step to the Anthill 1"
-	pos -519.441 -8472.8
-	government Uninhabited
-	habitable 425.92
-	asteroids "small rock" 2 5.9616
-	asteroids "medium rock" 62 2.9808
-	asteroids "large rock" 23 4.968
-	asteroids "small metal" 3 3.6984
-	asteroids "medium metal" 117 3.0912
-	asteroids "large metal" 28 6.348
-	trade Clothing 280
-	trade Electronics 730
-	trade Equipment 520
-	trade Food 350
-	trade "Heavy Metals" 950
-	trade Industrial 700
-	trade "Luxury Goods" 1200
-	trade Medical 650
-	trade Metal 390
-	trade Plastic 370
-	object
-		sprite star/k5
-		period 10
-	object
-		sprite planet/desert1
-		distance 258.25
-		period 80.4371
-	object
-		sprite planet/earth
-		distance 623.25
-		period 301.571
-		object
-			sprite planet/oberon
-			distance 127
-			period 14.6525
-	object
-		sprite planet/gas15
-		distance 1043.25
-		period 653.098
-	object
-		sprite planet/gas2
-		distance 1762.54
-		period 1434.18
-		object
-			sprite planet/tethys
-			distance 175
-			period 14.0272
-		object
-			sprite planet/callisto
-			distance 327
-			period 35.8291
-
-system "Step to the Anthill 2"
-	pos -552.441 -8518.8
-	government Uninhabited
-	habitable 486.68
-	asteroids "small rock" 5 1.8744
-	asteroids "medium rock" 2 3.5112
-	asteroids "large rock" 2 2.6664
-	asteroids "small metal" 19 1.7688
-	asteroids "medium metal" 21 3.2736
-	asteroids "large metal" 2 1.848
-	trade Clothing 280
-	trade Electronics 730
-	trade Equipment 520
-	trade Food 350
-	trade "Heavy Metals" 950
-	trade Industrial 700
-	trade "Luxury Goods" 1200
-	trade Medical 650
-	trade Metal 390
-	trade Plastic 370
-	object
-		sprite star/k0
-		period 10
-	object
-		sprite planet/rock9
-		distance 150.61
-		period 33.5134
-	object
-		sprite planet/lava6
-		distance 344.3
-		period 115.836
-	object
-		sprite planet/ocean8
-		distance 933.39
-		period 517.05
-	object
-		sprite planet/rock6
-		distance 1156.63
-		period 713.231
-	object
-		sprite planet/ice2
-		distance 1365.63
-		period 915.035
-	object
-		sprite planet/gas16
-		distance 2549.63
-		period 2334.29
-		object
-			sprite planet/dust5
-			distance 228
-			period 18.1217
-
-system "Step to the Anthill 3"
-	pos -627.441 -8562.8
-	government Uninhabited
-	habitable 320
-	asteroids "small rock" 10 3.0096
-	asteroids "medium rock" 3 3.1944
-	asteroids "large rock" 18 1.5048
-	asteroids "medium metal" 1 1.5312
-	asteroids "large metal" 1 1.7688
-	trade Clothing 280
-	trade Electronics 730
-	trade Equipment 520
-	trade Food 350
-	trade "Heavy Metals" 950
-	trade Industrial 700
-	trade "Luxury Goods" 1200
-	trade Medical 650
-	trade Metal 390
-	trade Plastic 370
-	object
-		sprite star/m0
-		period 10
-	object
-		sprite planet/ice1
-		distance 199.49
-		period 63.0038
-	object
-		sprite planet/rock5
-		distance 580.73
-		period 312.929
-	object
-		sprite planet/rock6
-		distance 766.37
-		period 474.398
-	object
-		sprite planet/dust1
-		distance 2022.37
-		period 2033.65
-
-system "Terngq Nlf Gne"
-	pos -757.59 -8645.77
-	government "Antfolk Union"
-	habitable 806.68
-	link "Pybfrfga Rvtuobe"
-	link Keqio
-	link "Ubylf Gne"
-	asteroids "small metal" 5 0.9516
-	asteroids "medium metal" 61 1.9812
-	asteroids "large metal" 87 1.092
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 570
-	trade Food 500
-	trade "Heavy Metals" 960
-	trade Industrial 760
-	trade "Luxury Goods" 1150
-	trade Medical 830
-	trade Metal 430
-	trade Plastic 350
-	object
-		sprite star/k0
-		distance 41.2555
-		period 14.9369
-	object
-		sprite star/m0
-		distance 62.7445
-		period 14.9369
-		offset 180
-	object Ussria
-		sprite planet/earth
-		distance 814.725
-		period 327.511
-		offset 248.059
-		object
-			sprite planet/desert4
-			distance 146.104
-			period 21.7634
-			offset 343.88
-		object Sheastheup
-			sprite planet/station2
-			distance 285.055
-			period 49.272
-			offset 222.795
-	object "Miasma Eopto"
-		sprite planet/desert7
-		distance 1330.78
-		period 683.708
-		offset 113.945
-	object
-		sprite planet/neptune
-		distance 1840.07
-		period 1111.64
-		offset 78.9082
-		object
-			sprite planet/ice8
-			distance 197
-			period 13.7763
-	object
-		sprite planet/dust5
-		distance 2841.88
-		period 2133.63
-		offset 24.9044
-
-system "Ubylf Gne"
-	pos -712.441 -8610.8
-	government Uninhabited
-	habitable 625
-	link "Terngq Nlf Gne"
-	link Oigex
-	link "Vsde Ztoox"
-	asteroids "medium rock" 5 7.3728
-	asteroids "large rock" 1 8.1792
-	asteroids "small metal" 25 3.3408
-	asteroids "medium metal" 2 4.5504
-	asteroids "large metal" 3 8.5248
-	trade Clothing 280
-	trade Electronics 730
-	trade Equipment 520
-	trade Food 350
-	trade "Heavy Metals" 950
-	trade Industrial 700
-	trade "Luxury Goods" 1200
-	trade Medical 650
-	trade Metal 390
-	trade Plastic 370
-	object
-		sprite star/g5
-		period 10
-	object
-		sprite planet/rock18
-		distance 586.843
-		period 227.459
-		offset 157.826
-		object
-			sprite planet/luna
-			distance 147
-			period 22.4047
-	object
-		sprite planet/lava7
-		distance 905.853
-		period 436.221
-		offset 23.4354
-	object
-		sprite planet/gas15
-		distance 1171.94
-		period 641.918
-		offset 295.571
-	object
-		sprite planet/gas16
-		distance 2618.1
-		period 2143.38
-		offset 335.603
-		object
-			sprite planet/europa
-			distance 211
-			period 16.1332
-		object
-			sprite planet/ice8
-			distance 349
-			period 34.3191
-
-system "Unnamed 1"
-	pos -792.703 -8733.88
-	government Uninhabited
-	habitable 486.68
-	link Keqio
-	asteroids "medium rock" 4 3.7296
-	asteroids "large rock" 2 2.184
-	asteroids "small metal" 2 3.1248
-	asteroids "medium metal" 1 3.1584
-	asteroids "large metal" 12 2.352
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
-	object
-		sprite star/k0
-		period 10
-	object
-		sprite planet/rock2
-		distance 156.49
-		period 35.4951
-	object
-		sprite planet/forest2
-		distance 427.1
-		period 160.041
-	object
-		sprite planet/rock11
-		distance 634.35
-		period 289.689
-	object
-		sprite planet/rock10
-		distance 1116.24
-		period 676.199
-	object
-		sprite planet/gas7
-		distance 1841.13
-		period 1432.4
-		object
-			sprite planet/tethys
-			distance 214
-			period 11.1366
-
-system "Vsde Ztoox"
-	pos -694.441 -8653.8
+system "[unnamed 3]"
+	pos -691.441 -8660.8
 	government Uninhabited
 	habitable 2859.44
 	link "Ubylf Gne"
-	link Edvxn
+	link "[unnamed 4]"
 	asteroids "small rock" 14 1.5552
 	asteroids "medium rock" 9 2.088
 	asteroids "large rock" 18 1.9728
@@ -914,7 +809,130 @@ system "Vsde Ztoox"
 			distance 559
 			period 34.7138
 
-planet "Atilt San Pug"
+system "[unnamed 4]"
+	pos -696.59 -8697.77
+	government Uninhabited
+	habitable 1705
+	link "[unnamed 3]"
+	link "Znalc Nguf"
+	link "[unnamed 5]"
+	link "[chokepoint 1]"
+	asteroids "small rock" 1 6.0345
+	asteroids "medium rock" 10 5.7915
+	asteroids "large rock" 7 3.807
+	asteroids "small metal" 11 2.5515
+	asteroids "medium metal" 66 3.321
+	asteroids "large metal" 1 2.6325
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g0
+		distance 48.0205
+		period 14.5246
+	object
+		sprite star/g5
+		distance 82.9795
+		period 14.5246
+		offset 180
+	object
+		sprite planet/lava1
+		distance 293.789
+		period 48.7812
+	object
+		sprite planet/cloud1
+		distance 609.149
+		period 145.641
+	object
+		sprite planet/gas7
+		distance 1185.96
+		period 395.642
+	object
+		sprite planet/jupiter
+		distance 2107.2
+		period 937.036
+		object
+			sprite planet/ice0
+			distance 237
+			period 11.4653
+		object
+			sprite planet/luna
+			distance 377
+			period 23.0024
+
+system "[unnamed 5]"
+	pos -717.59 -8742.77
+	government Uninhabited
+	habitable 233.28
+	link "Znalc Nguf"
+	link "[unnamed 4]"
+	link "[chokepoint 1]"
+	asteroids "small rock" 2 3.625
+	asteroids "medium rock" 58 2.725
+	asteroids "large rock" 6 3.175
+	asteroids "small metal" 2 1.825
+	asteroids "medium metal" 5 3.55
+	asteroids "large metal" 4 2.625
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/m4
+		period 10
+	object
+		sprite planet/rock4
+		distance 184.04
+		period 65.3867
+	object
+		sprite planet/desert7
+		distance 573.29
+		period 359.487
+	object
+		sprite planet/ice2
+		distance 766.29
+		period 555.534
+	object
+		sprite planet/jupiter
+		distance 1710.7
+		period 1853.03
+		object
+			sprite planet/tethys
+			distance 267
+			period 13.7097
+
+planet "Beob Sb Evtva"
+	attributes antfolk
+	landscape land/mfield3
+	description `Beob Sb Evtva is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
+	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of leasuire break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
+	"required reputation" 10
+	bribe 0
+	security 0.3
+
+planet "Beob ss Vefgp Bybal"
+	attributes antfolk
+	landscape land/red0
+	description `Similar to how Mars was prior to Humanity's discovery of terraforming, Beob ss Vefgp Bybal lacks an atmosphere that humans can survive. The Antfolk are capable of breathing the air here for a short time if necessary, but it is hard on them and even their hard chitin carapaces can't stand the pressure all that long, either. As a result, the Antfolk here all live inside planetbases equipped with atmospheric generators, hydroponic farms, and the like. While the Antfolk do go outside in envirosuits when a task requires skilled labor, they prefer to use remote-controlled drones for the mines and transportation of goods outside or between bases.`
+	spaceport `The spaceport is composed of numerous outdoor landing pads with walkways that funnel all traffic through one of multiple security checkpoints filled with armed guards. Past those, the anemeties you have come to associate with a spaceport turn out to be spread all over the local planetbase. A planetbase which was designed for large numbers of life forms less than a third your height. Instead of crawling around their planetbase on all fours and causing all sorts of accidents, you and the local Antfolk Queen in charge both agree for whatever goods you need to buy or sell to be handled by carrier bots, and for you to pay and be paid electronically.`
+	"required reputation" 4
+	bribe 0
+	security 0.2
+
+planet "Chtb Eob sn Agsbyx"
 	landscape land/space6
 	description `[planet description placeholder]`
 	spaceport `[spaceport description placeholder]`
@@ -922,16 +940,15 @@ planet "Atilt San Pug"
 	bribe 0
 	security 1
 
-planet "Miasma Eopto"
-	attributes antfolk
-	landscape land/red0
-	description `Similar to how Mars was prior to Humanity's discovery of terraforming, Miasma Eopto lacks an atmosphere that humans can survive. The Antfolk are capable of breathing the air here for a short time if necessary, but it is hard on them and even their hard chitin carapaces can't stand the pressure all that long, either. As a result, the Antfolk here all live inside planetbases equipped with atmospheric generators, hydroponic farms, and the like. While the Antfolk do go outside in envirosuits when a task requires skilled labor, they prefer to use remote-controlled drones for the mines and transportation of goods outside or between bases.`
-	spaceport `The spaceport is composed of numerous outdoor landing pads with walkways that funnel all traffic through one of multiple security checkpoints filled with armed guards. Past those, the anemeties you have come to associate with a spaceport turn out to be spread all over the local planetbase. A planetbase which was designed for large numbers of life forms less than a third your height. Instead of crawling around their planetbase on all fours and causing all sorts of accidents, you and the local Antfolk Queen in charge both agree for whatever goods you need to buy or sell to be handled by carrier bots, and for you to pay and be paid electronically.`
-	"required reputation" 10
+planet "Chtb Eob su Hzna"
+	landscape land/forest5
+	description `[planet description placeholder]`
+	spaceport `[spaceport description placeholder]`
+	"required reputation" 2
 	bribe 0
-	security 0.2
+	security 1
 
-planet Sheastheup
+planet "Fxls Npgbel"
 	attributes antfolk station
 	landscape land/station1
 	description `[stuff about this station serving as an orbital yard for the Antfolk]`
@@ -944,19 +961,3 @@ planet Sheastheup
 	bribe 0
 	security 0.3
 
-planet Ussria
-	attributes antfolk
-	landscape land/mfield3
-	description `Ussria is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
-	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of leasuire break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
-	"required reputation" 10
-	bribe 0
-	security 0.3
-
-planet "[New Human Branch Headquarters]"
-	landscape land/forest5
-	description `[planet description placeholder]`
-	spaceport `[spaceport description placeholder]`
-	"required reputation" 2
-	bribe 0
-	security 1
