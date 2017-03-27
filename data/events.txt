@@ -59,7 +59,7 @@ event "Milky Way-Acallaris Wormhole opens"
 			distance 4932.91
 			period 1959.88
 			offset 245.709
-	system "Galactic Core"
+	system "Gurt Ngrjnl"
 		object
 			sprite star/a0
 			period 10
@@ -76,7 +76,7 @@ mission "Milky Way-Acallaris Wormhole opens"
 	to offer
 		has "main plot completed"
 	on offer
-		event "Milky Way-Acallaris Wormhole opens" 1
+		event "Milky Way-Acallaris Wormhole opens"
 
 mission "Pirates don't fight ' Pirates '"
 	invisible

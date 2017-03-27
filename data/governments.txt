@@ -47,6 +47,6 @@ government "Antfolk Merchant"
 government "Antfolk Pirate"
 	language "APASL"
 	"player reputation" 0
-	"attidude toward"
+	"attitude toward"
 		"Antfolk Union" -0.2
 		"Antfolk Merchant" -0.2
