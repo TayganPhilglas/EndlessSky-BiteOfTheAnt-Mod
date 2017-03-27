@@ -1,28 +1,20 @@
-planet "Ad Elans" #anagram for "Atlantis"
+planet "Rgreanys Ybbq"
 	attributes antfolk
 	landscape land/sea1
-	description `Ad Elans is home to the oldest off-homeworld colonies the Antfolk have. Due to the planet's surface being ninty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
-	spaceport `Due to the heavy space traffic Ad Elans recieves, the city the spaceport is on one of the largest platforms of the largest and oldest of the mobile floating cities sailing the planet's oceans. While the Antfolk's choice to do this rather than letting docked ships take up valuable landmass makes sense, it has the side effect that ships can only land on one specific part of the planet, and which part that is constantly changes. As a result, traffic controllers have to stay in constant communication with the ships they're trying to help land, so as to send them new coordinates for the spaceport should they change significantly before the ship can find the correct floating city.`
+	description `Rgreanys Ybbq is the first extrasolar colony of the Antfolk Union. Due to the planet's surface being ninty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
+	spaceport `Due to the heavy space traffic Rgreanys Ybbq recieves, the spaceport takes up an entire platform on the largest of the mobile floating cities sailing the planet's oceans. While the Antfolk's choice to do this rather than letting docked ships take up valuable landmass makes sense, it has the side effect that ships can only land on one specific part of the planet, and which part that is constantly changes. As a result, traffic controllers have to stay in constant communication with the ships they're trying to help land, so as to send them new coordinates for the spaceport should they change significantly before the ship can find the correct floating city.`
 	"required reputation" 10
 	bribe 0
 	security 0.2
-planet Endlagn #anagram for "England"
-	attributes antfolk
-	landscape land/badlands2
-	description `[planet description here]`
-	spaceport `[spaceport description here]`
-	"required reputation" 10
-	bribe 0
-	security 0.1
-planet Aicmaer #anagram for "America"
+planet "Haqlvatf Gbez"
 	attributes antfolk
 	landscape #land/something
-	description `Aicmaer at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
-	spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Aicmaer lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Aicmaer has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
+	description `Haqlvatf Gbez at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
+	spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Haqlvatf Gbez lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Haqlvatf Gbez has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
 	"required reputation" 10
 	bribe 0
 	security 0.1
-planet Zcehc #anagram for "Czech"
+planet "Jbeyqb sp Evzfbap Bybal"
 	attributes antfolk
 	landscape #land/something
 	description `[planet description here]`
@@ -30,7 +22,7 @@ planet Zcehc #anagram for "Czech"
 	"required reputation" 10
 	bribe 0
 	security 0.1
-planet Voscal #anagram for "Slovac"
+planet "Jbeyqb sp Rehyrnap Bybal" #keep an eye out for possibly redoing this one, it came out of the rot13 scrambler a little wonky at first
 	attributes antfolk
 	landscape #land/something
 	description `[planet description here]`
@@ -38,6 +30,8 @@ planet Voscal #anagram for "Slovac"
 	"required reputation" 10
 	bribe 0
 	security 0.1
+
+#redo the names for all below this line
 planet "Laze Nu Eve" #can't recall for the life of me what on Earth that name is an anagram of
 	attributes antfolk "antfolk pirate"
 	landscape #land/something (probably something frozen wasteland-ish)
