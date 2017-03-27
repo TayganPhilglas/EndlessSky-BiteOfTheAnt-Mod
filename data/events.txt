@@ -90,8 +90,8 @@ event "Stormhold-PC armistice"
 	system Alcyone
 		government " Pirate "
 
-event "player has antfolk translation machine"
-	set "language: APASL"
+event "antfolk translation machine"
+	set "language: Antfolk"
 
 event "antfolk gain hyperdrives"
 	"reputation: Antfolk Union" >?= 20
@@ -99,135 +99,202 @@ event "antfolk gain hyperdrives"
 		"Fuel Vacuole"
 		"Hyperdrive"
 
-event "antfolk colonize chang-er"
-	system Chang-Er
+event "antfolk colonize pybfrfga rvtuobe"
+	system "Pybfrfga Rvtuobe"
 		government "Antfolk Union"
 		object
-			sprite star/k0
-			distance 43.6356
-			period 16.2479
-		object
-			sprite star/m0
-			distance 66.3644
-			period 16.2479
-			offset 180
-		object
-			sprite planet/rock5
-			distance 198.054
-			period 39.2542
-		object
-			sprite planet/ice2
-			distance 420.264
-			period 121.337
-		object Endlagn
-			sprite planet/rock10
-			distance 748.602
-			period 288.46
-			offset 61.4679
-		object
-			sprite planet/gas14
-			distance 1641.85
-			period 936.937
-			offset 8.33328
-			object
-				sprite planet/tethys
-				distance 209
-				period 12.3049
-			object
-				sprite planet/lava0
-				distance 355
-				period 27.2396
-	planet Endlagn
-		attributes antfolk
-		landscape land/badlands2
-		description `[planet description here]`
-		spaceport `[spaceport description here]`
-
-event "antfolk colonize voida"
-	system Voida
-		government "Antfolk Union"
-		object
-			sprite star/f0
-			period 10
-		object
-			sprite planet/ice3
-			distance 207.09
-			period 24.4721
-		object
-			sprite planet/ice0
-			distance 388.09
-			period 62.7815
-		object
-			sprite planet/rock16
-			distance 546.25
-			period 104.838
-		object Aicmaer
-			sprite planet/forest6
-			distance 2368.12
-			period 946.321
-			offset 270.51
-		object
-			sprite planet/rhea
-			distance 4031.16
-			period 2101.74
-			offset 114.954
-	planet Aicmaer
-		attributes antfolk
-		landscape #land/something
-		description `Aicmaer at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
-		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Aicmaer lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Aicmaer has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
-
-event "antfolk colonize alecto"
-	system Alecto
-		government "Antfolk Union"
-		object
-			sprite star/g0
-			distance 19.3618
-			period 12.5609
-			offset 180
+			sprite star/k5
+			distance 39.2811
+			period 18.2195
 		object
 			sprite star/m4
-			distance 89.6382
-			period 12.5609
+			distance 71.7189
+			period 18.2195
+			offset 180
 		object
-			sprite planet/lava3
-			distance 299.878
-			period 57.319
+			sprite planet/ice2
+			distance 308.809
+			period 84.5447
+		object "Rgreanys Ybbq"
+			sprite planet/ocean1
+			distance 577.049
+			period 215.959
+		object
+			sprite planet/gas13
+			distance 1104.21
+			period 571.647
+			object
+				sprite planet/rock7
+				distance 256
+				period 11.563
+		object
+			sprite planet/gas12
+			distance 1729.17
+			period 1120.23
+		object
+			sprite planet/gas11
+			distance 2264.17
+			period 1678.47
+			object
+				sprite planet/ice8
+				distance 231
+				period 11.5797
+	planet "Rgreanys Ybbq"
+		attributes antfolk
+		landscape land/sea1
+		description `Rgreanys Ybbq is the first extrasolar colony of the Antfolk Union. Due to the planet's surface being ninty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
+		spaceport `Due to the heavy space traffic Rgreanys Ybbq recieves, the spaceport takes up an entire platform on the largest of the mobile floating cities sailing the planet's oceans. While the Antfolk's choice to do this rather than letting docked ships take up valuable landmass makes sense, it has the side effect that ships can only land on one specific part of the planet, and which part that is constantly changes. As a result, traffic controllers have to stay in constant communication with the ships they're trying to help land, so as to send them new coordinates for the spaceport should they change significantly before the ship can find the correct floating city.`
+		"required reputation" 10
+		bribe 0
+		security 0.2
+
+event "antfolk colonize znalc nguf"
+	system "Znalc Nguf"
+		government "Antfolk Union"
+		object
+			sprite star/k5
+			distance 19.0134
+			period 11.8591
+		object
+			sprite star/m8
+			distance 59.9866
+			period 11.8591
+			offset 180
+		object "Haqlvatf Gbez"
+			sprite planet/desert2
+			distance 551.939
+			period 219.001
+			offset 312.639
+		object
+			sprite planet/ocean4
+			distance 985.749
+			period 522.708
+			offset 348.044
+			object
+				sprite planet/dust5
+				distance 173
+				period 20.7157
+		object
+			sprite planet/jupiter
+			distance 1744.04
+			period 1230.11
+			offset 357.112
 		object
 			sprite planet/gas8
-			distance 660.128
-			period 187.208
-			offset 17.7226
+			distance 2517.05
+			period 2132.79
+			offset 358.843
 			object
-				sprite planet/dust0
-				distance 198.904
-				period 14.9328
-				offset 319.61
+				sprite planet/lava0
+				distance 240
+				period 19.7922
+			object
+				sprite planet/ice0
+				distance 395
+				period 41.79
+	planet "Haqlvatf Gbez"
+		attributes antfolk
+		landscape land/dune0
+		description `Haqlvatf Gbez at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
+		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Haqlvatf Gbez lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Haqlvatf Gbez has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
+		"required reputation" 10
+		bribe 0
+		security 0.1
+
+event "antfolk colonize ubylf gne"
+	system "Ubylf Gne"
+		government "Antfolk Union"
 		object
-			sprite planet/gas4
-			distance 1339.32
-			period 541.015
-			offset 276.981
-			object Zcehc
+			sprite star/g5
+			period 10
+		object "Ubylb Eo"
+			sprite planet/forest6
+			distance 586.843
+			period 227.459
+			offset 157.826
+			object
+				sprite planet/luna
+				distance 147
+				period 22.4047
+		object
+			sprite planet/lava7
+			distance 905.853
+			period 436.221
+			offset 23.4354
+		object
+			sprite planet/gas15
+			distance 1171.94
+			period 641.918
+			offset 295.571
+		object
+			sprite planet/gas16
+			distance 2618.1
+			period 2143.38
+			offset 335.603
+			object
 				sprite planet/europa
-				distance 272.03
-				period 15.8243
-				offset 15.2957
-			object Voscal
-				sprite planet/io
-				distance 361.292
-				period 24.2206
-				offset 303.562
-	planet Zcehc
+				distance 211
+				period 16.1332
+			object
+				sprite planet/ice8
+				distance 349
+				period 34.3191
+	planet "Ubylb Eo"
 		attributes antfolk
-		landscape #land/something
+		landscape land/sky2
+		description `[stuff about the holy planet or some such]`
+		spaceport `[spaceport description placeholder]`
+		"required reputation" 10
+		bribe 0
+		security 0.3
+
+event "antfolk colonize [unnamed 5]"
+	system "[unnamed 5]"
+		government "Antfolk Union"
+		object
+			sprite star/m4
+			period 10
+		object
+			sprite planet/rock4
+			distance 184.04
+			period 65.3867
+		object
+			sprite planet/desert7
+			distance 573.29
+			period 359.487
+		object
+			sprite planet/ice2
+			distance 766.29
+			period 555.534
+		object
+			sprite planet/jupiter
+			distance 1817.7
+			period 2029.57
+			offset 17.3081
+			object "Jbeyqb sp Evzfbap Bybal"
+				sprite planet/tethys
+				distance 267
+				period 13.7097
+			object "Jbeyqb sp Rehyrnap Bybal"
+				sprite planet/europa
+				distance 365
+				period 21.913
+	planet "Jbeyqb sp Evzfbap Bybal"
+		attributes antfolk
+		landscape land/station3
 		description `[planet description here]`
 		spaceport `[spaceport description here]`
-	planet Voscal
+		"required reputation" 10
+		bribe 0
+		security 0.1
+	planet "Jbeyqb sp Rehyrnap Bybal"
 		attributes antfolk
-		landscape #land/something
+		landscape land/station3
 		description `[planet description here]`
 		spaceport `[spaceport description here]`
+		"required reputation" 10
+		bribe 0
+		security 0.1
 
 event "antfolk dissidents colonize vorloo"
 	system Vorloo
@@ -281,9 +348,10 @@ mission "event: antfolk begin colonizing"
 	to offer
 		has "event: antfolk gain hyperdrives"
 	on offer
-		event "antfolk colonize chang-er" 60 #arbitrarily picked number, can and will change
-		event "antfolk colonize voida" 60 #also needs changing
-		event "antfolk colonize alecto" 60 #also needs changing
+		event "antfolk colonize pybfrfga rvtuobe" 30 #arbitrarily picked number, can and will change
+		event "antfolk colonize znalc nguf" 30 #also needs changing
+		event "antfolk colonize ubylf gne" 30 #also needs changing
+		event "antfolk colonize [unnamed 5]" 60 #also needs changing
 
 #mission "event: political dissidents kicked from ussria"
 	invisible
@@ -295,62 +363,60 @@ mission "event: antfolk begin colonizing"
 		event "antfolk dissidents colonize vorloo"
 
 event "orbital terraforming management station 1: built"
-	system Alecto
-		government "Antfolk Union"
+	system "Znalc Nguf"
+	object
+		sprite star/k5
+		distance 19.0134
+		period 11.8591
+	object
+		sprite star/m8
+		distance 59.9866
+		period 11.8591
+		offset 180
+	object "Haqlvatf Gbez"
+		sprite planet/desert2
+		distance 551.939
+		period 219.001
+		offset 312.639
+		object "OTMS 1"
+			sprite planet/station3
+			distance 242
+			period 13.3922
+	object
+		sprite planet/ocean4
+		distance 985.749
+		period 522.708
+		offset 348.044
 		object
-			sprite star/g0
-			distance 19.3618
-			period 12.5609
-			offset 180
+			sprite planet/dust5
+			distance 173
+			period 20.7157
+	object
+		sprite planet/jupiter
+		distance 1744.04
+		period 1230.11
+		offset 357.112
+	object
+		sprite planet/gas8
+		distance 2517.05
+		period 2132.79
+		offset 358.843
 		object
-			sprite star/m4
-			distance 89.6382
-			period 12.5609
+			sprite planet/lava0
+			distance 240
+			period 19.7922
 		object
-			sprite planet/ice6
-			distance 299.878
-			period 57.319
-		object
-			sprite planet/gas8
-			distance 656.128
-			period 185.509
-			object
-				sprite planet/europa
-				distance 180
-				period 12.8554
-		object Aicmaer
-			sprite planet/fog0
-			distance 1300
-			period 517.367
-			offset 246.176
-			object "OTMS 1"
-				sprite planet/station3
-				distance 242
-				period 13.3922
-		object
-			sprite planet/gas0
-			distance 2683.89
-			period 1534.72
-			offset 343.663
-			object
-				sprite planet/rock14
-				distance 294
-				period 14.7733
-			object
-				sprite planet/tethys
-				distance 431
-				period 26.2224
-			object
-				sprite planet/lava0
-				distance 536
-				period 36.3667
-	planet Aicmaer
+			sprite planet/ice0
+			distance 395
+			period 41.79
+	planet "Haqlvatf Gbez"
 		attributes antfolk
-		landscape #land/something
-		description `[planet description here]`
-		description `[stuff about the effects of otms 1 on aicmaer here]`
-		spaceport `[spaceport description here]`
-		spaceport `[stuff about the effects of otms 1 on aicmaer's spaceport here]`
+		landscape land/dune0
+		description `Haqlvatf Gbez at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
+		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Haqlvatf Gbez lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Haqlvatf Gbez has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
+		"required reputation" 10
+		bribe 0
+		security 0.1
 	planet "OTMS 1"
 		attributes antfolk station
 		landscape land/station0

@@ -274,7 +274,7 @@ system "Pybfrfga Rvtuobe"
 		distance 308.809
 		period 84.5447
 	object
-		sprite planet/forest0
+		sprite planet/ocean1
 		distance 577.049
 		period 215.959
 	object
@@ -440,7 +440,7 @@ system "Ubylf Gne"
 		sprite star/g5
 		period 10
 	object
-		sprite planet/rock18
+		sprite planet/forest6
 		distance 586.843
 		period 227.459
 		offset 157.826
@@ -555,29 +555,29 @@ system "Znalc Nguf"
 		period 11.8591
 		offset 180
 	object
-		sprite planet/rock10
-		distance 319.027
-		period 96.2387
-	object
 		sprite planet/desert2
-		distance 563.237
-		period 225.759
+		distance 551.939
+		period 219.001
+		offset 312.639
 	object
 		sprite planet/ocean4
-		distance 997.047
-		period 531.72
+		distance 985.749
+		period 522.708
+		offset 348.044
 		object
 			sprite planet/dust5
 			distance 173
 			period 20.7157
 	object
 		sprite planet/jupiter
-		distance 1755.34
-		period 1242.08
+		distance 1744.04
+		period 1230.11
+		offset 357.112
 	object
 		sprite planet/gas8
-		distance 2528.35
-		period 2147.16
+		distance 2517.05
+		period 2132.79
+		offset 358.843
 		object
 			sprite planet/lava0
 			distance 240
@@ -907,12 +907,17 @@ system "[unnamed 5]"
 		period 555.534
 	object
 		sprite planet/jupiter
-		distance 1710.7
-		period 1853.03
+		distance 1817.7
+		period 2029.57
+		offset 17.3081
 		object
 			sprite planet/tethys
 			distance 267
 			period 13.7097
+		object
+			sprite planet/europa
+			distance 365
+			period 21.913
 
 planet "Beob Sb Evtva"
 	attributes antfolk
