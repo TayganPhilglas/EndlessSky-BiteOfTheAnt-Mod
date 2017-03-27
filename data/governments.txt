@@ -27,7 +27,7 @@ government "  Pirate  "
 
 government "Antfolk Union"
 	language "APASL"
-	"player reputation" -10
+	"player reputation" 6
 	"attitude toward"
 		"Drak" 0.5
 		" Drak " 0.5
