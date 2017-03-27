@@ -364,51 +364,51 @@ mission "event: antfolk begin colonizing"
 
 event "orbital terraforming management station 1: built"
 	system "Znalc Nguf"
-	object
-		sprite star/k5
-		distance 19.0134
-		period 11.8591
-	object
-		sprite star/m8
-		distance 59.9866
-		period 11.8591
-		offset 180
-	object "Haqlvatf Gbez"
-		sprite planet/desert2
-		distance 551.939
-		period 219.001
-		offset 312.639
-		object "OTMS 1"
-			sprite planet/station3
-			distance 242
-			period 13.3922
-	object
-		sprite planet/ocean4
-		distance 985.749
-		period 522.708
-		offset 348.044
 		object
-			sprite planet/dust5
-			distance 173
-			period 20.7157
-	object
-		sprite planet/jupiter
-		distance 1744.04
-		period 1230.11
-		offset 357.112
-	object
-		sprite planet/gas8
-		distance 2517.05
-		period 2132.79
-		offset 358.843
+			sprite star/k5
+			distance 19.0134
+			period 11.8591
 		object
-			sprite planet/lava0
-			distance 240
-			period 19.7922
+			sprite star/m8
+			distance 59.9866
+			period 11.8591
+			offset 180
+		object "Haqlvatf Gbez"
+			sprite planet/desert2
+			distance 551.939
+			period 219.001
+			offset 312.639
+			object "OTMS 1"
+				sprite planet/station3
+				distance 242
+				period 13.3922
 		object
-			sprite planet/ice0
-			distance 395
-			period 41.79
+			sprite planet/ocean4
+			distance 985.749
+			period 522.708
+			offset 348.044
+			object
+				sprite planet/dust5
+				distance 173
+				period 20.7157
+		object
+			sprite planet/jupiter
+			distance 1744.04
+			period 1230.11
+			offset 357.112
+		object
+			sprite planet/gas8
+			distance 2517.05
+			period 2132.79
+			offset 358.843
+			object
+				sprite planet/lava0
+				distance 240
+				period 19.7922
+			object
+				sprite planet/ice0
+				distance 395
+				period 41.79
 	planet "Haqlvatf Gbez"
 		attributes antfolk
 		landscape land/dune0
