@@ -8,6 +8,28 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+fleet "Terngq Nlf Gne Defense Fleet"
+	government "Antfolk Union"
+	names "antfolk military"
+	personality
+#		confusion 8 #VERY much up for debate and change
+		heroic staying
+	variant #needs a chance of appearing here
+		"Battle Larva"
+	variant #needs a chance of appearing here
+		"Battle Larva (Missile)"
+	variant #needs a chance of appearing here
+		"Fire Frigate"
+
+fleet "Antfolk Home System Surveillance"
+	government "Antfolk Union"
+	names "antfolk military"
+	personality
+#		confusion 8 #very much up for debate and change
+		surveillance staying
+	variant #needs a chance of appearing here
+		"Fire Frigate (Surveillance)"
+
 fleet "Small Antfolk Merchants"
 	government "Antfolk Merchant"
 	names "antfolk civilian"
@@ -20,7 +42,7 @@ fleet "Small Antfolk Union"
 	government "Antfolk Union"
 	names "antfolk military"
 	personality
-#		confusion 8 #VERY much up for debate and change, or flat-out removal
+#		confusion 8 #also very much up for debate and change
 		heroic
 
 fleet "Small Antfolk Pirates"

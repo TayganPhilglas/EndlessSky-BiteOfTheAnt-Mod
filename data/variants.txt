@@ -32,29 +32,24 @@ ship "Leaf Cutter" "Leaf Cutter (Hyper)"
 		"Hyperdrive"
 		"Fuel Vacuole" 2
 
+ship "Fire Frigate" "Fire Frigate (Surveillance)"
+	outfits
+		"Cargo Scanner"
+		"Outfit Scanner"
+
 ship "Fire Frigate" "Fire Frigate (Hyper)"
 	outfits
 		"Hyperdrive"
 		"Fuel Vacuole" 2
 
 ship "Queen Carrier" "Queen Carrier (Full)"
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
