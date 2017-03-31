@@ -13,19 +13,19 @@ ship "Battle Larva"
 #	licenses
 #		Antfolk
 	attributes
-		category "Fighter"
-		"cost" 30000
+		category "Drone"
+		"cost" 40000
 		"hull" 700
-		"required crew" 1
 		"bunks" 1
-		"mass" 13
+		"mass" 18
 		"drag" .5
-		"heat dissipation" 1.2
-		"outfit space" 75
+		"heat dissipation" 0.7
+		"outfit space" 50
 		"weapon capacity" 15
 		"engine capacity" 24
+		"automation" 1
 		
-		"biomass capacity" 75
+		"biomass capacity" 50
 		"hull repair rate" 1
 		"hull energy" 0.06
 		weapon
@@ -47,7 +47,7 @@ ship "Battle Larva"
 	engine 5 29
 	gun 0 -14
 	explode "tiny explosion" 10
-	description "The Battle Larva is a small and highly maneuverable fightercraft. Its lightweight and compact design is made possible through the use of incredibly low mass, high strength biomaterials and the simple fact that Antfolk don't need as large a cockpit as humans do."
+	description "The Battle Larva is a small and highly maneuverable combat drone. Its lightweight and compact design is made possible through the use of incredibly low mass and high strength biomaterials. However, they really can't take hits well."
 
 ship "Slave Maker"
 	sprite "ship/bulk freighter"
@@ -56,7 +56,7 @@ ship "Slave Maker"
 	attributes
 		category "Transport"
 		"cost" 3750000
-		"hull" 13000
+		"hull" 12000
 		"required crew" 60
 		"bunks" 480
 		"mass" 400
@@ -64,7 +64,7 @@ ship "Slave Maker"
 		"heat dissipation" 0.8
 		"cargo space" 100
 		"outfit space" 350
-		"weapon capacity" 66
+		"weapon capacity" 60
 		"engine capacity" 100
 
 		"biomass capacity" 350
@@ -91,8 +91,8 @@ ship "Slave Maker"
 	turret 0 0
 	turret 0 0
 	turret 0 0
-	fighter 0 0
-	fighter 0 0
+	drone 0 0
+	drone 0 0
 	explode "tiny explosion" 15
 	explode "small explosion" 34
 	explode "medium explosion" 18
@@ -286,6 +286,7 @@ ship "Army Cruiser"
 
 		"Reaper's Breath Thruster"
 		"Reaper's Breath Steering"
+		"Hyperdrive"
 
 	engine 0 0
 	engine 0 0
@@ -309,7 +310,7 @@ ship "Queen Carrier"
 	attributes
 		category "Heavy Warship"
 		cost 9800000
-		"hull" 14500
+		"hull" 16000
 		"required crew" 220
 		"bunks" 280
 		"mass" 540
@@ -340,35 +341,26 @@ ship "Queen Carrier"
 
 		"Widowmaker's Breath Thruster"
 		"Widowmaker's Breath Steering"
+		"Hyperdrive"
 
 	turret 0 0
 	turret 0 0
 	turret 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
-	fighter 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
+	drone 0 0
 	explode "tiny explosion" 18
 	explode "small explosion" 36
 	explode "medium explosion" 24
 	explode "large explosion" 8
-	description "Battle Larva, being too small to equip their own Hyperdrive, require a larger ship to carry them between systems. As a result, the Antfolk developed the Queen Carrier. While completely defenseless on its own, the Queen Carrier is able to carry upwards of 20 fighters in its large hangar bays. That much fire power is able to overpower almost any ship, quickly picking away at the shields and hull of anyone unfortunate enough to be in the way."
+	description "Battle Larva, being too small to equip their own Hyperdrive, require a larger ship to carry them between systems. As a result, the Antfolk developed the Queen Carrier. While completely defenseless on its own, the Queen Carrier is able to carry upwards of 10 drones in its large hangar bays. That much fire power is able to overpower almost any ship, quickly picking away at the shields and hull of anyone unfortunate enough to be in the way."
 
 ship "Bullet Battleship"
 	sprite "ship/carrier"
@@ -377,7 +369,7 @@ ship "Bullet Battleship"
 	attributes
 		category "Heavy Warship"
 		cost 7950000
-		"hull" 12800
+		"hull" 14800
 		"required crew" 99
 		"bunks" 160
 		"mass" 480
@@ -391,7 +383,7 @@ ship "Bullet Battleship"
 
 		"biomass capacity" 550
 		"hull repair rate" 2
-		"hull energy" 0.24 #this is 4x the energy cost of other ships, for only twice the repair rate; may need to rebalance this
+		"hull energy" 0.18
 		weapon
 			"blast radius" 160
 			"shield damage" 1600
@@ -411,6 +403,7 @@ ship "Bullet Battleship"
 
 		"Reaper's Breath Thruster"
 		"Widowmaker's Breath Steering"
+		"Hyperdrive"
 
 	gun 0 0
 	gun 0 0

@@ -12,7 +12,7 @@ fleet "Terngq Nlf Gne Defense Fleet"
 	government "Antfolk Union"
 	names "antfolk military"
 	personality
-#		confusion 8 #VERY much up for debate and change
+		confusion 8
 		heroic staying
 	variant #needs a chance of appearing here
 		"Battle Larva"
@@ -21,14 +21,34 @@ fleet "Terngq Nlf Gne Defense Fleet"
 	variant #needs a chance of appearing here
 		"Fire Frigate"
 
-fleet "Antfolk Home System Surveillance"
+fleet "Terngq Nlf Gne Surveillance Fleet"
 	government "Antfolk Union"
 	names "antfolk military"
 	personality
-#		confusion 8 #very much up for debate and change
+		confusion
 		surveillance staying
 	variant #needs a chance of appearing here
 		"Fire Frigate (Surveillance)"
+
+fleet "Terngq Nlf Gne Emergency Defense Fleet"
+	government "Antfolk Union"
+	names "antfolk military"
+	personality
+		confusion
+		heroic staying vindictive
+	variant #needs a chance of appearing here
+		"Fire Frigate (Nuke)" #need to decide on an amount here
+
+fleet "Union State of Emergency Defense Fleet"
+	government "Antfolk Union"
+	names "antfolk military"
+	personality
+		confusion 8
+		heroic vindictive
+	variant #needs a chance of appearing here
+		"Fire Frigate (Hyper) (Nuke)" #need to decide on an amount here
+	variant #needs a chance of appearing here
+		"Army Cruiser (Nuke)" #need to decide on an amount here
 
 fleet "Small Antfolk Merchants"
 	government "Antfolk Merchant"
@@ -42,7 +62,7 @@ fleet "Small Antfolk Union"
 	government "Antfolk Union"
 	names "antfolk military"
 	personality
-#		confusion 8 #also very much up for debate and change
+		confusion 8
 		heroic
 
 fleet "Small Antfolk Pirates"

@@ -10,9 +10,10 @@
 
 
 #These two shield generators are a temporary solution to a multitude of balancing questions I can't quite answer yet compounded onto each other
-outfit "Antfolk Civilian Shield Matrix Generator" #name could use some changing
+outfit "Civilian Shield Matrix" #name could use some changing
 #	licenses
 #		Antfolk
+	plural "Civilian Shield Matrices"
 	category "Systems"
 	cost 25000
 	thumbnail "outfit/tiny shield"
@@ -24,9 +25,10 @@ outfit "Antfolk Civilian Shield Matrix Generator" #name could use some changing
 	"biomass capacity" -15
 	description ""
 
-outfit "Antfolk Military Shield Matrix Generator" #name could also stand to be changed
+outfit "Military Shield Matrix" #name could also stand to be changed
 #	licenses
 #		Antfolk Military
+	plural "Military Shield Matrices"
 	category "Systems"
 	cost 50000
 	thumbnail "outfit/tiny shield"
@@ -47,7 +49,7 @@ outfit "Eccrine Ship Glands"
 	thumbnail "outfit/unknown"
 	"mass" 12
 	"outfit space" -12
-	"cooling" 7
+	"cooling" 8.5
 	"launcher capacity" 1
 	"biomass capacity" -12
 	description "Antfolk cooling. Also allows use of 1 missile launcher."
@@ -79,17 +81,6 @@ outfit "Fuel Vacuole"
 	description "Antfolk fuel hold. Better than human in fuel/mass."
 
 
-outfit "Antfolk Armor"
-#	licenses
-#		Antfolk
-	category "Hand to Hand"
-	cost 6000 #may need changing
-	thumbnail "outfit/unknown"
-	"capture attack" 0.6
-	"capture defense" 10
-	"unplunderable" 1
-	"installable" -1
-	description ""
 
 outfit "Antfolk Rifle"
 #	licenses
@@ -103,20 +94,21 @@ outfit "Antfolk Rifle"
 	"installable" -1
 	description "Since hand to hand bioweapons are too powerful for civilian use, most Antfolk use old fashioned ballistic rifles for personal defense."
 
-outfit "Antfolk Biogrenades"
+outfit "Antfolk Biogrenades" #most certainly needs removal
 #	licenses
 #		Antfolk Military
 	category "Hand to Hand"
 	cost 100000
 	thumbnail "outfit/unknown"
-	"capture attack" 250
+	"capture attack" 2
+	"capture defense" 0.6
 	"unplunderable" 1
-	description "While the Pug use hand to hand bioweaponry for defensive purposes, the Antfolk have designed equally effective offensive weapons."
+	description "[description not written yet]"
 
 outfit "Power Armor"
 	category "Hand to Hand"
 	cost 135000
-	thumbnail "outfit/unknown"
+	thumbnail "outfit/android" #needs changing
 	"capture attack" 3.3
 	"capture defense" 3.6
 	"unplunderable" 1

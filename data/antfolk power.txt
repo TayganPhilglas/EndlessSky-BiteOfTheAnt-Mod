@@ -17,10 +17,10 @@ outfit "Adipose Storage"
 	thumbnail "outfit/tiny battery hai"
 	"mass" 18
 	"outfit space" -18
-	"energy capacity" 1440
+	"energy capacity" 1080
 	"biomass capacity" -18
 	description "Antfolk battery. Best in terms of energy capacity efficiency between Antfolk batteries."
-#80 e/m
+#60 e/m
 
 outfit "Visceral Storage"
 #	licenses
@@ -28,19 +28,19 @@ outfit "Visceral Storage"
 	category "Power"
 	cost 175000
 	thumbnail "outfit/tiny battery hai"
-	"mass" 56
-	"outfit space" -56
-	"energy capacity" 2520
-	"hull" 250
-	"biomass capacity" -56
+	"mass" 44
+	"outfit space" -44
+	"energy capacity" 3000
+	"hull" 300
+	"biomass capacity" -44
 	description "Antfolk battery. Also increases hull strength."
-#60 e/m
+#45 e/m
 
 outfit "Musculus Storage"
 #	licenses
 #		Antfolk
 	category "Power"
-	cost 64000
+	cost 128000
 	thumbnail "outfit/tiny battery hai"
 	"mass" 33
 	"outfit space" -33
@@ -49,7 +49,7 @@ outfit "Musculus Storage"
 	"heat generation" 3.3
 	"biomass capacity" -33
 	description "Antfolk battery. Also produces small amounts of energy."
-#45 e/m
+#60 e/m
 
 
 outfit "Biochemical Container"
@@ -59,13 +59,13 @@ outfit "Biochemical Container"
 	cost 125000
 	thumbnail "outfit/small biochemical"
 	"mass" 14
-	"outfit space" -14
+	"outfit space" -15
 	"energy generation" 0.9
-	"heat generation" 1
+	"heat generation" 1.1
 	"hull repair rate" 0.075
 	"hull energy" 0.15
 	"hull heat" 0.6
-	"biomass capacity" -14
+	"biomass capacity" -15
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Biochemical Tank"
@@ -74,14 +74,14 @@ outfit "Biochemical Tank"
 	category "Power"
 	cost 245000
 	thumbnail "outfit/small biochemical"
-	"mass" 26
-	"outfit space" -26
+	"mass" 28
+	"outfit space" -28
 	"energy generation" 2
-	"heat generation" 2.2
+	"heat generation" 2.4
 	"hull repair rate" 0.15
 	"hull energy" 0.3
 	"hull heat" 1.2
-	"biomass capacity" -26
+	"biomass capacity" -28
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Biochemical Vat"
@@ -90,14 +90,14 @@ outfit "Biochemical Vat"
 	category "Power"
 	cost 490000
 	thumbnail "outfit/small biochemical"
-	"mass" 49
-	"outfit space" -49
-	"energy generation" 4.5
-	"heat generation" 4.8
+	"mass" 50
+	"outfit space" -50
+	"energy generation" 3.8
+	"heat generation" 4.5
 	"hull repair rate" 0.4
 	"hull energy" 0.8
 	"hull heat" 3.2
-	"biomass capacity" -51
+	"biomass capacity" -50
 	description "Antfolk energy generation. Also repairs ships."
 
 outfit "Photosynthetic Cell"
@@ -108,8 +108,7 @@ outfit "Photosynthetic Cell"
 	thumbnail "outfit/small photovoltaic"
 	"mass" 12
 	"outfit space" -12
-	"solar collection" 1
-	"energy capacity" 150
+	"solar collection" 0.8
 	"biomass capacity" -12
 	description "Antfolk energy generation. Dependent on distance from system center. Also holds energy."
 
@@ -121,7 +120,6 @@ outfit "Photosynthetic Array"
 	thumbnail "outfit/small photovoltaic"
 	"mass" 22
 	"outfit space" -22
-	"solar collection" 2.5
-	"energy capacity" 225
+	"solar collection" 2.01
 	"biomass capacity" -22
 	description "Antfolk energy generation. Dependent on distance from system center. Also holds energy."

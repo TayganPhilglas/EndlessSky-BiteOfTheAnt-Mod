@@ -8,15 +8,6 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-government " Drak "
-	swizzle 5
-	color 1 1 1
-	"player reputation" 0
-	"attitude toward"
-		"Antfolk Union" 0
-		"Antfolk Merchant" 0
-	"fine" 0
-
 government "  Pirate  "
 	swizzle 6
 	color .78 0 0
@@ -26,7 +17,7 @@ government "  Pirate  "
 		"Escort" 0
 
 government "Antfolk Union"
-	language "APASL"
+	language "Antfolk"
 	"player reputation" 6
 	"attitude toward"
 		"Drak" 0.5
@@ -36,7 +27,7 @@ government "Antfolk Union"
 	"bribe" 0
 
 government "Antfolk Merchant"
-	language "APASL"
+	language "Antfolk"
 	"player reputation" 0
 	"attitude toward"
 		"Drak" 0.5
@@ -45,7 +36,7 @@ government "Antfolk Merchant"
 		"Antfolk Pirate" -0.2
 
 government "Antfolk Pirate"
-	language "APASL"
+	language "Antfolk"
 	"player reputation" 0
 	"attitude toward"
 		"Antfolk Union" -0.2

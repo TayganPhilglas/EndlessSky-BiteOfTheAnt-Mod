@@ -93,9 +93,21 @@ event "Stormhold-PC armistice"
 event "antfolk translation machine"
 	set "language: Antfolk"
 
+event "pc feels the bite of the ant 1"
+	system "Terngq Nlf Gne"
+		fleet "Terngq Nlf Gne Emergency Defense Fleet" 300
+
+mission "pc kicks the anthill 1"
+	invisible
+	landing
+	to offer
+		"reputation: Antfolk Union" < -50 #might need changing
+	on offer
+		event "pc feels the bite of the ant 1"
+
 event "antfolk gain hyperdrives"
 	"reputation: Antfolk Union" >?= 20
-	outfitter "Antfolk Civilian Outfits"
+	outfitter "Antfolk Civilian"
 		"Fuel Vacuole"
 		"Hyperdrive"
 

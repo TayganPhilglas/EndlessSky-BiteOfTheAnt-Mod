@@ -8,7 +8,50 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-#mission "Transport Power Armor Prototype"
+#mission "Transport Power Armor Prototype 1"
+	name "Transport Power Armor Prototype"
+	description "[placeholder]"
+	source Valhalla
+	destination Valhalla
+	to offer
+		has "main plot completed"
+	stopover Bivrost
+	stopover Alfheim
+	on offer
+		conversation
+			`[Player offered a top-secret and high-risk escort job]`
+			choice
+				`	"Yes."`
+					accept
+				`	"I'm not ready to take that kind of risk. Let me go reoutfit my ship first."`
+					goto notReady
+				`	"No."`
+					decline
+			notReady
+			`	"Sure, go do that. But don't tell anyone what we told you!"`
+				defer
+	npc accompany save
+		government Merchant
+		personality escort timid
+		ship "Mule" "D.P.S. [placeholder]"
+	on enter "Epsilon Leonis"
+		dialog "Just as you launch from <source>, bounty hunters begin to fly towards you."
+	on visit
+		dialog "You have reached <planet>, but you left the <npc> behind! Better depart and wait for them to arrive in this star system."
+	on stopover Bivrost
+		dialog
+			`	[workers hurriedly load your ship with a lead crate. You're pretty sure you saw the safety symbol for radioactivity on the crate as it passed by you.]`
+	on stopover Alfheim
+		dialog
+			`	[workers hurriedly load your ship with a crate big enough to have a body or two hiding in it (and the sounds coming from inside as the workers half-run with it are not encouraging)]`
+	on complete
+		conversation
+			`[Great job, Captain <last>! Here's your payment.]`
+			branch hai
+				has "First Contact: Hai: offered"
+			label hai
+			`	[You notice that those bounty hunters were using Hai outfits.]`
+	payment 1000000
 
 mission "Missive from Harmony 1"
 	landing
@@ -35,7 +78,7 @@ mission "Missive from Harmony 2" #was worth keeping, but is in serious need of e
 	landing
 	clearance
 	name "Go to <destination>"
-	description "Take Arianne home to <destination>, and also for you to meet with Owen Diedrich."
+	description "Go to <destination> to take Arianne home and also for you to meet with Owen Diedrich."
 	destination Stormhold
 	to offer
 		has "Missive from Harmony 1: completed"

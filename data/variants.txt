@@ -34,13 +34,73 @@ ship "Leaf Cutter" "Leaf Cutter (Hyper)"
 
 ship "Fire Frigate" "Fire Frigate (Surveillance)"
 	outfits
+		"Thorn Gun" 4
+		"Thorn Turret"
+
+		"Biochemical Tank"
+		"Musculus Storage"
+		"Eccrine Ship Glands"
+
+		"Imperial's Breath Thruster"
+		"Imperial's Breath Steering" 2
 		"Cargo Scanner"
 		"Outfit Scanner"
 
+ship "Fire Frigate" "Fire Frigate (Nuke)"
+	outfits
+		"Thorn Gun" 2
+		"Nuclear Missile" 2
+		"Thorn Turret"
+
+		"Biochemical Tank"
+		"Musculus Storage"
+		"Eccrine Ship Glands"
+
+		"Imperial's Breath Thruster"
+		"Imperial's Breath Steering" 2
+		
+
 ship "Fire Frigate" "Fire Frigate (Hyper)"
 	outfits
+		"Thorn Gun" 4
+		"Thorn Turret"
+
+		"Biochemical Tank"
+		"Musculus Storage"
+		"Eccrine Ship Glands"
+
+		"Imperial's Breath Thruster"
+		"Imperial's Breath Steering" 2
 		"Hyperdrive"
 		"Fuel Vacuole" 2
+
+ship "Fire Frigate" "Fire Frigate (Hyper) (Nuke)"
+	outfits
+		"Thorn Gun" 2
+		"Nuclear Missile" 2
+		"Thorn Turret"
+
+		"Biochemical Tank"
+		"Musculus Storage"
+		"Eccrine Ship Glands"
+
+		"Imperial's Breath Thruster"
+		"Imperial's Breath Steering" 2
+		"Hyperdrive"
+		"Fuel Vacuole" 2
+
+ship "Army Cruiser" "Army Cruiser (Nuke)"
+	outfits
+		"Nuclear Missile" 5
+		"Thorn Turret" 2
+
+		"Biochemical Vat"
+		"Biochemical Tank"
+		"Musculus Storage"
+		"Eccrine Ship Glands" 2
+
+		"Reaper's Breath Thruster"
+		"Reaper's Breath Steering"
 
 ship "Queen Carrier" "Queen Carrier (Full)"
 	drone 0 0
