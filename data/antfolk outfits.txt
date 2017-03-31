@@ -9,8 +9,7 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 
-#These two shield generators are a temporary solution to a multitude of balancing questions I can't quite answer yet compounded onto each other
-outfit "Civilian Shield Matrix" #name could use some changing
+outfit "Civilian Shield Matrix"
 #	licenses
 #		Antfolk
 	plural "Civilian Shield Matrices"
@@ -25,7 +24,7 @@ outfit "Civilian Shield Matrix" #name could use some changing
 	"biomass capacity" -15
 	description ""
 
-outfit "Military Shield Matrix" #name could also stand to be changed
+outfit "Military Shield Matrix"
 #	licenses
 #		Antfolk Military
 	plural "Military Shield Matrices"
