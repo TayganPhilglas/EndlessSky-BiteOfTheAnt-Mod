@@ -44,7 +44,7 @@ system "[Close Star]"
 		distance 62.7445
 		period 14.9369
 		offset 180
-	object "Beob Sb Evtva"
+	object "[Orb of Origin]"
 		sprite planet/earth
 		distance 814.725
 		period 327.511
@@ -54,12 +54,12 @@ system "[Close Star]"
 			distance 146.104
 			period 21.7634
 			offset 343.88
-		object "Fxls Npgbel"
+		object "[Sky Factory]"
 			sprite planet/station2
 			distance 285.055
 			period 49.272
 			offset 222.795
-	object "Beob ss Vefgp Bybal"
+	object "[New Orb]"
 		sprite planet/desert7
 		distance 1330.78
 		period 683.708
@@ -388,7 +388,7 @@ system "[Origin of Weird Signal]"
 	object
 		sprite star/k5
 		period 10
-	object "Chtb Eob sn Agsbyx"
+	object "[Orb of Pug]"
 		sprite planet/ice3
 		distance 409.983
 		period 160.896
@@ -557,7 +557,7 @@ system "[Void Star]"
 	object
 		sprite star/k5
 		period 10
-	object "Chtb Eob su Hzna"
+	object Puggleyak
 		sprite planet/cloud1
 		distance 394.872
 		period 152.083
@@ -925,25 +925,25 @@ system "[unnamed 6]"
 			distance 232
 			period 11.6549
 
-planet "Beob Sb Evtva"
+planet "[Orb of Origin]"
 	attributes antfolk
 	landscape land/mfield3
-	description `Beob Sb Evtva is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
+	description `[Orb of Origin] is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
 	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of leasuire break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
 	"required reputation" 10
 	bribe 0
 	security 0.3
 
-planet "Beob ss Vefgp Bybal"
+planet "[New Orb]"
 	attributes antfolk
 	landscape land/red0
-	description `Similar to how Mars was prior to Humanity's discovery of terraforming, Beob ss Vefgp Bybal lacks an atmosphere that humans can survive. The Antfolk are capable of breathing the air here for a short time if necessary, but it is hard on them and even their hard chitin carapaces can't stand the pressure all that long, either. As a result, the Antfolk here all live inside planetbases equipped with atmospheric generators, hydroponic farms, and the like. While the Antfolk do go outside in envirosuits when a task requires skilled labor, they prefer to use remote-controlled drones for the mines and transportation of goods outside or between bases.`
+	description `Similar to how Mars was prior to Humanity's discovery of terraforming, [New Orb] lacks an atmosphere that humans can survive. The Antfolk are capable of breathing the air here for a short time if necessary, but it is hard on them and even their hard chitin carapaces can't stand the pressure all that long, either. As a result, the Antfolk here all live inside planetbases equipped with atmospheric generators, hydroponic farms, and the like. While the Antfolk do go outside in envirosuits when a task requires skilled labor, they prefer to use remote-controlled drones for the mines and transportation of goods outside or between bases.`
 	spaceport `The spaceport is composed of numerous outdoor landing pads with walkways that funnel all traffic through one of multiple security checkpoints filled with armed guards. Past those, the anemeties you have come to associate with a spaceport turn out to be spread all over the local planetbase. A planetbase which was designed for large numbers of life forms less than a third your height. Instead of crawling around their planetbase on all fours and causing all sorts of accidents, you and the local Antfolk Queen in charge both agree for whatever goods you need to buy or sell to be handled by carrier bots, and for you to pay and be paid electronically.`
 	"required reputation" 4
 	bribe 0
 	security 0.2
 
-planet "Chtb Eob sn Agsbyx"
+planet "[Orb of Pug]"
 	landscape land/space6
 	description `[planet description placeholder]`
 	spaceport `[spaceport description placeholder]`
@@ -951,7 +951,7 @@ planet "Chtb Eob sn Agsbyx"
 	bribe 0
 	security 1
 
-planet "Chtb Eob su Hzna"
+planet "Puggleyak"
 	landscape land/forest5
 	description `[planet description placeholder]`
 	spaceport `[spaceport description placeholder]`
@@ -959,7 +959,7 @@ planet "Chtb Eob su Hzna"
 	bribe 0
 	security 1
 
-planet "Fxls Npgbel"
+planet "[Sky Factory]"
 	attributes antfolk station
 	landscape land/station1
 	description `[stuff about this station serving as an orbital yard for the Antfolk]`
