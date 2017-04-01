@@ -8,7 +8,13 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-fleet "Terngq Nlf Gne Defense Fleet"
+fleet "Hai-Tech Bounty Hunters"
+	government "Bounty Hunter"
+	names "bounty hunter"
+	personality
+		nemesis waiting heroic plunders
+
+fleet "[Close Star] Defense Fleet"
 	government "Antfolk Union"
 	names "antfolk military"
 	personality
@@ -17,11 +23,9 @@ fleet "Terngq Nlf Gne Defense Fleet"
 	variant #needs a chance of appearing here
 		"Battle Larva"
 	variant #needs a chance of appearing here
-		"Battle Larva (Missile)"
-	variant #needs a chance of appearing here
 		"Fire Frigate"
 
-fleet "Terngq Nlf Gne Surveillance Fleet"
+fleet "[Close Star] Surveillance Fleet"
 	government "Antfolk Union"
 	names "antfolk military"
 	personality
@@ -30,7 +34,7 @@ fleet "Terngq Nlf Gne Surveillance Fleet"
 	variant #needs a chance of appearing here
 		"Fire Frigate (Surveillance)"
 
-fleet "Terngq Nlf Gne Emergency Defense Fleet"
+fleet "[Close Star] Emergency Defense Fleet"
 	government "Antfolk Union"
 	names "antfolk military"
 	personality
@@ -39,7 +43,7 @@ fleet "Terngq Nlf Gne Emergency Defense Fleet"
 	variant #needs a chance of appearing here
 		"Fire Frigate (Nuke)" #need to decide on an amount here
 
-fleet "Union State of Emergency Defense Fleet"
+fleet "Union State of Emergency Defense Fleet 1"
 	government "Antfolk Union"
 	names "antfolk military"
 	personality

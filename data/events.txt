@@ -54,29 +54,29 @@ event "Milky Way-Acallaris Wormhole opens"
 			sprite planet/oberon
 			distance 2107.64
 			period 1548.16
-		object "Wormhole of Truth"
+		object "The Gate"
 			sprite planet/wormhole
 			distance 4932.91
 			period 1959.88
 			offset 245.709
-	system "Gurt Ngrjnl"
+	system "[The Gateway]"
 		object
 			sprite star/a0
 			period 10
-		object "Wormhole of Truth"
+		object "The Gate"
 			sprite planet/wormhole
 			distance 4932.91
 			period 1959.88
 			offset 245.709
-	planet "Wormhole of Truth"
+	planet "The Gate"
 
-mission "Milky Way-Acallaris Wormhole opens"
-	invisible
-	landing
-	to offer
-		has "main plot completed"
-	on offer
-		event "Milky Way-Acallaris Wormhole opens"
+#mission "Milky Way-Acallaris Wormhole opens"
+#	invisible
+#	landing
+#	to offer
+#		has "main plot completed"
+#	on offer
+#		event "Milky Way-Acallaris Wormhole opens"
 
 mission "Pirates don't fight ' Pirates '"
 	invisible
@@ -94,8 +94,8 @@ event "antfolk translation machine"
 	set "language: Antfolk"
 
 event "pc feels the bite of the ant 1"
-	system "Terngq Nlf Gne"
-		fleet "Terngq Nlf Gne Emergency Defense Fleet" 300
+	system "[Close Star]"
+		fleet "[Close Star] Emergency Defense Fleet" 300
 
 mission "pc kicks the anthill 1"
 	invisible
@@ -111,8 +111,8 @@ event "antfolk gain hyperdrives"
 		"Fuel Vacuole"
 		"Hyperdrive"
 
-event "antfolk colonize pybfrfga rvtuobe"
-	system "Pybfrfga Rvtuobe"
+event "antfolk colonize closest neighbor"
+	system "[Closest Neighbor]"
 		government "Antfolk Union"
 		object
 			sprite star/k5
@@ -127,7 +127,7 @@ event "antfolk colonize pybfrfga rvtuobe"
 			sprite planet/ice2
 			distance 308.809
 			period 84.5447
-		object "Rgreanys Ybbq"
+		object "[Eternal Flood]"
 			sprite planet/ocean1
 			distance 577.049
 			period 215.959
@@ -151,17 +151,17 @@ event "antfolk colonize pybfrfga rvtuobe"
 				sprite planet/ice8
 				distance 231
 				period 11.5797
-	planet "Rgreanys Ybbq"
+	planet "[Eternal Flood]"
 		attributes antfolk
 		landscape land/sea1
-		description `Rgreanys Ybbq is the first extrasolar colony of the Antfolk Union. Due to the planet's surface being ninty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
-		spaceport `Due to the heavy space traffic Rgreanys Ybbq recieves, the spaceport takes up an entire platform on the largest of the mobile floating cities sailing the planet's oceans. While the Antfolk's choice to do this rather than letting docked ships take up valuable landmass makes sense, it has the side effect that ships can only land on one specific part of the planet, and which part that is constantly changes. As a result, traffic controllers have to stay in constant communication with the ships they're trying to help land, so as to send them new coordinates for the spaceport should they change significantly before the ship can find the correct floating city.`
+		description `[Eternal Flood] is the first extrasolar colony of the Antfolk Union. Due to the planet's surface being ninty-percent water, there is little enough arable land that the Antfolk have instead built floating cities that ride the ocean currents, fishing for what resources they can and getting the rest from stationary mining ports.`
+		spaceport `Due to the heavy space traffic [Eternal Flood] recieves, the spaceport takes up an entire platform on the largest of the mobile floating cities sailing the planet's oceans. While the Antfolk's choice to do this rather than letting docked ships take up valuable landmass makes sense, it has the side effect that ships can only land on one specific part of the planet, and which part that is constantly changes. As a result, traffic controllers have to stay in constant communication with the ships they're trying to help land, so as to send them new coordinates for the spaceport should they change significantly before the ship can find the correct floating city.`
 		"required reputation" 10
 		bribe 0
 		security 0.2
 
-event "antfolk colonize znalc nguf"
-	system "Znalc Nguf"
+event "antfolk colonize north star"
+	system "[North Star]"
 		government "Antfolk Union"
 		object
 			sprite star/k5
@@ -172,7 +172,7 @@ event "antfolk colonize znalc nguf"
 			distance 59.9866
 			period 11.8591
 			offset 180
-		object "Haqlvatf Gbez"
+		object "[Undying Storm]"
 			sprite planet/desert2
 			distance 551.939
 			period 219.001
@@ -204,22 +204,22 @@ event "antfolk colonize znalc nguf"
 				sprite planet/ice0
 				distance 395
 				period 41.79
-	planet "Haqlvatf Gbez"
+	planet "[Undying Storm]"
 		attributes antfolk
 		landscape land/dune0
-		description `Haqlvatf Gbez at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
-		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Haqlvatf Gbez lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Haqlvatf Gbez has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
+		description `[Undying Storm] at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
+		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. [Undying Storm] lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, [Undying Storm] has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
 		"required reputation" 10
 		bribe 0
 		security 0.1
 
-event "antfolk colonize ubylf gne"
-	system "Ubylf Gne"
+event "antfolk colonize holy star"
+	system "[Holy Star]"
 		government "Antfolk Union"
 		object
 			sprite star/g5
 			period 10
-		object "Ubylb Eo"
+		object "[Holy Orb]"
 			sprite planet/forest6
 			distance 586.843
 			period 227.459
@@ -251,7 +251,7 @@ event "antfolk colonize ubylf gne"
 				sprite planet/ice8
 				distance 349
 				period 34.3191
-	planet "Ubylb Eo"
+	planet "[Holy Orb]"
 		attributes antfolk
 		landscape land/sky2
 		description `[stuff about the holy planet or some such]`
@@ -283,15 +283,15 @@ event "antfolk colonize [unnamed 5]"
 			distance 1817.7
 			period 2029.57
 			offset 17.3081
-			object "Jbeyqb sp Evzfbap Bybal"
+			object "[World of Crimson Colony]"
 				sprite planet/tethys
 				distance 267
 				period 13.7097
-			object "Jbeyqb sp Rehyrnap Bybal"
+			object "[World of Cerulean Colony]"
 				sprite planet/europa
 				distance 365
 				period 21.913
-	planet "Jbeyqb sp Evzfbap Bybal"
+	planet "[World of Crimson Colony]"
 		attributes antfolk
 		landscape land/station3
 		description `[planet description here]`
@@ -299,7 +299,7 @@ event "antfolk colonize [unnamed 5]"
 		"required reputation" 10
 		bribe 0
 		security 0.1
-	planet "Jbeyqb sp Rehyrnap Bybal"
+	planet "[World of Cerulean Colony]"
 		attributes antfolk
 		landscape land/station3
 		description `[planet description here]`
@@ -360,12 +360,12 @@ mission "event: antfolk begin colonizing"
 	to offer
 		has "event: antfolk gain hyperdrives"
 	on offer
-		event "antfolk colonize pybfrfga rvtuobe" 30 #arbitrarily picked number, can and will change
-		event "antfolk colonize znalc nguf" 30 #also needs changing
-		event "antfolk colonize ubylf gne" 30 #also needs changing
+		event "antfolk colonize closest neighbor" 30 #arbitrarily picked number, can and will change
+		event "antfolk colonize north star" 30 #also needs changing
+		event "antfolk colonize holy star" 30 #also needs changing
 		event "antfolk colonize [unnamed 5]" 60 #also needs changing
 
-#mission "event: political dissidents kicked from ussria"
+#mission "event: political dissidents kicked from [orb of origin]"
 	invisible
 	landing
 	to offer
@@ -375,7 +375,7 @@ mission "event: antfolk begin colonizing"
 		event "antfolk dissidents colonize vorloo"
 
 event "orbital terraforming management station 1: built"
-	system "Znalc Nguf"
+	system "[North Star]"
 		object
 			sprite star/k5
 			distance 19.0134
@@ -385,7 +385,7 @@ event "orbital terraforming management station 1: built"
 			distance 59.9866
 			period 11.8591
 			offset 180
-		object "Haqlvatf Gbez"
+		object "[Undying Storm]"
 			sprite planet/desert2
 			distance 551.939
 			period 219.001
@@ -421,11 +421,11 @@ event "orbital terraforming management station 1: built"
 				sprite planet/ice0
 				distance 395
 				period 41.79
-	planet "Haqlvatf Gbez"
+	planet "[Undying Storm]"
 		attributes antfolk
 		landscape land/dune0
-		description `Haqlvatf Gbez at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
-		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. Haqlvatf Gbez lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, Haqlvatf Gbez has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
+		description `[Undying Storm] at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
+		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. [Undying Storm] lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, [Undying Storm] has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
 		"required reputation" 10
 		bribe 0
 		security 0.1
@@ -437,8 +437,10 @@ event "orbital terraforming management station 1: built"
 		spaceport `[spaceport description here]`
 
 event "Antfolk gain Energy Shielding tech"
-#	outfitter "Antfolk Civilian"
-#	outfitter "Antfolk Military"
+	outfitter "Antfolk Civilian"
+		"Civilian Shield Matrix"
+	outfitter "Antfolk Military"
+		"Military Shield Matrix"
 
 event "Antfolk mass producing Flamethrowers"
 	outfitter "Antfolk Military"

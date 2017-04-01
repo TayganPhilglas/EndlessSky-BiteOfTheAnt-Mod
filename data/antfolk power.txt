@@ -58,7 +58,7 @@ outfit "Biochemical Container"
 	category "Power"
 	cost 125000
 	thumbnail "outfit/small biochemical"
-	"mass" 14
+	"mass" 15
 	"outfit space" -15
 	"energy generation" 0.9
 	"heat generation" 1.1

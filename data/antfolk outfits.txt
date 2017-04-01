@@ -55,7 +55,7 @@ outfit "Eccrine Ship Glands"
 
 outfit "Apocrine Ship Glands"
 #	licenses
-#		Antfolk Military #might revert this to regular license...
+#		Antfolk
 	category "Systems"
 	cost 48500
 	thumbnail "outfit/unknown"

@@ -8,17 +8,205 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+#variants for the "Hai-Tech Bounty Hunters" fleet, specifically
+ship "Arrow" "Arrow (Hai)"
+	outfits
+		"Bullfrog Anti-Missile"
+		"Hai Tracker Pod" 2
+		"Hai Tracker" 112
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Pebble Core"
+		"Hai Chasm Batteries"
+		"A255 Atomic Steering"
+		"A250 Atomic Thruster"
+		"Nerve Gas" 5
+
+ship "Bounder" "Bounder (Hai)"
+	outfits
+		"Pulse Turret"
+		"Bullfrog Anti-Missile"
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Hai Williwaw Cooling"
+		"Cargo Scanner" 3
+		"Outfit Scanner" 3
+		"Hai Fissure Batteries"
+		"Pebble Core"
+		`"Biroo" Atomic Thruster`
+		`"Biroo" Atomic Steering`
+		"Nerve Gas" 17
+	turret "Pulse Turret"
+	turret "Bullfrog Anti-Missile"
+
+ship "Argosy" "Argosy (Hai)"
+	outfits
+		"Pulse Cannon"
+		"Pulse Turret"
+		"Bullfrog Anti-Missile"
+		"Hai Tracker Pod"
+		"Hai Tracker" 56
+		"Flamethrower"
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Liquid Nitrogen Cooler"
+		"Cargo Scanner"
+		"Pebble Core"
+		"LP072a Battery Pack"
+		`"Biroo" Atomic Thruster`
+		`"Biroo" Atomic Steering`
+		"Nerve Gas" 14
+	gun "Flamethrower"
+	gun "Pulse Cannon"
+	gun "Hai Tracker Pod"
+	turret "Pulse Turret"
+	turret "Bullfrog Anti-Missile"
+
+ship "Marauder Arrow" "Marauder Arrow (Hai)"
+	outfits
+		"Pulse Cannon"
+		"Quad Blaster Turret"
+		"Flamethrower"
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Cooling Ducts"
+		"Water Coolant System"
+		"Cargo Scanner"
+		"Pebble Core"
+		"LP072a Battery Pack"
+		"A255 Atomic Steering"
+		"A250 Atomic Thruster"
+		"Nerve Gas" 5
+	gun "Flamethrower"
+	gun "Pulse Cannon"
+
+ship "Marauder Bounder" "Marauder Bounder (Hai)"
+	outfits
+		"Ion Cannon"
+		"Bullfrog Anti-Missile"
+		"Laser Turret"
+		"Mass Expansion"
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Water Coolant System"
+		"Cargo Scanner" 2
+		"Pebble Core"
+		"Supercapacitor"
+		"LP072a Battery Pack"
+		"Afterburner"
+		"A255 Atomic Steering"
+		"A250 Atomic Thruster"
+		"Nerve Gas" 18
+	turret "Bullfrog Anti-Missile"
+	turret "Laser Turret"
+
+ship "Fury" "Fury (Hai)"
+	outfits
+		"Pulse Cannon" 2
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Cooling Ducts"
+		"Cargo Scanner"
+		"Pebble Core"
+		"LP036a Battery Pack"
+		"A125 Atomic Steering"
+		"A250 Atomic Thruster"
+		"Nerve Gas" 3
+
+ship "Marauder Fury" "Marauder Fury (Hai)"
+	outfits
+		"Flamethrower" 6
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Fuel Pod" 2
+		"Cooling Ducts"
+		"Water Coolant System"
+		"Catalytic Ramscoop"
+		"Pebble Core"
+		"Supercapacitor"
+		"LP036a Battery Pack"
+		"A255 Atomic Steering"
+		"A255 Atomic Thruster"
+		"Nerve Gas" 3
+
+ship "Modified Argosy" "Modified Argosy (Hai)"
+	outfits
+		"Pulse Cannon" 2
+		"Pulse Turret" 2
+		"Hai Tracker Pod"
+		"Hai Tracker" 56
+		"Flamethrower"
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Liquid Nitrogen Cooler"
+		"Ramscoop"
+		"Small Radar Jammer"
+		"Cargo Scanner" 2
+		"Outfit Scanner"
+		"Geode Reactor"
+		"LP072a Battery Pack"
+		"A375 Atomic Steering"
+		`"Benga" Atomic Thruster`
+		"Nerve Gas" 12
+	gun "Pulse Cannon"
+	gun "Hai Tracker Pod"
+	gun "Pulse Cannon"
+	gun "Flamethrower"
+
+ship "Raven" "Raven (Hai)"
+	outfits
+		"Pulse Cannon" 3
+		"Ion Cannon"
+		"Hyperdrive"
+		"Hai Corundum Regenerator"
+		"Water Coolant System"
+		"Cargo Scanner"
+		"Hai Fissure Batteries"
+		"Pebble Core"
+		"Ionic Afterburner"
+		`"Biroo" Atomic Thruster`
+		`"Biroo" Atomic Steering`
+		"Nerve Gas" 13
+	gun "Pulse Cannon"
+	gun "Ion Cannon"
+	gun "Pulse Cannon"
+	gun "Pulse Cannon"
+
+ship "Marauder Raven" "Marauder Raven (Hai)"
+
+ship "Leviathan" "Leviathan (Hai)"
+
+ship "Marauder Leviathan" "Marauder Leviathan (Hai)"
+
+#variants of Antfolk ships
 ship "Battle Larva" "Battle Larva (Missile)"
 	outfits
 		"Antfolk Coolant Missile"
-		"Biochemical Container"
 		"Photosynthetic Cell"
 		"Eccrine Ship Glands"
 		"Greyling's Breath Thruster"
 		"Greyling's Breath Steering"
 
+ship "Battle Larva" "Battle Larva (Fire)"
+	outfits
+		"Larval Flamethrower" 1
+		
+		"Biochemical Container"
+		
+		"Greyling's Breath Thruster"
+		"Greyling's Breath Steering"
+
 ship "Slave Maker" "Slave Maker (Hyper)"
 	outfits
+		"Thorn Turret" 3
+
+		"Biochemical Vat"
+		"Biochemical Container"
+		"Visceral Storage" 2
+
+		"Imperial's Breath Thruster"
+		"Greyling's Breath Thruster"
+		"Reaper's Breath Steering"
 		"Hyperdrive"
 		"Fuel Vacuole" 2
 
@@ -73,6 +261,22 @@ ship "Fire Frigate" "Fire Frigate (Hyper)"
 		"Imperial's Breath Steering" 2
 		"Hyperdrive"
 		"Fuel Vacuole" 2
+
+ship "Fire Frigate" "Fire Frigate (Hyper) (Surveillance)"
+	outfits
+		"Thorn Gun" 4
+		"Thorn Turret"
+
+		"Biochemical Tank"
+		"Musculus Storage"
+		"Eccrine Ship Glands"
+
+		"Imperial's Breath Thruster"
+		"Imperial's Breath Steering" 2
+		"Hyperdrive"
+		"Fuel Vacuole" 2
+		"Cargo Scanner"
+		"Outfit Scanner"
 
 ship "Fire Frigate" "Fire Frigate (Hyper) (Nuke)"
 	outfits

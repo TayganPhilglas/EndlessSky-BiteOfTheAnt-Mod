@@ -32,8 +32,9 @@
 				defer
 	npc accompany save
 		government Merchant
+		names deep
 		personality escort timid
-		ship "Mule" "D.P.S. [placeholder]"
+		ship "Mule"
 	on enter "Epsilon Leonis"
 		dialog "Just as you launch from <source>, bounty hunters begin to fly towards you."
 	on visit
@@ -46,12 +47,11 @@
 			`	[workers hurriedly load your ship with a crate big enough to have a body or two hiding in it (and the sounds coming from inside as the workers half-run with it are not encouraging)]`
 	on complete
 		conversation
-			`[Great job, Captain <last>! Here's your payment.]`
+			`[Great job, Captain <last>! Instead of paying you, how about you come back later and we'll give you a free suit of your own Power Armor?]`
 			branch hai
 				has "First Contact: Hai: offered"
 			label hai
 			`	[You notice that those bounty hunters were using Hai outfits.]`
-	payment 1000000
 
 mission "Missive from Harmony 1"
 	landing
@@ -60,6 +60,7 @@ mission "Missive from Harmony 1"
 	destination "Harmony"
 	to offer
 		has "main plot completed"
+		has "Smuggler's Den, Part 2: done"
 		random < 3
 	source
 		government "Free Worlds"
@@ -73,6 +74,7 @@ mission "Missive from Harmony 1"
 			`	Dear <first>,`
 			`		It is imperative that you come to Harmony and meet me at the Monestary as soon as you possibly can. I will explain more when you arrive. And, make sure you're not being followed. Just in case.`
 			`			Sincerely, Brother Greg`
+		event "Milky Way-Acallaris Wormhole opens"
 
 mission "Missive from Harmony 2" #was worth keeping, but is in serious need of editing
 	landing
@@ -249,7 +251,7 @@ mission "antfolk first contact"
 	landing
 	name "First Contact: Antfolk"
 	description "meet the ants"
-	source "Beob Sb Evtva"
+	source "[Orb of Origin]"
 	to offer
 		has "Missive from Harmony 2: done"
 	on offer
@@ -266,7 +268,7 @@ mission "Antfolk Hyperdrives Prep 1"
 	landing
 	name "Race Shepharding 101"
 	description "Learn about how to best provide new technology to a younger race"
-	source "Beob Sb Evtva"
+	source "[Orb of Origin]"
 	to offer
 		has "antfolk first contact: done"
 	on offer
@@ -436,7 +438,7 @@ mission "Antfolk Hyperdrive Model 1"
 	cargo "Hyperdrive Educational Model" 20
 	on offer
 		dialog "Some Tarazed Corp workers load the Hyperdrive Educational Model onto your ship."
-	destination "Beob Sb Evtva"
+	destination "[Orb of Origin]"
 	on complete
 		conversation
 			`The Antfolk unload the simplified model of a Hyperdrive from your ship and carry it off. You try asking them how many more they think they'll need, but they just look at you and then walk away, carrying the model.`
@@ -464,7 +466,7 @@ mission "Antfolk Hyperdrive Model 2"
 	description "Pickup another Hyperdrive Model from <destination> to give to the Antfolk on <origin>"
 	to offer
 		has "Antfolk Hyperdrive Model 1: done"
-	source "Beob Sb Evtva"
+	source "[Orb of Origin]"
 	destination "Wayfarer"
 	on complete
 		dialog "Tarazed Corp workers load another Hyperdrive Model onto your ship."
@@ -476,7 +478,7 @@ mission "Antfolk Hyperdrive Model 2A"
 	to offer
 		has "Antfolk Hyperdrive Model 2: done"
 	source "Wayfarer"
-	destination "Beob Sb Evtva"
+	destination "[Orb of Origin]"
 	cargo "Hyperdrive Educational Model" 20
 	on complete
 		conversation
@@ -489,7 +491,7 @@ mission "Antfolk Hyperdrive Model 3"
 	description "Pickup another Hyperdrive Model from <destination> to give to the Antfolk on <origin>"
 	to offer
 		has "Antfolk Hyperdrive Model 2A: done"
-	source "Beob Sb Evtva"
+	source "[Orb of Origin]"
 	destination "Wayfarer"
 	on complete
 		dialog "Tarazed Corp workers load another Hyperdrive Model onto your ship."
@@ -501,7 +503,7 @@ mission "Antfolk Hyperdrive Model 3A"
 	to offer
 		has "Antfolk Hyperdrive Model 3: done"
 	source "Wayfarer"
-	destination "Beob Sb Evtva"
+	destination "[Orb of Origin]"
 	cargo "Hyperdrive Educational Model" 20
 	on complete
 		conversation
@@ -512,7 +514,7 @@ mission "Message from the Pug"
 	name "Check on the Antfolk"
 	description "The Pug want you to return to Antfolk space. Besides, you're curious how things might've changed."
 	landing
-	destination "Beob Sb Evtva"
+	destination "[Orb of Origin]"
 	to offer
 		has "event: antfolk gain hyperdrives"
 #		and
@@ -547,7 +549,7 @@ mission "obtain human deitary data chip"
 	name "Human Deitary Data Card"
 	description "Obtain a data card containing detailed information on human deitary needs."
 	landing
-	destination "Beob Sb Evtva"
+	destination "[Orb of Origin]"
 	to offer
 		has "human food data chip fetch quest"
 	to complete

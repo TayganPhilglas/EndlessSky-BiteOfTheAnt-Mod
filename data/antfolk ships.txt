@@ -37,8 +37,6 @@ ship "Battle Larva"
 		"Thorn Gun" 1
 		
 		"Biochemical Container"
-		"Photosynthetic Cell"
-		"Eccrine Ship Glands"
 		
 		"Greyling's Breath Thruster"
 		"Greyling's Breath Steering"

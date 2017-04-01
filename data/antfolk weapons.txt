@@ -151,7 +151,7 @@ outfit "Proto-Beam Turret"
 		"hull damage" 2.6
 	description "Antfolk Turret Mount Burst Laser Weapon"
 
-outfit "Antfolk Anti-Missile" #just about everything for this outfit except the licenses and category are subject to (massive) change
+outfit "Antfolk Anti-Missile" #might want a new name
 #	licenses
 #		Antfolk
 	category "Turrets"
@@ -161,7 +161,7 @@ outfit "Antfolk Anti-Missile" #just about everything for this outfit except the 
 	"outfit space" -10
 	"weapon capacity" -10
 	"turret mounts" -1
-#	"biomass capacity" -10
+	"biomass capacity" -10
 	weapon
 		"hit effect" "small anti-missile"
 		"velocity" 150
