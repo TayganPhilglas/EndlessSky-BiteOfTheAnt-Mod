@@ -103,7 +103,7 @@ ship "Trap Jaw Courier"
 #		Antfolk
 	attributes
 		category "Transport"
-		"cost" 180000
+		"cost" 22400
 		"hull" 200
 		"mass" 40
 		"drag" 1.0
