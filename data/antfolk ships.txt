@@ -97,6 +97,48 @@ ship "Slave Maker"
 	explode "large explosion" 2
 	description "The Slave Maker has been the primary transport vessel of the Antfolk ever since they achieved space flight. Mainly used for the purpose of transporting Antfolk from planet to planet, the Slave Maker is capable of carrying hundreds of Antfolk, but as a result is rather slow and has few defenses."
 
+ship "Trap Jaw Courier"
+	sprite "ship/flivver"
+#	Licenses
+#		Antfolk
+	attributes
+		category "Transport"
+		"cost" 180000
+		"hull" 200
+		"mass" 40
+		"drag" 1.0
+		"heat dissipation" .9
+		"fuel capacity" 500
+		"cargo space" 5
+		"outfit space" 130
+		"weapon capacity" 0
+		"engine capacity" 45
+		"automation" 1
+		
+		"biomass capacity" 130
+		"hull repair rate" 1
+		"hull energy" 0.06
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		"Biochemical Container"
+		"Adipose Storage"
+		
+		"Greyling's Breath Steering"
+		"Greyling's Breath Thruster"
+		"Hyperdrive"
+		
+	engine -16 27
+	engine 16 27
+	gun -6 -31
+	gun 6 -31
+	explode "tiny explosion" 10
+	explode "small explosion" 10
+	description "[placeholder]"
+
 ship "Honey Pot"
 	sprite "ship/argosy"
 #	licenses
