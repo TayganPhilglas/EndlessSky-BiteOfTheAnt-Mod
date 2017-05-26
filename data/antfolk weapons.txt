@@ -139,6 +139,7 @@ outfit "Ionic Nuclear Missile"
 		"hit force" 4000
 		"missile strength" 200
 	description "[Antfolk have better/different nukes than Humans because Antfolk researched it openly for longer.]"
+	description "	[Ionic nuclear missiles are a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
 
 outfit "Proto-Beam"
 #	licenses
