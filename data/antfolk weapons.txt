@@ -98,6 +98,48 @@ outfit "Antfolk Coolant Missile Launcher"
 		"missile strength" 4
 	description "One of the Antfolk's more inventive weapons, they have managed to repurpose the waste from their cooling systems into acidic splash projectiles as ammunition for organic missile launchers. While not the fastest missiles around, and actually being closer to acidic snot balls than real missiles, these projectiles stick to any ship they're hit with, slowing them down, and will 'splash' onto nearby ships similar to the shrapnel of some human-made missiles."
 
+outfit "Ionic Nuclear Missile"
+#	licenses
+#		Antfolk Military
+	category "Secondary Weapons"
+	cost 1000000 #copied from the "Nuclear Missile" outfit for a placeholder; new value is up for discussion
+	thumbnail "outfit/nuke"
+	"mass" 10 #copied from the "Nuclear Missile" outfit for a placeholder; new value is up for discussion
+	"outfit space" -10 #copied from the "Nuclear Missile" outfit for a placeholder; new value is up for discussion
+	"weapon capacity" -10 #copied from the "Nuclear Missile" outfit for a placeholder; new value is up for discussion
+	"gun ports" -1
+	weapon #everything under this was copied from the "Nuclear Missile" outfit for a placeholder; new values are up for discussion
+		sprite "projectile/missile"
+			"no repeat"
+			"frame rate" .25
+		sound "nuke"
+		ammo "Nuclear Missile"
+		stream
+		icon "icon/nuke"
+		"hit effect" "nuke explosion"
+		"hit effect" "nuke residue fast" 10
+		"hit effect" "nuke residue slow" 10
+		"die effect" "missile death"
+		"inaccuracy" 1
+		"velocity" 6
+		"lifetime" 800
+		"reload" 400
+		"firing energy" 10
+		"firing heat" 400
+		"acceleration" .8
+		"drag" .1
+		"turn" 4
+		"homing" 4
+		"radar tracking" .5
+		"optical tracking" 1
+		"trigger radius" 30
+		"blast radius" 150
+		"shield damage" 9000
+		"hull damage" 7000
+		"hit force" 4000
+		"missile strength" 200
+	description "[Antfolk have better/different nukes than Humans because Antfolk researched it openly for longer.]"
+
 outfit "Proto-Beam"
 #	licenses
 #		Antfolk Military

@@ -12,6 +12,65 @@ galaxy Acallaris
 	pos -223.622 -8497.69
 	sprite ui/ring-galaxy
 
+system "[Bright Star]"
+	pos -705.59 -8682.77
+	government Uninhabited
+	habitable 1705
+	link "[unnamed 3]"
+	link "[North Star]"
+	link "[Double Star]"
+	link "[unnamed 6]"
+	link "[Close Star]"
+	asteroids "small rock" 1 6.0345
+	asteroids "medium rock" 10 5.7915
+	asteroids "large rock" 7 3.807
+	asteroids "small metal" 11 2.5515
+	asteroids "medium metal" 66 3.321
+	asteroids "large metal" 1 2.6325
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g0
+		distance 48.0205
+		period 14.5246
+	object
+		sprite star/g5
+		distance 82.9795
+		period 14.5246
+		offset 180
+	object
+		sprite planet/lava1
+		distance 293.789
+		period 48.7812
+	object
+		sprite planet/cloud1
+		distance 609.149
+		period 145.641
+	object
+		sprite planet/gas7
+		distance 1185.96
+		period 395.642
+	object
+		sprite planet/jupiter
+		distance 2107.2
+		period 937.036
+		object
+			sprite planet/ice0
+			distance 237
+			period 11.4653
+		object
+			sprite planet/luna
+			distance 377
+			period 23.0024
+
 system "[Close Star]"
 	pos -757.59 -8645.77
 	government "Antfolk Union"
@@ -19,9 +78,9 @@ system "[Close Star]"
 	link "[Closest Neighbor]"
 	link "[North Star]"
 	link "[Holy Star]"
-	link "[unnamed 1]"
+	link "[Dim Star]"
 	link "[unnamed 3]"
-	link "[unnamed 4]"
+	link "[Bright Star]"
 	asteroids "small metal" 5 0.9516
 	asteroids "medium metal" 61 1.9812
 	asteroids "large metal" 87 1.092
@@ -84,7 +143,7 @@ system "[Closest Neighbor]"
 	government Uninhabited
 	habitable 659.2
 	link "[Close Star]"
-	link "[unnamed 1]"
+	link "[Dim Star]"
 	link "[North Star]"
 	link "[unnamed 2]"
 	asteroids "small rock" 57 1.7355
@@ -140,6 +199,124 @@ system "[Closest Neighbor]"
 			sprite planet/ice8
 			distance 231
 			period 11.5797
+
+system "[Dim Star]"
+	pos -775.59 -8600.77
+	government Uninhabited
+	habitable 1705
+	link "[Closest Neighbor]"
+	link "[Holy Star]"
+	link "[unnamed 2]"
+	link "[Close Star]"
+	asteroids "small rock" 6 8.073
+	asteroids "medium rock" 4 10.005
+	asteroids "large rock" 3 10.212
+	asteroids "medium metal" 3 9.798
+	asteroids "large metal" 25 6.279
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g0
+		distance 43.9883
+		period 12.7341
+	object
+		sprite star/g5
+		distance 76.0117
+		period 12.7341
+		offset 180
+	object
+		sprite planet/gas15
+		distance 342.772
+		period 61.476
+	object
+		sprite planet/gas5
+		distance 1150.58
+		period 378.072
+		object
+			sprite planet/luna
+			distance 254
+			period 13.4616
+		object
+			sprite planet/dust5
+			distance 393
+			period 25.9081
+		object
+			sprite planet/ice0
+			distance 552
+			period 43.1277
+	object
+		sprite planet/gas0
+		distance 2099.94
+		period 932.199
+
+system "[Double Star]"
+	pos -717.59 -8742.77
+	government Uninhabited
+	habitable 973.36
+	link "[North Star]"
+	link "[Bright Star]"
+	link "[unnamed 6]"
+	asteroids "small rock" 2 3.625
+	asteroids "medium rock" 58 2.725
+	asteroids "large rock" 6 3.175
+	asteroids "small metal" 2 1.825
+	asteroids "medium metal" 5 3.55
+	asteroids "large metal" 4 2.625
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		distance 44
+		period 10.5839
+		offset 180
+	object
+		sprite star/k0
+		distance 44
+		period 10.5839
+	object
+		sprite planet/rock4
+		distance 233.04
+		period 45.6109
+		offset 108.275
+	object
+		sprite planet/desert7
+		distance 622.29
+		period 199.027
+		offset 264.313
+	object
+		sprite planet/ice2
+		distance 815.29
+		period 298.464
+		offset 156.099
+	object
+		sprite planet/jupiter
+		distance 1866.7
+		period 1034.03
+		offset 204.776
+		object
+			sprite planet/tethys
+			distance 267
+			period 13.7097
+		object
+			sprite planet/europa
+			distance 365
+			period 21.913
 
 system "[First Leap of Faith]"
 	pos -519.441 -8472.8
@@ -198,7 +375,7 @@ system "[Holy Star]"
 	government Uninhabited
 	habitable 625
 	link "[Close Star]"
-	link "[unnamed 1]"
+	link "[Dim Star]"
 	link "[unnamed 3]"
 	asteroids "medium rock" 5 7.3728
 	asteroids "large rock" 1 8.1792
@@ -305,8 +482,8 @@ system "[North Star]"
 	habitable 560.92
 	link "[Close Star]"
 	link "[Closest Neighbor]"
-	link "[unnamed 4]"
-	link "[unnamed 5]"
+	link "[Bright Star]"
+	link "[Double Star]"
 	link "[Next to Weird Source]"
 	asteroids "small rock" 18 3.84
 	asteroids "medium rock" 37 3.6
@@ -590,68 +767,11 @@ system "[Void Star]"
 			distance 417
 			period 28.3173
 
-system "[unnamed 1]"
-	pos -775.59 -8600.77
-	government Uninhabited
-	habitable 1705
-	link "[Closest Neighbor]"
-	link "[Holy Star]"
-	link "[unnamed 2]"
-	link "[Close Star]"
-	asteroids "small rock" 6 8.073
-	asteroids "medium rock" 4 10.005
-	asteroids "large rock" 3 10.212
-	asteroids "medium metal" 3 9.798
-	asteroids "large metal" 25 6.279
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
-	object
-		sprite star/g0
-		distance 43.9883
-		period 12.7341
-	object
-		sprite star/g5
-		distance 76.0117
-		period 12.7341
-		offset 180
-	object
-		sprite planet/gas15
-		distance 342.772
-		period 61.476
-	object
-		sprite planet/gas5
-		distance 1150.58
-		period 378.072
-		object
-			sprite planet/luna
-			distance 254
-			period 13.4616
-		object
-			sprite planet/dust5
-			distance 393
-			period 25.9081
-		object
-			sprite planet/ice0
-			distance 552
-			period 43.1277
-	object
-		sprite planet/gas0
-		distance 2099.94
-		period 932.199
-
 system "[unnamed 2]"
 	pos -826.441 -8581.8
 	government Uninhabited
 	habitable 1715
-	link "[unnamed 1]"
+	link "[Dim Star]"
 	link "[Closest Neighbor]"
 	asteroids "medium rock" 2 3.564
 	asteroids "large rock" 1 4.3362
@@ -700,7 +820,7 @@ system "[unnamed 3]"
 	government Uninhabited
 	habitable 2859.44
 	link "[Holy Star]"
-	link "[unnamed 4]"
+	link "[Bright Star]"
 	link "[Close Star]"
 	asteroids "small rock" 14 1.5552
 	asteroids "medium rock" 9 2.088
@@ -764,123 +884,12 @@ system "[unnamed 3]"
 			distance 559
 			period 34.7138
 
-system "[unnamed 4]"
-	pos -705.59 -8682.77
-	government Uninhabited
-	habitable 1705
-	link "[unnamed 3]"
-	link "[North Star]"
-	link "[unnamed 5]"
-	link "[unnamed 6]"
-	link "[Close Star]"
-	asteroids "small rock" 1 6.0345
-	asteroids "medium rock" 10 5.7915
-	asteroids "large rock" 7 3.807
-	asteroids "small metal" 11 2.5515
-	asteroids "medium metal" 66 3.321
-	asteroids "large metal" 1 2.6325
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
-	object
-		sprite star/g0
-		distance 48.0205
-		period 14.5246
-	object
-		sprite star/g5
-		distance 82.9795
-		period 14.5246
-		offset 180
-	object
-		sprite planet/lava1
-		distance 293.789
-		period 48.7812
-	object
-		sprite planet/cloud1
-		distance 609.149
-		period 145.641
-	object
-		sprite planet/gas7
-		distance 1185.96
-		period 395.642
-	object
-		sprite planet/jupiter
-		distance 2107.2
-		period 937.036
-		object
-			sprite planet/ice0
-			distance 237
-			period 11.4653
-		object
-			sprite planet/luna
-			distance 377
-			period 23.0024
-
-system "[unnamed 5]"
-	pos -717.59 -8742.77
-	government Uninhabited
-	habitable 233.28
-	link "[North Star]"
-	link "[unnamed 4]"
-	link "[unnamed 6]"
-	asteroids "small rock" 2 3.625
-	asteroids "medium rock" 58 2.725
-	asteroids "large rock" 6 3.175
-	asteroids "small metal" 2 1.825
-	asteroids "medium metal" 5 3.55
-	asteroids "large metal" 4 2.625
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
-	object
-		sprite star/m4
-		period 10
-	object
-		sprite planet/rock4
-		distance 184.04
-		period 65.3867
-	object
-		sprite planet/desert7
-		distance 573.29
-		period 359.487
-	object
-		sprite planet/ice2
-		distance 766.29
-		period 555.534
-	object
-		sprite planet/jupiter
-		distance 1817.7
-		period 2029.57
-		offset 17.3081
-		object
-			sprite planet/tethys
-			distance 267
-			period 13.7097
-		object
-			sprite planet/europa
-			distance 365
-			period 21.913
-
 system "[unnamed 6]"
 	pos -671.59 -8721.77
 	government Uninhabited
 	habitable 1715
-	link "[unnamed 4]"
-	link "[unnamed 5]"
+	link "[Bright Star]"
+	link "[Double Star]"
 	asteroids "small rock" 8 3.6816
 	asteroids "medium rock" 81 2.5896
 	asteroids "large rock" 34 2.5896
@@ -925,14 +934,13 @@ system "[unnamed 6]"
 			distance 232
 			period 11.6549
 
-planet "[Orb of Origin]"
-	attributes antfolk
-	landscape land/mfield3
-	description `[Orb of Origin] is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
-	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of leasuire break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
-	"required reputation" 10
+planet Puggleyak
+	landscape land/forest5
+	description `[planet description placeholder]`
+	spaceport `[spaceport description placeholder]`
+	"required reputation" 2
 	bribe 0
-	security 0.3
+	security 1
 
 planet "[New Orb]"
 	attributes antfolk
@@ -943,16 +951,17 @@ planet "[New Orb]"
 	bribe 0
 	security 0.2
 
+planet "[Orb of Origin]"
+	attributes antfolk
+	landscape land/mfield3
+	description `[Orb of Origin] is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
+	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of leasuire break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
+	"required reputation" 10
+	bribe 0
+	security 0.3
+
 planet "[Orb of Pug]"
 	landscape land/space6
-	description `[planet description placeholder]`
-	spaceport `[spaceport description placeholder]`
-	"required reputation" 2
-	bribe 0
-	security 1
-
-planet "Puggleyak"
-	landscape land/forest5
 	description `[planet description placeholder]`
 	spaceport `[spaceport description placeholder]`
 	"required reputation" 2

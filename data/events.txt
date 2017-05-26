@@ -16,44 +16,54 @@ event "deep sky sells power armor"
 #	invisible
 #	landing
 #	source
-#		near Sol 100
+#		government "Republic"
+#		government "Syndicate"
+#		government "Free Worlds"
 #	to offer
-#		has "main plot completed"
+#		has "Transport Power Armor Prototype 1: done"
 #	on offer
 #		event "deep sky sells power armor"
 #		conversation
 #			`"Attention all space captains! Deep Sky is proud to announce the latest in hand-to-hand defensive combat: Power Armor!"`
 
 event "Milky Way-Acallaris Wormhole opens"
-	unvisit "Kor Ak'Mari"
-	system "Kor Ak'Mari"
+	unvisit "Durax"
+	system "Durax"
 		object
-			sprite star/wr
-			period 100
+			sprite star/g0
+			period 10
 		object
-			sprite planet/lava6
-			distance 179.89
-			period 38.6038
+			sprite planet/rock16
+			distance 206.84
+			period 36.2076
 		object
-			sprite planet/lava0
-			distance 492.58
-			period 174.918
-		object
-			sprite planet/ocean6
-			distance 874.19
-			period 413.551
+			sprite planet/gas15
+			distance 951.09
+			period 357.01
 			object
-				sprite planet/callisto
-				distance 166
-				period 16.2305
+				sprite planet/lava2
+				distance 215
+				period 15.5389
+			object
+				sprite planet/mercury
+				distance 357
+				period 33.2479
 		object
-			sprite planet/ice0
-			distance 1777.8
-			period 1199.35
+			sprite planet/ice8
+			distance 1740.09
+			period 883.498
 		object
-			sprite planet/oberon
-			distance 2107.64
-			period 1548.16
+			sprite planet/gas2
+			distance 2530.73
+			period 1549.59
+			object
+				sprite planet/lava0
+				distance 218
+				period 14.3055
+			object
+				sprite planet/tethys
+				distance 351
+				period 29.2266
 		object "The Gate"
 			sprite planet/wormhole
 			distance 4932.91
@@ -78,17 +88,17 @@ event "Milky Way-Acallaris Wormhole opens"
 #	on offer
 #		event "Milky Way-Acallaris Wormhole opens"
 
-mission "Pirates don't fight ' Pirates '"
+mission "Pirates don't fight '  Pirates  '"
 	invisible
 	landing
 	on offer
 		government Pirate
 			"attitude toward"
-				" Pirate " .3 #may need changing
+				"  Pirate  " .3 #may need changing
 
 event "Stormhold-PC armistice"
 	system Alcyone
-		government " Pirate "
+		government "  Pirate  "
 
 event "antfolk translation machine"
 	set "language: Antfolk"
@@ -255,54 +265,63 @@ event "antfolk colonize holy star"
 		attributes antfolk
 		landscape land/sky2
 		description `[stuff about the holy planet or some such]`
-		spaceport `[spaceport description placeholder]`
+		spaceport `[stuff about the "holy city" that the spaceport is in]`
 		"required reputation" 10
 		bribe 0
 		security 0.3
 
-event "antfolk colonize [unnamed 5]"
-	system "[unnamed 5]"
+event "antfolk colonize double star"
+	system "[Double Star]"
 		government "Antfolk Union"
 		object
-			sprite star/m4
-			period 10
+			sprite star/k0
+			distance 44
+			period 10.5839
+			offset 180
+		object
+			sprite star/k0
+			distance 44
+			period 10.5839
 		object
 			sprite planet/rock4
-			distance 184.04
-			period 65.3867
+			distance 233.04
+			period 45.6109
+			offset 108.275
 		object
 			sprite planet/desert7
-			distance 573.29
-			period 359.487
+			distance 622.29
+			period 199.027
+			offset 264.313
 		object
 			sprite planet/ice2
-			distance 766.29
-			period 555.534
+			distance 815.29
+			period 298.464
+			offset 156.099
 		object
 			sprite planet/jupiter
-			distance 1817.7
-			period 2029.57
-			offset 17.3081
-			object "[World of Crimson Colony]"
+			distance 1866.7
+			period 1034.03
+			offset 204.776
+			object "[Orb of Crimson Colony]"
 				sprite planet/tethys
 				distance 267
 				period 13.7097
-			object "[World of Cerulean Colony]"
+			object "[Orb of Cerulean Colony]"
 				sprite planet/europa
 				distance 365
 				period 21.913
-	planet "[World of Crimson Colony]"
+	planet "[Orb of Crimson Colony]"
 		attributes antfolk
 		landscape land/station3
-		description `[planet description here]`
+		description `[The citizens of [Orb of Crimson Colony], whose word for themselves best translates as "Crimsonite", appear to have a very unfriendly rivalry of some sort with the citizens of [Orb of Cerulean Colony], whom they refer to with the pejorative "jvfushys vfu" meaning "wishful fish". Apparently, this term accuses citizens of [Orb of Cerulean Colony] of wishing they were fish. It's honestly hard to make much sense of the insult.]`
 		spaceport `[spaceport description here]`
 		"required reputation" 10
 		bribe 0
 		security 0.1
-	planet "[World of Cerulean Colony]"
+	planet "[Orb of Cerulean Colony]"
 		attributes antfolk
 		landscape land/station3
-		description `[planet description here]`
+		description `[The citizens of [Orb of Cerulean Colony], whose word for themselves best translates as "Ceruleanite", appear to have a very unfriendly rivalry of some sort with the citizens of [Orb of Crimson Colony], whom they refer to with the pejorative "jvfushys vern zbron" meaning "wishful svern zbron". Appearently, "svern zbron" are some form of extremophile microscopic organism native to the volcanoes [Orb of Origin]. It's honestly hard to make much sense of the insult.]`
 		spaceport `[spaceport description here]`
 		"required reputation" 10
 		bribe 0
@@ -433,7 +452,7 @@ event "orbital terraforming management station 1: built"
 		attributes antfolk station
 		landscape land/station0
 		description `"OTMS" apparently stands for "Orbital Terraforming Management Station", and is an ingenius solution to Aicmaer's weather problems. By building as large a space station as they could, the Antfolk have basicly managed to build an artificial moon for Aicmaer that noticably tempers the planet's weather just by being there.`
-		description `And yet the Antfolk did not invest so many resources into such a large space station just for it to sit there and be only marginally cheaper than a normal Glory terraforming machine. OTMS 1 also serves as a deuterium refinery using the local stars' solar winds, and teams of Antfolk scientists on the station run numerous tests and monitoring functions on the planet below to calculate when and how to adjust the planet's environment next.`
+		description `And yet the Antfolk did not invest so many resources into such a large space station just for it to sit there and be only marginally cheaper than a normal Glory terraforming machine. OTMS 1 also serves as a deuterium refinery using the local stars' solar winds, and teams of Antfolk scientists on the station run numerous tests and monitoring functions on the planet below to calculate when and how to next adjust the planet's environment.`
 		spaceport `[spaceport description here]`
 
 event "Antfolk gain Energy Shielding tech"

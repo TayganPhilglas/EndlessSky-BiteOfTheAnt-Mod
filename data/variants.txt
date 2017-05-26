@@ -20,7 +20,7 @@ ship "Arrow" "Arrow (Hai)"
 		"Hai Chasm Batteries"
 		"A255 Atomic Steering"
 		"A250 Atomic Thruster"
-		"Nerve Gas" 5
+		"Laser Rifle" 5
 
 ship "Bounder" "Bounder (Hai)"
 	outfits
@@ -35,7 +35,7 @@ ship "Bounder" "Bounder (Hai)"
 		"Pebble Core"
 		`"Biroo" Atomic Thruster`
 		`"Biroo" Atomic Steering`
-		"Nerve Gas" 17
+		"Laser Rifle" 17
 	turret "Pulse Turret"
 	turret "Bullfrog Anti-Missile"
 
@@ -55,7 +55,7 @@ ship "Argosy" "Argosy (Hai)"
 		"LP072a Battery Pack"
 		`"Biroo" Atomic Thruster`
 		`"Biroo" Atomic Steering`
-		"Nerve Gas" 14
+		"Laser Rifle" 14
 	gun "Flamethrower"
 	gun "Pulse Cannon"
 	gun "Hai Tracker Pod"
@@ -76,7 +76,7 @@ ship "Marauder Arrow" "Marauder Arrow (Hai)"
 		"LP072a Battery Pack"
 		"A255 Atomic Steering"
 		"A250 Atomic Thruster"
-		"Nerve Gas" 5
+		"Laser Rifle" 5
 	gun "Flamethrower"
 	gun "Pulse Cannon"
 
@@ -96,7 +96,7 @@ ship "Marauder Bounder" "Marauder Bounder (Hai)"
 		"Afterburner"
 		"A255 Atomic Steering"
 		"A250 Atomic Thruster"
-		"Nerve Gas" 18
+		"Laser Rifle" 18
 	turret "Bullfrog Anti-Missile"
 	turret "Laser Turret"
 
@@ -111,7 +111,7 @@ ship "Fury" "Fury (Hai)"
 		"LP036a Battery Pack"
 		"A125 Atomic Steering"
 		"A250 Atomic Thruster"
-		"Nerve Gas" 3
+		"Laser Rifle" 3
 
 ship "Marauder Fury" "Marauder Fury (Hai)"
 	outfits
@@ -127,7 +127,13 @@ ship "Marauder Fury" "Marauder Fury (Hai)"
 		"LP036a Battery Pack"
 		"A255 Atomic Steering"
 		"A255 Atomic Thruster"
-		"Nerve Gas" 3
+		"Laser Rifle" 3
+	gun "Flamethrower"
+	gun "Flamethrower"
+	gun "Flamethrower"
+	gun "Flamethrower"
+	gun "Flamethrower"
+	gun "Flamethrower"
 
 ship "Modified Argosy" "Modified Argosy (Hai)"
 	outfits
@@ -147,7 +153,7 @@ ship "Modified Argosy" "Modified Argosy (Hai)"
 		"LP072a Battery Pack"
 		"A375 Atomic Steering"
 		`"Benga" Atomic Thruster`
-		"Nerve Gas" 12
+		"Laser Rifle" 12
 	gun "Pulse Cannon"
 	gun "Hai Tracker Pod"
 	gun "Pulse Cannon"
@@ -166,17 +172,32 @@ ship "Raven" "Raven (Hai)"
 		"Ionic Afterburner"
 		`"Biroo" Atomic Thruster`
 		`"Biroo" Atomic Steering`
-		"Nerve Gas" 13
+		"Laser Rifle" 13
 	gun "Pulse Cannon"
 	gun "Ion Cannon"
 	gun "Pulse Cannon"
 	gun "Pulse Cannon"
 
-ship "Marauder Raven" "Marauder Raven (Hai)"
-
 ship "Leviathan" "Leviathan (Hai)"
-
-ship "Marauder Leviathan" "Marauder Leviathan (Hai)"
+	outfits
+		"Ion Cannon" 2
+		"Chameleon Anti-Missile"
+		"Pulse Turret" 3
+		"Hai Tracker Pod"
+		"Hai Tracker" 56
+		"Hyperdrive"
+		"Hai Diamond Regenerator"
+		"Liquid Helium Cooler"
+		"Cargo Scanner"
+		"Hai Ravine Batteries"
+		"Boulder Reactor"
+		"A375 Atomic Steering"
+		"Ionic Afterburner"
+		"A370 Atomic Thruster"
+		"Laser Rifle" 46
+	gun "Ion Cannon"
+	gun "Ion Cannon"
+	gun "Hai Tracker Pod"
 
 #variants of Antfolk ships
 ship "Battle Larva" "Battle Larva (Missile)"
@@ -186,15 +207,17 @@ ship "Battle Larva" "Battle Larva (Missile)"
 		"Eccrine Ship Glands"
 		"Greyling's Breath Thruster"
 		"Greyling's Breath Steering"
+	gun "Antfolk Coolant Missile"
 
 ship "Battle Larva" "Battle Larva (Fire)"
 	outfits
-		"Larval Flamethrower" 1
+		"Larval Flamethrower"
 		
 		"Biochemical Container"
 		
 		"Greyling's Breath Thruster"
 		"Greyling's Breath Steering"
+	gun "Larval Flamethrower"
 
 ship "Slave Maker" "Slave Maker (Hyper)"
 	outfits
@@ -233,6 +256,10 @@ ship "Fire Frigate" "Fire Frigate (Surveillance)"
 		"Imperial's Breath Steering" 2
 		"Cargo Scanner"
 		"Outfit Scanner"
+	gun "Thorn Gun"
+	gun "Thorn Gun"
+	gun "Thorn Gun"
+	gun "Thorn Gun"
 
 ship "Fire Frigate" "Fire Frigate (Nuke)"
 	outfits
@@ -246,7 +273,10 @@ ship "Fire Frigate" "Fire Frigate (Nuke)"
 
 		"Imperial's Breath Thruster"
 		"Imperial's Breath Steering" 2
-		
+	gun "Thorn Gun"
+	gun "Thorn Gun"
+	gun "Nuclear Missile"
+	gun "Nuclear Missile"
 
 ship "Fire Frigate" "Fire Frigate (Hyper)"
 	outfits
@@ -261,6 +291,10 @@ ship "Fire Frigate" "Fire Frigate (Hyper)"
 		"Imperial's Breath Steering" 2
 		"Hyperdrive"
 		"Fuel Vacuole" 2
+	gun "Thorn Gun"
+	gun "Thorn Gun"
+	gun "Thorn Gun"
+	gun "Thorn Gun"
 
 ship "Fire Frigate" "Fire Frigate (Hyper) (Surveillance)"
 	outfits
@@ -277,6 +311,10 @@ ship "Fire Frigate" "Fire Frigate (Hyper) (Surveillance)"
 		"Fuel Vacuole" 2
 		"Cargo Scanner"
 		"Outfit Scanner"
+	gun "Thorn Gun"
+	gun "Thorn Gun"
+	gun "Thorn Gun"
+	gun "Thorn Gun"
 
 ship "Fire Frigate" "Fire Frigate (Hyper) (Nuke)"
 	outfits
@@ -292,6 +330,10 @@ ship "Fire Frigate" "Fire Frigate (Hyper) (Nuke)"
 		"Imperial's Breath Steering" 2
 		"Hyperdrive"
 		"Fuel Vacuole" 2
+	gun "Thorn Gun"
+	gun "Thorn Gun"
+	gun "Nuclear Missile"
+	gun "Nuclear Missile"
 
 ship "Army Cruiser" "Army Cruiser (Nuke)"
 	outfits
@@ -305,6 +347,11 @@ ship "Army Cruiser" "Army Cruiser (Nuke)"
 
 		"Reaper's Breath Thruster"
 		"Reaper's Breath Steering"
+	gun "Nuclear Missile"
+	gun "Nuclear Missile"
+	gun "Nuclear Missile"
+	gun "Nuclear Missile"
+	gun "Nuclear Missile"
 
 ship "Queen Carrier" "Queen Carrier (Full)"
 	drone 0 0

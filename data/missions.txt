@@ -44,10 +44,10 @@
 			`	[workers hurriedly load your ship with a lead crate. You're pretty sure you saw the safety symbol for radioactivity on the crate as it passed by you.]`
 	on stopover Alfheim
 		dialog
-			`	[workers hurriedly load your ship with a crate big enough to have a body or two hiding in it (and the sounds coming from inside as the workers half-run with it are not encouraging)]`
+			`	[workers hurriedly load your ship with a crate big enough to have a body or two hiding in it (and the pattern of the thumping sounds coming from inside as the workers half-run with it are not encouraging)]`
 	on complete
 		conversation
-			`[Great job, Captain <last>! Instead of paying you, how about you come back later and we'll give you a free suit of your own Power Armor?]`
+			`[Great job, Captain <last>! Instead of paying you in credits, how about you come back later and we'll give you a free suit of your own Power Armor?]`
 			branch hai
 				has "First Contact: Hai: offered"
 			label hai
