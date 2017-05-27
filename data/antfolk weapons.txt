@@ -62,7 +62,7 @@ outfit "Thorn Turret"
 outfit "Waste-Coolant Missile Launcher"
 #	licenses
 #		Antfolk
-	category "Guns"
+	category "Secondary Weapons"
 	"cost" 45000
 	thumbnail "outfit/meteor launcher"
 	"mass" 15
