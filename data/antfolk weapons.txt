@@ -59,7 +59,7 @@ outfit "Thorn Turret"
 		"hull damage" 7
 	description "The Antfolk, a race brilliant enough to genetically engineer a biological machine with an exoskeleton that can, in at least one spot and axis, turn on a 360 degree pivot (a feature previously unheard of among biological organisms). They should've been able to take all the work that designing this turret must've taken and instead put it towards making a more powerful weapon system. Instead, they chose to use this technology to put a Thorn Gun on a swivvle."
 
-outfit "Antfolk Coolant Missile Launcher"
+outfit "Waste-Coolant Missile Launcher"
 #	licenses
 #		Antfolk
 	category "Guns"
