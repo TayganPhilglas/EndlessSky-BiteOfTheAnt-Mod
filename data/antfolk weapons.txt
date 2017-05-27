@@ -98,17 +98,18 @@ outfit "Antfolk Coolant Missile Launcher"
 		"missile strength" 4
 	description "One of the Antfolk's more inventive weapons, they have managed to repurpose the waste from their cooling systems into acidic splash projectiles as ammunition for organic missile launchers. While not the fastest missiles around, and actually being closer to acidic snot balls than real missiles, these projectiles stick to any ship they're hit with, slowing them down, and will 'splash' onto nearby ships similar to the shrapnel of some human-made missiles."
 
-outfit "Ionic Nuclear Missile"
+outfit "Ionic Nuclear Missile Launcher"
 #	licenses
 #		Antfolk Military
 	category "Secondary Weapons"
-	cost 1000000 #copied from the "Nuclear Missile" outfit for a placeholder; new value is up for discussion
-	thumbnail "outfit/nuke"
-	"mass" 10 #copied from the "Nuclear Missile" outfit for a placeholder; new value is up for discussion
-	"outfit space" -10 #copied from the "Nuclear Missile" outfit for a placeholder; new value is up for discussion
-	"weapon capacity" -10 #copied from the "Nuclear Missile" outfit for a placeholder; new value is up for discussion
+	"cost" 1000000 #placeholder cost
+	thumbnail "outfit/rocket launcher"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
 	"gun ports" -1
-	weapon #everything under this was copied from the "Nuclear Missile" outfit for a placeholder; new values are up for discussion
+	"ion nuke capacity" 2
+	weapon
 		sprite "projectile/missile"
 			"no repeat"
 			"frame rate" .25
@@ -138,8 +139,15 @@ outfit "Ionic Nuclear Missile"
 		"hull damage" 7000
 		"hit force" 4000
 		"missile strength" 200
-	description "[Antfolk have better/different nukes than Humans because Antfolk researched it openly for longer.]"
-	description "	[Ionic nuclear missiles are a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
+
+outfit "Ionic Nuclear Missile"
+	plural "Ionic Nuclear Missiles"
+	category "Ammunition"
+	cost 5000 #placeholder
+	thumbnail "outfit/nuke"
+	"mass" 2.5
+	"ion nuke capacity" -1
+	description "Ionic Nuclear Missiles are ammunition for the Ionic Nuclear Missile Launcher. Each launcher can hold 2 of them. You cannot install Ionic Nuclear Missiles unless you have also installed a launcher to fire them from."
 
 outfit "Proto-Beam"
 #	licenses
