@@ -113,7 +113,7 @@ outfit "Ionic Nuclear Missile"
 			"no repeat"
 			"frame rate" .25
 		sound "nuke"
-		ammo "Nuclear Missile"
+		ammo "Ionic Nuclear Missile"
 		stream
 		icon "icon/nuke"
 		"hit effect" "nuke explosion"
