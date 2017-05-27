@@ -137,6 +137,7 @@ outfit "Ionic Nuclear Missile Launcher"
 		"blast radius" 150
 		"shield damage" 9000
 		"hull damage" 7000
+		"ion damage" 5 #placeholder value taken from the "Ion Cannon" vanilla outfit
 		"hit force" 4000
 		"missile strength" 200
 
