@@ -1,5 +1,6 @@
 Bite of the Ant ES Mod Development To-do List:
 - find and remove any outdated or inconsistant information
+- redesign the Acallaris galaxy's hyperspace network
 - design the Antfolk gradual colonization system
 - design the planet and spaceport descriptions for the planets for said colonization system
 - write hails for the Antfolk ships
