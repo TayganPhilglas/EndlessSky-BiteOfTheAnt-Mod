@@ -104,12 +104,12 @@ outfit "Antfolk Biogrenades" #most certainly needs removal
 	"unplunderable" 1
 	description "[description not written yet]"
 
-outfit "Power Armor"
+outfit "Powered Armor"
 	category "Hand to Hand"
 	cost 135000
 	thumbnail "outfit/android" #needs changing
 	"capture attack" 3.3
 	"capture defense" 3.6
 	"unplunderable" 1
-	description "The Deep Sky 'Powered Knight Suit' is the first form of Power Armor to ever be commercially available in human space."
+	description "The Deep Sky 'Powered Knight Suit' is the first form of Powered Armor to ever be commercially available in human space."
 	description ""
