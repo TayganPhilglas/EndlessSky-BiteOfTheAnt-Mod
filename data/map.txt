@@ -13,13 +13,12 @@ galaxy Acallaris
 	sprite ui/ring-galaxy
 
 system "[Bright Star]"
-	pos -705.59 -8682.77
+	pos -639.96 -8718.96
 	government Uninhabited
 	habitable 1705
-	link "[unnamed 3]"
+	link "[Holy Star]"
 	link "[North Star]"
 	link "[Double Star]"
-	link "[unnamed 6]"
 	link "[Close Star]"
 	asteroids "small rock" 1 6.0345
 	asteroids "medium rock" 10 5.7915
@@ -72,15 +71,12 @@ system "[Bright Star]"
 			period 23.0024
 
 system "[Close Star]"
-	pos -757.59 -8645.77
+	pos -492.971 -8770.06
 	government "Antfolk Union"
 	habitable 806.68
 	link "[Closest Neighbor]"
-	link "[North Star]"
-	link "[Holy Star]"
-	link "[Dim Star]"
-	link "[unnamed 3]"
 	link "[Bright Star]"
+	link "[unnamed 6]"
 	asteroids "small metal" 5 0.9516
 	asteroids "medium metal" 61 1.9812
 	asteroids "large metal" 87 1.092
@@ -139,13 +135,11 @@ system "[Close Star]"
 		offset 24.9044
 
 system "[Closest Neighbor]"
-	pos -788.436 -8659.08
+	pos -457.234 -8746.27
 	government Uninhabited
 	habitable 659.2
 	link "[Close Star]"
-	link "[Dim Star]"
-	link "[North Star]"
-	link "[unnamed 2]"
+	link "[unnamed 6]"
 	asteroids "small rock" 57 1.7355
 	asteroids "medium rock" 41 2.925
 	asteroids "large rock" 104 1.404
@@ -201,13 +195,12 @@ system "[Closest Neighbor]"
 			period 11.5797
 
 system "[Dim Star]"
-	pos -775.59 -8600.77
+	pos -762.932 -8584.41
 	government Uninhabited
 	habitable 1705
-	link "[Closest Neighbor]"
-	link "[Holy Star]"
 	link "[unnamed 2]"
-	link "[Close Star]"
+	link "[Holy Star]"
+	link "[unnamed 1]"
 	asteroids "small rock" 6 8.073
 	asteroids "medium rock" 4 10.005
 	asteroids "large rock" 3 10.212
@@ -258,12 +251,11 @@ system "[Dim Star]"
 		period 932.199
 
 system "[Double Star]"
-	pos -717.59 -8742.77
+	pos -670.765 -8746.11
 	government Uninhabited
 	habitable 973.36
-	link "[North Star]"
 	link "[Bright Star]"
-	link "[unnamed 6]"
+	link "[unnamed 4]"
 	asteroids "small rock" 2 3.625
 	asteroids "medium rock" 58 2.725
 	asteroids "large rock" 6 3.175
@@ -318,16 +310,10 @@ system "[Double Star]"
 			distance 365
 			period 21.913
 
-system "[First Leap of Faith]"
-	pos -519.441 -8472.8
+system [Gateway]
+	pos -466.633 -8452.56
 	government Uninhabited
-	habitable 425.92
-	asteroids "small rock" 2 5.9616
-	asteroids "medium rock" 62 2.9808
-	asteroids "large rock" 23 4.968
-	asteroids "small metal" 3 3.6984
-	asteroids "medium metal" 117 3.0912
-	asteroids "large metal" 28 6.348
+	habitable 5000
 	trade Clothing 280
 	trade Electronics 730
 	trade Equipment 520
@@ -339,44 +325,16 @@ system "[First Leap of Faith]"
 	trade Metal 390
 	trade Plastic 370
 	object
-		sprite star/k5
+		sprite star/a0
 		period 10
-	object
-		sprite planet/desert1
-		distance 258.25
-		period 80.4371
-	object
-		sprite planet/earth
-		distance 623.25
-		period 301.571
-		object
-			sprite planet/oberon
-			distance 127
-			period 14.6525
-	object
-		sprite planet/gas15
-		distance 1043.25
-		period 653.098
-	object
-		sprite planet/gas2
-		distance 1762.54
-		period 1434.18
-		object
-			sprite planet/tethys
-			distance 175
-			period 14.0272
-		object
-			sprite planet/callisto
-			distance 327
-			period 35.8291
 
 system "[Holy Star]"
 	pos -712.441 -8610.8
 	government Uninhabited
 	habitable 625
-	link "[Close Star]"
 	link "[Dim Star]"
 	link "[unnamed 3]"
+	link "[Bright Star]"
 	asteroids "medium rock" 5 7.3728
 	asteroids "large rock" 1 8.1792
 	asteroids "small metal" 25 3.3408
@@ -429,10 +387,11 @@ system "[Holy Star]"
 			period 34.3191
 
 system "[Next to Weird Source]"
-	pos -792.703 -8733.88
+	pos -519.413 -8839.69
 	government Uninhabited
 	habitable 486.68
-	link "[North Star]"
+	link "[unnamed 6]"
+	link "[unnamed 5]"
 	asteroids "medium rock" 4 3.7296
 	asteroids "large rock" 2 2.184
 	asteroids "small metal" 2 3.1248
@@ -477,14 +436,11 @@ system "[Next to Weird Source]"
 			period 11.1366
 
 system "[North Star]"
-	pos -755.436 -8700.08
+	pos -631.539 -8779.99
 	government Uninhabited
 	habitable 560.92
-	link "[Close Star]"
-	link "[Closest Neighbor]"
 	link "[Bright Star]"
-	link "[Double Star]"
-	link "[Next to Weird Source]"
+	link "[unnamed 5]"
 	asteroids "small rock" 18 3.84
 	asteroids "medium rock" 37 3.6
 	asteroids "large rock" 28 5.472
@@ -544,7 +500,7 @@ system "[North Star]"
 			period 41.79
 
 system "[Origin of Weird Signal]"
-	pos -823.441 -8764.8
+	pos -526.064 -8894.14
 	government Pug
 	habitable 425.92
 	asteroids "medium rock" 2 3.8592
@@ -601,8 +557,159 @@ system "[Origin of Weird Signal]"
 			distance 517
 			period 30.876
 
-system "[Second Leap of Faith]"
-	pos -552.441 -8518.8
+system "[Star of Death]"
+	pos -640.675 -8582.71
+	government Uninhabited
+	habitable 486.68
+	asteroids "small rock" 2 7.6176
+	asteroids "medium rock" 1 4.6368
+	asteroids "large rock" 3 5.796
+	asteroids "small metal" 1 3.1464
+	asteroids "medium metal" 4 3.9744
+	asteroids "large metal" 1 6.072
+	trade Clothing 280
+	trade Electronics 730
+	trade Equipment 520
+	trade Food 350
+	trade "Heavy Metals" 950
+	trade Industrial 700
+	trade "Luxury Goods" 1200
+	trade Medical 650
+	trade Metal 390
+	trade Plastic 370
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/ganymede
+		distance 129.41
+		period 26.6925
+	object
+		sprite planet/desert6
+		distance 587.7
+		period 258.328
+		object
+			sprite planet/dust5
+			distance 148
+			period 18.7594
+	object
+		sprite planet/desert0
+		distance 1212.95
+		period 765.954
+		object
+			sprite planet/dust4
+			distance 156
+			period 24.4934
+	object
+		sprite planet/gas13
+		distance 1772.11
+		period 1352.62
+	object
+		sprite planet/gas5
+		distance 4794.67
+		period 6019.72
+		object
+			sprite planet/dust7
+			distance 268
+			period 14.5898
+		object
+			sprite planet/rock17
+			distance 399
+			period 26.5037
+
+system "[Star of Famine]"
+	pos -564.301 -8559.42
+	government Uninhabited
+	habitable 320
+	asteroids "small rock" 10 3.0096
+	asteroids "medium rock" 3 3.1944
+	asteroids "large rock" 18 1.5048
+	asteroids "medium metal" 1 1.5312
+	asteroids "large metal" 1 1.7688
+	trade Clothing 280
+	trade Electronics 730
+	trade Equipment 520
+	trade Food 350
+	trade "Heavy Metals" 950
+	trade Industrial 700
+	trade "Luxury Goods" 1200
+	trade Medical 650
+	trade Metal 390
+	trade Plastic 370
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/ice1
+		distance 199.49
+		period 63.0038
+	object
+		sprite planet/rock5
+		distance 580.73
+		period 312.929
+	object
+		sprite planet/rock6
+		distance 766.37
+		period 474.398
+	object
+		sprite planet/dust1
+		distance 2022.37
+		period 2033.65
+
+system "[Star of Pestilence]"
+	pos -519.441 -8472.8
+	government Uninhabited
+	habitable 425.92
+	asteroids "small rock" 2 5.9616
+	asteroids "medium rock" 62 2.9808
+	asteroids "large rock" 23 4.968
+	asteroids "small metal" 3 3.6984
+	asteroids "medium metal" 117 3.0912
+	asteroids "large metal" 28 6.348
+	trade Clothing 280
+	trade Electronics 730
+	trade Equipment 520
+	trade Food 350
+	trade "Heavy Metals" 950
+	trade Industrial 700
+	trade "Luxury Goods" 1200
+	trade Medical 650
+	trade Metal 390
+	trade Plastic 370
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/desert1
+		distance 258.25
+		period 80.4371
+	object
+		sprite planet/earth
+		distance 623.25
+		period 301.571
+		object
+			sprite planet/oberon
+			distance 127
+			period 14.6525
+	object
+		sprite planet/gas15
+		distance 1043.25
+		period 653.098
+	object
+		sprite planet/gas2
+		distance 1762.54
+		period 1434.18
+		object
+			sprite planet/tethys
+			distance 175
+			period 14.0272
+		object
+			sprite planet/callisto
+			distance 327
+			period 35.8291
+
+system "[Star of War]"
+	pos -589.649 -8494
 	government Uninhabited
 	habitable 486.68
 	asteroids "small rock" 5 1.8744
@@ -653,65 +760,8 @@ system "[Second Leap of Faith]"
 			distance 228
 			period 18.1217
 
-system "[The Gateway]"
-	pos -466.633 -8452.56
-	government Uninhabited
-	habitable 5000
-	trade Clothing 280
-	trade Electronics 730
-	trade Equipment 520
-	trade Food 350
-	trade "Heavy Metals" 950
-	trade Industrial 700
-	trade "Luxury Goods" 1200
-	trade Medical 650
-	trade Metal 390
-	trade Plastic 370
-	object
-		sprite star/a0
-		period 10
-
-system "[Third Leap of Faith]"
-	pos -627.441 -8562.8
-	government Uninhabited
-	habitable 320
-	asteroids "small rock" 10 3.0096
-	asteroids "medium rock" 3 3.1944
-	asteroids "large rock" 18 1.5048
-	asteroids "medium metal" 1 1.5312
-	asteroids "large metal" 1 1.7688
-	trade Clothing 280
-	trade Electronics 730
-	trade Equipment 520
-	trade Food 350
-	trade "Heavy Metals" 950
-	trade Industrial 700
-	trade "Luxury Goods" 1200
-	trade Medical 650
-	trade Metal 390
-	trade Plastic 370
-	object
-		sprite star/m0
-		period 10
-	object
-		sprite planet/ice1
-		distance 199.49
-		period 63.0038
-	object
-		sprite planet/rock5
-		distance 580.73
-		period 312.929
-	object
-		sprite planet/rock6
-		distance 766.37
-		period 474.398
-	object
-		sprite planet/dust1
-		distance 2022.37
-		period 2033.65
-
 system "[Void Star]"
-	pos -830.703 -8721.88
+	pos -593.494 -8929.06
 	government Pug
 	habitable 425.92
 	asteroids "small rock" 13 4.4352
@@ -767,12 +817,12 @@ system "[Void Star]"
 			distance 417
 			period 28.3173
 
-system "[unnamed 2]"
-	pos -826.441 -8581.8
+system "[unnamed 1]"
+	pos -820.831 -8599.84
 	government Uninhabited
 	habitable 1715
 	link "[Dim Star]"
-	link "[Closest Neighbor]"
+	link "[unnamed 2]"
 	asteroids "medium rock" 2 3.564
 	asteroids "large rock" 1 4.3362
 	asteroids "medium metal" 13 3.3858
@@ -815,13 +865,12 @@ system "[unnamed 2]"
 			distance 217
 			period 12.7763
 
-system "[unnamed 3]"
-	pos -691.441 -8660.8
+system "[unnamed 2]"
+	pos -769.044 -8641.52
 	government Uninhabited
 	habitable 2859.44
-	link "[Holy Star]"
-	link "[Bright Star]"
-	link "[Close Star]"
+	link "[Dim Star]"
+	link "[unnamed 1]"
 	asteroids "small rock" 14 1.5552
 	asteroids "medium rock" 9 2.088
 	asteroids "large rock" 18 1.9728
@@ -884,12 +933,12 @@ system "[unnamed 3]"
 			distance 559
 			period 34.7138
 
-system "[unnamed 6]"
-	pos -671.59 -8721.77
+system "[unnamed 3]"
+	pos -710.603 -8662.6
 	government Uninhabited
 	habitable 1715
-	link "[Bright Star]"
-	link "[Double Star]"
+	link "[Holy Star]"
+	link "[unnamed 4]"
 	asteroids "small rock" 8 3.6816
 	asteroids "medium rock" 81 2.5896
 	asteroids "large rock" 34 2.5896
@@ -933,6 +982,178 @@ system "[unnamed 6]"
 			sprite planet/rock0
 			distance 232
 			period 11.6549
+
+system "[unnamed 4]"
+	pos -701.222 -8706.39
+	government Uninhabited
+	habitable 1080
+	link "[unnamed 3]"
+	link "[Double Star]"
+	asteroids "small rock" 12 1.44
+	asteroids "medium rock" 7 2.18
+	asteroids "large rock" 2 1.8
+	asteroids "small metal" 2 2.26
+	asteroids "medium metal" 68 2.26
+	asteroids "large metal" 1 1.5
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/rock16
+		distance 335.41
+		period 74.7674
+		object
+			sprite planet/lava0
+			distance 145
+			period 23.8297
+	object
+		sprite planet/desert7
+		distance 660.9
+		period 206.801
+	object
+		sprite planet/gas17
+		distance 1494.34
+		period 703.108
+		object
+			sprite planet/dust7
+			distance 217
+			period 13.6572
+		object
+			sprite planet/tethys
+			distance 338
+			period 26.549
+	object
+		sprite planet/neptune
+		distance 3025.95
+		period 2026.01
+		object
+			sprite planet/rhea
+			distance 224
+			period 16.7034
+		object
+			sprite planet/io
+			distance 356
+			period 33.4663
+
+system "[unnamed 5]"
+	pos -576.222 -8809.39
+	government Uninhabited
+	habitable 1080
+	link "[North Star]"
+	link "[Next to Weird Source]"
+	asteroids "small rock" 1 3.7323
+	asteroids "medium rock" 2 2.262
+	asteroids "large rock" 4 4.0716
+	asteroids "small metal" 55 1.885
+	asteroids "medium metal" 3 3.0914
+	asteroids "large metal" 105 3.6946
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/neptune
+		distance 747.96
+		period 248.981
+		object
+			sprite planet/lava0
+			distance 213
+			period 15.4882
+		object
+			sprite planet/rock3
+			distance 318
+			period 28.2535
+		object
+			sprite planet/oberon
+			distance 459
+			period 48.9949
+		object
+			sprite planet/dust1
+			distance 585
+			period 70.4962
+	object
+		sprite planet/gas11
+		distance 1833.52
+		period 955.601
+		object
+			sprite planet/luna
+			distance 272
+			period 14.7955
+		object
+			sprite planet/rock0
+			distance 369
+			period 23.3785
+
+system "[unnamed 6]"
+	pos -447.222 -8818.39
+	government Uninhabited
+	habitable 5233.28
+	link "[Closest Neighbor]"
+	link "[Close Star]"
+	link "[Next to Weird Source]"
+	asteroids "small rock" 2 5.913
+	asteroids "medium rock" 58 4.131
+	asteroids "large rock" 1 4.941
+	asteroids "small metal" 19 5.022
+	asteroids "large metal" 2 5.67
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/a0
+		distance 4.81424
+		period 6.20596
+	object
+		sprite star/m4
+		distance 103.186
+		period 6.20596
+		offset 180
+	object
+		sprite planet/lava5
+		distance 237.826
+		period 20.2797
+	object
+		sprite planet/io
+		distance 513.036
+		period 64.2532
+	object
+		sprite planet/desert2
+		distance 1011.28
+		period 177.819
+	object
+		sprite planet/gas14
+		distance 1743.28
+		period 402.459
+		object
+			sprite planet/ice7
+			distance 230
+			period 14.2053
 
 planet Puggleyak
 	landscape land/forest5
