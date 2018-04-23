@@ -20,7 +20,7 @@ outfit "Thorn Gun"
 	"gun ports" -1
 	"biomass capacity" -10
 	weapon
-		sprite "projectile/repeater"
+		sprite "projectile/thorn"
 		sound "repeater"
 		"hit effect" "repeater impact"
 		"inaccuracy" 1
@@ -46,7 +46,7 @@ outfit "Thorn Turret"
 	"turret mounts" -1
 	"biomass capacity" -22
 	weapon
-		sprite "projectile/repeater"
+		sprite "projectile/thorn"
 		sound "repeater"
 		"hit effect" "repeater impact"
 		"inaccuracy" 2
