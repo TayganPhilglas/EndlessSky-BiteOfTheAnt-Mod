@@ -189,7 +189,7 @@ ship "Honey Pot"
 	description "Much like the Slave Maker, the Honey Pot has been in use for some time. While the carrying capacity of the Honey Pot is rather low by Antfolk freighter standards, any Human able to see just how much cargo that the Honey Pot is able to carry would be astonished. This is because of the Honey Pot's ability to adjust its internal structure with ease while dealing no damage to hull integrity, allowing the packing of much more cargo than would be thought possible."
 
 ship "Leaf Cutter"
-	sprite "ship/behemoth"
+	sprite "ship/deep river"
 #	licenses
 #		Antfolk
 	attributes

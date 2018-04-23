@@ -8,8 +8,8 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-#mission "Transport Power Armor Prototype 1"
-	name "Transport Power Armor Prototype"
+#mission "Transport Powered Armor Prototype 1"
+	name "Transport Powered Armor Prototype"
 	description "[placeholder]"
 	source Valhalla
 	destination Valhalla
@@ -47,7 +47,7 @@
 			`	[workers hurriedly load your ship with a crate big enough to have a body or two hiding in it (and the pattern of the thumping sounds coming from inside as the workers half-run with it are not encouraging)]`
 	on complete
 		conversation
-			`[Great job, Captain <last>! Instead of paying you in credits, how about you come back later and we'll give you a free suit of your own Power Armor?]`
+			`[Great job, Captain <last>! Instead of paying you in credits, how about you come back later and we'll give you a free suit of your own Powered Armor?]`
 			branch hai
 				has "First Contact: Hai: offered"
 			label hai
