@@ -15,6 +15,9 @@
 	destination Valhalla
 	to offer
 		has "main plot completed"
+		has "free worlds plot completed"
+		has "event: fw armistice"
+		has "Wanderers: Sestor Alt: Alnilam 3: done"
 	stopover Bivrost
 	stopover Alfheim
 	on offer
@@ -60,7 +63,10 @@ mission "Missive from Harmony 1"
 	destination "Harmony"
 	to offer
 		has "main plot completed"
-		has "Smuggler's Den, Part 2: done"
+		has "free worlds plot completed"
+		has "event: fw armistice"
+		has "Wanderers: Sestor Alt: Alnilam 3: done"
+		#has "Smuggler's Den, Part 2: done"
 		random < 3
 	source
 		government "Free Worlds"
@@ -125,13 +131,6 @@ mission "Missive from Harmony 2" #was worth keeping, but is in serious need of e
 			choice
 				`"Yes, I am. What's with all this cloak and dagger?"`
 					goto secrecy
-				`"First, I'd like to say that this isn't what I imagined when you said you performed 'pirate outreach.'"`
-					goto outreach
-			label outreach
-			`Brother Greg, as well as the pirate girl, instantly become fully flabbergasted. The pirate girl inches to the far end of the log.`
-			`Brother Greg, meanwhile, states angrily "Ugh! I took a vow of chastity! And that sort of irreputable behavior hasn't been a problem among the clergy since before the space age! Now if you please, this girl was sent here because her employer has business with YOU specifically. I'm only to be a mediator! Nothing more!"`
-			`You hastily apologise, and ask "For the record, I am VERY curious about what the deal is. What's with all this cloak and dagger?"`
-				got secrecy
 			label secrecy
 			`"Well, hm... Arianne, do you wish to explain it, or shall I?" Brother Greg asks the pirate girl.`
 			`"You only step in if the talkin' goes south. That was the deal," Arianne responds. She then turns to you and says "I's a pirate from Stormhold. One of the higher-ups, Owen Diedrich, sent me ta Harmony, givin' me jus' enough credits ta get here, ta beg the monks here ta contact ya'."`
@@ -140,104 +139,28 @@ mission "Missive from Harmony 2" #was worth keeping, but is in serious need of e
 			choice
 				`	"Stormhold... That planet is just north of Syndicate space, right? Can't say I know anyone from there. Who is this 'Owen Diedrich'? What does he want with me?" you ask.`
 			`	"Owen Diedrich is the greatest of the pirate leaders on Stormhold," says Arianne. "He was once a manager fer the Syndicate, but one day decided to stop givin' money to the Syndicate an' ta start takin' some of it back. He was the one pirate leader who refused to go after the bounty on Ijs Springborn."`
-				goto questions
+				goto secrecy2
 			label reconcile
 			`	"Stormhold... That planet is just north of Syndicate space, right? Can't say I know anyone from there. Who is this 'Owen Diedrich'? What does he want with me?" you ask.`
 			`	Arianne looks at you with a surprised look. "Ya' don' remember him? He remembers you vividly. He sold ya' information ya' needed to bring justice ta a bunch of Syndicate guys."`
 			`	You think for a moment. Then it hits you. "OH! That guy! Yeah, I never got his name, and I'm sure there are several rival leaders on Stormhold," you say, sheepishly. "I actually do remember him."`
 			`	Arianne looks pleased at your reaction, saying "Tha's more like it. A meeting of two great leaders like tha' should be remembered."`
-				goto questions
-			label questions
-			`"Before we move on to discussing anything like me going to Stormhold, I do still have a couple of questions," you say.`
-			`"Ask away. I'll answer best I can," Arianne said.`
-			branch reconcile2
-				has "event: fw armistice"
-			choice
-				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?"`
-					goto alphas
-				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
-					goto travel
-				`	"Actually, nevermind. Let's just get down to business,"`
-					goto secrecy2
-			label alphas
-				`	Arianne looks shocked at the question. "Diedrich hates Alphas! He'd never let them so much as set foot on Stormhold! Why d'ya think he left the Syndicate? He was appaled by the Oracle deal!"`
-				`	"The what deal?" you ask.`
-				`	[Arianne explains the Oracle]`
-			choice
-				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
-					goto travel
-				`	"I guess that's a good enough interrogation. Let's get down to business," you say.`
-					goto secrecy2
-			label travel
-				`	[Arianne explains that she was dropped off in northern Syndicate space with just enough supplies and credits to pay her way to Harmony]`
-			choice
-				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
-					goto alphas
-				`	"I guess that's a good enough interrogation. Let's get down to business," you say.`
-					goto secrecy2
-			label reconcile2
-			choice
-				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
-					goto alphas2
-				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
-					goto travel2
-				`	"Actually, nevermind. Let's just get to the part where you tell me why Owen Diedrich wants me to meet up with him," you say.`
-					goto secrecy2
-			label alphas2
-				`	Arianne looks shocked at the question. "Diedrich hates Alphas! He'd never let them so much as set foot on Stormhold! Why d'ya think he left the Syndicate? He was appaled by the Oracle deal!"`
-				`	"YOU know about the Oracle?" you ask.`
-				`	"Diedrich briefed me on it 'fore sendin' me to collect you," Arianne said.`
-				`	You find yourself starting to wonder just how high up the Syndicate's chain of command Diedrich was, how much he could possibly know, and how much he told this girl.`
-			choice
-				`	"I'm curious... how exactly did you get to Harmony anyway? You're a long mile from Stormhold."`
-					goto travel2
-				`	"I guess that's a good enough interrogation. Let's get down to business," you say.`
-					goto secrecy2
-			label travel2
-				`	[Arianne explains that she was dropped off in northern Syndicate space with just enough supplies and credits to pay her way to Harmony]`
-			choice
-				`	"About the current leadership on Stormhold... do they or have they ever harbored Alphas?" you ask.`
-					goto alphas2
-				`	"I guess that's a good enough interrogation. Let's get down to business," you say.`
-					goto secrecy2
+				goto secrecy2
 			label secrecy2
 				`[stuff about pirates and monks distrusting the Syndicate so much that they wanted to make sure there was 0% chance of the Syndicate learning what Diedrich wanted to tell PC]`
-			branch tribute
-				has "tribute: Stormhold"
 			choice
 				`	"So, why exactly does Owen Diedrich want me to come meet him on Stormhold?" you ask.`
 					goto why
 			label why
-				`	"You's an explorer, right? Well, one of the astronomers on Stormhold found a system he thinks might be worth exploring, but it's hyperlane network isn't connected to any star in human space. We need someone with a Jump Drive, and Diedrich won't trust the Syndicate to even know the system exists," Arianne said.`
-				`	"And I don't suppose I'll learn why this system is worth exploring or why Diedrich cares unless I go to Stormhold?" you ask.`
+				`	"You's an explorer, right? Well, a wormhole recently appeared in a system around our territory. We tried exploring it ourselves, but the system on the other side ain't hyperlinked. We need someone with a Jump Drive to explore any further, and Diedrich won't trust the Syndicate to even know the wormhole exists," Arianne said.`
+				`	"And I don't suppose I'll learn where this wormhole is or why Diedrich cares unless I go to Stormhold?" you ask.`
 				`	"Tha's right. I'd be ridin' with ya' back," Arianne said.`
-					goto decision
-			label tribute
-			choice
-				`	"So, why exactly does Owen Diedrich want me to come meet him on Stormhold?" you ask.`
-					goto why2
-			label why2
-				`	"You's an explorer, right? Well, one of the astronomers on Stormhold found a system he thinks might be worth exploring, but it's hyperlane network isn't connected to any star in human space. We need someone with a Jump Drive, and Diedrich won't trust the Syndicate to even know the system exists," Arianne said.`
-				`	"And I don't suppose I'll learn why this system is worth exploring or why Diedrich cares unless I go to Stormhold?" you ask.`
-				`	"Tha's right. I'd be ridin' with ya' back," Arianne said. "Bu' fair warnin', Diedrich is one of ta' few pirate bosses on Stormhold tha' don' wanta kill ya'."`
-			choice
-				`	"And why might that be? Sure, I've destroyed a lot of Pirate ships, but it's not like I didn't destroy a lot of other ships during the war, too."`
-					goto don'tremember
-				`	"Wait... is Stormhold one of the planets that I demanded...?"`
-					goto remember
-			label don'tremember
-				`	[placeholder dialog]`
-					goto decision
-			label remember
-				`	"Demanded tribute from, yeah," Arianne says. "A lotta folks on Stormhold are real broken up about it. Diedrich says I was chosen to send for ya' cause I'm oneova few subordinates he has who he can trust ta' have a level head 'round ya'."`
-				`	"Interesting that Diedrich apparently is still willing to deal with me," you say.`
-				`	"Not like he's gotta lot o' choices. It's you, or the Syndicate - who would just stink up the job, or the Navy's Danforth guy, who's got other jobs. Sides', they both hate pirates so much they wouldn't deal with us 'less they hadn't a single other option. We decided to gamble that you might be a little more reasonable."`
 					goto decision
 			label decision
 			choice
 				`	"I don't like this, but as long as Brother Greg can vouch for you and your people that you're not going to try any funny business while I'm there - and on the way - then I guess I don't have much choice. Not like I could find the system on my own going off of what little you're telling me."`
 					accept
-				`	"You know what? I don't trust pirates, and the fact that we're having this conversation at night, in a cave, in the mountains, only reinforces that mentality. Find your own way to your mystical Jump Drive-excludive star system."`
+				`	"You know what? I don't trust pirates, and the fact that we're having this conversation at night, in a cave, in the mountains, only reinforces that mentality. Find your own way beyond your mystical Jump Drive-exclusive wormhole."`
 				`	You storm out of the cave, not waiting for a response.`
 					decline
 	on accept
@@ -245,24 +168,24 @@ mission "Missive from Harmony 2" #was worth keeping, but is in serious need of e
 		passengers 1
 	on complete
 		conversation
-			`[PC speaks with Owen Diedrich, and things are discussed like what Diedrich hopes to gain from PC exploring the Chordi system]`
+			`[PC speaks with Owen Diedrich, and things are discussed like what Diedrich hopes to gain from PC exploring the Gateway]`
 
-mission "antfolk first contact"
+mission "Antfolk First Contact 1"
 	landing
 	name "First Contact: Antfolk"
 	description "meet the ants"
 	source "[Orb of Origin]"
+	destination "Setar Fort" #not yet sure I got the right Korath world here
 	to offer
 		has "Missive from Harmony 2: done"
 	on offer
 		conversation
-			`[stuff happens]`
-			`[PC wonders how to dress for the meeting]`
-			choice
-				`	(Don't worry about it, it's not like Earth had a toxic atmosphere in the Devonian Period or anything, right?)`
-					goto nosuit
-				`	(Don't risk it, wear an EVA suit and oxygen tank.)`
-					goto evasuit
+			`[pc lands near an antfolk hive]`
+			`[antfolk speak antfolk to pc]`
+			`[pc gets the idea to contact the Wanderers, see if Iktat Rek might be willing to help]`
+	on complete
+		conversation
+			`[pc convinces Rek to come along]`
 
 mission "Antfolk Hyperdrives Prep 1"
 	landing

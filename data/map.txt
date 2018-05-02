@@ -15,7 +15,7 @@ galaxy Acallaris
 system "[Bright Star]"
 	pos -639.96 -8718.96
 	government Uninhabited
-	habitable 1705
+	habitable 1111.68
 	link "[Holy Star]"
 	link "[North Star]"
 	link "[Double Star]"
@@ -37,38 +37,34 @@ system "[Bright Star]"
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite star/g0
-		distance 48.0205
-		period 14.5246
-	object
 		sprite star/g5
-		distance 82.9795
-		period 14.5246
+		distance 44.6544
+		period 12.3586
 		offset 180
 	object
-		sprite planet/lava1
-		distance 293.789
-		period 48.7812
+		sprite star/k0
+		distance 57.3456
+		period 12.3586
 	object
-		sprite planet/cloud1
-		distance 609.149
-		period 145.641
+		sprite planet/desert7
+		distance 197.956
+		period 33.4135
 	object
-		sprite planet/gas7
-		distance 1185.96
-		period 395.642
+		sprite planet/rock19
+		distance 386.206
+		period 91.0538
+	object "[Undying Storm]"
+		sprite planet/desert9
+		distance 753.766
+		period 248.27
 	object
-		sprite planet/jupiter
-		distance 2107.2
-		period 937.036
+		sprite planet/gas15
+		distance 2038.26
+		period 1103.97
 		object
-			sprite planet/ice0
-			distance 237
-			period 11.4653
-		object
-			sprite planet/luna
-			distance 377
-			period 23.0024
+			sprite planet/rock7
+			distance 194
+			period 14.2233
 
 system "[Close Star]"
 	pos -492.971 -8770.06
@@ -169,7 +165,7 @@ system "[Closest Neighbor]"
 		sprite planet/ice2
 		distance 308.809
 		period 84.5447
-	object
+	object "[Eternal Flood]"
 		sprite planet/ocean1
 		distance 577.049
 		period 215.959
@@ -253,7 +249,7 @@ system "[Dim Star]"
 system "[Double Star]"
 	pos -670.765 -8746.11
 	government Uninhabited
-	habitable 973.36
+	habitable 1050.92
 	link "[Bright Star]"
 	link "[unnamed 4]"
 	asteroids "small rock" 2 3.625
@@ -273,42 +269,46 @@ system "[Double Star]"
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite star/k0
-		distance 44
-		period 10.5839
+		sprite star/g5
+		distance 46.2023
+		period 15.0187
 		offset 180
 	object
-		sprite star/k0
-		distance 44
-		period 10.5839
+		sprite star/k5
+		distance 67.7977
+		period 15.0187
 	object
-		sprite planet/rock4
-		distance 233.04
-		period 45.6109
-		offset 108.275
+		sprite planet/rock1
+		distance 235.608
+		period 44.6231
 	object
-		sprite planet/desert7
-		distance 622.29
-		period 199.027
-		offset 264.313
+		sprite planet/desert9
+		distance 489.898
+		period 133.793
 	object
-		sprite planet/ice2
-		distance 815.29
-		period 298.464
-		offset 156.099
+		sprite planet/gas0
+		distance 1044.94
+		period 416.784
+		offset 46.8898
+		object "[Cerulean Orb]"
+			sprite planet/ice8
+			distance 280.04
+			period 13.7337
+			offset 51.7798
+		object "[Crimson Orb]"
+			sprite planet/io
+			distance 403.04
+			period 23.7126
+			offset 325.567
 	object
-		sprite planet/jupiter
-		distance 1866.7
-		period 1034.03
-		offset 204.776
+		sprite planet/gas3
+		distance 1993.42
+		period 1098.18
+		offset 336.988
 		object
-			sprite planet/tethys
-			distance 267
-			period 13.7097
-		object
-			sprite planet/europa
-			distance 365
-			period 21.913
+			sprite planet/ice7
+			distance 287
+			period 12.419
 
 system [Gateway]
 	pos -466.633 -8452.56
@@ -353,7 +353,7 @@ system "[Holy Star]"
 	object
 		sprite star/g5
 		period 10
-	object
+	object [Gravestone]
 		sprite planet/forest6
 		distance 586.843
 		period 227.459
@@ -1163,6 +1163,21 @@ planet Puggleyak
 	bribe 0
 	security 1
 
+planet "[Cerulean Orb]"
+	landscape land/station3
+
+planet "[Crimson Orb]"
+	landscape land/station3
+
+planet "[Eternal Flood]"
+	attributes "EVO-13 Legacy"
+	landscape land/sea1
+	description `[description placeholder]`
+
+planet [Gravestone]
+	landscape land/bwerner2
+	description `This planet's biosphere is so heavily irradiated, you can't leave your ship even in full EVA gear. However, your ship's sensors pick up numerous ruined structures across the globe.`
+
 planet "[New Orb]"
 	attributes antfolk
 	landscape land/red0
@@ -1173,7 +1188,7 @@ planet "[New Orb]"
 	security 0.2
 
 planet "[Orb of Origin]"
-	attributes antfolk
+	attributes antfolk "EVO-13 Legacy"
 	landscape land/mfield3
 	description `[Orb of Origin] is the homeworld of the Antfolk, an insectoid race of cat-sized ants that operate in multiple hive minds working in unision. Their architecture is extremely bizzaire, even compared to buildings made by the Quarg. Everything appears to be made of organic materials, and the otherwise plant-like buildings almost seem to breath more like an animal. You find yourself working to remember that the Antfolk aren't that different from one of the most common lifeforms on human worlds, other than humans themselves.`
 	spaceport `The Antfolk in this spaceport are constantly busy doing something, none of them obviously taking any kind of leasuire break, at least when you're watching. No one individual will speak with you; any communication done is done in a group, and that seems to be the norm here. In fact, you realize that you stick out like a sore thumb here: you are quite possibly the only sapient life form here that is even capable of independant thought or action.`
@@ -1201,4 +1216,8 @@ planet "[Sky Factory]"
 	"required reputation" 10
 	bribe 0
 	security 0.3
+
+planet "[Undying Storm]"
+	attributes "EVO-13 Legacy"
+	landscape land/dune0
 

@@ -8,11 +8,11 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-event "deep sky sells power armor"
+event "deep sky sells powered armor"
 	outfitter "Deep Sky Advanced"
-		"Power Armor"
+		"Powered Armor"
 
-#mission "deep sky sells power armor"
+#mission "deep sky sells powered armor"
 #	invisible
 #	landing
 #	source
@@ -24,9 +24,11 @@ event "deep sky sells power armor"
 #	on offer
 #		event "deep sky sells power armor"
 #		conversation
-#			`"Attention all space captains! Deep Sky is proud to announce the latest in hand-to-hand defensive combat: Power Armor!"`
+#			`"Attention all space captains! Deep Sky is proud to announce the latest in hand-to-hand defensive combat: the Powered Knight powered armor!"`
 
 event "Milky Way-Acallaris Wormhole opens"
+	invisible
+	landing
 	unvisit "Durax"
 	system "Durax"
 		object
@@ -69,7 +71,7 @@ event "Milky Way-Acallaris Wormhole opens"
 			distance 4932.91
 			period 1959.88
 			offset 245.709
-	system "[The Gateway]"
+	system "[Gateway]"
 		object
 			sprite star/a0
 			period 10
@@ -122,45 +124,6 @@ event "antfolk gain hyperdrives"
 		"Hyperdrive"
 
 event "antfolk colonize closest neighbor"
-	system "[Closest Neighbor]"
-		government "Antfolk Union"
-		object
-			sprite star/k5
-			distance 39.2811
-			period 18.2195
-		object
-			sprite star/m4
-			distance 71.7189
-			period 18.2195
-			offset 180
-		object
-			sprite planet/ice2
-			distance 308.809
-			period 84.5447
-		object "[Eternal Flood]"
-			sprite planet/ocean1
-			distance 577.049
-			period 215.959
-		object
-			sprite planet/gas13
-			distance 1104.21
-			period 571.647
-			object
-				sprite planet/rock7
-				distance 256
-				period 11.563
-		object
-			sprite planet/gas12
-			distance 1729.17
-			period 1120.23
-		object
-			sprite planet/gas11
-			distance 2264.17
-			period 1678.47
-			object
-				sprite planet/ice8
-				distance 231
-				period 11.5797
 	planet "[Eternal Flood]"
 		attributes antfolk
 		landscape land/sea1
@@ -170,50 +133,7 @@ event "antfolk colonize closest neighbor"
 		bribe 0
 		security 0.2
 
-event "antfolk colonize north star"
-	system "[North Star]"
-		government "Antfolk Union"
-		object
-			sprite star/k5
-			distance 19.0134
-			period 11.8591
-		object
-			sprite star/m8
-			distance 59.9866
-			period 11.8591
-			offset 180
-		object "[Undying Storm]"
-			sprite planet/desert2
-			distance 551.939
-			period 219.001
-			offset 312.639
-		object
-			sprite planet/ocean4
-			distance 985.749
-			period 522.708
-			offset 348.044
-			object
-				sprite planet/dust5
-				distance 173
-				period 20.7157
-		object
-			sprite planet/jupiter
-			distance 1744.04
-			period 1230.11
-			offset 357.112
-		object
-			sprite planet/gas8
-			distance 2517.05
-			period 2132.79
-			offset 358.843
-			object
-				sprite planet/lava0
-				distance 240
-				period 19.7922
-			object
-				sprite planet/ice0
-				distance 395
-				period 41.79
+event "antfolk colonize bright star"
 	planet "[Undying Storm]"
 		attributes antfolk
 		landscape land/dune0
@@ -223,111 +143,25 @@ event "antfolk colonize north star"
 		bribe 0
 		security 0.1
 
-event "antfolk colonize holy star"
-	system "[Holy Star]"
-		government "Antfolk Union"
-		object
-			sprite star/g5
-			period 10
-		object "[Holy Orb]"
-			sprite planet/forest6
-			distance 586.843
-			period 227.459
-			offset 157.826
-			object
-				sprite planet/luna
-				distance 147
-				period 22.4047
-		object
-			sprite planet/lava7
-			distance 905.853
-			period 436.221
-			offset 23.4354
-		object
-			sprite planet/gas15
-			distance 1171.94
-			period 641.918
-			offset 295.571
-		object
-			sprite planet/gas16
-			distance 2618.1
-			period 2143.38
-			offset 335.603
-			object
-				sprite planet/europa
-				distance 211
-				period 16.1332
-			object
-				sprite planet/ice8
-				distance 349
-				period 34.3191
-	planet "[Holy Orb]"
-		attributes antfolk
-		landscape land/sky2
-		description `[stuff about the holy planet or some such]`
-		spaceport `[stuff about the "holy city" that the spaceport is in]`
-		"required reputation" 10
-		bribe 0
-		security 0.3
-
 event "antfolk colonize double star"
-	system "[Double Star]"
-		government "Antfolk Union"
-		object
-			sprite star/k0
-			distance 44
-			period 10.5839
-			offset 180
-		object
-			sprite star/k0
-			distance 44
-			period 10.5839
-		object
-			sprite planet/rock4
-			distance 233.04
-			period 45.6109
-			offset 108.275
-		object
-			sprite planet/desert7
-			distance 622.29
-			period 199.027
-			offset 264.313
-		object
-			sprite planet/ice2
-			distance 815.29
-			period 298.464
-			offset 156.099
-		object
-			sprite planet/jupiter
-			distance 1866.7
-			period 1034.03
-			offset 204.776
-			object "[Orb of Crimson Colony]"
-				sprite planet/tethys
-				distance 267
-				period 13.7097
-			object "[Orb of Cerulean Colony]"
-				sprite planet/europa
-				distance 365
-				period 21.913
-	planet "[Orb of Crimson Colony]"
+	planet "[Crimson Orb]"
 		attributes antfolk
 		landscape land/station3
-		description `[The citizens of [Orb of Crimson Colony], whose word for themselves best translates as "Crimsonite", appear to have a very unfriendly rivalry of some sort with the citizens of [Orb of Cerulean Colony], whom they refer to with the pejorative "jvfushys vfu" meaning "wishful fish". Apparently, this term accuses citizens of [Orb of Cerulean Colony] of wishing they were fish. It's honestly hard to make much sense of the insult.]`
+		description `[The citizens of [Crimson Orb], whose word for themselves best translates as "Crimsonite", appear to have a very unfriendly rivalry of some sort with the citizens of [Cerulean Orb], whom they refer to with the pejorative "jvfushys vfu" meaning "wishful fish". Apparently, this term accuses citizens of [Cerulean Orb] of wishing they were fish. It's honestly hard to make much sense of the insult.]`
 		spaceport `[spaceport description here]`
 		"required reputation" 10
 		bribe 0
 		security 0.1
-	planet "[Orb of Cerulean Colony]"
+	planet "[Cerulean Orb]"
 		attributes antfolk
 		landscape land/station3
-		description `[The citizens of [Orb of Cerulean Colony], whose word for themselves best translates as "Ceruleanite", appear to have a very unfriendly rivalry of some sort with the citizens of [Orb of Crimson Colony], whom they refer to with the pejorative "jvfushys vern zbron" meaning "wishful svern zbron". Appearently, "svern zbron" are some form of extremophile microscopic organism native to the volcanoes [Orb of Origin]. It's honestly hard to make much sense of the insult.]`
+		description `[The citizens of [Cerulean Orb], whose word for themselves best translates as "Ceruleanite", appear to have a very unfriendly rivalry of some sort with the citizens of [Crimson Orb], whom they refer to with the pejorative "jvfushys vern zbron" meaning "wishful svern zbron". Appearently, "svern zbron" are some form of extremophile microscopic organism native to the volcanoes [Orb of Origin]. It's honestly hard to make much sense of the insult.]`
 		spaceport `[spaceport description here]`
 		"required reputation" 10
 		bribe 0
 		security 0.1
 
-event "antfolk dissidents colonize vorloo"
+#event "antfolk dissidents colonize vorloo" #pretty out-of-date event
 	system Vorloo
 		government "Antfolk Pirate"
 		object
@@ -384,7 +218,7 @@ mission "event: antfolk begin colonizing"
 		event "antfolk colonize holy star" 30 #also needs changing
 		event "antfolk colonize [unnamed 5]" 60 #also needs changing
 
-#mission "event: political dissidents kicked from [orb of origin]"
+#mission "event: political dissidents kicked from [orb of origin]" #is this even still going to happen?
 	invisible
 	landing
 	to offer
@@ -392,68 +226,6 @@ mission "event: antfolk begin colonizing"
 		#has [something might need to go here]
 	on offer
 		event "antfolk dissidents colonize vorloo"
-
-event "orbital terraforming management station 1: built"
-	system "[North Star]"
-		object
-			sprite star/k5
-			distance 19.0134
-			period 11.8591
-		object
-			sprite star/m8
-			distance 59.9866
-			period 11.8591
-			offset 180
-		object "[Undying Storm]"
-			sprite planet/desert2
-			distance 551.939
-			period 219.001
-			offset 312.639
-			object "OTMS 1"
-				sprite planet/station3
-				distance 242
-				period 13.3922
-		object
-			sprite planet/ocean4
-			distance 985.749
-			period 522.708
-			offset 348.044
-			object
-				sprite planet/dust5
-				distance 173
-				period 20.7157
-		object
-			sprite planet/jupiter
-			distance 1744.04
-			period 1230.11
-			offset 357.112
-		object
-			sprite planet/gas8
-			distance 2517.05
-			period 2132.79
-			offset 358.843
-			object
-				sprite planet/lava0
-				distance 240
-				period 19.7922
-			object
-				sprite planet/ice0
-				distance 395
-				period 41.79
-	planet "[Undying Storm]"
-		attributes antfolk
-		landscape land/dune0
-		description `[Undying Storm] at first seemed like a perfectly habitable planet for the Antfolk without any terraforming. The planet also has a position in Antfolk space ideal for becoming an interstellar trade hub. Unfortunately, one massive problem is preventing it from growing beyond a few small settlements: the planet's weather is extremely strong, erratic, and almost completely unpredictable. As a result, the planet's settlements are small, and are all planetbases little different from what you'd find on a barren moon. Except, of course, that these planetbases are far more heavily-armored.`
-		spaceport `It is a well-known fact in human space that moons help moderate the weather of the planets they orbit. Moons, like Luna, act as a sort of natural terraforming machine for the world they orbit, like Earth. [Undying Storm] lacks any kind of moon or other natural satellite of sufficient size to do this for it. As a result, [Undying Storm] has incredibly extreme weather patterns, to the point that you can't even leave your ship without an EVA suit. And, judging by the fact that the Antfolk at this spaceport are wearing various kinds of enviro suits as well, they don't seem to be doing much better.`
-		"required reputation" 10
-		bribe 0
-		security 0.1
-	planet "OTMS 1"
-		attributes antfolk station
-		landscape land/station0
-		description `"OTMS" apparently stands for "Orbital Terraforming Management Station", and is an ingenius solution to Aicmaer's weather problems. By building as large a space station as they could, the Antfolk have basicly managed to build an artificial moon for Aicmaer that noticably tempers the planet's weather just by being there.`
-		description `And yet the Antfolk did not invest so many resources into such a large space station just for it to sit there and be only marginally cheaper than a normal Glory terraforming machine. OTMS 1 also serves as a deuterium refinery using the local stars' solar winds, and teams of Antfolk scientists on the station run numerous tests and monitoring functions on the planet below to calculate when and how to next adjust the planet's environment.`
-		spaceport `[spaceport description here]`
 
 event "Antfolk gain Energy Shielding tech"
 	outfitter "Antfolk Civilian"
@@ -469,8 +241,7 @@ event "Antfolk mass producing Larval Flamethrowers"
 	outfitter "Antfolk Military"
 		"Larval Flamethrower"
 
-#everything after this, if disapproved of by MZ, will be removed to be put in some supplementary mod that would be seperate from, but dependant on, "Bite of the Ant". A "Bite of the Ant: Supplement" mod or something.
-
+#Epilog: The Book of <first> events
 event "Book of First being written"
 
 mission "Book of First writing progress 1"
