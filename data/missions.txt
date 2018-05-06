@@ -82,7 +82,7 @@ mission "Missive from Harmony 1"
 			`			Sincerely, Brother Greg`
 		event "Milky Way-Acallaris Wormhole opens"
 
-mission "Missive from Harmony 2" #was worth keeping, but is in serious need of editing
+mission "Missive from Harmony 2"
 	landing
 	clearance
 	name "Go to <destination>"
@@ -170,22 +170,125 @@ mission "Missive from Harmony 2" #was worth keeping, but is in serious need of e
 		conversation
 			`[PC speaks with Owen Diedrich, and things are discussed like what Diedrich hopes to gain from PC exploring the Gateway]`
 
-mission "Antfolk First Contact 1"
+mission "Explore Acallaris"
 	landing
-	name "First Contact: Antfolk"
-	description "meet the ants"
-	source "[Orb of Origin]"
-	destination "Setar Fort" #not yet sure I got the right Korath world here
+	name "Investigate the Durax Wormhole"
+	description "Explore the other side of the Gate"
+	source Stormhold
+	to offer
+		has "Missive from Harmony 2: done"
+	to complete
+		has "Antfolk First Contact 0: done"
+	on complete
+		conversation
+			`[pc lands near an antfolk hive]`
+			`[antfolk speak antfolk to pc and arianne]`
+			`[pc and arianne return to ship]`
+
+mission "Antfolk First Contact 0"
+	invisible
+	landing
+	source Stormhold
+	destination "[Orb of Origin]"
 	to offer
 		has "Missive from Harmony 2: done"
 	on offer
+		passengers 1
+
+mission "Find the Antfolk Handler Pug (Before Antfolk or Human Handler Pug)"
+	invisible
+	landing
+	destination "[Orb of Pug]"
+	to offer
+		has "Missive from Harmony 2: done"
+		not "Antfolk First Contact 0: done"
+		not "Find the Human Handler Pug (Before Antfolk or their Handler Pug): done"
+	on complete
 		conversation
-			`[pc lands near an antfolk hive]`
-			`[antfolk speak antfolk to pc]`
-			`[pc gets the idea to contact the Wanderers, see if Iktat Rek might be willing to help]`
+			`You're honestly not all that surprised to find Pug here. These Pug seem to be behaving somewhat oddly, even for Pug. They acknowledge your presence, but do not speak. One of them hands you a slip of paper that says some inane jibberish. More specifically, it says "jru nirf jbean i bjb sf vyraprh agvyg urn agfu nirg eniryrqo rlbaqg urveu bzrf gne". You're not sure if you're looking at an alien language or the product of a Pug playing with an English random letter generator.`
+
+mission "Find the Human Handler Pug (Before Antfolk or their Handler Pug)"
+	invisible
+	landing
+	destination Puggleyak
+	to offer
+		has "Missive from Harmony 2: done"
+		not "Antfolk First Contact 0: done"
+		not "Find the Antfolk Handler Pug (Before Antfolk or Human Handler Pug): done"
+	on complete
+		conversation
+			`[PC meets Steve the Pug]`
+
+mission "Antfolk First Contact 1"
+	landing
+	name "First Contact: Antfolk"
+	description "See if the Wanderers would help you make first contact with the aliens in this new galaxy."
+	source "[Orb of Origin]"
+	destination "Setar Fort" #not yet sure I got the right Korath world here
+#	to offer
+		has "Explore Acallaris: done"
+	on offer
+		passengers 1
+		conversation
+			`Back on your ship, [arianne says something that gives pc the idea to contact the Wanderers to see if Iktat Rek might be willing to help]`
 	on complete
 		conversation
 			`[pc convinces Rek to come along]`
+			`[pc suggests to Rek that Rek stay hidden on the ship during the trip through human space; Rek agrees]`
+			`"I need to inform some of the Korath and other Wanderers about where I'm going. I'll meet you in the spaceport," says Rek.`
+
+mission "Antfolk First Contact 2"
+	name "First Contact: Antfolk"
+	description "Contact Freya and hope she knows how to get a Lincos Dictionary for English."
+	source "Setar Fort"
+	destination Pugglemug
+	to offer
+		has "Antfolk First Contact 1: done"
+	on offer
+		passengers 2
+		conversation
+			`[Rek suggests pc obtain a Lincos Dictionary for English {and explains what a Lincos Dictionary is}]`
+			`[pc decides to contact Freya]`
+	on complete
+		conversation
+			`[pc explains antfolk to freya]`
+			`[freya suggests talking to the scientists of the Republic's SETI Program, headquartered on Earth]`
+			`[freya [begs, demands] to come]`
+			`"I need to pack some equipment and inform some of the other engineers here. Let's meet up in the spaceport bar in, say, two hours, I think," says Freya.`
+
+mission "Antfolk First Contact 3"
+	name "First Contact: Antfolk"
+	description "[obtain English Lincos Dictionary]"
+	source Pugglemug
+	destination Earth
+	to offer
+		has "Antfolk First Contact 2: done"
+	on offer
+		passengers 3
+		conversation
+			`[freya comes aboard and says stuff. Maybe something about having a contact who is or was in the Republic's SETI Program?]`
+	on complete
+		conversation
+			`[PC gets a copy of a Lincos Dictionary for English]`
+
+mission "Antfolk First Contact 4"
+	landing
+	name "First Contact: Antfolk"
+	description "[broadcast English Lincos Dictionary to the Antfolk]"
+	source Earth
+	destination "[Orb of Origin]"
+	to offer
+		has "Antfolk First Contact 3: done"
+	on offer
+		passengers 3
+		conversation
+			`[With your team assembled and the English Lincos Dictionary in your ship computer's data storage, you leave to try again at making first contact with the ants.]`
+	on enter "[Close Star]"
+		dialog "You broadcast the English Lincos Dictionary to the apparent homeworld of the ant-people."
+	on complete
+		set "antfolk first contact"
+		conversation
+			`[PC and co. speak to an Antfolk consciousness which asks for the means to travel between stars]`
 
 mission "Antfolk Hyperdrives Prep 1"
 	landing
@@ -193,7 +296,9 @@ mission "Antfolk Hyperdrives Prep 1"
 	description "Learn about how to best provide new technology to a younger race"
 	source "[Orb of Origin]"
 	to offer
-		has "antfolk first contact: done"
+		has "antfolk first contact"
+		has "[Orb of Pug] Pug discovered"
+		has "Puggleyak Pug discovered"
 	on offer
 		conversation
 			`It occurs to you that you know very little about how Hyperdrives work or how to make them, and even less about Jump Drives. Not to mention that what little you know of the two makes just giving tons of either one to a race that hasn't earned the knowledge for themselves sounds like more of a terrible idea the more you think about it.`
