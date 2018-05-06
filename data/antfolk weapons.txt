@@ -18,20 +18,23 @@ outfit "Thorn Gun"
 	"outfit space" -10
 	"weapon capacity" -10
 	"gun ports" -1
-	"biomass capacity" -10
+#	"biomass capacity" -10
 	weapon
-		sprite "projectile/repeater"
+		sprite "projectile/thorn"
 		sound "repeater"
 		"hit effect" "repeater impact"
-		"inaccuracy" 1
-		"velocity" 14
+		"inaccuracy" 3
+		"velocity" 10
+		"random velocity" 3
 		"lifetime" 30
 		"reload" 6
 		"firing energy" 5
 		"firing heat" 15
-		"shield damage" 2
-		"hull damage" 3.5
-	description "This weapon is a rather simplistic and primitive example of space age bioweapons. It is little more than a gun which shoots massive plant thorns that are grown fairly quickly, but shot out even faster."
+		"firing force" 5
+		"shield damage" 4
+		"hull damage" 7
+		"hit force" 5
+	description "This weapon is a rather simplistic and primitive example of space age bioweapons. It is little more than a gun which shoots massive plant thorns that are grown fairly quickly, and shot out even faster."
 	description "The Antfolk's method of producing organic ballistics ammunition so rapidly and on-board the ship that'll be using them is complex and beyond your grasp. However, you have a sense that some kind of growth hormone is involved, most likely combined with some advanced form of hydroponic gardening. The Antfolk must be very good at biotechnology to have designed and miniaturized that system, and you can only guess at how they could have invented such advanced technology and yet weaponized it so poorly."
 
 outfit "Thorn Turret"
@@ -44,20 +47,25 @@ outfit "Thorn Turret"
 	"outfit space" -22
 	"weapon capacity" -22
 	"turret mounts" -1
-	"biomass capacity" -22
+#	"biomass capacity" -22
 	weapon
-		sprite "projectile/repeater"
+		sprite "projectile/thorn"
 		sound "repeater"
+		"hardpoint sprite" "hardpoint/thorn turret"
 		"hit effect" "repeater impact"
-		"inaccuracy" 2
-		"velocity" 14
+		"turret turn" 2.5
+		"inaccuracy" 3
+		"velocity" 10
+		"random velocity" 3
 		"lifetime" 30
 		"reload" 3
 		"firing energy" 5
 		"firing heat" 15
+		"firing force" 5
 		"shield damage" 4
 		"hull damage" 7
-	description "The Antfolk, a race brilliant enough to genetically engineer a biological machine with an exoskeleton that can, in at least one spot and axis, turn on a 360 degree pivot (a feature previously unheard of among biological organisms). They should've been able to take all the work that designing this turret must've taken and instead put it towards making a more powerful weapon system. Instead, they chose to use this technology to put a Thorn Gun on a swivvle."
+		"hit force" 5
+	description "The Antfolk, a race brilliant enough to genetically engineer a biological machine with an exoskeleton that can, in at least one spot and axis, turn on a 360 degree pivot (a feature previously unheard of among biological organisms). They should've been able to take all the work that designing this turret must've taken and instead put it towards making a more powerful weapon system. Instead, they chose to use this technology to put two Thorn Guns on a swivel."
 
 outfit "Waste-Coolant Missile Launcher"
 #	licenses
@@ -69,7 +77,7 @@ outfit "Waste-Coolant Missile Launcher"
 	"outfit space" -15
 	"weapon capacity" -15
 	"gun ports" -1
-	"biomass capacity" -15
+#	"biomass capacity" -15
 	"launcher capacity" -1
 	weapon
 		sprite "projectile/meteor"
@@ -133,14 +141,16 @@ outfit "Ionic Nuclear Missile Launcher"
 		"homing" 4
 		"radar tracking" .5
 		"optical tracking" 1
-		"trigger radius" 30
-		"blast radius" 150
-		"shield damage" 9000
-		"hull damage" 7000
-		"ion damage" 5 #placeholder value taken from the "Ion Cannon" vanilla outfit
+		"trigger radius" 50
+		"blast radius" 300
+		"shield damage" 5000
+		"hull damage" 4000
+		"ion damage" 20
 		"heat damage" 340 #placeholder value taken from the "Plasma Cannon" vanilla outfit
 		"hit force" 4000
 		"missile strength" 200
+	description "While nuclear weaponry is considered an atrocity in human space, the antfolk have no issue employing the use of spontaneous atomic decay to solve their problems."
+	description "The Ionic Nuclear Missile Launcher fires nuclear missile which appear to be designed less for damage and more for releasing a fatal electromagnetic pulse which can immobilize all but the most well-equipped warships for a time."
 
 outfit "Ionic Nuclear Missile"
 	plural "Ionic Nuclear Missiles"
@@ -151,7 +161,7 @@ outfit "Ionic Nuclear Missile"
 	"ion nuke capacity" -1
 	description "Ionic Nuclear Missiles are ammunition for the Ionic Nuclear Missile Launcher. Each launcher can hold 2 of them. You cannot install Ionic Nuclear Missiles unless you have also installed a launcher to fire them from."
 
-outfit "Proto-Beam"
+outfit "Spore Beam"
 #	licenses
 #		Antfolk Military
 	category "Guns"
@@ -163,21 +173,24 @@ outfit "Proto-Beam"
 	"gun ports" -1
 #	"biomass capacity" -1
 	weapon
-		sprite "projectile/laser"
-			"frame rate" 1
+		sprite "projectile/spore beam"
+			"frame rate" 3
+		"hardpoint offset" -2
 		sound "laser"
-		"hit effect" "beam laser impact"
+		"hit effect" "heavy laser impact"
 		"inaccuracy" .5
 		"velocity" 300
 		"lifetime" 1
 		"reload" 1
 		"firing energy" .5
 		"firing heat" 1.2
+		"firing force" .3
 		"shield damage" 1
 		"hull damage" 1.3
-	description "Antfolk Gun Port Burst Laser Weapon"
+		"hit force" .3
+	description "This beam-like weapon utilizes ionic charges to fire microscopic spores at a target to not only cause significant damage, but also to generate a slight pushing force."
 
-outfit "Proto-Beam Turret"
+outfit "Spore Beam Turret"
 #	licenses
 #		Antfolk Military
 	category "Turrets"
@@ -190,19 +203,24 @@ outfit "Proto-Beam Turret"
 #	"biomass capacity" -1
 	"required crew" 1
 	weapon
-		sprite "projectile/2x laser"
-			"frame rate" 1
+		sprite "projectile/spore beam"
+			"frame rate" 3
+		"hardpoint sprite" "hardpoint/spore beam turret"
+		"hardpoint offset" 4
 		sound "laser"
-		"hit effect" "beam laser impact"
+		"hit effect" "heavy laser impact"
 		"inaccuracy" .5
+		"turret turn" 2.5
 		"velocity" 300
 		"lifetime" 1
 		"reload" 1
-		"firing energy" 1
-		"firing heat" 2.4
+		"firing energy" .5
+		"firing heat" 1.2
+		"firing force" .3
 		"shield damage" 1
-		"hull damage" 2.6
-	description "Antfolk Turret Mount Burst Laser Weapon"
+		"hull damage" 1.3
+		"hit force" .3
+	description "Ever since their revolutionary breakthrough with the Thorn Turret, the Antfolk have been eager to implement it on their other weapons."
 
 outfit "Antfolk Anti-Missile" #might want a new name
 #	licenses
@@ -214,16 +232,25 @@ outfit "Antfolk Anti-Missile" #might want a new name
 	"outfit space" -10
 	"weapon capacity" -10
 	"turret mounts" -1
-	"biomass capacity" -10
+#	"biomass capacity" -10
 	weapon
-		"hit effect" "small anti-missile"
+		"hardpoint sprite" "hardpoint/antfolk antimissile"
+		"hit effect" "antfolk anti-missile"
 		"velocity" 150
 		"lifetime" 1
 		"reload" 7
 		"firing energy" 5
 		"firing heat" 2
 		"anti-missile" 3
-	description "Antfolk anti-missile defense turret."
+	description "This advanced turret is not much more than a Thorn Turret modified to track and destroy incoming projectiles. This also required a substantial increase in muzzle velocity, which, in turn, costs exponentially more energy per thorn fired."
+
+effect "antfolk anti-missile"
+	sprite "projectile/spore AM"
+		"frame rate" 10
+		"no repeat"
+	sound "anti-missile"
+	"lifetime" 10
+	"velocity scale" 1
 
 outfit "Larval Flamethrower"
 #	licenses
@@ -235,7 +262,7 @@ outfit "Larval Flamethrower"
 	"outfit space" -13
 	"weapon capacity" -9
 	"gun ports" -1
-	"biomass capacity" -4 #this one is arguable
+#	"biomass capacity" -4 #this one is arguable
 	"fuel capacity" 50
 	weapon
 		sprite "effect/explosion/small"
