@@ -195,29 +195,103 @@ mission "Antfolk First Contact 0"
 	on offer
 		passengers 1
 
-mission "Find the Antfolk Handler Pug (Before Antfolk or Human Handler Pug)"
+mission "Find the Antfolk Handler Pug first"
 	invisible
 	landing
 	destination "[Orb of Pug]"
 	to offer
 		has "Missive from Harmony 2: done"
-		not "Antfolk First Contact 0: done"
-		not "Find the Human Handler Pug (Before Antfolk or their Handler Pug): done"
+		not "[Orb of Origin]: visited"
+		not "Puggleyak: visited"
 	on complete
+		fail "Find the Human Handler Pug first"
+		fail "Find the Antfolk first, then the Antfolk Handler Pug"
+		fail "Find the Antfolk first, then the Human Handler Pug"
+		fail "Find the Human Handler Pug first, then the Antfolk Handler Pug"
 		conversation
 			`You're honestly not all that surprised to find Pug here. These Pug seem to be behaving somewhat oddly, even for Pug. They acknowledge your presence, but do not speak. One of them hands you a slip of paper that says some inane jibberish. More specifically, it says "jru nirf jbean i bjb sf vyraprh agvyg urn agfu nirg eniryrqo rlbaqg urveu bzrf gne". You're not sure if you're looking at an alien language or the product of a Pug playing with an English random letter generator.`
 
-mission "Find the Human Handler Pug (Before Antfolk or their Handler Pug)"
+mission "Find the Human Handler Pug first"
 	invisible
 	landing
 	destination Puggleyak
 	to offer
 		has "Missive from Harmony 2: done"
-		not "Antfolk First Contact 0: done"
-		not "Find the Antfolk Handler Pug (Before Antfolk or Human Handler Pug): done"
+		not "[Orb of Origin]: visited"
+		not "[Orb of Pug]: visited"
 	on complete
+		fail "Find the Antfolk Handler Pug first"
+		fail "Find the Antfolk first, then the Antfolk Handler Pug"
+		fail "Find the Antfolk first, then the Human Handler Pug"
+		fail "Find the Antfolk Handler Pug first, then the Human Handler Pug"
 		conversation
-			`[PC meets Steve the Pug]`
+			`[PC meets Jane Pug Doe, V. 1]`
+
+mission "Find the Antfolk first, then the Antfolk Handler Pug"
+	invisible
+	landing
+	destination "[Orb of Pug]"
+	to offer
+		has "Missive from Harmony 2: done"
+		has "[Orb of Origin]: visited"
+		not "Puggleyak: visited"
+	on complete
+		fail "Find the Antfolk Handler Pug first"
+		fail "Find the Human Handler Pug first"
+		fail "Find the Antfolk first, then the Human Handler Pug"
+		fail "Find the Antfolk Handler Pug first, then the Human Handler Pug"
+		fail "Find the Human Handler Pug first, then the Antfolk Handler Pug"
+		conversation
+			`[placeholder]`
+
+mission "Find the Antfolk first, then the Human Handler Pug"
+	invisible
+	landing
+	destination Puggleyak
+	to offer
+		has "Missive from Harmony 2: done"
+		has "[Orb of Origin]: visited"
+		not "[Orb of Pug]: visited"
+	on complete
+		fail "Find the Antfolk Handler Pug first"
+		fail "Find the Human Handler Pug first"
+		fail "Find the Antfolk first, then the Antfolk Handler Pug"
+		fail "Find the Antfolk Handler Pug first, then the Human Handler Pug"
+		fail "Find the Human Handler Pug first, then the Antfolk Handler Pug"
+		conversation
+			`[PC meets Jane Pug Doe, V. 2]`
+
+mission "Find the Antfolk Handler Pug first, then the Human Handler Pug"
+	invisible
+	landing
+	destination Puggleyak
+	to offer
+		has "Find the Antfolk Handler Pug first: done"
+		not "Find the Human Handler Pug first: done"
+		not "[Orb of Origin]: visited"
+	on complete
+		fail "Find the Human Handler Pug first"
+		fail "Find the Antfolk first, then the Antfolk Handler Pug"
+		fail "Find the Antfolk Handler Pug first, then the Human Handler Pug"
+		fail "Find the Human Handler Pug first, then the Antfolk Handler Pug"
+		conversation
+			`[placeholder]`
+
+mission "Find the Human Handler Pug first, then the Antfolk Handler Pug"
+	invisible
+	landing
+	destination "[Orb of Pug]"
+	to offer
+		has "Find the Human Handler Pug first: done"
+		not "Find the Antfolk Handler Pug first: done"
+		not "[Orb of Origin]: visited"
+	on complete
+		fail "Find the Antfolk Handler Pug first"
+		fail "Find the Antfolk first, then the Antfolk Handler Pug"
+		fail "Find the Antfolk first, then the Human Handler Pug"
+		fail "Find the Antfolk Handler Pug first, then the Human Handler Pug"
+		conversation
+			`[placeholder]`
 
 mission "Antfolk First Contact 1"
 	landing
